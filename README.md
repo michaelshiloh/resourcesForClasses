@@ -2,7 +2,7 @@
 
 1. Arduino Resources
 
-  1. Arduino basics: Intro through Lesson 4 of Adafruit's Arduino [tutorial]
+	1. Arduino basics: Intro through Lesson 4 of Adafruit's Arduino [tutorial]
 	(http://www.ladyada.net/learn/arduino/index.html)
 
 	2. AnalogReadSerial [tutorial]
@@ -13,7 +13,8 @@
 
 2. Mechatronic Resources
 
-	1. Pages xx - xx in "Physical Computing" by Tom Igoe, available in the
+	1. Pages 272-281 in "Physical Computing: Sensing and Controlling the
+	Physical World with Computers" by Igoe/O'Sullivan, available in the
 	Hybrid Lab
 
 	1. "How to Build Automata" book, available in the Hybrid Lab
