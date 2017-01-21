@@ -13,12 +13,10 @@
 
 	2. AnalogReadSerial [tutorial]
 	(http://arduino.cc/en/Tutorial/AnalogReadSerial)
+	by Arduino
 
 	3. Photoresistor
 	[Instructables](http://www.instructables.com/id/How-to-Use-a-Light-Dependent-Resistor-LDR/)
-
-	4. Arduino AnalogReadSerial
-	[tutorial](https://www.arduino.cc/en/Tutorial/AnalogReadSerial)
 
 2. Mechatronic Resources
 
