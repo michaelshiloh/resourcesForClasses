@@ -1,6 +1,6 @@
 # resourcesForClasses
 
-1. Arduino Resources
+1. Basic Arduino Resources
 
 	1. Arduino basics: Intro through Lesson 4 of Adafruit's Arduino [tutorial]
 	(http://www.ladyada.net/learn/arduino/index.html)
@@ -28,6 +28,26 @@
 	6. [Experiment 2: Reading a
 	Potentiometer](https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/experiment-2-reading-a-potentiometer)
 	in the SparkFun Inventor's Kit for Arduino Experimenter's Guide
+
+1. Arduino Multitasking Resources
+
+	1. [Tutorial](https://www.arduino.cc/en/Tutorial/BlinkWithoutDelay)
+	to Blink Without Delay on the official Arduino website
+
+	1. Excellent Adafruit Multitasking
+	[Tutorial](https://learn.adafruit.com/multi-tasking-the-arduino-part-1?view=all)
+	(highly recommended)
+
+	2. A detailed
+	[explanation](https://programmingelectronics.com/tutorial-16-blink-an-led-without-using-the-delay-function-old-version/) of Blink Without Delay. I don't like the way he
+	does the circuit, but his explanation is good.
+
+	3. Very detailed line-by-line
+	[explanation](https://www.baldengineer.com/blink-without-delay-explained.html)
+	of Blink Without Delay, with links
+	to explanations of related concepts every step of the way.
+
+	4. 
 
 2. Mechatronic Resources
 
