@@ -47,7 +47,14 @@
 	of Blink Without Delay, with links
 	to explanations of related concepts every step of the way.
 
-	4. 
+1. Arduino Tone Resources
+
+	1. Decent explanation
+	[here](https://programmingelectronics.com/an-easy-way-to-make-noise-with-arduino-using-tone/)
+
+	2. Using switches to control the tone
+	[here](http://arduino-tutorials.eu/creating-sounds-with-arduino-buzzer)
+
 
 2. Mechatronic Resources
 
