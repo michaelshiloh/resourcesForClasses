@@ -18,6 +18,17 @@
 	3. Photoresistor
 	[Instructables](http://www.instructables.com/id/How-to-Use-a-Light-Dependent-Resistor-LDR/)
 
+	4. [Introduction](https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/introduction-sik-arduino-uno)
+	to the SparkFun Inventor's Kit for Arduino Experimenter's Guide
+
+	5. [Experiment 1: Blinking an LED](
+	https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/experiment-1-blinking-an-led)
+	in the SparkFun Inventor's Kit for Arduino Experimenter's Guide
+
+	6. [Experiment 2: Reading a
+	Potentiometer](https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/experiment-2-reading-a-potentiometer)
+	in the SparkFun Inventor's Kit for Arduino Experimenter's Guide
+
 2. Mechatronic Resources
 
 	1. Pages 272-281 in "Physical Computing: Sensing and Controlling the
