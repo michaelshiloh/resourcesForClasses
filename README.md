@@ -55,6 +55,10 @@
 	2. Using switches to control the tone
 	[here](http://arduino-tutorials.eu/creating-sounds-with-arduino-buzzer)
 
+1. Arduino Sensors Resources
+
+	1. Adafruit [guide](http://www.ladyada.net/learn/sensors/) Tone Resourcesto sensors
+
 
 2. Mechatronic Resources
 
