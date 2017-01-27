@@ -98,6 +98,12 @@
 			the bottom of the page
 		5. Finally, save your changes by pressing the green _Commit new file_
 			button at the bottom of the page
+	4. How to delete a file
+		1. Browse to the file in your repository that you want to delete.
+		2. At the top of the file, click the icon of the trash can
+		4. Add a short description of why you are deleting this file
+		5. Finally, save your changes by pressing the green _Commit changes_
+			button at the bottom of the page
 	4. How to [organize folders and files]
 (https://github.com/blog/1436-moving-and-renaming-files-on-github) 
 		in Github (move and rename)
