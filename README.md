@@ -57,7 +57,7 @@
 
 1. Arduino Sensors Resources
 
-	1. Adafruit [guide](http://www.ladyada.net/learn/sensors/) Tone Resourcesto sensors
+	1. Adafruit [guide](http://www.ladyada.net/learn/sensors/) to sensors
 
 
 2. Mechatronic Resources
