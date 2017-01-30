@@ -5,8 +5,9 @@ Digital
 10 cd4023 3x 3 input nand
 10 HCF4511 bcd to 7 segment obsolete?
 10 cd 4024 7 stage ripple binary counter
-9 HCF 4017B 5 stage binary counter with 10 decoded outputs
+10 HCF 4017B 5 stage binary counter with 10 decoded outputs
 4 CD 4026 decade counters
+2 4027 cmos dual j-k flip-flop
 
 comparators
 60 lm339 quad differential comparator
@@ -14,7 +15,7 @@ comparators
 11 lm311
 
 op amps
-19 lm741
+20 lm741
 10 tl084 quad jfet 
 10 tl074cn 4x low noise jfet
 10 lm301
@@ -24,7 +25,7 @@ op amps
 30 mc1458 dual gp
 8 lm308 
 8 lf411
-14 tl072 tl082 dual bifet
+15 tl072 tl082 dual bifet
 
 timers
 45 555
@@ -68,7 +69,7 @@ HOME
 
 op amps
 5 MC34072 single supply 3-44V dual 
-4 lm358 dual 
+20 lm358 dual 
 3 tlv2474cn rail-to-rail quad
 15 lm741
 12 mc1458 dual gp
