@@ -107,3 +107,7 @@
 	4. How to [organize folders and files]
 (https://github.com/blog/1436-moving-and-renaming-files-on-github) 
 		in Github (move and rename)
+
+	5. There are many guides to Github Markdown. I find
+	[this](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+	particularly useful.
