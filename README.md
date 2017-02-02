@@ -73,6 +73,8 @@
 	1. "Making Things Move" book, available in the Hybrid Lab 
 
 	1. [Machinations/Mechanisms](doc/machinations-mechanisms.pdf)
+	
+	1. [Gear generator](http://www.geargenerator.com)
 
 3. Github Resources
 
