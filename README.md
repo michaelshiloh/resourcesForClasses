@@ -113,3 +113,8 @@
 	5. There are many guides to Github Markdown. I find
 	[this](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 	particularly useful.
+
+4. Making Sounds without Arduino
+	1. Basic 40106 (hex Schmitt trigger inverter)
+	    [oscillator](http://fluxmonkey.com/electronoize/40106Oscillator.htm)
+	2. Other 40106 [ideas](http://bleeplabs.com/rad-fi-analog/)
