@@ -126,9 +126,9 @@
 	2. There are many different symbols for MOSFETs depending on subtle
 	difference that we won't be concerned with. 
 	
-	I suggest that you use these symbols:
+    I suggest that you use these symbols:
 
-	![](http://www.electrotechservices.com/electronics/images/metal_oxide_semiconductor_fet_symbol.jpg)
+    ![](http://www.electrotechservices.com/electronics/images/metal_oxide_semiconductor_fet_symbol.jpg)
 
-	We have both N-channel and P-channel MOSFETs in the lab, but the ones that
-	we use primarily (and the only ones I've discussed in class) are N-channel.
+    We have both N-channel and P-channel MOSFETs in the lab, but the ones that
+	  we use primarily (and the only ones I've discussed in class) are N-channel.
