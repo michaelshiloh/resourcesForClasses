@@ -118,3 +118,14 @@
 	1. Basic 40106 (hex Schmitt trigger inverter)
 	    [oscillator](http://fluxmonkey.com/electronoize/40106Oscillator.htm)
 	2. Other 40106 [ideas](http://bleeplabs.com/rad-fi-analog/)
+
+5. Schematics
+	1. A great
+	[tutorial](https://learn.sparkfun.com/tutorials/how-to-read-a-schematic) on
+	schematics
+	2. There are many different symbols for MOSFETs depending on subtle
+	difference that we won't be concerned with. I suggest we use these symbols
+	for all mosfets:
+	![](http://www.electrotechservices.com/electronics/images/metal_oxide_semiconductor_fet_symbol.jpg)
+	We have both N-channel and P-channel MOSFETs in the lab, but the ones that
+	we use primarily (and the only ones I've discussed in class) are N-channel.
