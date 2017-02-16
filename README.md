@@ -132,3 +132,11 @@
 
     We have both N-channel and P-channel MOSFETs in the lab, but the ones that
 	  we use primarily (and the only ones I've discussed in class) are N-channel.
+
+6. Debugging
+	1. Adafruit Digital Multimeter
+	[tutorial](https://learn.adafruit.com/multimeters?view=all)
+	1. Sparkfun Digital Multimeter
+	[tutorial](https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter)
+	1. My debugging
+	[tutorial](http://teachmetomake.com/wordpress/debugging-circuits)
