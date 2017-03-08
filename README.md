@@ -133,6 +133,19 @@
     We have both N-channel and P-channel MOSFETs in the lab, but the ones that
 	  we use primarily (and the only ones I've discussed in class) are N-channel.
 
+5. Edge Detection 
+	1. Arduino [tutorial](https://www.arduino.cc/en/Tutorial/StateChangeDetection)
+	2. Adafruit 
+		[tutorial](http://www.ladyada.net/learn/arduino/lesson5.html)
+	3. Another 
+		[tutorial]
+		(https://programmingelectronics.com/tutorial-18-state-change-detection-and-the-modulo-operator-old-version/)
+
+5. Debouncing
+	- Arduino
+		[tutorial]
+		(https://www.arduino.cc/en/tutorial/debounce)
+
 6. Debugging
 	1. Adafruit Digital Multimeter
 	[tutorial](https://learn.adafruit.com/multimeters?view=all)
@@ -140,3 +153,44 @@
 	[tutorial](https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter)
 	1. My debugging
 	[tutorial](http://teachmetomake.com/wordpress/debugging-circuits)
+
+7. Functions
+	1. Arduino function
+	[reference](https://www.arduino.cc/en/Reference/FunctionDeclaration)
+	1. User contributed Arduino function 
+	[tutorial](http://playground.arduino.cc/Code/Function)
+	1. Arduino function
+	[lesson](https://startingelectronics.org/software/arduino/learn-to-program-course/15-functions/)
+
+8. Arrays 
+	1. Arduino array [reference](https://www.arduino.cc/en/Reference/Array)
+	1. Arduino array [tutorial](https://www.arduino.cc/en/Tutorial/Arrays)
+	1. Another Arduino array
+	[tutorial](https://programmingelectronics.com/tutorial-13-how-to-use-arrays-with-arduino/)
+	1. Yet another Arduino array
+	[tutorial](https://www.tutorialspoint.com/arduino/arduino_arrays.htm)
+	1. Yet another Arduino array
+		[tutorial]
+		(https://startingelectronics.org/software/arduino/learn-to-program-course/17-arrays/)
+	1. Yet another Arduino array
+		(http://www.thebox.myzen.co.uk/Tutorial/Arrays.html)
+
+9. Processing
+	1. [Hello Processing](http://hello.processing.org/)
+	tutorial
+	2. Processing [Getting Started](http://processing.org/tutorials/gettingstarted/)
+	tutorial
+	3. Processing [Coordinate System and Shapes](http://processing.org/tutorials/drawing/)
+	tutorial
+	4. Processing [Color](http://processing.org/tutorials/color/) tutorial
+
+10. Classes and Objects
+	1. Daniel Shiffman’s [Objects](https://processing.org/tutorials/objects/)
+	tutorial (Processing)
+	2. A simple Processing class
+	[example](http://teachmetomake.com/wordpress/simple-processing-class-example)
+
+11. Soldering:
+	1. Adafruit 
+	[guide](https://learn.adafruit.com/adafruit-guide-excellent-soldering?view=all)
+	to excellent soldering
