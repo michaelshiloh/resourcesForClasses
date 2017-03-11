@@ -194,3 +194,11 @@
 	1. Adafruit 
 	[guide](https://learn.adafruit.com/adafruit-guide-excellent-soldering?view=all)
 	to excellent soldering
+
+12. Fritzing and Othermill
+	1. Download and install Fritzing from [fritzing.org](www.fritzing.org)
+	2. Fritzing’s [Getting Started](http://fritzing.org/learning/get-started/)
+	3. Getting started with Fritzing’s [Project
+	View](http://fritzing.org/learning/get-started/project-view/)
+	4. Fritzing Designing
+	PCB [tutorial](http://fritzing.org/learning/tutorials/designing-pcb/)
