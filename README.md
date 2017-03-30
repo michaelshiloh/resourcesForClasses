@@ -204,23 +204,23 @@
 	PCB [tutorial](http://fritzing.org/learning/tutorials/designing-pcb/)
 
 13. Wireless technologies
-		1. Wifi
-			- Hard to use on some networks such as those that require logging in
-				with credentials or those that prevent peer-to-peer communication
-			1. Arduino [Yun](https://www.arduino.cc/en/Guide/ArduinoYunLin)
-			1. Arduino [MKR1000](https://www.arduino.cc/en/Guide/MKR1000)
-		2. Bluetooth [tutorial](http://teachmetomake.com/wordpress/adafruit-bluefruit-arduino)
-			- Reliable
-			- Limited to vendor provided phone app unless you know how to write your
-				own
-			- __Don't solder the module to your project!__ 
-				Add the appropriate header to
-				mate with the module.
-		3. Xbee
-			- Tricky to configure
-			- Very reliable
-			1. Sparkfun [tutorial](https://learn.sparkfun.com/tutorials/xbee-shield-hookup-guide)
-		4. 433 MHz
-			- [Part](http://www.oddwires.com/433-mhz-transmitter-and-receiver-modules-great-for-arduino/)
-			- [Library](http://www.airspayce.com/mikem/arduino/RadioHead/)
-				(untested)
+	1. Wifi
+		- Hard to use on some networks such as those that require logging in
+			with credentials or those that prevent peer-to-peer communication
+		1. Arduino [Yun](https://www.arduino.cc/en/Guide/ArduinoYunLin)
+		1. Arduino [MKR1000](https://www.arduino.cc/en/Guide/MKR1000)
+	2. Bluetooth [tutorial](http://teachmetomake.com/wordpress/adafruit-bluefruit-arduino)
+		- Reliable
+		- Limited to vendor provided phone app unless you know how to write your
+			own
+		- __Don't solder the module to your project!__ 
+			Add the appropriate header to
+			mate with the module.
+	3. Xbee
+		- Tricky to configure
+		- Very reliable
+		1. Sparkfun [tutorial](https://learn.sparkfun.com/tutorials/xbee-shield-hookup-guide)
+	4. 433 MHz
+		- [Part](http://www.oddwires.com/433-mhz-transmitter-and-receiver-modules-great-for-arduino/)
+		- [Library](http://www.airspayce.com/mikem/arduino/RadioHead/)
+			(untested)
