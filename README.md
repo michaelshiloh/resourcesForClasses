@@ -209,13 +209,13 @@
 			with credentials or those that prevent peer-to-peer communication
 		1. Arduino [Yun](https://www.arduino.cc/en/Guide/ArduinoYunLin)
 		1. Arduino [MKR1000](https://www.arduino.cc/en/Guide/MKR1000)
-	2. Bluetooth [tutorial](http://teachmetomake.com/wordpress/adafruit-bluefruit-arduino)
+	2. Bluetooth 
 		- Reliable
 		- Limited to vendor provided phone app unless you know how to write your
 			own
 		- __Don't solder the module to your project!__ 
-			Add the appropriate header to
-			mate with the module.
+			Add the appropriate header to mate with the module.
+		1. Adafruit Bluefruit [tutorial](http://teachmetomake.com/wordpress/adafruit-bluefruit-arduino)
 	3. Xbee
 		- Tricky to configure
 		- Very reliable
