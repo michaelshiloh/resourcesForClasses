@@ -21,8 +21,7 @@
 	Potentiometer](https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/experiment-2-reading-a-potentiometer)
 	in the SparkFun Inventor's Kit for Arduino Experimenter's Guide
 
-	2. AnalogReadSerial [tutorial]
-	(http://arduino.cc/en/Tutorial/AnalogReadSerial)
+	2. AnalogReadSerial [tutorial](http://arduino.cc/en/Tutorial/AnalogReadSerial)
 	by Arduino
 
 	3. Photoresistor
