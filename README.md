@@ -74,6 +74,31 @@ Hybrid Lab
 
 1. [Gear generator](http://www.geargenerator.com)
 
+1. [Free plans](http://cabaret.co.uk/store/downloads/) from Cabaret Mechanical
+Theatre
+
+1. Instructables
+[tagged](http://www.instructables.com/tag/type-id/keyword-automata/) with the
+keyword Automata
+
+1. Nice collection of resources for [Cam and Crank
+toys](http://re.trotoys.com/projects/cat/cam-crank-toys/)
+
+1. Simple [descriptions](http://www.mechanical-toys.com/mechanisums.htm) of
+the 6 basic mechanisms
+
+1. Cardboard Automata
+[pamphlet](https://www.exploratorium.edu/pie/downloads/Cardboard_Automata.pdf)
+from The Exploratorium
+
+1. Free plans to download and other
+[resources](http://dugnorth.com/automaton-plans.aspx) from Dug North, a master
+automata builder
+
+1. How to Make Cardboard Automata
+[article](http://makezine.com/projects/make-cardboard-automata/) on Make:
+Projects website (which itself is a great resource for all sorts of projects).
+
 ## Github Resources
 
 1. How to create a Github account and your first repository
