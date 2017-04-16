@@ -1,17 +1,18 @@
 # resourcesForClasses
 
+#basicArduinoResources
 ## Basic Arduino Resources
 
-	1. Arduino basics: Intro through Lesson 3 of Adafruit's Arduino [tutorial](http://www.ladyada.net/learn/arduino/index.html)
+1. Arduino basics: Intro through Lesson 3 of Adafruit's Arduino [tutorial](http://www.ladyada.net/learn/arduino/index.html)
 
-	1. [Arduino in a Nutshell](http://hci.rwth-aachen.de/arduino)
+1. [Arduino in a Nutshell](http://hci.rwth-aachen.de/arduino)
 
-	1. Another [Getting Started with
-	Arduino](http://reboot.yoha.co.uk/index.php?title=Getting_Started_with_Arduino)
-		with links to many other sources of information
+1. Another [Getting Started with
+Arduino](http://reboot.yoha.co.uk/index.php?title=Getting_Started_with_Arduino)
+	with links to many other sources of information
 
-	4. [Introduction](https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/introduction-sik-arduino-uno)
-	to the SparkFun Inventor's Kit for Arduino Experimenter's Guide
+4. [Introduction](https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/introduction-sik-arduino-uno)
+to the SparkFun Inventor's Kit for Arduino Experimenter's Guide
 
 	5. [Experiment 1: Blinking an LED](
 	https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/experiment-1-blinking-an-led)
