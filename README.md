@@ -2,8 +2,7 @@
 
 1. Basic Arduino Resources
 
-	1. Arduino basics: Intro through Lesson 4 of Adafruit's Arduino [tutorial]
-	(http://www.ladyada.net/learn/arduino/index.html)
+	1. Arduino basics: Intro through Lesson 4 of Adafruit's Arduino [tutorial](http://www.ladyada.net/learn/arduino/index.html)
 
 	1. [Arduino in a Nutshell](http://hci.rwth-aachen.de/arduino)
 
