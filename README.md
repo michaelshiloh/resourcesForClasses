@@ -1,6 +1,6 @@
 # resourcesForClasses
 
-1. Basic Arduino Resources
+##Basic Arduino Resources
 
 	1. Arduino basics: Intro through Lesson 3 of Adafruit's Arduino [tutorial](http://www.ladyada.net/learn/arduino/index.html)
 
