@@ -11,13 +11,6 @@
 	Arduino](http://reboot.yoha.co.uk/index.php?title=Getting_Started_with_Arduino)
 		with links to many other sources of information
 
-	2. AnalogReadSerial [tutorial]
-	(http://arduino.cc/en/Tutorial/AnalogReadSerial)
-	by Arduino
-
-	3. Photoresistor
-	[Instructables](http://www.instructables.com/id/How-to-Use-a-Light-Dependent-Resistor-LDR/)
-
 	4. [Introduction](https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/introduction-sik-arduino-uno)
 	to the SparkFun Inventor's Kit for Arduino Experimenter's Guide
 
@@ -28,6 +21,13 @@
 	6. [Experiment 2: Reading a
 	Potentiometer](https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/experiment-2-reading-a-potentiometer)
 	in the SparkFun Inventor's Kit for Arduino Experimenter's Guide
+
+	2. AnalogReadSerial [tutorial]
+	(http://arduino.cc/en/Tutorial/AnalogReadSerial)
+	by Arduino
+
+	3. Photoresistor
+	[Instructables](http://www.instructables.com/id/How-to-Use-a-Light-Dependent-Resistor-LDR/)
 
 1. Arduino Multitasking Resources
 
