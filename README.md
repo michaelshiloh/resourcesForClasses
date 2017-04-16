@@ -1,6 +1,5 @@
-# resourcesForClasses
+# Resources for Classes
 
-# basicArduinoResources
 ## Basic Arduino Resources
 
 1. Arduino basics: Intro through Lesson 3 of Adafruit's Arduino [tutorial](http://www.ladyada.net/learn/arduino/index.html)
@@ -28,7 +27,7 @@ by Arduino
 3. Photoresistor
 [Instructables](http://www.instructables.com/id/How-to-Use-a-Light-Dependent-Resistor-LDR/)
 
-1. Arduino Multitasking Resources
+## Arduino Multitasking Resources
 
 1. [Tutorial](https://www.arduino.cc/en/Tutorial/BlinkWithoutDelay)
 to Blink Without Delay on the official Arduino website
@@ -46,7 +45,7 @@ does the circuit, but his explanation is good.
 of Blink Without Delay, with links
 to explanations of related concepts every step of the way.
 
-1. Arduino Tone Resources
+## Arduino Tone Resources
 
 1. Decent explanation
 [here](https://programmingelectronics.com/an-easy-way-to-make-noise-with-arduino-using-tone/)
@@ -54,12 +53,12 @@ to explanations of related concepts every step of the way.
 2. Using switches to control the tone
 [here](http://arduino-tutorials.eu/creating-sounds-with-arduino-buzzer)
 
-1. Arduino Sensors Resources
+## Arduino Sensors Resources
 
 1. Adafruit [guide](http://www.ladyada.net/learn/sensors/) to sensors
 
 
-2. Mechatronic Resources
+## Mechatronic Resources
 
 1. Pages 272-281 in "Physical Computing: Sensing and Controlling the
 Physical World with Computers" by Igoe/O'Sullivan, available in the
@@ -75,7 +74,7 @@ Hybrid Lab
 
 1. [Gear generator](http://www.geargenerator.com)
 
-3. Github Resources
+## Github Resources
 
 1. How to create a Github account and your first repository
 [guide](https://github.com/zamfi/github-guide)
@@ -118,7 +117,7 @@ particularly useful.
 		[oscillator](http://fluxmonkey.com/electronoize/40106Oscillator.htm)
 2. Other 40106 [ideas](http://bleeplabs.com/rad-fi-analog/)
 
-5. Schematics
+## Schematics
 1. A great
 [tutorial](https://learn.sparkfun.com/tutorials/how-to-read-a-schematic) on
 schematics
@@ -132,93 +131,116 @@ difference that we won't be concerned with.
 	We have both N-channel and P-channel MOSFETs in the lab, but the ones that
 	we use primarily (and the only ones I've discussed in class) are N-channel.
 
-5. Edge Detection 
+## Edge Detection 
 1. Arduino [tutorial](https://www.arduino.cc/en/Tutorial/StateChangeDetection)
+
 2. Adafruit 
 	[tutorial](http://www.ladyada.net/learn/arduino/lesson5.html)
+
 3. Another 
 	[tutorial]
 	(https://programmingelectronics.com/tutorial-18-state-change-detection-and-the-modulo-operator-old-version/)
 
-5. Debouncing
+## Debouncing
 - Arduino
 	[tutorial]
 	(https://www.arduino.cc/en/tutorial/debounce)
 
-6. Debugging
+## Debugging
 1. Adafruit Digital Multimeter
 [tutorial](https://learn.adafruit.com/multimeters?view=all)
+
 1. Sparkfun Digital Multimeter
 [tutorial](https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter)
+
 1. My debugging
 [tutorial](http://teachmetomake.com/wordpress/debugging-circuits)
 
-7. Functions
+## Functions
 1. Arduino function
 [reference](https://www.arduino.cc/en/Reference/FunctionDeclaration)
+
 1. User contributed Arduino function 
 [tutorial](http://playground.arduino.cc/Code/Function)
+
 1. Arduino function
 [lesson](https://startingelectronics.org/software/arduino/learn-to-program-course/15-functions/)
 
-8. Arrays 
+## Arrays 
 1. Arduino array [reference](https://www.arduino.cc/en/Reference/Array)
+
 1. Arduino array [tutorial](https://www.arduino.cc/en/Tutorial/Arrays)
+
 1. Another Arduino array
 [tutorial](https://programmingelectronics.com/tutorial-13-how-to-use-arrays-with-arduino/)
+
 1. Yet another Arduino array
 [tutorial](https://www.tutorialspoint.com/arduino/arduino_arrays.htm)
-1. Yet another Arduino array
-	[tutorial]
-	(https://startingelectronics.org/software/arduino/learn-to-program-course/17-arrays/)
-1. Yet another Arduino array
-	(http://www.thebox.myzen.co.uk/Tutorial/Arrays.html)
 
-9. Processing
+1. Yet another Arduino array
+	[tutorial](https://startingelectronics.org/software/arduino/learn-to-program-course/17-arrays/)
+
+1. Yet another Arduino array [tutorial](http://www.thebox.myzen.co.uk/Tutorial/Arrays.html)
+
+## Processing
 1. [Hello Processing](http://hello.processing.org/)
 tutorial
+
 2. Processing [Getting Started](http://processing.org/tutorials/gettingstarted/)
 tutorial
+
 3. Processing [Coordinate System and Shapes](http://processing.org/tutorials/drawing/)
 tutorial
+
 4. Processing [Color](http://processing.org/tutorials/color/) tutorial
 
-10. Classes and Objects
+## Classes and Objects
 1. Daniel Shiffman’s [Objects](https://processing.org/tutorials/objects/)
 tutorial (Processing)
+
 2. A simple Processing class
 [example](http://teachmetomake.com/wordpress/simple-processing-class-example)
 
-11. Soldering:
+## Soldering:
 1. Adafruit 
 [guide](https://learn.adafruit.com/adafruit-guide-excellent-soldering?view=all)
 to excellent soldering
 
-12. Fritzing and Othermill
+## Fritzing and Othermill
 1. Download and install Fritzing from [fritzing.org](http://www.fritzing.org)
+
 2. Fritzing’s [Getting Started](http://fritzing.org/learning/get-started/)
+
 3. Getting started with Fritzing’s [Project
 View](http://fritzing.org/learning/get-started/project-view/)
+
 4. Fritzing Designing
 PCB [tutorial](http://fritzing.org/learning/tutorials/designing-pcb/)
 
-13. Wireless technologies
+## Wireless technologies
 1. Wifi
 	- Hard to use on some networks such as those that require logging in
 		with credentials or those that prevent peer-to-peer communication
+
 	1. Arduino [Yun](https://www.arduino.cc/en/Guide/ArduinoYunLin)
+
 	1. Arduino [MKR1000](https://www.arduino.cc/en/Guide/MKR1000)
+
 2. Bluetooth 
 	- Reliable
 	- Limited to vendor provided phone app unless you know how to write your
 		own
 	- __Don't solder the module to your project!__ 
 		Add the appropriate header to mate with the module.
+		
 	1. Adafruit Bluefruit [tutorial](http://teachmetomake.com/wordpress/adafruit-bluefruit-arduino)
+
 3. Xbee
 	- Tricky to configure
 	- Very reliable
+
 	1. Sparkfun [tutorial](https://learn.sparkfun.com/tutorials/xbee-shield-hookup-guide)
+
 4. 433 MHz
 	- [Part](http://www.oddwires.com/433-mhz-transmitter-and-receiver-modules-great-for-arduino/)
 	- [Library](http://www.airspayce.com/mikem/arduino/RadioHead/)
