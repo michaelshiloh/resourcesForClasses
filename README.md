@@ -224,7 +224,7 @@ tutorial (Processing)
 2. A simple Processing class
 [example](http://teachmetomake.com/wordpress/simple-processing-class-example)
 
-## Soldering:
+## Soldering
 1. Adafruit 
 [guide](https://learn.adafruit.com/adafruit-guide-excellent-soldering?view=all)
 to excellent soldering
