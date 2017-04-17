@@ -272,20 +272,20 @@ PCB [tutorial](http://fritzing.org/learning/tutorials/designing-pcb/)
 		(untested)
 
 ## Motors
-	2. Sparkfun Motors and Selecting the Right One
-	[tutorial](https://learn.sparkfun.com/tutorials/motors-and-selecting-the-right-one)
+2. Sparkfun Motors and Selecting the Right One
+[tutorial](https://learn.sparkfun.com/tutorials/motors-and-selecting-the-right-one)
 
-	3. Adafruit [Arduino Lesson 13. DC
-	Motors](https://learn.adafruit.com/adafruit-arduino-lesson-13-dc-motors?view=all)
+3. Adafruit [Arduino Lesson 13. DC
+Motors](https://learn.adafruit.com/adafruit-arduino-lesson-13-dc-motors?view=all)
 
-	4. Adafruit [Arduino Lesson 14. Servo
-	Motors](https://learn.adafruit.com/adafruit-arduino-lesson-14-servo-motors/arduino-code-for-knob?view=all)
+4. Adafruit [Arduino Lesson 14. Servo
+Motors](https://learn.adafruit.com/adafruit-arduino-lesson-14-servo-motors/arduino-code-for-knob?view=all)
 
-	5. Adafruit [Arduino Lesson 15. DC Motor
-	Reversing](https://learn.adafruit.com/adafruit-arduino-lesson-15-dc-motor-reversing/arduino-code?view=all)
+5. Adafruit [Arduino Lesson 15. DC Motor
+Reversing](https://learn.adafruit.com/adafruit-arduino-lesson-15-dc-motor-reversing/arduino-code?view=all)
 
-	5. Adafruit [Arduino Lesson 16. Stepper
-	Motors](https://learn.adafruit.com/adafruit-arduino-lesson-16-stepper-motors/overview?view=all)
+5. Adafruit [Arduino Lesson 16. Stepper
+Motors](https://learn.adafruit.com/adafruit-arduino-lesson-16-stepper-motors/overview?view=all)
 
-	1. H-bridge
-	[tutorial](http://teachmetomake.com/wordpress/arduino-tutorial-h-bridge)
+1. H-bridge
+[tutorial](http://teachmetomake.com/wordpress/arduino-tutorial-h-bridge)
