@@ -240,7 +240,7 @@ View](http://fritzing.org/learning/get-started/project-view/)
 4. Fritzing Designing
 PCB [tutorial](http://fritzing.org/learning/tutorials/designing-pcb/)
 
-## Wireless technologies
+## Wireless Technologies
 1. Wifi
 	- Hard to use on some networks such as those that require logging in
 		with credentials or those that prevent peer-to-peer communication
