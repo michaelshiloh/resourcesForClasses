@@ -163,13 +163,11 @@ difference that we won't be concerned with.
 	[tutorial](http://www.ladyada.net/learn/arduino/lesson5.html)
 
 3. Another 
-	[tutorial]
-	(https://programmingelectronics.com/tutorial-18-state-change-detection-and-the-modulo-operator-old-version/)
+	[tutorial](https://programmingelectronics.com/tutorial-18-state-change-detection-and-the-modulo-operator-old-version/)
 
 ## Debouncing
 - Arduino
-	[tutorial]
-	(https://www.arduino.cc/en/tutorial/debounce)
+	[tutorial](https://www.arduino.cc/en/tutorial/debounce)
 
 ## Debugging
 1. Adafruit Digital Multimeter
