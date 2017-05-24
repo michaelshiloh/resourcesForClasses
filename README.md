@@ -104,19 +104,19 @@ Projects website (which itself is a great resource for all sorts of projects).
 1. How to create a Github account and your first repository
 [guide](https://github.com/zamfi/github-guide)
 
-Your account name should be your name (unless for privacy reasons you'd prefer
-something else) and your repository name could be the course name. 
+	Your account name should be your name (unless for privacy reasons you'd prefer
+	something else) and your repository name could be the course name. 
 
 1. Help! I created my account and repository, but I can't find the button 
 that says "Create new file" or "Upload files". How do I fix this?
 
-Answer: It sounds like you forgot to create a README.md file when you created the
-repository. See below.
+	Answer: It sounds like you forgot to create a README.md file when you created the
+	repository. See below.
 
 2. Help! I created a new repository but I forgot to check the box that says
 "Initialize this repository with a README". How can I create a README file?
 	
-Answer: You can either:
+	Answer: You can either:
 
 	1. Delete your repository and create a new one, this time with the box
 	checked.
@@ -126,29 +126,36 @@ Answer: You can either:
 
 2. How to upload a file to Github
 	1. Click on "Upload files"
+
 3. How to create a folder in Github
 
 	Git doesn't store empty folders, so you can only create a new folder when
 	you have a file to put in it. Also, you can't create a folder
 	when you _upload_ a file. The only way to create a folder is 
-	to create a _new_ file, and then to paste the contents of your file into 
-	the new file:
+	to create a _new_ file, and then to tell Github to put that new file
+	in a new folder:
 	1. Go to the folder inside which you want to create another folder.
 	2. Click on _Create new file_.
 	3. On the text field for the file name, first write the folder name you
 		 want to create, then type _/_ (which creates the new folder) and then
-		 the name of the new file you want to create.
-	4. Paste the contents of your file into the "new file"
-	4. Optionally, add a short description and an extended description at
-		the bottom of the page
-	5. Finally, save your changes by pressing the green _Commit new file_
+		 the name of the new file you want to create. The name doesn't matter.
+	5. Finally, save your new file by pressing the green _Commit new file_
 		button at the bottom of the page
+	6. If you don't need the file, you may delete it now that the folder
+		has been created.
+
 4. How to delete a file
 	1. Browse to the file in your repository that you want to delete.
 	2. At the top of the file, click the icon of the trash can
 	4. Add a short description of why you are deleting this file
 	5. Finally, save your changes by pressing the green _Commit changes_
 		button at the bottom of the page
+
+4. How to upload a code file so that Github formats it as code
+
+	Use the extension along with the file name. Github recognizes that .ino 
+	are code files. Github recognizes many other file extensions as code.
+
 4. How to [organize folders and files]
 (https://github.com/blog/1436-moving-and-renaming-files-on-github) 
 	in Github (move and rename)
@@ -156,6 +163,18 @@ Answer: You can either:
 5. There are many guides to Github Markdown. I find
 [this](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 particularly useful.
+
+4. How to create code blocks within in a markdown (.md) file
+
+You can create fenced code blocks by placing triple backticks ``` before and
+after the code block. We recommend placing a blank line before and after code
+blocks to make the raw formatting easier to read.
+
+```
+function test() {
+  console.log("notice the blank line before this function?");
+	}
+```
 
 ## Making Sounds without Arduino
 1. Basic 40106 (hex Schmitt trigger inverter)
