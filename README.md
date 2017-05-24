@@ -104,6 +104,26 @@ Projects website (which itself is a great resource for all sorts of projects).
 1. How to create a Github account and your first repository
 [guide](https://github.com/zamfi/github-guide)
 
+Your account name should be your name (unless for privacy reasons you'd prefer
+something else) and your repository name could be the course name. 
+
+1. Help! I created my account and repository, but I can't find the button 
+that says "Create new file" or "Upload files". How do I fix this?
+
+Answer: It sounds like you forgot to create a README.md file when you created the
+repository. See below.
+
+2. Help! I created a new repository but I forgot to check the box that says
+"Initialize this repository with a README". How can I create a README file?
+	
+Answer: You can either:
+
+	1. Delete your repository and create a new one, this time with the box
+	checked.
+
+	2.  Click where it says "README" and then click "Commit new file" at the 
+	bottom of the page that comes up. This will create a "README" file.
+
 2. How to upload a file to Github
 	1. Click on "Upload files"
 3. How to create a folder in Github
