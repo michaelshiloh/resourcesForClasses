@@ -160,20 +160,25 @@ that says "Create new file" or "Upload files". How do I fix this?
 (https://github.com/blog/1436-moving-and-renaming-files-on-github) 
 	in Github (move and rename)
 
-5. There are many guides to Github Markdown. I find
-[this](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-particularly useful.
+5. How do I control the appearance of my README.md file?
 
-4. How to create code blocks within in a markdown (.md) file
+	There are many guides to Github Markdown. I find
+	[this](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+	particularly useful.
 
-You can create fenced code blocks by placing triple backticks ``` before and
-after the code block. We recommend placing a blank line before and after code
-blocks to make the raw formatting easier to read.
+	Any file that has the .md extension will be interpreted by Github as a
+	markdown file.
+
+4. How do I create code blocks within in a markdown (.md) file?
+
+	You can create fenced code blocks by placing triple backticks ``` before and
+	after the code block. We recommend placing a blank line before and after code
+	blocks to make the raw formatting easier to read.
 
 ```
-function test() {
-  console.log("notice the blank line before this function?");
-	}
+	function test() {
+		console.log("notice the blank line before this function?");
+		}
 ```
 
 ## Making Sounds without Arduino
