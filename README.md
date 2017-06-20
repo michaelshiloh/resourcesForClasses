@@ -302,6 +302,9 @@ PCB [tutorial](http://fritzing.org/learning/tutorials/designing-pcb/)
 		
 	1. Adafruit Bluefruit [tutorial](http://teachmetomake.com/wordpress/adafruit-bluefruit-arduino)
 
+	1. Adafruit Bluefruit and Adafruit Motor Shield
+	[tutorial](https://github.com/michaelshiloh/motorShieldAndBluefruit)
+
 3. Xbee
 	- Tricky to configure
 	- Very reliable
