@@ -4,7 +4,7 @@
 
 1. List of [inspirational movies](http://eat.cca.edu) collected by [Barney
 Haynes](http://www.ultrafuzz.net/) (also
-[here](https://vimeo.com/barneyhaynes) and shown to his Interfaces classes 
+[here](https://vimeo.com/barneyhaynes)) and shown to his Interfaces classes 
 
 ### Data Visualization Examples
 
