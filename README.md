@@ -4,7 +4,15 @@
 
 1. List of [inspirational movies](http://eat.cca.edu) collected by [Barney
 Haynes](http://www.ultrafuzz.net/) (also
-[here](https://vimeo.com/barneyhaynes)) and shown at his Interface classes 
+[here](https://vimeo.com/barneyhaynes)) and shown at his Interface classes. In
+particular
+
+2. [Golan Levin: Art that looks back at
+you](https://www.youtube.com/watch?v=1G0MzlfMPuM)
+
+3. [Drawdio](https://www.youtube.com/watch?v=PV_w38ldZaE)
+
+4. Sudhu Tewari's [Yasmin Electro Mechanical Sequencer](https://www.youtube.com/watch?v=MjNB3nKPMb8)
 
 ### Data Visualization Examples
 
