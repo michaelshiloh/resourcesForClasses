@@ -2,8 +2,8 @@
 
 ## Inspiration: Movies, Projects, etc.
 
-1. List of [inspirational movies](http://eat.cca.edu collected by Barney Haynes and show to his
-Interfaces classes 
+1. List of [inspirational movies](http://eat.cca.edu) collected by Barney
+Haynes and show to his Interfaces classes 
 
 ### Data Visualization Examples
 
@@ -13,12 +13,12 @@ Interfaces classes
 
 3. Jer Thorp
 
-3.1. [Just
+	3.1. [Just
 Landed](http://blog.blprnt.com/blog/blprnt/just-landed-processing-twitter-metacarta-hidden-data)
 
-3.2. [another](http://nytlabs.com/projects/cascade.html)
+	3.2. [another](http://nytlabs.com/projects/cascade.html)
 
-3.3. [nytimes top coverage and
+	3.3. [nytimes top coverage and
 connections](https://www.flickr.com/photos/blprnt/sets/72157614008027965/with/3288898519/)
 
 4. [Nicholas Feltron](http://feltron.com/FAR14.html)
@@ -61,7 +61,7 @@ presentation at TED in 2006 includes
 a wonderful video of his work and a live demonstration of portions of his
 mechanisms. Search youTube for many other videos of his work
 
-[Del’s Beautiful New Wooden
+8. [Del’s Beautiful New Wooden
 Machine](http://www.youtube.com/watch?v=u7ziwuIpnVY)
 An intricate hand-cranked machine demonstrating many types of simple
 mechanisms: cranks, gears, chains, sprockets, offset gears to change speed,
