@@ -1,9 +1,10 @@
 # Resources for Classes
 
-## Inspiration: Movies, Projects, etc.
+## Inspiration: Artists, Movies, Projects, etc.
 
-1. List of [inspirational movies](http://eat.cca.edu) collected by Barney
-Haynes and show to his Interfaces classes 
+1. List of [inspirational movies](http://eat.cca.edu) collected by [Barney
+Haynes](http://www.ultrafuzz.net/) (also
+[here](https://vimeo.com/barneyhaynes) and shown to his Interfaces classes 
 
 ### Data Visualization Examples
 
