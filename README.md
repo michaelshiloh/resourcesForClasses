@@ -276,7 +276,8 @@ difference that we won't be concerned with.
 	![](http://www.electrotechservices.com/electronics/images/metal_oxide_semiconductor_fet_symbol.jpg)
 
 	We have both N-channel and P-channel MOSFETs in the lab, but the ones that
-	we use primarily (and the only ones I've discussed in class) are N-channel.
+	we use primarily (and the only ones I've discussed in class) are N-channel
+	enhancement mode MOSFETs
 
 ## Edge Detection 
 1. Arduino [tutorial](https://www.arduino.cc/en/Tutorial/StateChangeDetection)
