@@ -352,7 +352,7 @@ tutorial (Processing)
 [guide](https://learn.adafruit.com/adafruit-guide-excellent-soldering?view=all)
 to excellent soldering
 
-## Fritzing and Othermill
+## Fritzing Resources
 1. Download and install Fritzing from [fritzing.org](http://www.fritzing.org)
 
 2. Fritzing’s [Getting Started](http://fritzing.org/learning/get-started/)
