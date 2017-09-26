@@ -7,6 +7,39 @@ Haynes](http://www.ultrafuzz.net/) (also
 [here](https://vimeo.com/barneyhaynes)) and shown at his Interface classes. In
 particular
 
+1. Inspirational videos collected by [J.D.
+Zamfirescu](https://github.com/zamfi)
+	1.1. Basic robots
+		1.1.1. [Coffee-can robot](http://www.youtube.com/watch?v=b0mIshBIbvI#t=24)
+		1.1.1. [Tree-climbing robot](http://www.youtube.com/watch?v=zkpH1BjD6Wc)
+		1.1.1. [Self-balancing robot](http://www.youtube.com/watch?v=Tw9Jr-SPL0Y)
+		1.1.1. [Insect robot](http://www.youtube.com/watch?v=tOsNXg2vAd4#t=120)
+		1.1.1. [Treadbot](http://www.youtube.com/watch?v=YblSltHDbIU)
+		1.1.1. [Velociraptor robot](http://www.youtube.com/watch?v=lPEg83vF_Tw)
+	1.1. Installations
+		1.1.1. [The Bay Lights](http://thebaylights.org/)
+		1.1.1. [Murmur Wall](http://www.future-cities-lab.net/projects/#/murmurwall/)
+		1.1.1. [Floating Couch](http://vimeo.com/72826106)
+		1.1.1. [Wooden Segment Mirror](https://www.youtube.com/watch?v=BZysu9QcceM#t=36)
+		1.1.1. [Generative design](https://www.youtube.com/watch?v=pNkz8wEJljc)
+	1.1. Art & Music bots
+		1.1.1. [Textile weaving](https://vimeo.com/71044541)
+		1.1.1. [ReacTable](https://www.youtube.com/user/marcosalonso)
+		1.1.1. [Projection mapping](https://www.youtube.com/watch?v=czuhNcNU6qU)
+		1.1.1. [Laser harp](http://www.youtube.com/watch?v=sLVXmsbVwUs#t=20)
+		1.1.1. [Cubli: Floating Cube](https://www.youtube.com/watch?v=n_6p-1J551Y)
+		1.1.1. [Arc-o-matic](http://vimeo.com/57082262#at=130)
+		1.1.1. [Robo Faber](http://vimeo.com/78771257)
+		1.1.1. [Eggbot](https://www.youtube.com/watch?v=w4cdbV2oaEc)
+	1.1. Drink-makers
+		1.1.1. [Textspresso](http://www.youtube.com/watch?v=kx9D74t7GD8#t=89)
+		1.1.1. [The Inebriator](http://www.youtube.com/watch?v=WqY7fchs7H0)
+	1.1. Computer Numerical Control (CNC)
+		1.1.1. [Shapoko / tinyg](http://www.youtube.com/watch?v=pCC1GXnYfFI#t=11)
+		1.1.1. [Makerbot Replicator](http://www.youtube.com/watch?v=NAbiAzYhTOQ)
+	1.1. Vacuuming
+		1.1.1. [Roomba](https://www.youtube.com/watch?v=0DNkbZvVYvc)
+
 2. [Golan Levin: Art that looks back at
 you](https://www.youtube.com/watch?v=1G0MzlfMPuM)
 
@@ -346,6 +379,9 @@ tutorial (Processing)
 
 2. A simple Processing class
 [example](http://teachmetomake.com/wordpress/simple-processing-class-example)
+
+3. "[Arduino the Object Oriented
+way](https://paulmurraycbr.github.io/ArduinoTheOOWay.html)" tutorial
 
 ## Soldering
 1. Adafruit 
