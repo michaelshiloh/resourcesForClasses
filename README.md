@@ -10,7 +10,6 @@ particular
 1. Inspirational videos collected by [J.D.
 Zamfirescu](https://github.com/zamfi)  
 	1.1. Basic robots  
-		1.1.1. [Coffee-can robot](http://www.youtube.com/watch?v=b0mIshBIbvI#t=24)  
 		1.1.1. [Tree-climbing robot](http://www.youtube.com/watch?v=zkpH1BjD6Wc)  
 		1.1.1. [Self-balancing robot](http://www.youtube.com/watch?v=Tw9Jr-SPL0Y)  
 		1.1.1. [Insect robot](http://www.youtube.com/watch?v=tOsNXg2vAd4#t=120)  
