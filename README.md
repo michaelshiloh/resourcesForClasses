@@ -339,8 +339,7 @@ difference that we won't be concerned with.
 1. Sparkfun Digital Multimeter
 [tutorial](https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter)
 
-1. My debugging
-[tutorial](http://teachmetomake.com/wordpress/debugging-circuits)
+1. Clay Shirky's 4 part [video series](https://vimeo.com/channels/debugging) on debugging
 
 ## Functions
 1. Arduino function
