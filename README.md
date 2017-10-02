@@ -421,8 +421,6 @@ PCB [tutorial](http://fritzing.org/learning/tutorials/designing-pcb/)
 	- __Don't solder the module to your project!__ 
 		Add the appropriate header to mate with the module.
 		
-	1. Adafruit Bluefruit [tutorial](http://teachmetomake.com/wordpress/adafruit-bluefruit-arduino)
-
 	1. Adafruit Bluefruit and Adafruit Motor Shield
 	[tutorial](https://github.com/michaelshiloh/motorShieldAndBluefruit)
 
@@ -455,3 +453,10 @@ Motors](https://learn.adafruit.com/adafruit-arduino-lesson-16-stepper-motors/ove
 
 6. H-bridge
 [tutorial](http://teachmetomake.com/wordpress/arduino-tutorial-h-bridge)
+
+## Wordpress
+
+1. Rather than upload a video to a Wordpress blog, it 
+is better to upload video to Vimeo or
+Youtube and to embed those in your post. [Here](http://www.wpbeginner.com/beginners-guide/how-to-easily-embed-videos-in-wordpress-blog-posts/) are instructions.
+
