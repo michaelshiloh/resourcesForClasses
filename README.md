@@ -408,6 +408,10 @@ PCB [tutorial](http://fritzing.org/learning/tutorials/designing-pcb/)
 5. My [repository](https://github.com/michaelshiloh/Fritzing)
 of assorted Fritzing projects
 
+## Othermill/Bantam Tools Printer Circuit Board mill
+1. Getting Started
+		[project](https://support.bantamtools.com/hc/en-us/articles/115003204926-Bantam-Tools-PCB-Badge)
+
 ## Wireless Technologies
 1. Wifi
 	- Hard to use on some networks such as those that require logging in
