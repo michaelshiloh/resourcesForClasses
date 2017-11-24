@@ -186,7 +186,12 @@ Hybrid Lab
 
 1. "How to Build Simple Automata" book, available in the Hybrid Lab
 
-1. "Making Things Move" book, available in the Hybrid Lab 
+1. A nice [overview](https://makezine.com/projects/make-your-own-gears/) of
+making your own gears. Don't worry about the specifics (Inkscape etc.) 
+but get the general concept which can be achieved in many different 
+ways and using different tools.
+
+1. "Making Things Move" book, available in the Hybrid Lab and in our library
 
 1. [Machinations/Mechanisms](doc/machinations-mechanisms.pdf)
 
