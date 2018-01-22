@@ -399,6 +399,9 @@ way](https://paulmurraycbr.github.io/ArduinoTheOOWay.html)" tutorial
 [guide](https://learn.adafruit.com/adafruit-guide-excellent-soldering?view=all)
 to excellent soldering
 
+2. Sparkfun Through Hole Soldering
+[tutorial](https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering)
+
 ## Fritzing Resources
 1. Download and install Fritzing from [fritzing.org](http://www.fritzing.org)
 
