@@ -279,8 +279,7 @@ that says "Create new file" or "Upload files". How do I fix this?
 	Use the extension along with the file name. Github recognizes that .ino 
 	are code files. Github recognizes many other file extensions as code.
 
-4. How to [organize folders and files]
-(https://github.com/blog/1436-moving-and-renaming-files-on-github) 
+4. How to [organize folders and files](https://github.com/blog/1436-moving-and-renaming-files-on-github) 
 	in Github (move and rename)
 
 5. How do I control the appearance of my README.md file?
@@ -482,4 +481,24 @@ guide](https://oscarliang.com/how-to-use-mosfet-beginner-tutorial/)
 1. Rather than upload a video to a Wordpress blog, it 
 is better to upload video to Vimeo or
 Youtube and to embed those in your post. [Here](http://www.wpbeginner.com/beginners-guide/how-to-easily-embed-videos-in-wordpress-blog-posts/) are instructions.
+
+## Drawing Machines
+[1](https://www.raspberrypi.org/blog/hanging-wall-plotter/)    
+[2](https://www.youtube.com/watch?v=T0jwdrgVBBc)    
+[3](http://www.homofaciens.de/technics-machines-v-plotter_en.htm)  
+[4](https://www.pinterest.com/pin/516014069788859472/)  
+[5](http://www.instructables.com/id/CNC-HANGING-PLOTTER/)  
+[6](http://patriciogonzalezvivo.com/2014/vPlotter/)  
+[7](http://www.instructables.com/id/Polargraph-Drawing-Machine/)  
+[8](https://www.thingiverse.com/thing:12557)  
+[9](https://www.thingiverse.com/thing:12403)  
+[10](http://makerblock.com/2013/03/a-study-of-drawing-robot-pen-holders-and-design-considerations/)  
+[11](https://www.kickstarter.com/projects/1765367532/duograph-drawing-machine?ref=nav_search)  
+[12](http://www.thisiscolossal.com/2016/03/cycloid-drawing-machine/)  
+  
+## Marble Machines
+[1](https://www.youtube.com/user/denha)  
+[2](https://tinkerlog.com/)  
+[3](https://www.youtube.com/watch?v=3OGyLHu24rk)
+[4](media/binaryCounter.wmv)
 
