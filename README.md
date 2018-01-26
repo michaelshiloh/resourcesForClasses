@@ -111,8 +111,8 @@ for bringing this to my attention.
 
 ## Basic Arduino Resources from Arduino
 
-4. [Getting Started with Arduino / Genuino Uno
-    tutorial](https://www.arduino.cc/en/Guide/ArduinoUno)
+4. Getting Started with Arduino / Genuino Uno
+    [tutorial](https://www.arduino.cc/en/Guide/ArduinoUno)
 
 2. Blink [tutorial](http://arduino.cc/en/Tutorial/Blink)
 
