@@ -109,16 +109,30 @@ mechanisms: cranks, gears, chains, sprockets, offset gears to change speed,
 escapements, conversion of rotary motion to linear motion. Thanks to Tristan
 for bringing this to my attention.
 
+## Basic Arduino Resources from Arduino
 
-## Basic Arduino Resources
+4. [Getting Started with Arduino / Genuino Uno
+    tutorial](https://www.arduino.cc/en/Guide/ArduinoUno)
+
+2. Blink [tutorial](http://arduino.cc/en/Tutorial/Blink)
+
+2. DigitalReadSerial [tutorial](http://arduino.cc/en/Tutorial/DigitalReadSerial)
+
+2. AnalogReadSerial [tutorial](http://arduino.cc/en/Tutorial/AnalogReadSerial)
+
+2. Fade [tutorial](http://arduino.cc/en/Tutorial/Fade)
+shows how to use the `analogWrite()` function
+
+## Basic Arduino Resources from Other Sources
 
 1. Arduino basics: Intro through Lesson 3 of Adafruit's Arduino [tutorial](http://www.ladyada.net/learn/arduino/index.html)
 
 1. [Arduino in a Nutshell](http://hci.rwth-aachen.de/arduino)
 
-1. Another [Getting Started with
-Arduino](http://reboot.yoha.co.uk/index.php?title=Getting_Started_with_Arduino)
-	with links to many other sources of information
+3. Photoresistor
+[Instructables](http://www.instructables.com/id/How-to-Use-a-Light-Dependent-Resistor-LDR/)
+
+## SparkFun Inventor's Kit Resources
 
 4. [Introduction](https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/introduction-sik-arduino-uno)
 to the SparkFun Inventor's Kit for Arduino Experimenter's Guide
@@ -130,16 +144,6 @@ in the SparkFun Inventor's Kit for Arduino Experimenter's Guide
 6. [Experiment 2: Reading a
 Potentiometer](https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/experiment-2-reading-a-potentiometer)
 in the SparkFun Inventor's Kit for Arduino Experimenter's Guide
-
-2. AnalogReadSerial [tutorial](http://arduino.cc/en/Tutorial/AnalogReadSerial)
-by Arduino
-
-3. Photoresistor
-[Instructables](http://www.instructables.com/id/How-to-Use-a-Light-Dependent-Resistor-LDR/)
-
-4. [Getting Started with Arduino / Genuino Uno
-    tutorial](https://www.arduino.cc/en/Guide/ArduinoUno)
-
 
 
 ## Arduino Multitasking Resources
