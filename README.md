@@ -137,6 +137,11 @@ by Arduino
 3. Photoresistor
 [Instructables](http://www.instructables.com/id/How-to-Use-a-Light-Dependent-Resistor-LDR/)
 
+4. [Getting Started with Arduino / Genuino Uno
+    tutorial](https://www.arduino.cc/en/Guide/ArduinoUno)
+
+
+
 ## Arduino Multitasking Resources
 
 1. [Tutorial](https://www.arduino.cc/en/Tutorial/BlinkWithoutDelay)
@@ -400,6 +405,12 @@ to excellent soldering
 
 2. Sparkfun Through Hole Soldering
 [tutorial](https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering)
+
+## Solderless Breadboard Resources
+
+1. Sparkfun's [How to Use a
+    Breadboard](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard)
+    tutorial.
 
 ## Fritzing Resources
 1. Download and install Fritzing from [fritzing.org](http://www.fritzing.org)
