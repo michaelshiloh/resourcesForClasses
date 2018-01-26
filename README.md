@@ -415,6 +415,10 @@ to excellent soldering
     Breadboard](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard)
     tutorial.
 
+2. Adafruit's [Breadboards for
+    Beginners](https://learn.adafruit.com/breadboards-for-beginners?view=all)
+    tutorial
+
 ## Fritzing Resources
 1. Download and install Fritzing from [fritzing.org](http://www.fritzing.org)
 
