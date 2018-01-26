@@ -407,8 +407,7 @@ to excellent soldering
 [tutorial](https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering)
 
 ## Solderless Breadboard Resources
-
-#### Sparkfun's [How to Use a
+1. Sparkfun's [How to Use a
     Breadboard](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard)
     tutorial.
 
