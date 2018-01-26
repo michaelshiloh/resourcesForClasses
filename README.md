@@ -408,7 +408,7 @@ to excellent soldering
 
 ## Solderless Breadboard Resources
 
-1. Sparkfun's [How to Use a
+#### Sparkfun's [How to Use a
     Breadboard](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard)
     tutorial.
 
