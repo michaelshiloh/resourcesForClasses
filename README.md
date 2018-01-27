@@ -2,6 +2,32 @@
 
 ## Inspiration: Artists, Movies, Projects, etc.
 
+1.  Drawing Machines
+	1. [1](https://www.raspberrypi.org/blog/hanging-wall-plotter/)    
+	1. [2](https://www.youtube.com/watch?v=T0jwdrgVBBc)    
+	1. [3](http://www.homofaciens.de/technics-machines-v-plotter_en.htm)  
+	1. [4](https://www.pinterest.com/pin/516014069788859472/)  
+	1. [5](http://www.instructables.com/id/CNC-HANGING-PLOTTER/)  
+	1. [6](http://patriciogonzalezvivo.com/2014/vPlotter/)  
+	1. [7](http://www.instructables.com/id/Polargraph-Drawing-Machine/)  
+	1. [8](https://www.thingiverse.com/thing:12557)  
+	1. [9](https://www.thingiverse.com/thing:12403)  
+	1. [10](http://makerblock.com/2013/03/a-study-of-drawing-robot-pen-holders-and-design-considerations/)  
+	1. [11](https://www.kickstarter.com/projects/1765367532/duograph-drawing-machine?ref=nav_search)  
+	1. [12](http://www.thisiscolossal.com/2016/03/cycloid-drawing-machine/)  
+  
+1. Marble Machines
+	1. [1](https://www.youtube.com/user/denha)  
+	1. [2](https://tinkerlog.com/)  
+	1. [3](https://www.youtube.com/watch?v=3OGyLHu24rk)
+	1. [4](media/binaryCounter.wmv)
+
+1. Musical Machines
+	1. Carlos Guedes' wonderful [Phobos, Orquestra Robótica
+	Disfuncional[(https://vimeo.com/235763130)
+	4. Sudhu Tewari's [Yasmin Electro Mechanical 
+	Sequencer](https://www.youtube.com/watch?v=MjNB3nKPMb8)
+
 1. List of [inspirational movies](http://eat.cca.edu) collected by [Barney
 Haynes](http://www.ultrafuzz.net/) (also
 [here](https://vimeo.com/barneyhaynes)) and shown at his Interface classes. In
@@ -43,8 +69,6 @@ Zamfirescu](https://github.com/zamfi)
 you](https://www.youtube.com/watch?v=1G0MzlfMPuM)
 
 3. [Drawdio](https://www.youtube.com/watch?v=PV_w38ldZaE)
-
-4. Sudhu Tewari's [Yasmin Electro Mechanical Sequencer](https://www.youtube.com/watch?v=MjNB3nKPMb8)
 
 ### Data Visualization Examples
 
@@ -437,7 +461,7 @@ of assorted Fritzing projects
 1. Getting Started
 		[project](https://support.bantamtools.com/hc/en-us/articles/115003204926-Bantam-Tools-PCB-Badge)
 
-## Wireless Technologies
+## Wireless Resources
 1. Wifi
 	- Hard to use on some networks such as those that require logging in
 		with credentials or those that prevent peer-to-peer communication
@@ -467,7 +491,7 @@ of assorted Fritzing projects
 	- [Library](http://www.airspayce.com/mikem/arduino/RadioHead/)
 		(untested)
 
-## Motors
+## Motors Resources
 1. Sparkfun Motors and Selecting the Right One
 [tutorial](https://learn.sparkfun.com/tutorials/motors-and-selecting-the-right-one)
 
@@ -486,7 +510,7 @@ Motors](https://learn.adafruit.com/adafruit-arduino-lesson-16-stepper-motors/ove
 6. H-bridge
 [tutorial](http://teachmetomake.com/wordpress/arduino-tutorial-h-bridge)
 
-## Transistor
+## Transistor Resources
 
 1. Quite decent MOSFET
 [tutorial](http://www.radio-electronics.com/info/data/semicond/fet-field-effect-transistor/mosfet-basics-tutorial.php)
@@ -494,29 +518,10 @@ Motors](https://learn.adafruit.com/adafruit-arduino-lesson-16-stepper-motors/ove
 1. Quite good MOSFET [tutorial and usage
 guide](https://oscarliang.com/how-to-use-mosfet-beginner-tutorial/)
 
-## Wordpress
+## Wordpress Resources
 
 1. Rather than upload a video to a Wordpress blog, it 
 is better to upload video to Vimeo or
 Youtube and to embed those in your post. [Here](http://www.wpbeginner.com/beginners-guide/how-to-easily-embed-videos-in-wordpress-blog-posts/) are instructions.
 
-## Drawing Machines
-[1](https://www.raspberrypi.org/blog/hanging-wall-plotter/)    
-[2](https://www.youtube.com/watch?v=T0jwdrgVBBc)    
-[3](http://www.homofaciens.de/technics-machines-v-plotter_en.htm)  
-[4](https://www.pinterest.com/pin/516014069788859472/)  
-[5](http://www.instructables.com/id/CNC-HANGING-PLOTTER/)  
-[6](http://patriciogonzalezvivo.com/2014/vPlotter/)  
-[7](http://www.instructables.com/id/Polargraph-Drawing-Machine/)  
-[8](https://www.thingiverse.com/thing:12557)  
-[9](https://www.thingiverse.com/thing:12403)  
-[10](http://makerblock.com/2013/03/a-study-of-drawing-robot-pen-holders-and-design-considerations/)  
-[11](https://www.kickstarter.com/projects/1765367532/duograph-drawing-machine?ref=nav_search)  
-[12](http://www.thisiscolossal.com/2016/03/cycloid-drawing-machine/)  
-  
-## Marble Machines
-[1](https://www.youtube.com/user/denha)  
-[2](https://tinkerlog.com/)  
-[3](https://www.youtube.com/watch?v=3OGyLHu24rk)
-[4](media/binaryCounter.wmv)
-
+## 
