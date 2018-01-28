@@ -524,4 +524,12 @@ guide](https://oscarliang.com/how-to-use-mosfet-beginner-tutorial/)
 is better to upload video to Vimeo or
 Youtube and to embed those in your post. [Here](http://www.wpbeginner.com/beginners-guide/how-to-easily-embed-videos-in-wordpress-blog-posts/) are instructions.
 
-## 
+## Laser Cutting Resources
+
+1. Laser cut boxes [Gallery of Ideas](doc/LasercutBoxGalleryOfIdeas.pdf)
+
+1. Laser Cut Like a Boss [lecture](doc/LaserCutLikeaBoss.pdf)
+
+1. Laser cut T-Slot [picture](doc/laserCutTSlot.pdf)
+
+1. Laser Cut box [notes](doc/LaserCutBoxNotes.pdf)
