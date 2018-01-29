@@ -533,3 +533,8 @@ Youtube and to embed those in your post. [Here](http://www.wpbeginner.com/beginn
 1. Laser cut T-Slot [picture](doc/laserCutTSlot.pdf)
 
 1. Laser Cut box [notes](doc/LaserCutBoxNotes.pdf)
+
+1. Detailed [instructions](https://www.wikihow.com/Glue-Acrylic) for gluing acrylic
+
+1. General tips for [Working with
+acrylic](https://makezine.com/2015/10/29/skill-builder-acrylic/)
