@@ -228,8 +228,7 @@ Shift Register
 
 ## Communication resources
 
-#### Sparkfun 
-Serial Communication tutorial
+#### Sparkfun Serial Communication tutorial
 [here](https://learn.sparkfun.com/tutorials/serial-communication)
 
 
