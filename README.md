@@ -228,9 +228,9 @@ Shift Register
 
 ## Communication resources
 
-1. Sparkfun 
-Serial Communication
-[tutorial](https://learn.sparkfun.com/tutorials/serial-communication)
+#### Sparkfun 
+Serial Communication tutorial
+[here](https://learn.sparkfun.com/tutorials/serial-communication)
 
 
 ## Miscellaneous Electronic resources
