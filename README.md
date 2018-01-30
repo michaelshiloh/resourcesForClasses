@@ -156,18 +156,18 @@ shows how to use the `analogWrite()` function
 3. Photoresistor
 [Instructables](http://www.instructables.com/id/How-to-Use-a-Light-Dependent-Resistor-LDR/)
 
-## SparkFun Inventor's Kit Resources
+## Sparkfun Inventor's Kit Resources
 
 4. [Introduction](https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/introduction-sik-arduino-uno)
-to the SparkFun Inventor's Kit for Arduino Experimenter's Guide
+to the Sparkfun Inventor's Kit for Arduino Experimenter's Guide
 
 5. [Experiment 1: Blinking an LED](
 https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/experiment-1-blinking-an-led)
-in the SparkFun Inventor's Kit for Arduino Experimenter's Guide
+in the Sparkfun Inventor's Kit for Arduino Experimenter's Guide
 
 6. [Experiment 2: Reading a
 Potentiometer](https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/experiment-2-reading-a-potentiometer)
-in the SparkFun Inventor's Kit for Arduino Experimenter's Guide
+in the Sparkfun Inventor's Kit for Arduino Experimenter's Guide
 
 
 ## Arduino Multitasking Resources
@@ -207,6 +207,37 @@ to explanations of related concepts every step of the way.
 ## Arduino Sensors Resources
 
 1. Adafruit [guide](http://www.ladyada.net/learn/sensors/) to sensors
+
+
+## Shift Register resources
+
+1. Adafruit Shift Register
+[tutorial](https://learn.adafruit.com/adafruit-arduino-lesson-4-eight-leds/the-74hc595-shift-register)
+
+1. Arduino Shift Register
+[tutorial](https://www.arduino.cc/en/Tutorial/ShiftOut)
+
+2. Electronics Tutorials
+Shift Register
+[tutorial](https://www.electronics-tutorials.ws/sequential/seq_5.html)
+
+1. Sparkfun 
+Shift Register
+[tutorial](https://learn.sparkfun.com/tutorials/shift-registers)
+
+
+## Communication resources
+
+1. Sparkfun 
+Serial Communication
+[tutorial](https://learn.sparkfun.com/tutorials/serial-communication)
+
+
+## Miscellaneous Electronic resources
+
+1. Sparkfun 
+Logic Level 
+[tutorial](https://learn.sparkfun.com/tutorials/logic-levels)
 
 
 ## Mechatronic Resources
