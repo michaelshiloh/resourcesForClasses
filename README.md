@@ -70,6 +70,14 @@ you](https://www.youtube.com/watch?v=1G0MzlfMPuM)
 
 3. [Drawdio](https://www.youtube.com/watch?v=PV_w38ldZaE)
 
+### Solderless Breadboards
+
+1. [How to Use a Breadboard](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard) tutorial by Sparkfun
+
+### Basic Electronics
+
+1. [Basic Electronics](https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law) tutorial by Sparkfun
+
 ### Data Visualization Examples
 
 1. [Ben Fry](http://benfry.com/allstreets/)
