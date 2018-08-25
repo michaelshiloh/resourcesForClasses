@@ -73,10 +73,12 @@ you](https://www.youtube.com/watch?v=1G0MzlfMPuM)
 ### Solderless Breadboards
 
 1. [How to Use a Breadboard](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard) tutorial by Sparkfun
+1. [Setting Up a Breadboard](https://itp.nyu.edu/physcomp/labs/labs-electronics/breadboard/) lab at NYU ITP
 
 ### Basic Electronics
 
 1. [Basic Electronics](https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law) tutorial by Sparkfun
+1. [Electricity: the Basics](https://itp.nyu.edu/physcomp/lessons/electronics/electricity-the-basics/) tutorial at NYU ITP
 
 ### Data Visualization Examples
 
