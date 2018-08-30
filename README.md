@@ -560,6 +560,24 @@ guide](https://oscarliang.com/how-to-use-mosfet-beginner-tutorial/)
 
 ## Wordpress Resources
 
+1. Creating your first post as an author
+
+1.1 Visit your blog's administratoin page at blogname/wp-admin e.g.  [http://intro18fall.nyuad.im/wp-admin](http://intro18fall.nyuad.im/wp-admin). Enter the user name and password that you have been given.
+
+1.1 In the left hand toolbar hover over "Posts" and select "Create New"
+
+1.1 Give a title to your first post, such as "Introducing Myself"
+
+1.1 Write the text of your post in the large box below. You might use this opportunity to experiment with some of the formatting options. You can edit your post now as well as later.
+
+1.1 When you are satisfied with your post click "Publish"
+
+1.1 It is always wise to make sure you post published correctly and appears how you want it. Hover over the blog name (near the home symbol near the upper left corner) and select "visit site". 
+
+1.1 If you are not happy with your post you can click in "Edit" and make further changes.
+
+1. [Comparison of User Roles](https://www.wpbeginner.com/beginners-guide/wordpress-user-roles-and-permissions/?display=wide)
+
 1. Rather than upload a video to a Wordpress blog, it 
 is better to upload video to Vimeo or
 Youtube and to embed those in your post. [Here](http://www.wpbeginner.com/beginners-guide/how-to-easily-embed-videos-in-wordpress-blog-posts/) are instructions.
