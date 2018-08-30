@@ -560,7 +560,7 @@ guide](https://oscarliang.com/how-to-use-mosfet-beginner-tutorial/)
 
 ## Wordpress Resources
 
-1. Creating your first post as an author
+1. Creating your first post as a Wordpress author
 
 	1. Visit your blog's administratoin page at blogname/wp-admin e.g.  [http://intro18fall.nyuad.im/wp-admin](http://intro18fall.nyuad.im/wp-admin). Enter the user name and password that you have been given.
 
