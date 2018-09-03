@@ -70,11 +70,11 @@ you](https://www.youtube.com/watch?v=1G0MzlfMPuM)
 
 3. [Drawdio](https://www.youtube.com/watch?v=PV_w38ldZaE)
 
-4. Other Projects
-	1.1. Alex Markova's [fortune wheel](http://intro17fall.nyuad.im/2017/10/09/homework-due-october-9/)
-	1.1. Claire Neel's [reactive eye](https://youtu.be/lYERKTf5YtI)
-	1.1. Ji Young Kim's [map and national anthems](https://youtu.be/JknAOpjAkmQ
-	1.1. May Baho's [campfire](http://intro17fall.nyuad.im/wp-content/uploads/2017/12/IMG_2544.jpg)
+4. Other Projects  
+	1.1. Alex Markova's [fortune wheel](http://intro17fall.nyuad.im/2017/10/09/homework-due-october-9/)  
+	1.1. Claire Neel's [reactive eye](https://youtu.be/lYERKTf5YtI)  
+	1.1. Ji Young Kim's [map and national anthems](https://youtu.be/JknAOpjAkmQ  
+	1.1. May Baho's [campfire](http://intro17fall.nyuad.im/wp-content/uploads/2017/12/IMG_2544.jpg)  
 
 ### Solderless Breadboards
 
