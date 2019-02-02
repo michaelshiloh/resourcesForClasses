@@ -568,3 +568,21 @@ Youtube and to embed those in your post. [Here](http://www.wpbeginner.com/beginn
 
 1. General tips for [Working with
 acrylic](https://makezine.com/2015/10/29/skill-builder-acrylic/)
+
+## CAD Resources
+
+1. Free cloud based simple 2D CAD software [Vectr](vectr.com). Somewhat
+limited but easy to learn quickly from built-in tutorials.
+
+2. Free Open Source 2D CAD software [inkscape](inkscape.org). Runs on Linux,
+MacOS, and Windows.
+
+
+## CNC supply resources (stores)
+
+1. [Inventables](https://www.inventables.com/categories/machine-components)
+
+1. [Adafruit](https://www.adafruit.com/category/122)
+
+1. [Servo City](https://www.servocity.com/motion-components)
+
