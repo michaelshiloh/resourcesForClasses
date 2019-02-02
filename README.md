@@ -70,6 +70,22 @@ you](https://www.youtube.com/watch?v=1G0MzlfMPuM)
 
 3. [Drawdio](https://www.youtube.com/watch?v=PV_w38ldZaE)
 
+4. Other Projects  
+	1.1. Alex Markova's [fortune wheel](http://intro17fall.nyuad.im/2017/10/09/homework-due-october-9/)  
+	1.1. Claire Neel's [reactive eye](https://youtu.be/lYERKTf5YtI)  
+	1.1. Ji Young Kim's [map and national anthems](https://youtu.be/JknAOpjAkmQ  
+	1.1. May Baho's [campfire](http://intro17fall.nyuad.im/wp-content/uploads/2017/12/IMG_2544.jpg)  
+
+### Solderless Breadboards
+
+1. [How to Use a Breadboard](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard) tutorial by Sparkfun
+1. [Setting Up a Breadboard](https://itp.nyu.edu/physcomp/labs/labs-electronics/breadboard/) lab at NYU ITP
+
+### Basic Electronics
+
+1. [Basic Electronics](https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law) tutorial by Sparkfun
+1. [Electricity: the Basics](https://itp.nyu.edu/physcomp/lessons/electronics/electricity-the-basics/) tutorial at NYU ITP
+
 ### Data Visualization Examples
 
 1. [Ben Fry](http://benfry.com/allstreets/)
@@ -549,6 +565,24 @@ Motors](https://learn.adafruit.com/adafruit-arduino-lesson-16-stepper-motors/ove
 guide](https://oscarliang.com/how-to-use-mosfet-beginner-tutorial/)
 
 ## Wordpress Resources
+
+1. Creating your first post as a Wordpress author
+
+	1. Visit your blog's administratoin page at blogname/wp-admin e.g.  [http://intro18fall.nyuad.im/wp-admin](http://intro18fall.nyuad.im/wp-admin). Enter the user name and password that you have been given.
+
+	1. In the left hand toolbar hover over "Posts" and select "Create New"
+
+	1. Give a title to your first post, such as "Introducing Myself"
+
+	1. Write the text of your post in the large box below. You might use this opportunity to experiment with some of the formatting options. You can edit your post now as well as later.
+
+	1. When you are satisfied with your post click "Publish"
+
+	1. It is always wise to make sure you post published correctly and appears how you want it. Hover over the blog name (near the home symbol near the upper left corner) and select "visit site". 
+
+	1. If you are not happy with your post you can click in "Edit" and make further changes.
+
+1. [Comparison of User Roles](https://www.wpbeginner.com/beginners-guide/wordpress-user-roles-and-permissions/?display=wide)
 
 1. Rather than upload a video to a Wordpress blog, it 
 is better to upload video to Vimeo or
