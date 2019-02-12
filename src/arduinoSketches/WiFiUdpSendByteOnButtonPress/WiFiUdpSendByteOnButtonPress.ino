@@ -24,7 +24,7 @@ char packetBuffer[255]; //buffer to hold incoming packet
 
 WiFiUDP Udp;
 
-const int LED_PIN = 5;
+const int BUTTON_PIN = 5;
 
 // remember the button state so we only send
 // when the state changes
@@ -69,7 +69,7 @@ void loop() {
   IPAddress receivingDeviceAddress(192, 168, 1, 139);
   unsigned int receivingDevicePort = 2390;
 
-  buttonState = digitalRead(LED_PIN);
+  buttonState = digitalRead(BUTTON_PIN);
 
   if (buttonState != lastButtonState) {
 
