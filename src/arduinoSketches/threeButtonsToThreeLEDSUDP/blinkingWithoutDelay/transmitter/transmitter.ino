@@ -8,7 +8,7 @@
 */
 
 #include <SPI.h>
-#include <WiFiNINA.h>
+#include <WiFi101.h>
 #include <WiFiUdp.h>
 
 int status = WL_IDLE_STATUS;
@@ -18,15 +18,23 @@ char ssid[] = SECRET_SSID;        // your network SSID (name)
 char pass[] = SECRET_PASS;    // your network password (use for WPA, or use as key for WEP)
 int keyIndex = 0;            // your network key Index number (needed only for WEP)
 
-unsigned int localPort = 5000;      // local port to listen on
+// My IP information
+// My IP address will be assigned to me by the WiFi router
+const unsigned int localPort = 1000;   // This will be my port for listening
+
+// IP information of the other device (receiver)
+// IP address of the other device (receiver)
+// Note that you probably need to change at least the IP address
+IPAddress receivingDeviceAddress(192, 168, 1, 28);
+const unsigned int receivingDevicePort = 1000;
 
 char packetBuffer[255]; //buffer to hold incoming packet
 
 WiFiUDP Udp;
 
-const int BLUE_BUTTON_PIN = 3;
-const int GREEN_BUTTON_PIN = 4;
-const int YELLOW_BUTTON_PIN = 5;
+const int BLUE_BUTTON_PIN = 7;
+const int GREEN_BUTTON_PIN = 8;
+const int YELLOW_BUTTON_PIN = 9;
 
 // remember the button state so we only send
 // when the state changes
@@ -86,9 +94,6 @@ void setup() {
 
 void loop() {
 
-  // IP address of the receiving device
-  IPAddress receivingDeviceAddress(192, 168, 1, 19);
-  unsigned int receivingDevicePort = 2390;
 
   currentBlueButtonState = digitalRead(BLUE_BUTTON_PIN);
   currentGreenButtonState = digitalRead(GREEN_BUTTON_PIN);
