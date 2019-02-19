@@ -46,6 +46,8 @@ boolean currentYellowButtonState;
 boolean lastYellowButtonState = LOW; // arbitrary
 
 void setup() {
+
+  BLUE_BUTTON_PIN = 9;
   //Initialize serial and wait for port to open:
   Serial.begin(9600);
 

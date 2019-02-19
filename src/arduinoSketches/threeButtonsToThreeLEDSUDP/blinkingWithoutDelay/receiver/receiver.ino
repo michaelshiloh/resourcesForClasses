@@ -134,6 +134,7 @@ void loop() {
     //    digitalWrite(YELLOW_LED_PIN, packetBuffer[2]);
 
     // Is the blue switch pressed?
+    // This does the same as blueLEDSwitch = packetBuffer[0];
     if (packetBuffer[0] == HIGH) { // yes
       Serial.println("activate blue LED");
       blueLEDSwitch = HIGH;
@@ -142,13 +143,21 @@ void loop() {
       blueLEDSwitch = LOW;
 
       // need to turn off the LED in case it was on
-      blueLEDState = LOW;
+      blueLEDState = LOW
       digitalWrite(BLUE_LED_PIN, blueLEDState);
+    }
+
+
+    greenLEDSwitch = packetBuffer[1];
+    if ( greenLEDSwitch == 0) {
+      greenLEDState = LOW;
+      digitalWrite(GREEN_LED_PIN, greenLEDState);
     }
   }
 
   // check the time
   unsigned long currentTime = millis();
+
   if (blueLEDSwitch == HIGH) {
     // but is it time?
     if (currentTime - blueLEDChangedAt > blueLEDPeriod) {
