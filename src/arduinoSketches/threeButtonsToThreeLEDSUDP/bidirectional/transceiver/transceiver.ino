@@ -46,8 +46,8 @@ const unsigned int localPort = 1000;   // This will be my port for listening
 
 // IP address of the other device (receiver)
 // Change this to IP address and port of the device you want to talk to
-IPAddress receivingDeviceAddress(192, 168, 1, 28);
-const unsigned int receivingDevicePort = 1000; // can be the same as my port, but doesn't need to be
+IPAddress receivingDeviceAddress(192, 168, 1, 22);
+const unsigned int receivingDevicePort = 8967; // can be the same as my port, but doesn't need to be
 
 WiFiUDP Udp;
 
