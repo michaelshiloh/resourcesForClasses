@@ -26,7 +26,7 @@ function serverReceivedMessage(message, sender) {
 		'Message length: ' +
 		message.length + 
 		' Message contents: ' +
-		message);
+		48 + message);
 }
 
 udpServer.bind(MY_PORT);
