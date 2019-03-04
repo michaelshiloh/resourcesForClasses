@@ -204,8 +204,8 @@ Delay, it is wise to first understand
 (highly recommended)
 
 2. A detailed
-[explanation](https://programmingelectronics.com/tutorial-16-blink-an-led-without-using-the-delay-function-old-version/) of Blink Without Delay. I don't like the way he
-does the circuit, but his explanation is good.
+[explanation](https://programmingelectronics.com/tutorial-16-blink-an-led-without-using-the-delay-function-old-version/) of Blink Without Delay. 
+I don't like the way he does the circuit, but his explanation is good.
 
 3. Very detailed line-by-line
 [explanation](https://www.baldengineer.com/blink-without-delay-explained.html)
