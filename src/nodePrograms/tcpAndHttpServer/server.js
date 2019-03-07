@@ -58,30 +58,16 @@ arduinoServer.on('connection', (socket) => {
 
   socket.on('data',function(data){
     var numBytesRead = socket.bytesRead;
-    console.log('Bytes read : ' + numBytesRead);
+    console.log('Bytes read: ' + 
+	    	numBytesRead + 
+	    	' buffer length: ' + 
+	    	data.length);
   
-    // When we have received 5 bytes, read the message
-    if (numBytesRead >=5) {
-      var messageStart = data.readUInt8();
-      var sensor1 = data.readUInt8();
-      var sensor2 = data.readUInt8();
-      var sensor3 = data.readUInt8();
-      var messageEnd = data.readUInt8();
-      console.log('read 5 bytes, values = ' + 
-        messageStart + ' ' +
-        sensor1 + ' ' +
-        sensor2 + ' ' +
-        sensor3 + ' ' +
-        messageEnd);  
-/*
-      console.log('read 5 bytes, values = ' + 
-        data[0] + ' ' +
-        data[1] + ' ' +
-        data[2] + ' ' +
-        data[3] + ' ' +
-        data[4]);  
-*/
-   }; // end of reading message
+    //for (ii = 0; ii < data.length; ii++) {
+	  //console.log(data.readUInt8(ii));
+    //};
+	  console.log(data.toString('hex'));
+
   }); // end of socket.on'data'
 
   socket.on('end', data => {
