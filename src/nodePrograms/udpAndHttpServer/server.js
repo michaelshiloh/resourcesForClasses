@@ -40,7 +40,7 @@ function UDPServerReceivedMessage(message, sender) {
 
 	// print the message
 	console.log(
-		'Received message from' +
+		'Received message from: ' +
 		sender.address + 
 		':' + 
 		sender.port);
@@ -74,19 +74,20 @@ httpServer.on('connection', (socket) => {
 io.on('connect', function (socket) {
     console.log('a user connected');
 
-    // if you get the 'ledON' msg, send an 'H' to the arduino
+    // if you get the 'ledON' message
     socket.on('ledON', function () {
-        console.log('Web server: received ledON message from web client');
+      console.log('Web server socket: received ledON message from web client');
+      // this is where we would send the message to Arduino
     });
 
-    // if you get the 'ledOFF' msg, send an 'L' to the arduino
+    // if you get the 'ledOFF' message
     socket.on('ledOFF', function () {
-        console.log('Web server: received ledOFF message from web client');
+       console.log('Web server socket: received ledOFF message from web client');
+      // this is where we would send the message to Arduino
     });
 
     // if you get the 'disconnect' message, say the user disconnected
     socket.on('disconnect', function () {
-        console.log('user disconnected');
+      console.log('Web server socket: user disconnected');
   });
 });
-
