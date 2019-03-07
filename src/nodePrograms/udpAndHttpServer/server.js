@@ -15,6 +15,8 @@
 var dgram = require('dgram');
 var udpServer = dgram.createSocket('udp4')
 var ARDUINO_UDP_PORT = 7000;
+var ARDUINO_LISTENING_AT= 5000;
+var ARDUINO_ADDRESS = '192.168.1.7';
 
 /* HTTP server talks to browser */
 const http = require('http')
@@ -28,7 +30,7 @@ const HTTP_SERVER_PORT = 8000;
 app.use(express.static('public'));  
 
 // websockets so that webpage can talk back to server
-const io = require('socket.io')(httpServer);  
+const webSocket = require('socket.io')(httpServer);  
 
 /* UDP server callback functions */
 
@@ -49,8 +51,6 @@ function UDPServerReceivedMessage(message, sender) {
 		message.length + 
 		' Message contents: ' +
 		message);
-
-	udpServer.send(message, 0, message.length, sender.port, sender.address);
 }
 
 /* Register the UDP callback functions */
@@ -71,19 +71,30 @@ httpServer.on('connection', (socket) => {
 
 /* and here is the websocket event handler */
 
-io.on('connect', function (socket) {
-    console.log('a user connected');
+webSocket.on('connect', function (socket) {
+var ledOnMessage = new Buffer('ledON');
+var ledOffMessage = new Buffer('ledOFF');
+    console.log('Web server socket: Client connected');
 
     // if you get the 'ledON' message
     socket.on('ledON', function () {
       console.log('Web server socket: received ledON message from web client');
-      // this is where we would send the message to Arduino
+      // Send the message to Arduino
+      udpServer.send(ledOnMessage, 
+		0, 
+		ledOnMessage.length, 
+		ARDUINO_LISTENING_AT, 
+		ARDUINO_ADDRESS);
     });
 
     // if you get the 'ledOFF' message
     socket.on('ledOFF', function () {
        console.log('Web server socket: received ledOFF message from web client');
-      // this is where we would send the message to Arduino
+      udpServer.send(ledOnMessage, 
+		0, 
+		ledOffMessage.length, 
+		ARDUINO_LISTENING_AT, 
+		ARDUINO_ADDRESS);
     });
 
     // if you get the 'disconnect' message, say the user disconnected
