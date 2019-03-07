@@ -7,8 +7,9 @@
   by Michael Shiloh
 */
 
-#include <SPI.h>
-#include <WiFi101.h>
+//#include <SPI.h>
+//#include <WiFi101.h>
+#include <WiFiNINA.h>
 #include <WiFiUdp.h>
 
 int status = WL_IDLE_STATUS;
@@ -24,7 +25,7 @@ char packetBuffer[255]; //buffer to hold incoming packet
 
 WiFiUDP Udp;
 
-const int BUTTON_PIN = 5;
+const int BUTTON_PIN = 6;
 
 // remember the button state so we only send
 // when the state changes
@@ -66,8 +67,8 @@ void setup() {
 void loop() {
 
   // IP address of the receiving device
-  IPAddress receivingDeviceAddress(192, 168, 1, 139);
-  unsigned int receivingDevicePort = 2390;
+  IPAddress receivingDeviceAddress(192, 168, 1, 4);
+  unsigned int receivingDevicePort = 7000;
 
   buttonState = digitalRead(BUTTON_PIN);
 
@@ -75,7 +76,13 @@ void loop() {
 
     Serial.println("button state changed; sending new state");
     Udp.beginPacket(receivingDeviceAddress, receivingDevicePort);
-    Udp.write(buttonState);
+    Udp.print("button state is ");
+    if (buttonState) {
+      Udp.print("HIGH");
+    } else{
+      Udp.print("LOW");
+    }
+    
     Udp.endPacket();
 
     lastButtonState = buttonState;

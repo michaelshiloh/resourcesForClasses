@@ -1,2 +1,2 @@
-#define SECRET_SSID "Cisco70085"
-#define SECRET_PASS "michaelshiloh"
+#define SECRET_SSID "IMNetwork"
+#define SECRET_PASS "static123"
