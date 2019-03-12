@@ -90,7 +90,7 @@ var ledOffMessage = new Buffer('ledOFF');
     // if you get the 'ledOFF' message
     socket.on('ledOFF', () => {
        console.log('Web server socket: received ledOFF message from web client');
-      udpServer.send(ledOnMessage, 
+      udpServer.send(ledOffMessage, 
 		0, 
 		ledOffMessage.length, 
 		ARDUINO_LISTENING_AT, 
