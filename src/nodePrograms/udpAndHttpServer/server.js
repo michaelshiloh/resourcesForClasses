@@ -64,20 +64,20 @@ httpServer.listen(HTTP_SERVER_PORT, () => {
 	console.log('httpServer: Listening at', httpServer.address());
 });
 
-httpServer.on('connection', (socket) => {
+httpServer.on('connection', () => {
   console.log("httpServer: An HTTP client has connected")
 });
 
 
 /* and here is the websocket event handler */
 
-webSocket.on('connect', function (socket) {
+webSocket.on('connect', (socket) => {
 var ledOnMessage = new Buffer('ledON');
 var ledOffMessage = new Buffer('ledOFF');
     console.log('Web server socket: Client connected');
 
     // if you get the 'ledON' message
-    socket.on('ledON', function () {
+    socket.on('ledON', () => {
       console.log('Web server socket: received ledON message from web client');
       // Send the message to Arduino
       udpServer.send(ledOnMessage, 
@@ -88,16 +88,21 @@ var ledOffMessage = new Buffer('ledOFF');
     });
 
     // if you get the 'ledOFF' message
-    socket.on('ledOFF', function () {
+    socket.on('ledOFF', () => {
        console.log('Web server socket: received ledOFF message from web client');
-      udpServer.send(ledOnMessage, 
+      udpServer.send(ledOffMessage, 
 		0, 
 		ledOffMessage.length, 
 		ARDUINO_LISTENING_AT, 
 		ARDUINO_ADDRESS);
     });
 
+<<<<<<< HEAD
     socket.on('disconnect', function () {
+=======
+    // if you get the 'disconnect' message, say the user disconnected
+    socket.on('disconnect', () => {
+>>>>>>> 26760be8526a256a91418dfe6e87b1b7bcd7dda3
       console.log('Web server socket: user disconnected');
   });
 });
