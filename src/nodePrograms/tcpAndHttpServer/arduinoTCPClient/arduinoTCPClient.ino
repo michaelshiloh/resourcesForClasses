@@ -25,9 +25,9 @@ char pass[] = SECRET_PASS;    // your network password (use for WPA, or use as k
 
 int status = WL_IDLE_STATUS;
 
-//IPAddress server(192, 168, 1, 22); // linux in lab
+IPAddress server(192, 168, 1, 4); // linux in lab
 
-IPAddress server(192, 168, 1, 5); // alienware on NETGEAR55
+//IPAddress server(192, 168, 1, 5); // alienware on NETGEAR55
 
 const int serverPort = 8000;
 

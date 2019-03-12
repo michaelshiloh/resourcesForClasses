@@ -26,6 +26,10 @@ char packetBuffer[255]; //buffer to hold incoming packet
 WiFiUDP Udp;
 
 const int BUTTON_PIN = 6;
+const int LED_PIN = 2;
+
+String LED_ON_MESSAGE = "ledON";
+String LED_OFF_MESSAGE = "ledOFF";
 
 // remember the button state so we only send
 // when the state changes
@@ -38,6 +42,8 @@ void setup() {
   while (!Serial) {
     ; // wait for serial port to connect. Needed for native USB port only
   }
+
+  pinMode(LED_PIN, OUTPUT);
 
   // check for the presence of the shield:
   if (WiFi.status() == WL_NO_SHIELD) {
@@ -79,10 +85,10 @@ void loop() {
     Udp.print("button state is ");
     if (buttonState) {
       Udp.print("HIGH");
-    } else{
+    } else {
       Udp.print("LOW");
     }
-    
+
     Udp.endPacket();
 
     lastButtonState = buttonState;
@@ -96,8 +102,8 @@ void loop() {
   if (packetSize)
   {
     Serial.print("Received packet of size ");
-    Serial.println(packetSize);
-    Serial.print("From ");
+    Serial.print(packetSize);
+    Serial.print(" from address ");
     IPAddress remoteIp = Udp.remoteIP();
     Serial.print(remoteIp);
     Serial.print(", port ");
@@ -105,14 +111,20 @@ void loop() {
 
     // read the packet into packetBufffer
     int len = Udp.read(packetBuffer, 255);
-    if (len > 0) packetBuffer[len] = 0;
-    Serial.println("Contents:");
+    if (len > 0) packetBuffer[len] = 0; // 0 indicates the end of an ASCII string
+    Serial.print("Packet contents:");
     Serial.println(packetBuffer);
 
-
+    if (LED_ON_MESSAGE.equals(packetBuffer)) {
+      digitalWrite(LED_PIN, HIGH);
+      Serial.println("Turning LED ON");
+    } 
+    if (LED_OFF_MESSAGE.equals(packetBuffer)) {
+      digitalWrite(LED_PIN, LOW);
+      Serial.println("Turning LED OFF");
+    }
   }
 }
-
 
 void printWiFiStatus() {
   // print the SSID of the network you're attached to:

@@ -97,7 +97,6 @@ var ledOffMessage = new Buffer('ledOFF');
 		ARDUINO_ADDRESS);
     });
 
-    // if you get the 'disconnect' message, say the user disconnected
     socket.on('disconnect', function () {
       console.log('Web server socket: user disconnected');
   });
