@@ -41,7 +41,11 @@ webSocket.on('connect', (socket) => {
 
     // if you get the 'slider value' message
     socket.on('slider', (data) => {
-       console.log('Web server socket: received slider value message: ' + data);
+       console.log('Web server socket: received slider value : ' + data);
+    });
+
+    socket.on('date', (data) => {
+       console.log('Web server socket: received date value : ' + data);
     });
 
     // if you get the 'disconnect' message, say the user disconnected
@@ -49,3 +53,30 @@ webSocket.on('connect', (socket) => {
       console.log('Web server socket: user disconnected');
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
