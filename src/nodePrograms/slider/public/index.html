@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf8"/>
+        <title>Sending a slider value back to the server</title>
+    </head>
+    <body>
+        <button onclick="ledON()">LED ON</button>
+
+        <button onclick="ledOFF()">LED OFF</button>
+
+				<div class="slidecontainer">
+					<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+					<p id="sliderValue"></p>
+				</div>
+    </body>
+				<script src="/socket.io/socket.io.js"></script>
+        <script src="client.js"></script>
+</html>
