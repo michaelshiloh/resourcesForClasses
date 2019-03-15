@@ -1,14 +1,21 @@
 /*
 
-  WiFi UDP Send Byte on Button Press
-  Based on UDP Send and Receive String
+  WiFi UDP device responding to buttons on a web page 
+  sent from a web page to node.js client to node.js server
+  and finally to here
+
+  code is at:
+  https://github.com/michaelshiloh/resourcesForClasses/tree/master/src/nodePrograms/udpAndHttpServer
 
   created 3 February 2019
   by Michael Shiloh
+
+  Change log:
+  14 Mar 2019 - ms -  better comments and cleaned up code
+                      Send binary data between Arduino and server
+
 */
 
-//#include <SPI.h>
-//#include <WiFi101.h>
 #include <WiFiNINA.h>
 #include <WiFiUdp.h>
 
@@ -19,14 +26,25 @@ char ssid[] = SECRET_SSID;        // your network SSID (name)
 char pass[] = SECRET_PASS;    // your network password (use for WPA, or use as key for WEP)
 int keyIndex = 0;            // your network key Index number (needed only for WEP)
 
-unsigned int localPort = 5000;      // local port to listen on
+unsigned int myPort = 5000;      // local port to listen on
+unsigned int remoteServerPort = 7000;  // remote port to talk to
+IPAddress remoteServerAddress(192, 168, 1, 5);
 
 char packetBuffer[255]; //buffer to hold incoming packet
 
 WiFiUDP Udp;
 
-const int BUTTON_PIN = 6;
-const int LED_PIN = 2;
+// Sensors
+const int BUTTON_PIN = 0;
+
+
+// Actuators
+const int NUMBER_OF_ACTUATORS = 3;
+int actuators[NUMBER_OF_ACTUATORS] = {
+  3, // pin numbers
+  4,
+  5
+};
 
 String LED_ON_MESSAGE = "ledON";
 String LED_OFF_MESSAGE = "ledOFF";
@@ -37,19 +55,18 @@ boolean buttonState;
 boolean lastButtonState = LOW; // arbitrary
 
 void setup() {
-  //Initialize serial and wait for port to open:
-  Serial.begin(9600);
-  while (!Serial) {
-    ; // wait for serial port to connect. Needed for native USB port only
+
+  // Set all actuator pins as outputs
+  for (int i = 0; i < NUMBER_OF_ACTUATORS; i++ ) {
+    pinMode(actuators[i], OUTPUT);
   }
-
-  pinMode(LED_PIN, OUTPUT);
-
-  // check for the presence of the shield:
-  if (WiFi.status() == WL_NO_SHIELD) {
-    Serial.println("WiFi shield not present");
-    // don't continue:
-    while (true);
+  
+  //Initialize serial
+  Serial.begin(9600);
+  // wait for serial port to connect. Needed for native USB port only
+  // Remove this if running without a serial monitor
+  while (!Serial) {
+    ; 
   }
 
   // attempt to connect to WiFi network:
@@ -66,39 +83,15 @@ void setup() {
   printWiFiStatus();
 
   Serial.print("Initializing WiFiUDP library and listening on port ");
-  Serial.println(localPort);
-  Udp.begin(localPort);
+  Serial.println(myPort);
+  Udp.begin(myPort);
 }
 
 void loop() {
 
-  // IP address of the receiving device
-  IPAddress receivingDeviceAddress(192, 168, 1, 4);
-  unsigned int receivingDevicePort = 7000;
-
-  buttonState = digitalRead(BUTTON_PIN);
-
-  if (buttonState != lastButtonState) {
-
-    Serial.println("button state changed; sending new state");
-    Udp.beginPacket(receivingDeviceAddress, receivingDevicePort);
-    Udp.print("button state is ");
-    if (buttonState) {
-      Udp.print("HIGH");
-    } else {
-      Udp.print("LOW");
-    }
-
-    Udp.endPacket();
-
-    lastButtonState = buttonState;
-  }
-
-  // once we send a packet to the server, it might
-  // respond, so read it
-
-  // if there's data available, read a packet
-  int packetSize = Udp.parsePacket();
+  // It's polite to listen first
+  // Did the server send us anything?
+  int packetSize = Udp.parsePacket(); 
   if (packetSize)
   {
     Serial.print("Received packet of size ");
@@ -111,18 +104,23 @@ void loop() {
 
     // read the packet into packetBufffer
     int len = Udp.read(packetBuffer, 255);
-    if (len > 0) packetBuffer[len] = 0; // 0 indicates the end of an ASCII string
-    Serial.print("Packet contents:");
-    Serial.println(packetBuffer);
 
-    if (LED_ON_MESSAGE.equals(packetBuffer)) {
-      digitalWrite(LED_PIN, HIGH);
-      Serial.println("Turning LED ON");
-    } 
-    if (LED_OFF_MESSAGE.equals(packetBuffer)) {
-      digitalWrite(LED_PIN, LOW);
-      Serial.println("Turning LED OFF");
-    }
+    // Activate the actuators as requested
+    digitalWrite( 
+      actuators[(int)packetBuffer[0]],  // first byte is actuator number
+      (int)packetBuffer[1]);            // second byte is value
+  }
+
+  buttonState = digitalRead(BUTTON_PIN);
+
+  if (buttonState != lastButtonState) {
+
+    Serial.println("button state changed; sending new state");
+    Udp.beginPacket(remoteServerAddress, remoteServerPort);
+    Udp.write(buttonState);
+    Udp.endPacket();
+
+    lastButtonState = buttonState;
   }
 }
 
