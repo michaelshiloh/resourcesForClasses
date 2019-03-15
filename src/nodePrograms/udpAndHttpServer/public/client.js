@@ -4,14 +4,38 @@ back to the web server
 */
 var socket = io();
 
+socket.on('event', (data) => {
+	console.log('received data from webserver: ' + data);
+});
 
-function ledON() {
-  console.log ("sending a message to the web server to turn on the LED");
-  // this is how we send a message back to the web server
-  socket.emit('ledON'); 
+socket.on('buttonPressed', (data) => {
+	console.log('received button pressed event from webserver: ' + data);
+});
+
+socket.on('buttonReleased', (data) => {
+	console.log('received button released from webserver: ' + data);
+});
+
+function redLEDOn() {
+  socket.emit('redLEDOn'); 
 }
 
-function ledOFF() {
-  console.log ("sending a message to the web server to turn off the LED");
-  socket.emit('ledOFF');
+function redLEDOff() {
+  socket.emit('redLEDOff');
+}
+
+function greenLEDOn() {
+  socket.emit('greenLEDOn'); 
+}
+
+function greenLEDOff() {
+  socket.emit('greenLEDOff');
+}
+
+function blueLEDOn() {
+  socket.emit('blueLEDOn'); 
+}
+
+function blueLEDOff() {
+  socket.emit('blueLEDOff');
 }
