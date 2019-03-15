@@ -1,14 +1,37 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf8"/>
-        <title>Trivial Connected Device Control Panel</title>
-	<<script src="/socket.io/socket.io.js"></script>
-        <script src="client.js"></script>
-    </head>
-    <body>
-        <button onclick="ledON()">LED ON</button>
-
-        <button onclick="ledOFF()">LED OFF</button>
-    </body>
+	<head>
+		<meta charset="utf8"/>
+		<title>Trivial Connected Device Control Panel</title>
+		<<script src="/socket.io/socket.io.js"></script>
+		<script src="client.js"></script>
+	</head>
+	<body>
+		<table style="width:100%; max-width: 500px; height:300px;">
+			<tr>
+				<td>
+					<button onclick="redLEDOn()">Red LED On</button>
+				</td>
+				<td>
+					<button onclick="redLEDOff()">Red LED Off</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button onclick="greenLEDOn()">Green LED On</button>
+				</td>
+				<td>
+					<button onclick="greenLEDOff()">Green LED Off</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button onclick="blueLEDOn()">Blue LED On</button>
+				</td>
+				<td>
+					<button onclick="blueLEDOff()">Blue LED Off</button>
+				</td>
+			</tr>
+		</table>
+	</body>
 </html>
