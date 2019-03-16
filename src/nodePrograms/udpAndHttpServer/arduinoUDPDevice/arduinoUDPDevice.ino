@@ -28,7 +28,8 @@ int keyIndex = 0;            // your network key Index number (needed only for W
 
 unsigned int myPort = 5000;      // local port to listen on
 unsigned int remoteServerPort = 7000;  // remote port to talk to
-IPAddress remoteServerAddress(192, 168, 1, 5);
+// IPAddress remoteServerAddress(192, 168, 1, 5); // server at home
+IPAddress remoteServerAddress(192, 168, 1, 10); // server on x1 laptop
 
 char packetBuffer[255]; //buffer to hold incoming packet
 
