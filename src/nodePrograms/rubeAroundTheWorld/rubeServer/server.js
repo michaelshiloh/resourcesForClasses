@@ -25,7 +25,7 @@ const http = require('http')
 const express = require('express'); // web server application
 const app = express();        // instantiate express server
 const httpServer = http.Server(app);  // connects http library to server
-const HTTP_SERVER_PORT = 80; 
+const HTTP_SERVER_PORT = 8000; 
 
 var Gpio = require('onoff').Gpio; //include onoff to interact with the GPIO
 var LED = new Gpio(4, 'out'); //use GPIO pin 4, and specify that it is output
@@ -42,7 +42,8 @@ httpServer.listen(HTTP_SERVER_PORT, () => {
 
 httpServer.on('connection', () => {
   console.log("httpServer: An HTTP client has connected")
-	var blinkInterval = setInterval(blinkLED, 250); //run the blinkLED function every 250ms
+  var blinkInterval = setInterval(blinkLED, 250); //run the blinkLED function every 250ms
+  setTimeout(endBlink, 5000); //stop blinking after 5 seconds
 });
 
 
@@ -60,4 +61,3 @@ function endBlink() { //function to stop blinking
   LED.unexport(); // Unexport GPIO to free resources
 }
 
-setTimeout(endBlink, 5000); //stop blinking after 5 seconds
