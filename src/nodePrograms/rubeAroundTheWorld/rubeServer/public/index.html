@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf8"/>
+        <title>Sending a slider value back to the server</title>
+    </head>
+    <body>
+        <button onclick="ledON()">LED ON</button>
+
+        <button onclick="ledOFF()">LED OFF</button>
+
+				<div class="slidecontainer">
+					<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+					<p id="sliderValue"></p>
+				</div>
+
+				<div class="slidecontainer">
+					<input type="range" min="1" max="100" value="50" class="slider" id="myDate">
+					<p id="dateValue"></p>
+				</div>
+
+				<audio src="/music/good_enough.mp3" autoplay>
+<p>If you are reading this, it is because your browser does not support the audio element.     </p>
+<embed src="foo.mp3" width="180" height="90" hidden="false" />
+</audio>
+
+    </body>
+				<script src="/socket.io/socket.io.js"></script>
+        <script src="client.js"></script>
+</html>
