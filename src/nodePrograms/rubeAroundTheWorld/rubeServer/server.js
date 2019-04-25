@@ -30,6 +30,14 @@ const HTTP_SERVER_PORT = 8000;
 var Gpio = require('onoff').Gpio; //include onoff to interact with the GPIO
 var LED = new Gpio(4, 'out'); //use GPIO pin 4, and specify that it is output
 
+var localStartTime = new Date(2019, 
+															04,  // month
+															25,  // day
+															25,  // hour
+															00,  // minute
+															00,  // second, 
+															00); // millisecond
+
 // Express creates the simple web page
 // The argument says where to find pages and scripts
 app.use(express.static('public'));  
@@ -47,13 +55,15 @@ httpServer.on('connection', () => {
   //setTimeout(endBlink, 5000); //stop blinking after 5 seconds
 
   // now check the time, and if it's not time yet, don't blink
-  var currtime = Date.now();
-  console.log(currtime );
+  var currentTime = Date.now();
+
+  console.log("current time is " + currentTime );
+  console.log("start time is " + localStartTime );
 
   // if it's time to run, do it
-  //if (compare the current time to the desired time) {
+  if (currentTime > localStartTime) {
     LED.writeSync(1); //set pin state to 1 (turn LED on)
-  //}
+  }
 
 
 });
@@ -74,3 +84,4 @@ function endBlink() { //function to stop blinking
   LED.unexport(); // Unexport GPIO to free resources
 }
 */
+
