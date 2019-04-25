@@ -37,16 +37,29 @@ app.use(express.static('public'));
 /* HTTP callback functions */
 
 httpServer.listen(HTTP_SERVER_PORT, () => {
-	console.log('httpServer: Listening at', httpServer.address());
+  console.log('httpServer: Listening at', httpServer.address());
+  LED.writeSync(0); // Turn LED off
 });
 
 httpServer.on('connection', () => {
   console.log("httpServer: An HTTP client has connected")
-  var blinkInterval = setInterval(blinkLED, 250); //run the blinkLED function every 250ms
-  setTimeout(endBlink, 5000); //stop blinking after 5 seconds
+  //var blinkInterval = setInterval(blinkLED, 250); //run the blinkLED function every 250ms
+  //setTimeout(endBlink, 5000); //stop blinking after 5 seconds
+
+  // now check the time, and if it's not time yet, don't blink
+  var currtime = Date.now();
+  console.log(currtime );
+
+  // if it's time to run, do it
+  //if (compare the current time to the desired time) {
+    LED.writeSync(1); //set pin state to 1 (turn LED on)
+  //}
+
+
 });
 
 
+/*
 function blinkLED() { //function to start blinking
   if (LED.readSync() === 0) { //check the pin state, if the state is 0 (or off)
     LED.writeSync(1); //set pin state to 1 (turn LED on)
@@ -60,4 +73,4 @@ function endBlink() { //function to stop blinking
   LED.writeSync(0); // Turn LED off
   LED.unexport(); // Unexport GPIO to free resources
 }
-
+*/
