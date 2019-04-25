@@ -15,6 +15,8 @@
 	Based on many things:
 	- Blink example at 
 		https://www.w3schools.com/nodejs/nodejs_raspberrypi_blinking_led.asp
+	- Time comparison at
+		https://stackoverflow.com/questions/39522958/node-js-dates-comparison
 
 	Created 25 April 2019
 	by Michael Shiloh
@@ -60,10 +62,12 @@ httpServer.on('connection', () => {
   console.log("current time is " + currentTime );
   console.log("start time is " + localStartTime );
 
+  // different formats; need to convert
+
   // if it's time to run, do it
-  if (currentTime > localStartTime) {
+  //if (currentTime > localStartTime) {
     LED.writeSync(1); //set pin state to 1 (turn LED on)
-  }
+  //}
 
 
 });
