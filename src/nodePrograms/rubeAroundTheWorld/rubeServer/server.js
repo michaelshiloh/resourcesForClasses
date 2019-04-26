@@ -12,7 +12,7 @@
   
 	Context: node.js
 
-	Based on many things:
+	Based on:
 	- Blink example at 
 		https://www.w3schools.com/nodejs/nodejs_raspberrypi_blinking_led.asp
 	- Time comparison at
@@ -23,69 +23,53 @@
 */
 
 /* HTTP server talks to browser */
-const http = require('http')
+// const http = require('http')
 const express = require('express'); // web server application
 const app = express();        // instantiate express server
-const httpServer = http.Server(app);  // connects http library to server
 const HTTP_SERVER_PORT = 8000; 
 
 var Gpio = require('onoff').Gpio; //include onoff to interact with the GPIO
 var LED = new Gpio(4, 'out'); //use GPIO pin 4, and specify that it is output
 
-var localStartTime = new Date(2019, 
-															04,  // month
-															25,  // day
-															25,  // hour
-															00,  // minute
-															00,  // second, 
-															00); // millisecond
-
 // Express creates the simple web page
 // The argument says where to find pages and scripts
-app.use(express.static('public'));  
+
+var moment = require('moment');
 
 /* HTTP callback functions */
 
-httpServer.listen(HTTP_SERVER_PORT, () => {
-  console.log('httpServer: Listening at', httpServer.address());
+app.listen(HTTP_SERVER_PORT, () => {
+  console.log('httpServer: Listening ');
   LED.writeSync(0); // Turn LED off
 });
 
-httpServer.on('connection', () => {
-  console.log("httpServer: An HTTP client has connected")
-  //var blinkInterval = setInterval(blinkLED, 250); //run the blinkLED function every 250ms
-  //setTimeout(endBlink, 5000); //stop blinking after 5 seconds
+app.get('/', (req, resp) => {
+  console.log("httpServer: received a request")
 
-  // now check the time, and if it's not time yet, don't blink
-  var currentTime = Date.now();
+  var now = moment();
+  var runAt = moment({date: 26, hour: 16, minute: 00});  
 
-  console.log("current time is " + currentTime );
-  console.log("start time is " + localStartTime );
+  console.log("now = " + now.format("dddd, MMMM Do YYYY, h:mm:ss a"));
+  console.log("runAt = " + runAt.format("dddd, MMMM Do YYYY, h:mm:ss a"));
 
-  // different formats; need to convert
-
-  // if it's time to run, do it
-  //if (currentTime > localStartTime) {
+  if( now.isAfter (runAt) ) { // if now > runAt
+  	console.log("time to run!");
     LED.writeSync(1); //set pin state to 1 (turn LED on)
-  //}
-
-
-});
-
-
-/*
-function blinkLED() { //function to start blinking
-  if (LED.readSync() === 0) { //check the pin state, if the state is 0 (or off)
-    LED.writeSync(1); //set pin state to 1 (turn LED on)
-  } else {
-    LED.writeSync(0); //set pin state to 0 (turn LED off)
+		resp.send("we are running!");
   }
-}
-
-function endBlink() { //function to stop blinking
-  clearInterval(blinkInterval); // Stop blink intervals
-  LED.writeSync(0); // Turn LED off
-  LED.unexport(); // Unexport GPIO to free resources
-}
-*/
-
+  else {
+	  var duration = moment.duration(runAt.diff(now));
+				console.log(
+					"Rube Around the World will run in NYU Abu Dhabi in " + 
+					duration.get('hours') + 
+					" hours and " + 
+					duration.get('minutes') + 
+					" minutes");
+	  resp.send(
+					"Rube Around the World will run in NYU Abu Dhabi in " + 
+					duration.get('hours') + 
+					" hours and " + 
+					duration.get('minutes') + 
+					" minutes");
+  }
+});
