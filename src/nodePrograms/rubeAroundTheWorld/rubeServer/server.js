@@ -34,8 +34,8 @@ var LED = new Gpio(4, 'out'); //use GPIO pin 4, and specify that it is output
 
 // to handle time calculations
 var moment = require('moment');
-// var runAt = moment({date: 26, hour: 16, minute: 00});   // when to run
-var runAt = moment({date: 26, hour: 11, minute: 36});   // when to run
+var runAt = moment({date: 26, hour: 16, minute: 00});   // when to run
+// var runAt = moment({date: 26, hour: 11, minute: 36});   // sooner for testing
 
 // Set a timer to check the time very so often,
 // If we are triggered before it is time this will initiate the
