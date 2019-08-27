@@ -257,24 +257,35 @@ Logic Level
 
 ## Mechatronic Resources
 
+1. Simple [descriptions](http://www.mechanical-toys.com/mechanisums.htm) of
+the 6 basic mechanisms
+
+1. Great pamphlet describing how to build [Mechanisms](doc/machinations-mechanisms.pdf)
+
+1. How to build a [Crank and
+	 Slider](https://www.wikihow.com/Build-a-Crank-and-Slider-Mechanism) 
+	 mechanism
+
+1. [Gear generator](http://www.geargenerator.com)
+
 1. Pages 272-281 in "Physical Computing: Sensing and Controlling the
-Physical World with Computers" by Igoe/O'Sullivan, available in the
-Hybrid Lab
+Physical World with Computers" by Igoe/O'Sullivan
 
-1. "How to Build Automata" book, available in the Hybrid Lab
+1. "How to Build Automata" book
 
-1. "How to Build Simple Automata" book, available in the Hybrid Lab
+1. "How to Build Simple Automata" book
 
 1. A nice [overview](https://makezine.com/projects/make-your-own-gears/) of
 making your own gears. Don't worry about the specifics (Inkscape etc.) 
 but get the general concept which can be achieved in many different 
 ways and using different tools.
 
-1. "Making Things Move" book, available in the Hybrid Lab and in our library
+1. Cardboard Automata
+[pamphlet](https://www.exploratorium.edu/pie/downloads/Cardboard_Automata.pdf)
+from The Exploratorium which has a clear diagram of how to use two cams to get
+alternating rotation
 
-1. [Machinations/Mechanisms](doc/machinations-mechanisms.pdf)
-
-1. [Gear generator](http://www.geargenerator.com)
+1. "Making Things Move" by Dustyn Roberts
 
 1. [Free plans](http://cabaret.co.uk/store/downloads/) from Cabaret Mechanical
 Theatre
@@ -285,13 +296,6 @@ keyword Automata
 
 1. Nice collection of resources for [Cam and Crank
 toys](http://re.trotoys.com/projects/cat/cam-crank-toys/)
-
-1. Simple [descriptions](http://www.mechanical-toys.com/mechanisums.htm) of
-the 6 basic mechanisms
-
-1. Cardboard Automata
-[pamphlet](https://www.exploratorium.edu/pie/downloads/Cardboard_Automata.pdf)
-from The Exploratorium
 
 1. Free plans to download and other
 [resources](http://dugnorth.com/automaton-plans.aspx) from Dug North, a master
