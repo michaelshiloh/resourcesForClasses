@@ -151,14 +151,14 @@ for bringing this to my attention.
 
 ## Basic Arduino Resources from Arduino
 
-4. Getting Started with Arduino / Genuino Uno
+1. Getting Started with Arduino / Genuino Uno
     [tutorial](https://www.arduino.cc/en/Guide/ArduinoUno)
 
-2. Blink [tutorial](http://arduino.cc/en/Tutorial/Blink)
+1. Blink [tutorial](http://arduino.cc/en/Tutorial/Blink)
 
-2. DigitalReadSerial [tutorial](http://arduino.cc/en/Tutorial/DigitalReadSerial)
+1. DigitalReadSerial [tutorial](http://arduino.cc/en/Tutorial/DigitalReadSerial)
 
-2. AnalogReadSerial [tutorial](http://arduino.cc/en/Tutorial/AnalogReadSerial)
+1. AnalogReadSerial [tutorial](http://arduino.cc/en/Tutorial/AnalogReadSerial)
 
 2. Fade [tutorial](http://arduino.cc/en/Tutorial/Fade)
 shows how to use the `analogWrite()` function
@@ -169,19 +169,19 @@ shows how to use the `analogWrite()` function
 
 1. [Arduino in a Nutshell](http://hci.rwth-aachen.de/arduino)
 
-3. Photoresistor
+1. Photoresistor
 [Instructables](http://www.instructables.com/id/How-to-Use-a-Light-Dependent-Resistor-LDR/)
 
 ## Sparkfun Inventor's Kit Resources
 
-4. [Introduction](https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/introduction-sik-arduino-uno)
+1. [Introduction](https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/introduction-sik-arduino-uno)
 to the Sparkfun Inventor's Kit for Arduino Experimenter's Guide
 
-5. [Experiment 1: Blinking an LED](
+1. [Experiment 1: Blinking an LED](
 https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/experiment-1-blinking-an-led)
 in the Sparkfun Inventor's Kit for Arduino Experimenter's Guide
 
-6. [Experiment 2: Reading a
+1. [Experiment 2: Reading a
 Potentiometer](https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/experiment-2-reading-a-potentiometer)
 in the Sparkfun Inventor's Kit for Arduino Experimenter's Guide
 
