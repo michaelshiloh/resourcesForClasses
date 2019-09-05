@@ -557,9 +557,6 @@ Reversing](https://learn.adafruit.com/adafruit-arduino-lesson-15-dc-motor-revers
 5. Adafruit [Arduino Lesson 16. Stepper
 Motors](https://learn.adafruit.com/adafruit-arduino-lesson-16-stepper-motors/overview?view=all)
 
-6. H-bridge
-[tutorial](http://teachmetomake.com/wordpress/arduino-tutorial-h-bridge)
-
 7. Adafruit [Motor Shield
 	 Tutorial](https://learn.adafruit.com/adafruit-motor-shield-v2-for-arduino?view=all)
 
