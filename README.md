@@ -386,6 +386,9 @@ that says "Create new file" or "Upload files". How do I fix this?
 		}
 ```
 
+1. Github
+	 [cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
+
 ## Making Sounds without Arduino
 1. Basic 40106 (hex Schmitt trigger inverter)
 		[oscillator](http://fluxmonkey.com/electronoize/40106Oscillator.htm)
