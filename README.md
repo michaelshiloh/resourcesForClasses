@@ -461,13 +461,23 @@ difference that we won't be concerned with.
 1. [Hello Processing](http://hello.processing.org/)
 tutorial
 
-2. Processing [Getting Started](http://processing.org/tutorials/gettingstarted/)
+1. Processing [Getting Started](http://processing.org/tutorials/gettingstarted/)
 tutorial
 
-3. Processing [Coordinate System and Shapes](http://processing.org/tutorials/drawing/)
+1. Processing [Coordinate System and Shapes](http://processing.org/tutorials/drawing/)
 tutorial
 
-4. Processing [Color](http://processing.org/tutorials/color/) tutorial
+1. Processing [Color](http://processing.org/tutorials/color/) tutorial
+
+1. Daniel Shiffman's [Learning Processing video
+	 tutorials](http://learningprocessing.com/videos/)
+
+1. [Examples](http://learningprocessing.com/examples/)
+from Daniel Shiffman's _Learning Processing_ book (also available on
+[Github](https://github.com/shiffman/LearningProcessing)
+
+1. [Examples](https://github.com/nature-of-code/noc-examples-processing)
+from Daniel Shiffman's _The Nature of Code_ book
 
 ## Classes and Objects
 1. Daniel Shiffman’s [Objects](https://processing.org/tutorials/objects/)
