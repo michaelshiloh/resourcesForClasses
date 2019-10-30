@@ -483,8 +483,12 @@ from Daniel Shiffman's _The Nature of Code_ book
 	 Processing](media/getting_started_with_processing.pdf) book
 
 ## Classes and Objects
-1. Daniel Shiffman’s [Objects](https://processing.org/tutorials/objects/)
-tutorial (Processing)
+1. Daniel Shiffman’s [written tutorial](https://processing.org/tutorials/objects/)
+tutorial on objects in Processing
+
+1. Daniel Shiffman's [video
+	 tutorial](https://www.youtube.com/watch?v=lmgcMPRa1qw) on objects in
+	 Processing
 
 2. A simple Processing class
 [example](https://github.com/michaelshiloh/simpleProcessingClassExample)
