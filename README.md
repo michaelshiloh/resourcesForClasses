@@ -479,6 +479,9 @@ from Daniel Shiffman's _Learning Processing_ book (also available on
 1. [Examples](https://github.com/nature-of-code/noc-examples-processing)
 from Daniel Shiffman's _The Nature of Code_ book
 
+1. [Getting Started with
+	 Processing](media/getting_started_with_processing.pdf) book
+
 ## Classes and Objects
 1. Daniel Shiffman’s [Objects](https://processing.org/tutorials/objects/)
 tutorial (Processing)
