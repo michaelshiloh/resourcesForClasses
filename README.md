@@ -487,7 +487,7 @@ from Daniel Shiffman's _The Nature of Code_ book
 tutorial (Processing)
 
 2. A simple Processing class
-[example](http://teachmetomake.com/wordpress/simple-processing-class-example)
+[example](https://github.com/michaelshiloh/simpleProcessingClassExample)
 
 3. "[Arduino the Object Oriented
 way](https://paulmurraycbr.github.io/ArduinoTheOOWay.html)" tutorial
