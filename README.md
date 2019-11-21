@@ -644,3 +644,28 @@ MacOS, and Windows.
 
 1. [Servo City](https://www.servocity.com/motion-components)
 
+
+## Daniel Shiffman Videos
+
+1. Youtube [channel](https://www.youtube.com/user/shiffman/videos)
+
+1. Image and Pixels
+	 [tutorials](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YB9x6f23CBftiyx0u_5sO9)
+
+1. Computer Vision
+	 tutorials](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6aG2RJHErXKSWFDXU4qo_ro)
+
+1. [11.4: Introduction to Computer Vision - Processing Tutorial](https://www.youtube.com/watch?v=h8tk0hmWB44&amp;list=PLRqwX-V7Uu6aG2RJHErXKSWFDXU4qo_ro&amp;index=2&amp;t=0s)
+
+1. [11.5: Computer Vision: Color Tracking - Processing Tutorial](https://www.youtube.com/watch?v=nCVZHROb_dE&amp;list=PLRqwX-V7Uu6aG2RJHErXKSWFDXU4qo_ro&amp;index=2)
+
+1. [11.6: Computer Vision: Motion Detection - Processing Tutorial](https://www.youtube.com/watch?v=QLHMtE5XsMs&amp;list=PLRqwX-V7Uu6aG2RJHErXKSWFDXU4qo_ro&amp;index=3)
+
+1. [11.7: Computer Vision: Blob Detection - Processing Tutorial](https://www.youtube.com/watch?v=ce-2l2wRqO8&amp;list=PLRqwX-V7Uu6aG2RJHErXKSWFDXU4qo_ro&amp;index=4)
+
+1. [11.8: Computer Vision: Improved Blob Detection - Processing Tutorial](https://www.youtube.com/watch?v=1scFcY-xMrI&amp;list=PLRqwX-V7Uu6aG2RJHErXKSWFDXU4qo_ro&amp;index=5)
+
+1. [11.9: Computer Vision: Blob Tracking with Persistence - Processing Tutorial](https://www.youtube.com/watch?v=r0lvsMPGEoY&amp;list=PLRqwX-V7Uu6aG2RJHErXKSWFDXU4qo_ro&amp;index=6)
+
+1. [11.10: Computer Vision: Adding Lifespan to Blobs - Processing Tutorial](https://www.youtube.com/watch?v=o1Ob28sF0N8&amp;list=PLRqwX-V7Uu6aG2RJHErXKSWFDXU4qo_ro&amp;index=7)
+
