@@ -333,6 +333,8 @@ that says "Create new file" or "Upload files". How do I fix this?
 2. How to upload a file to Github
 	1. Click on "Upload files"
 
+	![](media/githubUploadFiles.png)
+
 3. How to create a folder in Github
 
 	Git doesn't store empty folders, so you can only create a new folder when
