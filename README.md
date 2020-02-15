@@ -1,5 +1,11 @@
 # Resources for Classes
 
+## Theory
+1. [Robotic Creatures](doc/roboticCreatures2010Ghedini.pdf)
+1. [Catalog](doc/moma_catalogue_machine_art.pdf)
+) from Machine Art exhibit, Museum of Modern Art, 1934 
+
+
 ## Inspiration: Artists, Movies, Projects, etc.
 
 1.  Drawing Machines
@@ -15,6 +21,8 @@
 	1. [10](http://makerblock.com/2013/03/a-study-of-drawing-robot-pen-holders-and-design-considerations/)  
 	1. [11](https://www.kickstarter.com/projects/1765367532/duograph-drawing-machine?ref=nav_search)  
 	1. [12](http://www.thisiscolossal.com/2016/03/cycloid-drawing-machine/)  
+	1. The Machine As Artist, an
+		 [Introduction](doc/theMachineAsArtistIntroduction.pdf)
   
 1. Marble Machines
 	1. [1](https://www.youtube.com/user/denha)  
@@ -670,4 +678,5 @@ MacOS, and Windows.
 1. [11.9: Computer Vision: Blob Tracking with Persistence - Processing Tutorial](https://www.youtube.com/watch?v=r0lvsMPGEoY&amp;list=PLRqwX-V7Uu6aG2RJHErXKSWFDXU4qo_ro&amp;index=6)
 
 1. [11.10: Computer Vision: Adding Lifespan to Blobs - Processing Tutorial](https://www.youtube.com/watch?v=o1Ob28sF0N8&amp;list=PLRqwX-V7Uu6aG2RJHErXKSWFDXU4qo_ro&amp;index=7)
+
 
