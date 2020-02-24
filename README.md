@@ -279,9 +279,9 @@ the 6 basic mechanisms
 1. Pages 272-281 in "Physical Computing: Sensing and Controlling the
 Physical World with Computers" by Igoe/O'Sullivan
 
-1. "How to Build Automata" book
+1. [How To Design And Make Automata](doc/howToDesignAndMakeAutomata_RobertAdams.pdf) by Robert Adams
 
-1. "How to Build Simple Automata" book
+1. [How To Design And Make Simple Automata](doc/howToDesignAndMakeSimpleAutomata_RobertAdams.pdf) by Robert Adams (I think this is a different version of the same book above)
 
 1. A nice [overview](https://makezine.com/projects/make-your-own-gears/) of
 making your own gears. Don't worry about the specifics (Inkscape etc.) 
