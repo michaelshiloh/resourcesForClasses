@@ -637,6 +637,16 @@ Youtube and to embed those in your post. [Here](http://www.wpbeginner.com/beginn
 1. General tips for [Working with
 acrylic](https://makezine.com/2015/10/29/skill-builder-acrylic/)
 
+## Fusion 360 Resources
+
+## Free CAD models
+
+1. McMaster-Carr
+1. Onshape (free account)
+1. https://info.traceparts.com/use-and-manage-3d-cad-models/download-free-cad-models/
+1. https://grabcad.com/library
+
+
 ## CAD Resources
 
 1. Free cloud based simple 2D CAD software [Vectr](vectr.com). Somewhat
