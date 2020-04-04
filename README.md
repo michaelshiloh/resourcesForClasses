@@ -28,7 +28,11 @@
 	1. [1](https://www.youtube.com/user/denha)  
 	1. [2](https://tinkerlog.com/)  
 	1. [3](https://www.youtube.com/watch?v=3OGyLHu24rk)
-	1. [4](media/binaryCounter.wmv)
+
+1. Didi Vardi's Wonderful Mechamisms
+	1. [Binary Counter with old computer parts](media/binaryCounterDidiVardi.wmv)
+	1. [Machine Animating late 19th century and early 20th century hand
+		 tools](media/oldToolsMachineDidiVardi.wmv)
 
 1. Musical Machines
 	1. Carlos Guedes' wonderful [Phobos, Orquestra Robótica
@@ -637,14 +641,20 @@ Youtube and to embed those in your post. [Here](http://www.wpbeginner.com/beginn
 1. General tips for [Working with
 acrylic](https://makezine.com/2015/10/29/skill-builder-acrylic/)
 
-## Fusion 360 Resources
+## Fusion 360 Tutorials
+
+1. Excellent series by [Kevin Kennedy](https://www.youtube.com/watch?v=sZwM87-nsYA&list=PLrZ2zKOtC_-DR2ZkMaK3YthYLErPxCnT-&index=2&t=0s)
+1. Excellent series by [NYCCNC]()
+1. Joints by[](https://www.youtube.com/watch?v=C03H_YZHuAI)
+1. Joints by[](https://www.youtube.com/watch?v=QisfRW0pd44)
+1. Joints by[](https://www.youtube.com/watch?v=Bw08O6XsfDI)
 
 ## Free CAD models
 
-1. McMaster-Carr
-1. Onshape (free account)
-1. https://info.traceparts.com/use-and-manage-3d-cad-models/download-free-cad-models/
-1. https://grabcad.com/library
+1. [McMaster-Carr](https://mcmaster.com)
+1. [Onshape](https://onshape.com)
+1. [Traceparts](https://info.traceparts.com/use-and-manage-3d-cad-models/download-free-cad-models/)
+1. [Grabcad](https://grabcad.com/library)
 
 
 ## CAD Resources
