@@ -317,7 +317,9 @@ automata builder
 
 1. How to Make Cardboard Automata
 [article](http://makezine.com/projects/make-cardboard-automata/) on Make:
-Projects website (which itself is a great resource for all sorts of projects).
+Projects website (which itself is a great resource for all sorts of projects)
+
+1. [Website](https://www.cs.cmu.edu/afs/cs/academic/class/15394h-f17/resources/mechanism-design.html|) for an Introduction to Mechanisms course at CMU with a ton of great material
 
 ## Github Resources
 
