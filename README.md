@@ -299,6 +299,8 @@ alternating rotation
 
 1. "Making Things Move" by Dustyn Roberts
 
+1. Very detailed [book](https://www.cs.cmu.edu/afs/cs/academic/class/15394h-f17/resources/cabaret_mechanical_movement.pdf) on making automata from Cabaret Mechanical Theatre
+
 1. [Free plans](http://cabaret.co.uk/store/downloads/) from Cabaret Mechanical
 Theatre
 
