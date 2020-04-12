@@ -321,6 +321,8 @@ Projects website (which itself is a great resource for all sorts of projects)
 
 1. [Website](https://www.cs.cmu.edu/afs/cs/academic/class/15394h-f17/resources/mechanism-design.html|) for an Introduction to Mechanisms course at CMU with a ton of great material
 
+1. Hackaday (articles on mechanisms)[https://hackaday.com/tag/mechanisms/). Very good.
+
 ## Github Resources
 
 1. How to create a Github account and your first repository
