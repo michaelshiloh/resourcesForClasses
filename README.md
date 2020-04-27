@@ -3,7 +3,7 @@
 ## Theory
 1. [Robotic Creatures](doc/roboticCreatures2010Ghedini.pdf)
 1. [Catalog](doc/moma_catalogue_machine_art.pdf)
-) from Machine Art exhibit, Museum of Modern Art, 1934 
+ from Machine Art exhibit, Museum of Modern Art, 1934 
 
 
 ## Inspiration: Artists, Movies, Projects, etc.
