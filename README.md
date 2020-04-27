@@ -651,9 +651,10 @@ acrylic](https://makezine.com/2015/10/29/skill-builder-acrylic/)
 
 1. Excellent series by [Kevin Kennedy](https://www.youtube.com/watch?v=sZwM87-nsYA&list=PLrZ2zKOtC_-DR2ZkMaK3YthYLErPxCnT-&index=2&t=0s)
 1. Excellent series by [NYCCNC]()
-1. Joints by[](https://www.youtube.com/watch?v=C03H_YZHuAI)
-1. Joints by[](https://www.youtube.com/watch?v=QisfRW0pd44)
-1. Joints by[](https://www.youtube.com/watch?v=Bw08O6XsfDI)
+1. Joint tutorial by[NYC CNC](https://www.youtube.com/watch?v=C03H_YZHuAI)
+1. Joint tutorial by [Jason Workshop](https://www.youtube.com/watch?v=QisfRW0pd44)
+1. Another joint tutorial by[NYC CNC](https://www.youtube.com/watch?v=Bw08O6XsfDI)
+1. Joint tutorial by [Autodesk](https://www.youtube.com/watch?v=nngmNos6VI4)
 
 ## Free CAD models
 
