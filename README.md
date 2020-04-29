@@ -718,6 +718,10 @@ MacOS, and Windows.
 	 Ratto](http://opendesignnow.org/index.html%3Fp=434.html)
 
 ## Open Source Theory
+
+1. [The Cathedral and the
+	 Bazaar](https://www.semanticscholar.org/paper/The-cathedral-and-the-bazaar-musings-on-Linux-and-Raymond/905ca73f18b2571c1c3fde12f6dd18dd0c735a41)
+
 1. [Open Source Model](https://en.wikipedia.org/wiki/Open-source_model)
 
 1. [Why Open Source Misses the Point of Free
