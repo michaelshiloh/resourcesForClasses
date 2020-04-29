@@ -655,6 +655,8 @@ acrylic](https://makezine.com/2015/10/29/skill-builder-acrylic/)
 1. Joint tutorial by [Jason Workshop](https://www.youtube.com/watch?v=QisfRW0pd44)
 1. Another joint tutorial by[NYC CNC](https://www.youtube.com/watch?v=Bw08O6XsfDI)
 1. Joint tutorial by [Autodesk](https://www.youtube.com/watch?v=nngmNos6VI4)
+1. [HOW and WHY to Fully Constrain Your
+	 Sketches](https://www.youtube.com/watch?v=C11L136U0vQ&list=PLrZ2zKOtC_-DR2ZkMaK3YthYLErPxCnT-&index=19)
 
 ## Free CAD models
 
