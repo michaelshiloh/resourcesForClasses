@@ -709,3 +709,16 @@ MacOS, and Windows.
 1. [11.10: Computer Vision: Adding Lifespan to Blobs - Processing Tutorial](https://www.youtube.com/watch?v=o1Ob28sF0N8&amp;list=PLRqwX-V7Uu6aG2RJHErXKSWFDXU4qo_ro&amp;index=7)
 
 
+## Critical Making
+
+1. [The Role of Critical
+	 Making](https://waag.org/en/article/role-critical-making)
+
+1. [Critical Making by Matt
+	 Ratto](http://opendesignnow.org/index.html%3Fp=434.html)
+
+## Open Source Theory
+1. [Open Source Model](https://en.wikipedia.org/wiki/Open-source_model)
+
+1. [Why Open Source Misses the Point of Free
+	 Software](https://www.gnu.org/philosophy/open-source-misses-the-point.en.html)
