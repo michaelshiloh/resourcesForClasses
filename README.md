@@ -717,6 +717,27 @@ MacOS, and Windows.
 1. [Critical Making by Matt
 	 Ratto](http://opendesignnow.org/index.html%3Fp=434.html)
 
+1. From Ratto's paper above:
+Benkler, Y, ‘Freedom in the Commons: Towards a Political Economy of Information’, Duke Law Journal, 52(6), 2003, p. 1245–1277. 
+Agre, P, ‘Toward a Critical Technical Practice: Lessons Learned in Trying to Reform AI’, in Bowker, G, Gasser, L, Star, L and Turner, B, eds, Bridging the Great Divide: Social Science, Technical Systems, and Cooperative Work. Erlbaum, 1997. Dourish, P, Finlay, J, Sengers, P, & Wright, P, ‘Reflective HCI: Towards a critical technical practice’, in CHI’04 extended abstracts on Human factors in computing systems, 2004, p. 1727–1728. 
+Friedman, B, ‘Value-sensitive design’, interactions, 3(6), p.16-23. DOI:10.1145/242485.242493. 
+Flanagan, M, Howe, D, & Nissenbaum, H, Embodying Values in Technology: Theory and Practice. 2005 (draft). 
+Dunne, A, & Raby, F, Design Noir: The Secret Life of Electronic Objects. Birkhäuser Basel, 2001. 
+Papert, S, Mindstorms: Children, Computers, and Powerful Ideas (2nd ed.). Basic Books, 1993. 
+Law, J, After method: mess in social science research. Routledge, 2004. 
+Haraway, D, Simians, Cyborgs, and Women: The Reinvention of Nature (1st ed.). Routledge, 1990. Hayles, N, ‘The Materiality of Informatics’, Configurations, 1(1), 1993, p. 147-170. Hayles, N, How we became posthuman: virtual bodies in cybernetics, literature, and informatics. University of Chicago Press, 1999. Kirschenbaum, M, Mechanisms: New Media and the Forensic Imagination. The MIT Press, 2008. 
+Lamberty, K, ‘Designing, playing, and learning: sustaining student engagement with a constructionist design tool for craft and math’, in Proceedings of the 6th international conference on Learning sciences, 2004, p. 652.
+Lamberty, K, ‘Creating mathematical artifacts: extending children’s engagement with math beyond the classroom’, in Proceedings of the 7th international conference on Interaction design and children, 2008 p. 226–233. 
+Ratto, M, ‘Critical Making: conceptual and material studies in technology and social life’, paper for Hybrid Design Practice workshop, Ubicomp 2009, Orlando, Florida. 
+Lewin, K, ‘Action research and minority problems’, J Soc. Issues 2(4), 1946, p. 34-46. Argyris, C, Putnam, R, & Smith, D, Action Science: Concepts, methods and skills for research and intervention. San Francisco: Jossey-Bass, 1985. 
+Gaver, B, Dunne, T, & Pacenti, E, ‘Design: Cultural probes’, interactions, 6(1), p. 21-29. DOI:10.1145/291224.291235. 
+Ratto, M, Hockema, S, ‘Flwr Pwr: Tending the Walled Garden’, in Dekker, A & Wolfsberger A (eds) Walled Garden, Virtueel Platform, The Netherlands, 2009.Ratto, op.cit. 
+Latour, B, ‘A Cautious Prometheus? A Few Steps toward a Philosophy of Design’, Keynote lecture for the Networks of Design* meeting of the Design History Society, Falmouth, Cornwall, 3rd September 2008. 
+
+1. Garnet hertz's zine "critical making" (need to upload)
+
+1. Critical Making [website](http://criticalmaking.nl/) in Holland
+
 ## Open Source Theory
 
 1. [The Cathedral and the
