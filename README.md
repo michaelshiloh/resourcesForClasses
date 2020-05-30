@@ -39,6 +39,8 @@
 	Disfuncional[(https://vimeo.com/235763130)
 	4. Sudhu Tewari's [Yasmin Electro Mechanical 
 	Sequencer](https://www.youtube.com/watch?v=MjNB3nKPMb8)
+	1. Solenoid tapping wine glasses by [Lilliana Matta](https://vimeo.com/202356514) password
+		 2424
 
 1. List of [inspirational movies](http://eat.cca.edu) collected by [Barney
 Haynes](http://www.ultrafuzz.net/) (also
@@ -408,6 +410,20 @@ that says "Create new file" or "Upload files". How do I fix this?
 
 1. Github
 	 [cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
+
+1. Using Git from the command line
+	1. To remove a file locally and from your repository:
+
+````
+			git rm filename
+````
+
+	1. To remove a file from your repository but keep it locally:
+
+````
+			git rm --cached debug.log
+````
+
 
 ## Making Sounds without Arduino
 1. Basic 40106 (hex Schmitt trigger inverter)
