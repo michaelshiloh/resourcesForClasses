@@ -1,7 +1,8 @@
 /*
    derived from
    https://ledhacker.blogspot.com/2011/12/led-candle-light-flicker-with-arduino.html?m=1
-   with ideas from
+   with ideas from Adafruit's excellent Multitasking Tutorial part I
+	 https://learn.adafruit.com/multi-tasking-the-arduino-part-1?view=all
    
 
    Each LED has 5 flickerStates
