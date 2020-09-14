@@ -199,19 +199,24 @@ in the Sparkfun Inventor's Kit for Arduino Experimenter's Guide
 Potentiometer](https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/experiment-2-reading-a-potentiometer)
 in the Sparkfun Inventor's Kit for Arduino Experimenter's Guide
 
-
-## Arduino Multitasking Resources
+## Blink Without Delay Resources
 
 1. [Tutorial](https://www.arduino.cc/en/Tutorial/BlinkWithoutDelay)
 to Blink Without Delay on the official Arduino website
 
 1. [Another](https://www.baldengineer.com/millis-tutorial.html) 
-explanation of Blink Without Delay
-recommended by a student
+explanation of Blink Without Delay recommended by a student
 
 1. The same student recommends that in order to understand Blink Without
 Delay, it is wise to first understand
 [millis()](https://www.arduino.cc/en/Reference/Millis)
+
+1. Very detailed line-by-line
+[explanation](https://www.baldengineer.com/blink-without-delay-explained.html)
+of Blink Without Delay, with links
+to explanations of related concepts every step of the way.
+
+## Arduino Multitasking Resources
 
 1. Excellent Adafruit Multitasking
 [Tutorial](https://learn.adafruit.com/multi-tasking-the-arduino-part-1?view=all)
@@ -220,11 +225,6 @@ Delay, it is wise to first understand
 2. A detailed
 [explanation](https://programmingelectronics.com/tutorial-16-blink-an-led-without-using-the-delay-function-old-version/) of Blink Without Delay. 
 I don't like the way he does the circuit, but his explanation is good.
-
-3. Very detailed line-by-line
-[explanation](https://www.baldengineer.com/blink-without-delay-explained.html)
-of Blink Without Delay, with links
-to explanations of related concepts every step of the way.
 
 ## Arduino Tone Resources
 
