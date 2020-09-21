@@ -216,15 +216,28 @@ Delay, it is wise to first understand
 of Blink Without Delay, with links
 to explanations of related concepts every step of the way.
 
+2. A detailed
+[explanation](https://programmingelectronics.com/tutorial-16-blink-an-led-without-using-the-delay-function-old-version/) of Blink Without Delay. 
+I don't like the way he does the circuit, but his explanation is good.
+
 ## Arduino Multitasking Resources
 
 1. Excellent Adafruit Multitasking
 [Tutorial](https://learn.adafruit.com/multi-tasking-the-arduino-part-1?view=all)
 (highly recommended)
 
-2. A detailed
-[explanation](https://programmingelectronics.com/tutorial-16-blink-an-led-without-using-the-delay-function-old-version/) of Blink Without Delay. 
-I don't like the way he does the circuit, but his explanation is good.
+1. Play a melody and blink an LED
+without using `delay()`:
+[toneMelodyAndBlinkWithoutDelay](https://github.com/michaelshiloh/toneMelodyAndBlinkWithoutDelay)
+
+1. Flicker (i.e simulate a candle) multiple LEDs
+without using `delay()`:
+[flickerMultipleNoDelay](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/flickerMultipleNoDelay/flickerMultipleNoDelay.ino)
+
+
+## State and state change detection
+
+1. [State Change Detection](https://www.arduino.cc/en/Tutorial/StateChangeDetection)
 
 ## Arduino Tone Resources
 
