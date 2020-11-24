@@ -235,9 +235,14 @@ without using `delay()`:
 [flickerMultipleNoDelay](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/flickerMultipleNoDelay/flickerMultipleNoDelay.ino)
 
 
-## State and state change detection
+## State, state machines, and state change detection (also referred to as
+*edge detection*)
 
 1. [State Change Detection](https://www.arduino.cc/en/Tutorial/StateChangeDetection)
+
+1. A formal State Machine is called a *Finite State Machine* (FSM). Although you can
+	 often get away with being less formal, here is a nice [tutorial](https://www.instructables.com/Finite-State-Machine-on-an-Arduino/) on FSMs
+
 
 ## Arduino Tone Resources
 
