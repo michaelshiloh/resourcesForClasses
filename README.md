@@ -5,7 +5,7 @@
 1. Running average, built-in example in Arduino (File -> Examples -> Analog ->
 Smoothing) [tutorial](https://www.arduino.cc/en/pmwiki.php?n=Tutorial/Smoothing)
 
-1.  [Another](https://maker.pro/arduino/tutorial/how-to-clean-up-noisy-sensor-data-with-a-moving-average-filter)
+1. [Another](https://maker.pro/arduino/tutorial/how-to-clean-up-noisy-sensor-data-with-a-moving-average-filter)
 explanation of the running average filter
 
 1. Great [discussion](https://www.megunolink.com/articles/coding/3-methods-filter-noisy-arduino-measurements/) and comparison
