@@ -17,6 +17,18 @@ explanation of the running average filter
 1. Many other filters are available through the library manager. I have not
 	 tested these.
 
+**Notes**
+- While the examples above often refer to analog sensors, these methods
+can be applied to all sensors (e.g. the ultrasonic distance measuring sensor)
+- For beginners, I would recommend a basic average or a running average 
+	- Basic average is faster to respond, but isn't quite as smooth as a running average.
+	- In both cases, you will need to experiment with how many samples to take.  
+		- A few samples responds quickly but won't be as smooth 
+		- Many samples smooths well but won't respond quickly.  
+	- You will have balance how much delay you can
+tolerate vs. how smooth you need the result. Usually it's best to do this by
+experimentation.
+
 
 ## Theory
 1. [Robotic Creatures](doc/roboticCreatures2010Ghedini.pdf)
