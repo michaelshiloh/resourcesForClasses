@@ -1,5 +1,25 @@
 # Resources for Classes
 
+## Smoothing Readings from Noisy Sensors
+
+1. Running average, built-in example in Arduino (File -> Examples -> Analog ->
+Smoothing
+[tutorial](https://www.arduino.cc/en/pmwiki.php?n=Tutorial/Smoothing)
+
+1.
+[Another](https://maker.pro/arduino/tutorial/how-to-clean-up-noisy-sensor-data-with-a-moving-average-filter)
+explanation of the running average filter
+
+1. Great [discussion](https://www.megunolink.com/articles/coding/3-methods-filter-noisy-arduino-measurements/) and comparison
+	of three smoothing methods: basic average, running average, and an
+	exponential filter. The running average is the same as above. The
+	exponential filter can be used by installing the *Megunolink* library
+	(Sketch -> Include Library -> Manage Libraries, search for *Megunolink*) 
+
+1. Many other filters are available through the library manager. I have not
+	 tested these.
+
+
 ## Theory
 1. [Robotic Creatures](doc/roboticCreatures2010Ghedini.pdf)
 1. [Catalog](doc/moma_catalogue_machine_art.pdf)
