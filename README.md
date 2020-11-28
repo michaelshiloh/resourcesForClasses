@@ -1,6 +1,6 @@
 # Resources for Classes
 
-## Smoothing Readings from Noisy Sensors
+## Smoothing Readings from Noisy Sensors using Filters
 
 1. Running average, built-in example in Arduino (File -> Examples -> Analog ->
 Smoothing
