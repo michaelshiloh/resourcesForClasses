@@ -712,6 +712,9 @@ Youtube and to embed those in your post. [Here](http://www.wpbeginner.com/beginn
 1. Detailed [instructions](https://www.wikihow.com/Glue-Acrylic) for gluing acrylic
 
 1. General tips for [Working with
+
+1. CNC panel joinery
+	 [ideas](https://makezine.com/2012/04/13/cnc-panel-joinery-notebook/)
 acrylic](https://makezine.com/2015/10/29/skill-builder-acrylic/)
 
 ## Fusion 360 Tutorials
