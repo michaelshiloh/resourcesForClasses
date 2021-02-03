@@ -1273,4 +1273,6 @@ Routledge; 1st Edition (December 12, 1990)
 
 1. *Turtles, Termites, and Traffic Jams : 
 Explorations in Massively Parallel Microworlds*  
-Mitchel Resnick
+Mitchel Resnick  
+in the [NYU online
+library](http://web.b.ebscohost.com.proxy.library.nyu.edu/ehost/ebookviewer/ebook?sid=5477c50e-b17d-4d9a-8d91-49a2992dfbdd%40pdc-v-sessmgr03&vid=0&format=EB)
