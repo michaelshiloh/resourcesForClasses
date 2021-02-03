@@ -1213,19 +1213,19 @@ Chris salter
 ISBN-13: 978-0262195881  
 ISBN-10: 0262195887  
 
-1. *The Cybernetic Brain*,
+1. *The Cybernetic Brain*,  
 Andrew Pickering  
 ISBN-10 : 0226667901  
 ISBN-13 : 978-0226667904  
 University of Chicago Press; Illustrated Edition (December 15, 2011)
 
-1. *The Human Use of Human Beings*,
+1. *The Human Use of Human Beings*,  
 Norbert Wiener  
 ISBN-13 : 978-0306803208  
 ISBN-10 : 0306803208  
 Da Capo Press; New edition (March 22, 1988)  
 
-1. *The Living Brain*,
+1. *The Living Brain*,  
 Grey Walter  
 ISBN-10 : 0393001539  
 ISBN-13 : 978-0393001532  
@@ -1240,32 +1240,37 @@ Oxford University Press; 1st Edition (September 1, 2011)
 
 ## Optional texts:
 
-1. *Chaos: Making a New Science – Illustrated, *,
-James Gleick
-ISBN-10 : 978-0143113454
-ISBN-13 : 978-0143113454
+1. *Chaos: Making a New Science – Illustrated, *,  
+James Gleick  
+ISBN-10 : 978-0143113454  
+ISBN-13 : 978-0143113454  
 Penguin Books; 20th Anniversary ed. Edition (August 26, 2008)
 
-1. *Computer Power and Human Reason*,
-J Weizenbaum
-ISBN-10 : 0140179119
-ISBN-13 : 978-0140179118
+1. *Computer Power and Human Reason*,  
+J Weizenbaum  
+ISBN-10 : 0140179119  
+ISBN-13 : 978-0140179118  
 Penguin Science, January 1, 1984
 
-1. *Cybernetics: Second Edition: Or the Control and Communication in the Animal and the Machine*,
-Norbert Wiener 
-ISBN-10 : 1614275025
-ISBN-13 : 978-1614275022
+1. *Cybernetics: Second Edition: Or the Control and Communication in the Animal and the Machine*,  
+Norbert Wiener   
+ISBN-10 : 1614275025  
+ISBN-13 : 978-1614275022  
 Martino Fine Books; 2nd ed. Edition (October 2, 2013)
 
-1. *God and Golem, Inc.*,
-Norbert WienerISBN-10 : 0262730111
-ISBN-13 : 978-0262730112
+1. *God and Golem, Inc.*,  
+Norbert Wiener  
+ISBN-10 : 0262730111  
+ISBN-13 : 978-0262730112  
 The MIT Press; 7th ed. Edition (March 15, 1966)
 
 1. *Cyborg Manifesto*,
-In Simians, Cyborgs, and Women: The Reinvention of Nature 1st Edition
+In Simians, Cyborgs, and Women: The Reinvention of Nature 1st Edition  
 Donna Haraway  
 ISBN-10 : 0415903874  
 ISBN-13 : 978-0415903875  
 Routledge; 1st Edition (December 12, 1990)    
+
+1. *Turtles, Termites, and Traffic Jams : 
+Explorations in Massively Parallel Microworlds*  
+Mitchel Resnick
