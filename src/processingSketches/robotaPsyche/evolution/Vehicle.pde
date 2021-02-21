@@ -1,39 +1,37 @@
+
 // The vehicle class, more or less straight from the book
+
 class Vehicle {
 
   PVector location;
   PVector velocity;
   PVector acceleration;
   // Additional variable for size
-  float r;
   float maxforce;
   float maxspeed;
-  int energy;
+  float energy;
+  float metabolism; // how much energy is used in each frame
+  DNA dna;
 
-  Vehicle(float x, float y) {
+  boolean alive;
+
+  Vehicle(float x, float y, float r, float imsf, float ims, float ie, float metab, float dat) {
     acceleration = new PVector(0, 0);
     velocity = new PVector(0, 0);
     location = new PVector(x, y);
-    r = 3.0;
-    //Arbitrary values for maxspeed and
-    // force; try varying these!
-    maxspeed = 4;
-    maxforce = 0.10;
-    energy = 1000;
+    dna = new DNA(r, imsf, ims, ie, metab, dat);
+
+    maxforce = dna.initialMaxSteeringForce;
+    maxspeed = dna.initialMaxSpeed;
+    energy = dna.initialEnergy;
+    alive = true;
   }
 
   void consumeEnergy() {
-    if (energy != 0)
-    {
-      energy--;
-      if ((energy % 10) == 0) {
-        if (abs(maxspeed) < 0.01) {
-          maxspeed = 0;
-        } else {
-          maxspeed -= 0.4;
-        }
-        // println(" maxspeed = " + maxspeed);
-      }
+    if (abs(energy) < dna.deadAt) {
+      alive = false;
+    } else {
+      energy -= dna.metabolism;
     }
   }
 
@@ -69,9 +67,9 @@ class Vehicle {
     steer.limit(maxforce);
     applyForce(steer);
   }
-  
+
   void feed(PVector food) {
-    PVector dist = PVector.sub(food,location);
+    PVector dist = PVector.sub(food, location);
     if (dist.mag() < 40) {
       energy++;
     }
@@ -90,6 +88,7 @@ class Vehicle {
   }
 
   void display() {
+    float r = dna.radius;
     // Vehicle is a triangle pointing in
     // the direction of velocity; since it is drawn
     // pointing up, we rotate it an additional 90 degrees.
@@ -108,7 +107,7 @@ class Vehicle {
   }
 
   void separate (ArrayList<Vehicle> vehicles) {
-    float desiredseparation = 20; // how close is too close.
+    float desiredseparation = 200; // how close is too close.
     int count = 0;
     PVector sum = new PVector(0, 0);
 

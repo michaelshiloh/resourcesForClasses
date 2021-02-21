@@ -90,7 +90,7 @@ class FlowField {
   }
 
   // Display the flow field so we can see if it looks like what we think it should
-  // 
+  //
   void display() {
     for (int i = 0; i < cols; i++) {
       for (int j = 0; j < rows; j++) {
