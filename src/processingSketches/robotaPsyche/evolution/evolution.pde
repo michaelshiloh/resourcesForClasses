@@ -27,6 +27,10 @@ First step towards evolution:
  Michael Shiloh
  February 20 2021
  
+ Change log
+ 20 feb 2021 - ms - initial entry
+ 24 feb 2021 - ms - added debugging aids: inspector, frameRate control
+ 
  Based on examples from The Nature of Code by Daniel Shiffman - Thanks Dan!
  
  This code is in the public domain
@@ -34,6 +38,8 @@ First step towards evolution:
 
 ArrayList<Vehicle> vehicles = new ArrayList<Vehicle>();
 Food food;
+
+boolean singleFrame = false; // when true, do only one frame and then stop
 
 void setup() {
   size (1200, 800);
@@ -49,14 +55,10 @@ void setup() {
       1.0, // initial maximum speed
       5000.0, // initial energy
       1.0, // metabolism (energy consumption per frame)
-      0.01)); // energy level at which vehicle dies
+      0.01, // energy level at which vehicle dies
+      color(0, 255, 0) // original vehicles are greennn
+      ));
   }
-}
-
-// If you want more vehicles. You could also add
-// multiple vehicles for each click
-void mouseClicked() {
-  vehicles.add(new Vehicle(mouseX, mouseY, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0));
 }
 
 void draw() {
@@ -97,6 +99,7 @@ void draw() {
 
   // Is it time to copy a vehicle?
   if ((frameCount % 100) == 0) {
+    println("Copying a vehicle");
 
     // randomly pick a vehicle and get its DNA
     Vehicle v = vehicles.get(int (random(vehicles.size())));
@@ -112,8 +115,62 @@ void draw() {
       dna.radius,
       dna.initialMaxSteeringForce,
       dna.initialMaxSpeed,
-      dna.initialEnergy, 
+      dna.initialEnergy,
       dna.metabolism,
-      dna.deadAt)); // energy at which to die
+      dna.deadAt, // energy at which to die
+      color(255, 0, 0) // these new vehicles are red
+      ));
   }
+
+  if (singleFrame) {
+    noLoop();
+  }
+}
+
+void keyPressed() {
+  switch (key) {
+  case 'p':
+    println("Loop paused; framecount = " + frameCount);
+    noLoop();
+    break;
+  case 'r':
+    singleFrame = false;
+    loop();
+    break;
+  case 'd':
+    frameRate -= 10;
+    println("frameRate = " + frameRate);
+    break;
+  case 'u':
+    frameRate += 10;
+    println("frameRate = " + frameRate);
+    break;
+  case 's': // single frame
+    singleFrame = true;
+    println("single frame; framecount = " + frameCount);
+    loop();
+    break;
+  case 'n':
+    vehicles.add(new Vehicle(mouseX, mouseY, 1.0, 1.0, 1.0, 100.0, 1.0, 1.0, color(0, 0, 255))); // new vehicles are blue
+    break;
+  default:
+    println("p = pause; r = run; d = slow down; u = speed up; s = single frame; n = new vehicle");
+  }
+}
+
+void mouseClicked() {
+  // find the closest vehicle
+
+  Vehicle closestVehicle = vehicles.get(0);
+  float closestVehicleDistance = width*height; //assume worst case
+  PVector mouseAt = new PVector(mouseX, mouseY);
+
+  for (Vehicle v : vehicles) {
+    if (v.distance(mouseAt) < closestVehicleDistance ) {
+      closestVehicle = v;
+      closestVehicleDistance = v.distance(mouseAt);
+    }
+  }
+
+  closestVehicle.inspect();
 }

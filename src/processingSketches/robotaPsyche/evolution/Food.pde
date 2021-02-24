@@ -10,6 +10,7 @@ class Food {
   }
 
   void display() {
+    fill(128);
     ellipse(location.x, location.y, 20, 20);
   }
 }

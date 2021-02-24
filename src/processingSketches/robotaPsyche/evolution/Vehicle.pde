@@ -12,8 +12,9 @@ class Vehicle {
   float metabolism; // how much energy is used in each frame
   DNA dna; // unique but fixed qualities
   boolean alive;
+  color c;
 
-  Vehicle(float x, float y, float r, float imsf, float ims, float ie, float metab, float dat) {
+  Vehicle(float x, float y, float r, float imsf, float ims, float ie, float metab, float dat, color _c) {
     acceleration = new PVector(0, 0);
     velocity = new PVector(0, 0);
     location = new PVector(x, y);
@@ -23,6 +24,7 @@ class Vehicle {
     maxspeed = dna.initialMaxSpeed;
     energy = dna.initialEnergy;
     alive = true;
+    c = _c;
   }
 
   /*
@@ -128,7 +130,7 @@ class Vehicle {
     // the direction of velocity; since it is drawn
     // pointing up, we rotate it an additional 90 degrees.
     float theta = velocity.heading() + PI/2;
-    fill(175);
+    fill(c);
     stroke(0);
     pushMatrix();
     translate(location.x, location.y);
@@ -143,5 +145,19 @@ class Vehicle {
 
   DNA getDNA() {
     return(dna.getDNA());
+  }
+
+  // Originally for debugging, determine the distance to this vehicle
+  float distance(PVector l) {
+    return PVector.sub(l, location).mag();
+  }
+
+  void inspect() {
+    println("\nVehicle inspector:");
+    println("Location: " + location.x + ", " + location.y);
+    println("Velocity = " + velocity + " acceleration = " + acceleration);
+    println("Maximum steering force = " + maxforce + ", maximum speed = " + maxspeed);
+    println("Current energy level = " + energy + ", metabolism rate = " +  metabolism);
+    dna.inspect();
   }
 }
