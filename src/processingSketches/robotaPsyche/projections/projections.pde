@@ -7,14 +7,18 @@ P3 is off to the right somewhere between the two
 
 Define the vector V to go between P1 and P3
 Find VM, the projection of V that lies on the line between P1 and P2
+*/
 
-
-size(200,200);
+size(300,300);
 
 // Given three points
-PVector P1 = new PVector(20, 20);
-PVector P2 = new PVector(20, 100);
-PVector P3 = new PVector(50, 70);
+PVector P1 = new PVector(120, 120);
+PVector P2 = new PVector(120, 200);
+
+//PVector P3 = new PVector(150, 70); // above and to the right
+PVector P3 = new PVector(150, 170); // between and to the right
+//PVector P3 = new PVector(50, 70); // above and to the left
+//PVector P3 = new PVector(50, 170); // between and to the left
 
 circle(P1.x, P1.y, 20);
 circle(P2.x, P2.y, 20);
@@ -42,5 +46,6 @@ pushMatrix();
 translate(P1.x, P1.y);
 line(0,0, VM.x, VM.y);
 fill(255,0,0);
-circle(VM.x, VM.y, 10);
+rectMode(CENTER);
+rect(VM.x, VM.y, 10, 10);
 popMatrix();
