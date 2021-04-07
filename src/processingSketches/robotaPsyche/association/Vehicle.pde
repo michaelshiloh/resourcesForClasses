@@ -123,6 +123,9 @@ class Vehicle {
     }
   }
 
+  void avoidRedVehicles(ArrayList<Vehicle> vehicles) {
+  }
+
   // Given the desired velocity, return the maximum steering force
   // given limits of speed and steering force
   PVector applyLimits(PVector desiredVelocity) {

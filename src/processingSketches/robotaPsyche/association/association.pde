@@ -17,13 +17,18 @@ Vehicles that make associations (red = aggressive)
 
 ArrayList<Vehicle> vehicles = new ArrayList<Vehicle>();
 FlowField f;
-boolean singleFrame = true; // For debugging: when true, do only one frame and then stop
-int numberVehicles = 20; // no longer a constant
+int numberVehicles = 20; // no longer a constant because they can be added or removed
 int redVehiclesThatAreAlsoAggressive = 0;
+
+// Constants
+final int REDVEHICLETHRESHHOLD = 7; // really should be a percentage but for simplicity
+
+// Debugging
+boolean singleFrame = true; // For debugging: when true, do only one frame and then stop
 
 void setup() {
   size (900, 900);
-  f = new FlowField(15);
+  f = new FlowField(15); // resolution of grid
 
   // Make some vehicles to start with
   for (int i = 0; i < numberVehicles; i++) {
@@ -32,9 +37,6 @@ void setup() {
       random(-10, 10), random(-10, 10), // velocity
       i )); // serial number is the index number
   }
-
-  //vehicles.add(new Vehicle(100, 100, 0, 0, 0));
-  //vehicles.add(new Vehicle(100, 120, 0, s50, 1));
 }
 
 void draw() {
@@ -55,6 +57,12 @@ void draw() {
     // Apply forces as accelerations. Each force adds an acceleration
     v.avoidAggressive(vehicles);
     // v.follow(f); // Apply the steering force to follow the flow field
+
+    // Here is where we make an association. If we've observed
+    // that many red vehicles are aggressive, we'd better avoid red vehicles as well
+    if (redVehiclesThatAreAlsoAggressive > REDVEHICLETHRESHHOLD) {
+      v.avoidRedVehicles(vehicles);
+    }
 
     // Update the velocity and location
     // based on the accumilated acceleration
@@ -78,6 +86,10 @@ void draw() {
     noLoop(); // for debugging
   }
 }
+
+/*
+Functions used for debugging and understanding what's going on
+ */
 
 // mouseClicked() is called after a mouse button has been pressed and then released
 // Inspect the vehicle that is closest to the mouse
