@@ -16,8 +16,8 @@ PVector P1 = new PVector(120, 120);
 PVector P2 = new PVector(120, 200);
 
 //PVector P3 = new PVector(150, 70); // above and to the right
-PVector P3 = new PVector(150, 170); // between and to the right
-//PVector P3 = new PVector(50, 70); // above and to the left
+//PVector P3 = new PVector(150, 170); // between and to the right
+PVector P3 = new PVector(50, 70); // above and to the left
 //PVector P3 = new PVector(50, 170); // between and to the left
 
 circle(P1.x, P1.y, 20);
@@ -49,3 +49,5 @@ fill(255,0,0);
 rectMode(CENTER);
 rect(VM.x, VM.y, 10, 10);
 popMatrix();
+
+println(VM);

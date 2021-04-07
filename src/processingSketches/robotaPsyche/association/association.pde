@@ -7,6 +7,8 @@ Vehicles that make associations (red = aggressive)
  Change log
  21 mar 2021 - ms - initial entry
  03 apr 2021 - ms - add ability to move vehicles
+ 04 apr 2021 - ms - aggression is random rather than based on vehicle speed
+ 07 apr 2021 - ms - remove all unnecessary stuff to make it easier to read
  
  Based on examples from The Nature of Code by Daniel Shiffman - Thanks Dan!
  
@@ -63,6 +65,7 @@ void draw() {
     v.display(); // display the vehicle
   }
 
+  // Remove any vehicles that have gone beyond the canvas
   for (int i = vehicles.size() - 1; i >= 0; i--) {
     Vehicle v = vehicles.get(i);
     if (v.offCanvas()) {
@@ -75,7 +78,6 @@ void draw() {
     noLoop(); // for debugging
   }
 }
-
 
 // mouseClicked() is called after a mouse button has been pressed and then released
 // Inspect the vehicle that is closest to the mouse
@@ -93,7 +95,7 @@ Vehicle getClosestVehicleTo(float x, float y) {
   PVector location = new PVector(x, y);
 
   for (Vehicle v : vehicles) {
-    float distance = v.distance(location);
+    float distance = v.distanceTo(location);
 
     if ( distance < closestVehicleDistance ) {
       closestVehicle = v;

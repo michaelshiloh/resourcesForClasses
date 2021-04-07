@@ -1,6 +1,5 @@
 // The flow field class, more or less straight from the book
-// with the addition of the display() function and different
-// initialization options (each of which is from the book)
+// with the addition of the display() function 
 class FlowField {
 
   PVector[][] field;
@@ -16,21 +15,8 @@ class FlowField {
     // Declare the array of PVectors which will hold the field
     field = new PVector[cols][rows];
 
-    // Initialize the field using one of the three options below
-    // or make up your own initialization function
-    // uniformFlowField();
+    // Initialize the field 
     randomFlowField();
-    // perlinFlowField();
-    // followMouse();
-  }
-
-  // Pretty boring; all vectors point to the right
-  void uniformFlowField() {
-    for (int i = 0; i < cols; i++) {
-      for (int j = 0; j < rows; j++) {
-        field[i][j] = new PVector(1, 0); // pointing to the right
-      }
-    }
   }
 
   void randomFlowField() {
@@ -38,42 +24,6 @@ class FlowField {
       for (int j = 0; j < rows; j++) {
         field[i][j] = PVector.random2D(); // unit vectors
       }
-    }
-  }
-
-  void followMouse() {
-    for (int i = 0; i < cols; i++) {
-      for (int j = 0; j < rows; j++) {
-        PVector pvMouse = new PVector(mouseX, mouseY);
-        PVector pvCurrentLocation = new PVector(i*resolution, j*resolution);
-        PVector meToMouse = PVector.sub(pvMouse, pvCurrentLocation);
-        meToMouse.normalize();
-        field[i][j] = meToMouse;
-      }
-    }
-  }
-
-  // Use perlin noise to determine the angle of each vector
-  void perlinFlowField() {
-
-    float xoff = 0.01;//random();
-    for (int i = 0; i < cols; i++) {
-      float yoff = 0.01; //random(30);
-      for (int j = 0; j < rows; j++) {
-
-        // Moving through the noise() space in two dimensions
-        // and mapping the result to an angle between 0 and 360
-        float theta = map(noise(xoff, yoff), 0, 1, 0, TWO_PI);
-
-        // Convert the angle (polar coordinate) to Cartesian coordinates
-        field[i][j] = new PVector(cos(theta), sin(theta));
-
-        // Move to neighboring noise in Y axis
-        yoff += 0.1;
-      }
-
-      // Move to neighboring noise in X axis
-      xoff += 0.1;
     }
   }
 

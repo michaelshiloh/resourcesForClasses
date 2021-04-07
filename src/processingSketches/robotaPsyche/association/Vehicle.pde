@@ -28,6 +28,7 @@ class Vehicle {
     r = 3;
     alive = true;
 
+    // 50% chance of being red
     if (round(random(1)) == 1) {
       isRed =  true;
     } else {
@@ -35,63 +36,15 @@ class Vehicle {
     }
   }
 
-  PVector getVelocity() {
-    PVector myVelocity =  velocity.copy(); // is this the right way to make a copy?
-    return myVelocity;
-  }
-
-  boolean getIsRed() {
-    return (isRed);
+  // Return the distance from the given location to this vehicle
+  float distanceTo(PVector l) {
+    return PVector.sub(l, location).mag();
   }
 
   boolean offCanvas() {
     if (location.x > width) return true;
     if (location.y > height) return true;
     return false;
-  }
-
-  int getSerialNumber() {
-    return serialNumber;
-  }
-
-  // Am I aggressive?
-  boolean getIsAggressive() {
-    float chance = random(100);
-
-    if (isRed) {
-      // If I am red, the threshold for aggression is 20 (i.e. 80% are aggressive)
-      return (chance > 20);
-    } else {
-      // otherwise, the threshold is 80 (i.e. only 20% are aggressive)
-      return(chance > 80);
-    }
-  }
-
-  void setLocation(PVector _location) {
-    location = _location;
-  }
-
-  /*
-  Different steering algorithms. A vehicle
-   could use any, and you can create additional ones.
-   Each algorithm calculates and returns a steering force
-   */
-
-  // Calculate steering force to seek a target
-  // simpleSeek goes to target at max speed
-  void simpleSeek(PVector target) {
-    PVector desired = PVector.sub(target, location);
-    applyForce(applyLimits(desired));
-  }
-
-  // Given the desired velocity, return the maximum steering force
-  // given limits of speed and steering force
-  PVector applyLimits(PVector desiredVelocity) {
-    desiredVelocity.normalize();
-    desiredVelocity.mult(maxspeed);
-    PVector steerForce = PVector.sub(desiredVelocity, velocity);
-    steerForce.limit(maxforce);
-    return(steerForce);
   }
 
   // Calculate the steering force to follow a flow field
@@ -108,12 +61,11 @@ class Vehicle {
   // Avoid aggressive vehicles and notice if they are also red
   void avoidAggressive(ArrayList<Vehicle> vehicles) {
 
-
     // to accumilate all the individual avoidance vectors
     int count = 0; // how
     PVector sum = new PVector(0, 0);
 
-
+    // Now look at each vehicle and if it is aggressive calculate the desired vector to avoid it
     for (Vehicle other : vehicles) {
 
       // What is the distance between me and another Vehicle?
@@ -151,7 +103,6 @@ class Vehicle {
       }
     }
 
-
     // We have checked all vehicles and have a sum total of all the avoidance vectors
     if (count > 0) { // If zero then no one is aggresive
       sum.div(count); // sum is now our desired velocity
@@ -168,48 +119,24 @@ class Vehicle {
 
       // Apply the force to the Vehicle’s
       // acceleration.
-      applyForce(steer);
+      applyForce(applyLimits(steer));
     }
   }
 
-  // Calculate a steering force to separate from other vehicles
-  void separate (ArrayList<Vehicle> vehicles) {
-    float desiredseparation = 200; // how close is too close.
-    int count = 0;
-    PVector sum = new PVector(0, 0);
-
-    for (Vehicle other : vehicles) {
-
-      // What is the distance between me and another Vehicle?
-      float d = PVector.dist(location, other.location);
-
-      // If the distance is zero we are looking at ourselves; exclude that
-      if ((d > 0) && (d < desiredseparation)) {
-
-        // calculate the location of this vehicle
-        PVector diff = PVector.sub(location, other.location);
-        diff.normalize();
-
-        // We'll need the average, so add this location to the sum
-        // of all locations and increment the count.
-        sum.add(diff);
-        count++;
-      }
-    } // end of loop over all vehicles
-
-    // now calculate the average,
-    // figure out the force
-    // and apply the force:
-    if (count > 0) { // If zero then no one is too close
-      sum.div(count); // sum is now our desired velocity
-      applyForce(applyLimits(sum));
-    }
+  // Given the desired velocity, return the maximum steering force
+  // given limits of speed and steering force
+  PVector applyLimits(PVector desiredVelocity) {
+    desiredVelocity.normalize();
+    desiredVelocity.mult(maxspeed);
+    PVector steerForce = PVector.sub(desiredVelocity, velocity);
+    steerForce.limit(maxforce);
+    return(steerForce);
   }
 
   // Newton’s second law; we could divide by mass if we wanted.
   // If there are multiple forces (e.g. gravity, wind) we use
   // this function for each one, and it is added to the acceleration
-  void applyForce(PVector force) {
+  private void applyForce(PVector force) {
     acceleration.add(force);
   }
 
@@ -249,15 +176,35 @@ class Vehicle {
     popMatrix();
   }
 
-  // Return the distance from the given location to this vehicle
-  float distance(PVector l) {
-    return PVector.sub(l, location).mag();
-  }
+  // Methods used for debugging
 
   void inspect() {
     println("\nVehicle inspector:");
     println("SerialNumber: " + serialNumber );
     println("Location: " + location + " velocity = " + velocity + " acceleration = " + acceleration);
     println("Maximum steering force = " + maxforce + ", maximum speed = " + maxspeed);
+  }
+
+  void setLocation(PVector _location) {
+    location = _location;
+  }
+
+  // Private methods used only member methods
+
+  private boolean getIsRed() {
+    return (isRed);
+  }
+
+  // Am I aggressive?
+  private  boolean getIsAggressive() {
+    float chance = random(100);
+
+    if (isRed) {
+      // If I am red, the threshold for aggression is 20 (i.e. 80% are aggressive)
+      return (chance > 20);
+    } else {
+      // otherwise, the threshold is 80 (i.e. only 20% are aggressive)
+      return(chance > 80);
+    }
   }
 }
