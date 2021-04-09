@@ -24,7 +24,7 @@ int redVehiclesThatAreAlsoAggressive = 0;
 final int REDVEHICLETHRESHHOLD = 7; // really should be a percentage but for simplicity
 
 // Debugging
-boolean singleFrame = true; // For debugging: when true, do only one frame and then stop
+boolean singleFrame = false; // For debugging: when true, do only one frame and then stop
 
 void setup() {
   size (900, 900);
