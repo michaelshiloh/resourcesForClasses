@@ -9,22 +9,22 @@ Vehicles that make associations (red = aggressive)
  03 apr 2021 - ms - add ability to move vehicles
  04 apr 2021 - ms - aggression is random rather than based on vehicle speed
  07 apr 2021 - ms - remove all unnecessary stuff to make it easier to read
+ 11 apr 2021 - ms - implemented avoidRedVehicles()
  
  Based on examples from The Nature of Code by Daniel Shiffman - Thanks Dan!
  
  This code is in the public domain
  */
 
+// Variable and object names use modifiedCamelCase format:
 ArrayList<Vehicle> vehicles = new ArrayList<Vehicle>();
 FlowField f;
 int numberVehicles = 20; // no longer a constant because they can be added or removed
 int redVehiclesThatAreAlsoAggressive = 0;
+boolean singleFrame = true; // For debugging: when true, do only one frame and then stop
 
-// Constants
-final int REDVEHICLETHRESHHOLD = 7; // really should be a percentage but for simplicity
-
-// Debugging
-boolean singleFrame = false; // For debugging: when true, do only one frame and then stop
+// Constants are all upper case:
+final int REDVEHICLETHRESHHOLD = 3; // really should be a percentage but for simplicity
 
 void setup() {
   size (900, 900);
