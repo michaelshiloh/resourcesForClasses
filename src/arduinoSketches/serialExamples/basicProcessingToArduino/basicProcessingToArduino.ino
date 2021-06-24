@@ -13,6 +13,9 @@ const int LEDPIN = 3;
 
 void setup() {
   Serial.begin(9600);
+
+  // Since both sides wait for each other before they send anything,
+  // someone needs to start the conversation
   Serial.println("0");
 }
 
