@@ -1,14 +1,15 @@
-/*
-   Flash an LED when we receive a message from Processing.
-   Because Processing is so much faster, we use handshaking
-   to avoid overwhelming the Arduino
+// Bounce a ball, and each time the ball hits the floor
+// flash an LED on Arduino. Whenver Arduino receives a message,
+// read an analog port and send it to Processing, to blow the
+// ball to the left or right.
+// Demonstrates adding serial communication to an existing project.
 
-   Based on
-   https://github.com/aaronsherwood/introduction_interactive_media/blob/master/arduinoExamples/serialExamples/buildOffThisOne/buildOffThisOne.ino
-   by Aaron Sherwood
-*/
+// Based on 
+// https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/gravityExamples/gravityWind/gravityWind.pde
+// by Aaron Sherwood
 
 const int LEDPIN = 3;
+const int AINPIN = A2;
 
 const int flashDuration = 100; // milliseconds
 unsigned long turnedLEDOnAt = 0;
@@ -38,8 +39,9 @@ void loop() {
         turnedLEDOnAt = millis();
       }
 
-      // Tell Processing we're ready for another
-      Serial.println(0); // the value doesn't matter
+      // send the reading from an analog pin to Processing 
+      // which also signifies that we're ready for another
+      Serial.println(analogRead(AINPIN)); 
     }
   }
 
@@ -52,8 +54,10 @@ void loop() {
 /*
 
 // Bounce a ball, and each time the ball hits the floor
-// flash an LED on Arduino. Demonstration of adding serial
-// communication to an existing project.
+// flash an LED on Arduino. Whenver Arduino receives a message,
+// read an analog port and send it to Processing, to blow the
+// ball to the left or right.
+// Demonstrates adding serial communication to an existing project.
 
 // Based on 
 // https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/gravityExamples/gravityWind/gravityWind.pde
@@ -100,7 +104,10 @@ void setup() {
 void draw() {
   background(255);
   if (!keyPressed) {
-    wind.x=0;
+
+    // In the original version wind is only applied when keys
+    // are pressed, but we need wind to work always
+    //wind.x=0;
     velocity.x*=hDampening;
   }
   applyForce(wind);
@@ -153,11 +160,19 @@ void keyPressed() {
 }
 
 void serialEvent(Serial myPort) {
-  String s=myPort.readStringUntil('\n');
-  arduinoIsReady = true;
-  println("arduino is ready");
+  String inString = myPort.readStringUntil('\n');
+
+  // Always check to make sure the string isn't empty
+  if (inString != null) { 
+    // trim off any whitespace:
+    inString = trim(inString);
+    // convert to a float
+    float inValue = float(inString);
+    println("received from Arduino: " + inValue);
+    // Finally, map it to sensible values for wind
+    wind.x = map(inValue, 0, 1023, -5, 5);
+    arduinoIsReady = true;
+  }
 }
-
-
 
 */
