@@ -54,7 +54,7 @@ void loop() {
 // Bounce a ball, and each time the ball hits the floor
 // flash an LED on Arduino. Demonstration of adding serial
 // communication to an existing project.
- 
+
 // Based on 
 // https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/gravityExamples/gravityWind/gravityWind.pde
 // by Aaron Sherwood
@@ -79,7 +79,7 @@ void setup() {
   position = new PVector(width/2, 0);
   velocity = new PVector(0, 0);
   acceleration = new PVector(0, 0);
-  gravity = new PVector(0, 0.5*mass);
+  gravity = new PVector(0, 0.3*mass);
   wind = new PVector(0, 0);
   hDampening=map(mass, 15, 80, .98, .96);
 
@@ -90,6 +90,11 @@ void setup() {
   myPort = new Serial(this, portname, 9600);
   myPort.clear();
   myPort.bufferUntil('\n');
+
+  // Opening the serial port will cause Arduino to reset,
+  // so wait a bit to allow Arduino to finish
+  // so that we don't miss the first bounce
+  delay (2000);
 }
 
 void draw() {
@@ -150,7 +155,9 @@ void keyPressed() {
 void serialEvent(Serial myPort) {
   String s=myPort.readStringUntil('\n');
   arduinoIsReady = true;
+  println("arduino is ready");
 }
+
 
 
 */
