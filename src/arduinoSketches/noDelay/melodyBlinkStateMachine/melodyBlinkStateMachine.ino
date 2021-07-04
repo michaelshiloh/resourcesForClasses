@@ -1,32 +1,39 @@
 /*
 
-  Play a melody without using delay()
-  Melody player is in a class
+  Example of a state machine which blinks LEDs and plays a melody
 
   circuit:
-  - speaker (piezo or voice coil) on digital pin 3
+  See the section labeled "Circuit" below
+
+  Behavior:
+  See the section labeled "States" below
 
   by Michael Shiloh
   Motivated by students in Introduction to Interactive Media, Fall 2018
   New York University Abu Dhabi
 
   Revision log:
-  10 October 2018 created
+  04 Jul 2021 - ms - created
 
   Based on
     Melody by Tom Igoe
     Blink Without Delay by David A. Mellis
     toneMelodyWithoutDelay by Michael Shiloh
+    Multi-tasking the Arduino By Bill Earl (on the Adafruit website)
 
   This example code is in the public domain.
 
-  https://github.com/michaelshiloh/toneMelodyAndBlinkWithoutDelay
-
 */
 
-#include "pitches.h"
+// Circuit:
+const int SPKRPIN = 2;
+const int BLUESWITCHPIN = 4;
+const int GREENSWITCHPIN = 7;
+const int BLUELEDPIN = 8;
 
-const int SPKRPIN = 9;
+int state = 0;
+
+#include "pitches.h"
 
 // In some future version, perhaps the notes and durations could be provided in the constructor
 
@@ -112,25 +119,149 @@ class MelodyPlayer
     }
 };
 
+class Flasher
+{
+    // Class Member Variables
+    // These are initialized at startup
+    int ledPin;      // the number of the LED pin
+    long OnTime;     // milliseconds of on-time
+    long OffTime;    // milliseconds of off-time
+
+    // These maintain the current state
+    int ledState;                 // ledState used to set the LED
+    unsigned long previousMillis;   // will store last time LED was updated
+    boolean flasherIsBlinking;
+
+    // Constructor - creates a Flasher
+    // and initializes the member variables and state
+  public:
+    Flasher(int pin)
+    {
+      ledPin = pin;
+      pinMode(ledPin, OUTPUT);
+
+
+      ledState = LOW;
+      previousMillis = 0;
+    }
+
+    void setRate(int _OnTime, int _OffTime) {
+      OnTime = _OnTime;
+      OffTime = _OffTime;
+    }
+
+    void stopBlinking() {
+      flasherIsBlinking = false;
+      ledState = LOW;
+      digitalWrite(ledPin, ledState);
+    }
+
+    void startBlinking() {
+      flasherIsBlinking = true;
+    }
+
+    boolean ledIsOn() {
+      return (ledState == HIGH);
+    }
+
+    void update()
+    {
+      if (!flasherIsBlinking) return;
+
+      // check to see if it's time to change the state of the LED
+      unsigned long currentMillis = millis();
+
+      if ((ledState == HIGH) && (currentMillis - previousMillis >= OnTime))
+      {
+        ledState = LOW;  // Turn it off
+        previousMillis = currentMillis;  // Remember the time
+        digitalWrite(ledPin, ledState);  // Update the actual LED
+      }
+      else if ((ledState == LOW) && (currentMillis - previousMillis >= OffTime))
+      {
+        ledState = HIGH;  // turn it on
+        previousMillis = currentMillis;   // Remember the time
+        digitalWrite(ledPin, ledState);   // Update the actual LED
+      }
+    }
+};
+
+
+Flasher myFlasher(BLUELEDPIN);
 MelodyPlayer myTune;
-const int STARTPIN = 2;
-const int STOPPIN = 7;
-
-void loop() {
-
-  if (digitalRead(STARTPIN)) {
-    myTune.startPlaying();
-  }
-
-  if (digitalRead(STOPPIN)) {
-    myTune.stopPlaying();
-  }
-
-  myTune.update();
-
-}
 
 void setup() {
   Serial.begin(9600);
   myTune.setSpkrPin(SPKRPIN);
+  state = 99;
+}
+
+void loop() {
+
+  /* States
+     99 - everything off; next state: 1
+     1 - start blinking LED slowly; next state: 2
+     2 - if blue switch pressed, start the melody, and blink the LED faster; next state = 4
+     4 - when the melody finishes, blink the LED slowly, next state = 7
+     7 - if the blue switch is pressed, next state = 9
+       - if the green switch is pressed, stop blinking, next state = 8
+     8 - next state = 8
+     9 - if the blue switch is NOT pressed, next state = 1
+  */
+
+  Serial.print("Current state = ");
+  Serial.println(state);
+
+  switch (state) {
+    case 99:
+      myFlasher.stopBlinking();
+      myTune.stopPlaying();
+      state = 1;
+      break;
+    case 1:
+      myFlasher.setRate(1000, 1000);
+      myFlasher.startBlinking();
+      state = 2;
+      break;
+    case 2:
+      if (digitalRead(BLUESWITCHPIN) == HIGH) {
+        myTune.startPlaying();
+        myFlasher.setRate(100, 100);
+        myFlasher.startBlinking();
+        state = 4;
+      }
+      break;
+    case 4:
+      if (!myTune.isPlaying()) {
+        myFlasher.setRate(1000, 1000);
+        myFlasher.startBlinking();
+        state = 7;
+      }
+      break;
+    case 7:
+      if (digitalRead(BLUESWITCHPIN) == HIGH) {
+        state = 9;
+      }
+      if (digitalRead(GREENSWITCHPIN) == HIGH) {
+        myFlasher.stopBlinking();
+        state = 8;
+      }
+      break;
+    case 8:
+      break;
+    case 9:
+      if (digitalRead(BLUESWITCHPIN) != HIGH) {
+        state = 1;
+      }
+      break;
+    default:
+      Serial.println("invalid state, hanging");
+      while (true);
+      break;
+  }
+
+  // Don't forget to update everything!
+  myTune.update();
+  myFlasher.update();
+
 }
