@@ -31,7 +31,6 @@ const int BLUESWITCHPIN = 4;
 const int GREENSWITCHPIN = 7;
 const int BLUELEDPIN = 8;
 
-int state = 0;
 
 #include "pitches.h"
 
@@ -55,13 +54,10 @@ class MelodyPlayer
   public:
 
     // Constructor
-    MelodyPlayer() {
+    MelodyPlayer(int _spkrPin) {
+      spkrPin = _spkrPin;
       thisNoteStartedAt = 0;
       melodyIsPlaying = false;
-    }
-
-    void setSpkrPin(int _spkrPin) {
-      spkrPin = _spkrPin;
     }
 
     void startPlaying() {
@@ -188,11 +184,11 @@ class Flasher
 
 
 Flasher myFlasher(BLUELEDPIN);
-MelodyPlayer myTune;
+MelodyPlayer myTune(SPKRPIN);
+int state;
 
 void setup() {
   Serial.begin(9600);
-  myTune.setSpkrPin(SPKRPIN);
   state = 99;
 }
 
