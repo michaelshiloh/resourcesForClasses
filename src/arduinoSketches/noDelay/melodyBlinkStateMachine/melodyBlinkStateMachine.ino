@@ -9,7 +9,8 @@
   See the section labeled "States" below
 
   by Michael Shiloh
-  Motivated by students in Introduction to Interactive Media, Fall 2018
+  Motivated by students in Introduction to Interactive Media, 
+  Fall 2018 and Summer 2021
   New York University Abu Dhabi
 
   Revision log:
@@ -61,7 +62,9 @@ class MelodyPlayer
     }
 
     void startPlaying() {
-      if (melodyIsPlaying) return;
+      if (melodyIsPlaying) {
+        return;
+      }
       Serial.println("startPlaying");
       thisNote = 0; // Alternately, we could provide a different starting point
       melodyIsPlaying = true;
@@ -91,6 +94,7 @@ class MelodyPlayer
       // If we've reached the end of the tune, don't do anything
       if ( thisNote >= MELODYLENGTH ) {
         melodyIsPlaying = false;
+        noTone(spkrPin);
         thisNote = 0; // in case we want to play again
         return;
       }
@@ -135,8 +139,6 @@ class Flasher
     {
       ledPin = pin;
       pinMode(ledPin, OUTPUT);
-
-
       ledState = LOW;
       previousMillis = 0;
     }
@@ -156,7 +158,7 @@ class Flasher
       flasherIsBlinking = true;
     }
 
-    boolean ledIsOn() {
+    boolean isLEDOn() {
       return (ledState == HIGH);
     }
 
@@ -193,6 +195,10 @@ void setup() {
 }
 
 void loop() {
+  
+  // Don't forget to update everything!
+  myTune.update();
+  myFlasher.update();
 
   /* States
      99 - everything off; next state: 1
@@ -254,10 +260,5 @@ void loop() {
       Serial.println("invalid state, hanging");
       while (true);
       break;
-  }
-
-  // Don't forget to update everything!
-  myTune.update();
-  myFlasher.update();
-
-}
+  } // end of switch() statement
+} // end of loop() function
