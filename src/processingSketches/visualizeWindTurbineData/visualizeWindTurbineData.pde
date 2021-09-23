@@ -1,3 +1,9 @@
+/*
+ * example to process a CSV file containing data about wind turbines in the USA
+ * Source: https://eerscmap.usgs.gov/uswtdb/
+ */
+
+
 // An array of strings to hold the entire file
 String strings[];
 
