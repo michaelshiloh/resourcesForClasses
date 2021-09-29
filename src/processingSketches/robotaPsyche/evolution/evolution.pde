@@ -110,13 +110,13 @@ void draw() {
 
     // Now make a new vehicle using this DNA
     vehicles.add(new Vehicle(
-      random(width),
-      random(height),
-      dna.radius,
-      dna.initialMaxSteeringForce,
-      dna.initialMaxSpeed,
-      dna.initialEnergy,
-      dna.metabolism,
+      random(width), 
+      random(height), 
+      dna.radius, 
+      dna.initialMaxSteeringForce, 
+      dna.initialMaxSpeed, 
+      dna.initialEnergy, 
+      dna.metabolism, 
       dna.deadAt, // energy at which to die
       color(255, 0, 0) // these new vehicles are red
       ));
@@ -128,6 +128,7 @@ void draw() {
 }
 
 void keyPressed() {
+
   switch (key) {
   case 'p':
     println("Loop paused; framecount = " + frameCount);

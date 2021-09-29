@@ -37,7 +37,7 @@ const byte address[6] = "00001";
 // Pins for the pushbuttons
 const int leftPin = 2;
 const int rightPin = 4;
-const int fwdPin = 3;
+const int fwdPin = 8;
 
 void setup() {
   Serial.begin(115200);
