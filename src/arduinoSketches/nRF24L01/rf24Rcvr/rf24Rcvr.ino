@@ -1,6 +1,6 @@
 
 /*
-   Example using the nRF24L01 radio module to communicate 
+   Example using the nRF24L01 radio module to communicate
    between two Arduinos,
    the transmitter is connected to some pushbuttons
    the receiver is connected to a motor driver
@@ -20,10 +20,10 @@ const int CSNPIN = 10;
 //          1                     GND
 //          2                     3.3V
 //          3             9       CE
-//          4             10      CSN  
+//          4             10      CSN
 //          5             13      SCLK
 //          6             11      MOSI/COPI
-//          7             12      MISO/CIPO   
+//          7             12      MISO/CIPO
 
 #include <SPI.h>
 #include <nRF24L01.h>
@@ -31,8 +31,8 @@ const int CSNPIN = 10;
 RF24 radio(CEPIN, CSNPIN);  // CE, CSN
 
 
-// Byte of array representing the address. 
-// This is the address where we will send the data. 
+// Byte of array representing the address.
+// This is the address where we will send the data.
 // This should be same on the receiving side.
 const byte address[6] = "00001";
 
@@ -52,19 +52,30 @@ void setup() {
   Serial.begin(115200);
 
   // RF24 setup
-  bool retval = radio.begin();
-  // Serial.println(retval);
-  radio.openReadingPipe(0, address);  // Destination address 
+  if (!radio.begin()) {
+    Serial.println("radio  initialization failed");
+    while (1)
+      ;
+  } else {
+    Serial.println("radio successfully initialized");
+  }
+  radio.openReadingPipe(0, address);  // Destination address
   radio.setPALevel(RF24_PA_MIN);      // Min or max
   radio.startListening();             // sets  module as receiver
 }
 void loop() {
-  if (radio.available())  //Looking for the data.
+  uint8_t pipeNum;
+  if (radio.available(&pipeNum))  //Looking for the data.
   {
     int data;
 
+    Serial.print("data available on pipe ");
+    Serial.println(pipeNum);
+
     radio.read(&data, sizeof(data));  //Reading the data
-    //Serial.println(data);
+    Serial.print("data = ");
+    Serial.println( data);
+
 
     switch (data) {
         break;
@@ -93,7 +104,7 @@ void loop() {
         break;
     }
   } else {
-    Serial.println("stop");
+    //Serial.println("stop");
     stop();
   }
   delay(5);

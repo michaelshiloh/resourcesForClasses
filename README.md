@@ -472,6 +472,10 @@ that says "Create new file" or "Upload files". How do I fix this?
 			git rm --cached debug.log
 ````
 
+1. External Git and Github Resources
+- Git and Github [resources](https://garrulous-fragrance-04a.notion.site/GitHub-Resources-e2b1c4f44afd49dd86ddd0ada3eab99a) created by Thais Alvarenga 
+- [Version Control with Git](https://swcarpentry.github.io/git-novice/)
+	lessons by [Software Carpentry](https://software-carpentry.org/)
 
 ## Making Sounds without Arduino
 1. Basic 40106 (hex Schmitt trigger inverter)
