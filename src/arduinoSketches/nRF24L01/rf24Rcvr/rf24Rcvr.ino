@@ -78,25 +78,19 @@ void loop() {
 
 
     switch (data) {
-        break;
-      case 0x01:
+      case 0b00000001:
         Serial.println("turning right");
         digitalWrite(rightDirPin, LOW);
         analogWrite(rightPWMPin, 200);
         break;
-      case 0x02:
+      case 0b00000010:
         Serial.println("forward");
         digitalWrite(rightDirPin, HIGH);
         analogWrite(rightPWMPin, 0);
         digitalWrite(leftDirPin, LOW);
         analogWrite(leftPWMPin, 255);
         break;
-      case 0x04:
-        Serial.println("turning left");
-        digitalWrite(leftDirPin, HIGH);
-        analogWrite(leftPWMPin, 50);
-        break;
-      case 0b00001100:
+      case 0b00000100:
         Serial.println("turning left");
         digitalWrite(leftDirPin, HIGH);
         analogWrite(leftPWMPin, 50);
