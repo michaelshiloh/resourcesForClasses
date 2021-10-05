@@ -1,5 +1,31 @@
 # General Resources for Classes
 
+## Priorities (learned the hard way)
+
+1. What is the minimum that you need to get done? Get that working first.
+That way, if it's difficult you have more time to fix it, and if
+it's impossible, you have more time to change your concept.  
+1.1. If this is for a class, what's most of the grade?
+1.1. If this is for yourself, what's the minimum you would need to feel proud?
+1. In my experience, 
+the mechanical things are the most difficult to get working, because usually
+most students have the least amount of experience with this.
+Get the mechanical parts work at least well enough before involving the
+Arduino and programming.
+1.1. If your robot is to be mobile, 
+I would first get the mobility part working
+1.1. If your robot has any other moving parts 
+	(arms, tentacles, alien appendages, robot grippers) 
+	I would try to get at least one of them working. 
+1. The guiding principle is to do the things that you have the
+least amount of experience with first And always leave the aesthetic stuff
+until the very end. It doesn't matter if it looks like a jumble of junk, as
+long as it works.  
+1.1. One exception to the aesthetics is the wiring. As you've
+probably discovered, a big mess of wires is very hard to debug, so spending
+time to make the wires tidy can save you a lot of time later when things don't
+work.
+
 ## Smoothing Readings from Noisy Sensors using Filters
 
 1. Running average, built-in example in Arduino (File -> Examples -> Analog ->

@@ -96,6 +96,11 @@ void loop() {
         digitalWrite(leftDirPin, HIGH);
         analogWrite(leftPWMPin, 50);
         break;
+      case 0b00001100:
+        Serial.println("turning left");
+        digitalWrite(leftDirPin, HIGH);
+        analogWrite(leftPWMPin, 50);
+        break;
       default:
         Serial.println("invalid code");
         stop();
