@@ -599,6 +599,9 @@ from Daniel Shiffman's _The Nature of Code_ book
 1. [Pictures made with Processing](https://www.behance.net/manoloide) 
 and [the code](https://github.com/manoloide/AllSketchs) that made them
 
+1.
+[NullPointerException](https://forum.processing.org/two/discussion/8071/why-do-i-get-a-nullpointerexception)
+
 ## Classes and Objects
 1. Daniel Shiffman’s [written tutorial](https://processing.org/tutorials/objects/)
 tutorial on objects in Processing
