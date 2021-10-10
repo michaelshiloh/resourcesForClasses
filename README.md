@@ -537,6 +537,40 @@ difference that we won't be concerned with.
 	[tutorial](https://www.arduino.cc/en/tutorial/debounce)
 
 ## Debugging
+- Students often assume that the problem is a bad component or a problem in
+their computer. This is rarely the case. The most likely cause is a mistake in
+your circuit and/or in your program. Suspect those first.
+- In the suggested sequence below, prioritize tests that are easy to do
+- If your Arduino power LED (labeled **ON** on the Uno) does not light up:
+	- The most likely cause is a short circuit in your circuit. Remove
+		everything, verify that the LED now does come on, and rebuild your circuit
+	- Sometimes the USB cable is bad. This is rare but does happen.
+
+Things that are easy to check:
+
+- Reminder: Including the servo library 
+will disable `analogWrite()` (PWM) on pins 9 and 10, 
+whether or not there is a servo on those pins.
+- Reminder: Using the `tone()` function 
+will disable `analogWrite()` (PWM) on pins 3 and 11.
+- Check that you have a `pinMode(pin, OUTPUT)` for any pin you use as a
+	digital output
+
+Suggested debugging ~Sequence
+
+1. Test each component in isolation, preferably with known good code, the
+best being the built in-examples
+1.1. If individual components don't work, remove everything else from your
+circuit. Once you get that individual component working, add the rest one by
+one, testing each time
+1.1 For motor drivers, test the motor and battery in isolation by connecting
+the motor directly to the battery
+1. If the problem is intermittent, it is very likely caused by a loose
+connection. Upload a program that tests that component continously, and
+carefully wiggle each wire looking at the output. If the output starts
+fluctuating, then you may be close to the intermittent connection
+
+
 1. Adafruit Digital Multimeter
 [tutorial](https://learn.adafruit.com/multimeters?view=all)
 
