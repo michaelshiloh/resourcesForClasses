@@ -537,10 +537,30 @@ difference that we won't be concerned with.
 	[tutorial](https://www.arduino.cc/en/tutorial/debounce)
 
 ## Debugging
-- Students often assume that the problem is a bad component or a problem in
-their computer. This is rarely the case. The most likely cause is a mistake in
-your circuit and/or in your program. Suspect those first.
-- In the suggested sequence below, prioritize tests that are easy to do
+Students often assume that the problem is a bad component (including
+	Arduino) or a problem in their computer. 
+	While this is possible, 
+	in my experience it is rarely the case. 
+	The most likely cause is a mistake in
+	your circuit and/or in your program. 
+	Suspect those first.
+
+#### Upload problems
+- Check in the tools menu that the correct serial port is selected
+- Try uploading again. Sometimes the second or third time works
+- Unplug the USB cable from your laptop and plug it in again. 
+Check in the tools menu the serial port again (it might have been reassigned)
+- Try a different USB port (if you have any)
+- If you are using a USBC to USB-A adapter try a known good adapter, I have
+	seen quite a few adapters simply not work with Arduino
+- Disconnect your Arduino entirely from any circuit you have built. If this
+	works it proves there is a problem in your circuit
+- Shut down Arduino and restart
+- Shut down your laptop and restart
+- If none of the above helped, try a known good Arduino
+
+#### Other problems
+In the suggested sequence below, prioritize tests that are easy to do
 - If your Arduino power LED (labeled **ON** on the Uno) does not light up:
 	- The most likely cause is a short circuit in your circuit. Remove
 		everything, verify that the LED now does come on, and rebuild your circuit
