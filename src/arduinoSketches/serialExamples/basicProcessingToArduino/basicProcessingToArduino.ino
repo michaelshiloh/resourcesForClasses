@@ -51,11 +51,13 @@ void loop() {
 
 /*
 
+
+
 // Bounce a ball, and each time the ball hits the floor
 // flash an LED on Arduino. Demonstration of adding serial
 // communication to an existing project.
- 
-// Based on 
+
+// Based on
 // https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/gravityExamples/gravityWind/gravityWind.pde
 // by Aaron Sherwood
 
@@ -63,7 +65,6 @@ PVector velocity;
 PVector gravity;
 PVector position;
 PVector acceleration;
-PVector wind;
 float drag = 0.99;
 float mass = 50;
 float hDampening;
@@ -80,8 +81,6 @@ void setup() {
   velocity = new PVector(0, 0);
   acceleration = new PVector(0, 0);
   gravity = new PVector(0, 0.5*mass);
-  wind = new PVector(0, 0);
-  hDampening=map(mass, 15, 80, .98, .96);
 
   printArray(Serial.list());
   // replace the index with the index of Arduino's serial port
@@ -94,11 +93,7 @@ void setup() {
 
 void draw() {
   background(255);
-  if (!keyPressed) {
-    wind.x=0;
-    velocity.x*=hDampening;
-  }
-  applyForce(wind);
+
   applyForce(gravity);
   velocity.add(acceleration);
   velocity.mult(drag);
@@ -113,13 +108,13 @@ void draw() {
 
     // change direction to bounce, also loose some energy
     // (dampning) so we the bounce is a little less each time
-    velocity.y *= -0.9;  
+    velocity.y *= -0.9;
 
     // prevent sinking beneath the floor
     position.y = height-mass/2;
 
     // Send message to Arduio
-    if (arduinoIsReady) {
+    if (arduinoIsReady && velocity.mag() > 1) {
       myPort.write(1 + "\n"); // could be any value
       arduinoIsReady = false;
     }
@@ -133,24 +128,11 @@ void applyForce(PVector force) {
   acceleration.add(f);
 }
 
-void keyPressed() {
-  if (keyCode==LEFT) {
-    wind.x=-1;
-  }
-  if (keyCode==RIGHT) {
-    wind.x=1;
-  }
-  if (key==' ') {
-    mass=random(15, 80);
-    position.y=-mass;
-    velocity.mult(0);
-  }
-}
+
 
 void serialEvent(Serial myPort) {
   String s=myPort.readStringUntil('\n');
   arduinoIsReady = true;
 }
-
 
 */
