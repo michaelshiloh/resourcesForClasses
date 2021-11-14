@@ -4,6 +4,8 @@
    between two Arduinos,
    the transmitter is connected to some pushbuttons
    the receiver is connected to a motor driver
+
+   14 NOV 2021 - ms - changed baud rate to 9600
 */
 
 // Pin usage
@@ -49,7 +51,7 @@ void setup() {
   pinMode(rightDirPin, OUTPUT);
   pinMode(leftDirPin, OUTPUT);
 
-  Serial.begin(115200);
+  Serial.begin(9600);
 
   // RF24 setup
   if (!radio.begin()) {
