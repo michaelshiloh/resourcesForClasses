@@ -401,6 +401,9 @@ Projects website (which itself is a great resource for all sorts of projects)
 
 ## Github Resources
 
+1. Please don't create documentation in PDF or Word format, as these are not
+	 visible directly on Github. Use MarkDown (.md files) as described below.
+
 1. How to create a Github account and your first repository
 [guide](https://github.com/zamfi/github-guide)
 
