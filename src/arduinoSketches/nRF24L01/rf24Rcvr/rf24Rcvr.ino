@@ -1,15 +1,11 @@
+
 /*
    Example using the nRF24L01 radio module to communicate
    between two Arduinos,
    the transmitter is connected to some pushbuttons
    the receiver is connected to a motor driver
 
-   Based on rf24Xmit
-
-   TODO
-   - Read potentiometers and send those values too
-
-   14 NOV 2021 - ms - changed pin numbers to correspond to shield
+   14 NOV 2021 - ms - changed baud rate to 9600
 */
 
 // Pin usage
@@ -34,53 +30,91 @@ const int CSNPIN = 10;
 #include <SPI.h>
 #include <nRF24L01.h>
 #include <RF24.h>
-RF24 radio(CEPIN, CSNPIN);                // CE, CSN
+RF24 radio(CEPIN, CSNPIN);  // CE, CSN
+
 
 // Byte of array representing the address.
 // This is the address where we will send the data.
 // This should be same on the receiving side.
 const byte address[6] = "00001";
 
-// Pins for the directional buttons
-const int LEFT_BUTTON = 4;
-const int RIGHT_BUTTON = 7;
-const int UP_BUTTON = 8;
-const int DOWN_BUTTON = 2;
-const int POT1PIN = A1;
-const int POT2PIN = A0;
+// Motor controller pins
+const int rightDirPin = 4;
+const int rightPWMPin = 5;
+const int leftDirPin = 7;
+const int leftPWMPin = 6;
+
 
 void setup() {
+
+  // Motor controller pins
+  pinMode(rightDirPin, OUTPUT);
+  pinMode(leftDirPin, OUTPUT);
+
   Serial.begin(9600);
 
-  pinMode(LEFT_BUTTON, INPUT_PULLUP);
-  pinMode(RIGHT_BUTTON, INPUT_PULLUP);
-  pinMode(UP_BUTTON, INPUT_PULLUP);
-  pinMode(DOWN_BUTTON, INPUT_PULLUP);
+  // RF24 setup
+  if (!radio.begin()) {
+    Serial.println("radio  initialization failed");
+    while (1)
+      ;
+  } else {
+    Serial.println("radio successfully initialized");
+  }
+  radio.openReadingPipe(0, address);  // Destination address
+  radio.setPALevel(RF24_PA_MIN);      // Min or max
+  radio.startListening();             // sets  module as receiver
+}
+void loop() {
+  uint8_t pipeNum;
+  if (radio.available(&pipeNum))  //Looking for the data.
+  {
+    int data;
 
-  boolean retval = radio.begin();   //Starting the Wireless communication
-  Serial.println(retval);
-  radio.openWritingPipe(address);  //destination addres
-  radio.setPALevel(RF24_PA_MIN);   // min or max
-  radio.stopListening();           //This sets the module as transmitter
+    Serial.print("data available on pipe ");
+    Serial.println(pipeNum);
+
+    radio.read(&data, sizeof(data));  //Reading the data
+    Serial.print("data = ");
+    Serial.println( data);
+
+
+    switch (data) {
+      case 0b00000001:
+        Serial.println("turning right");
+        digitalWrite(rightDirPin, LOW);
+        analogWrite(rightPWMPin, 200);
+        break;
+      case 0b00000010:
+        Serial.println("forward");
+        digitalWrite(rightDirPin, HIGH);
+        analogWrite(rightPWMPin, 0);
+        digitalWrite(leftDirPin, LOW);
+        analogWrite(leftPWMPin, 255);
+        break;
+      case 0b00000100:
+        Serial.println("turning left");
+        digitalWrite(leftDirPin, HIGH);
+        analogWrite(leftPWMPin, 50);
+        break;
+      default:
+        Serial.println("invalid code");
+        stop();
+        digitalWrite(rightDirPin, LOW);
+        digitalWrite(rightPWMPin, LOW);
+        break;
+    }
+  } else {
+    //Serial.println("stop");
+    stop();
+  }
+  delay(5);
 }
 
-void loop() {
+void stop() {
 
-  int left = !digitalRead(LEFT_BUTTON);
-  int right = !digitalRead(RIGHT_BUTTON);
-  int down = !digitalRead(DOWN_BUTTON);
-  int up = !digitalRead(UP_BUTTON);
-
-  int data =
-    (left << 4) |
-    (up << 3) |
-    (right << 2) |
-    (down << 1) ;
-
-  if (data) {
-    Serial.print( "sending data = " );
-
-    Serial.println(data, BIN);
-    radio.write(&data, sizeof(data)) ;
-  }
+  digitalWrite(rightDirPin, LOW);
+  analogWrite(rightPWMPin, 0);
+  digitalWrite(leftDirPin, LOW);
+  analogWrite(leftPWMPin, 0);
 }
