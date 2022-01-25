@@ -220,7 +220,7 @@ let CIRCLESIZE = 15;
 let myCircleArray = [];
 
 // We'll make 10 objects
-let QUANTITY = 100;
+let QUANTITY = 10;
 
 function setup() {
   createCanvas(400, 400);
