@@ -19,7 +19,6 @@ let ballx, bally, ballxSpeed, ballySpeed;
 
 function setup() {
   createCanvas(400, 400);
-  smooth();
   ballx = 10;
   bally = 50;
   ballxSpeed = INITIALXSPEED;
@@ -137,7 +136,6 @@ let myCircle = new MovingCircle(25, 72);
 
 function setup() {
   createCanvas(400, 400);
-  smooth();
 }
 
 function draw() {
@@ -173,7 +171,6 @@ let myOtherCircle;
 
 function setup() {
   createCanvas(400, 400);
-  smooth();
   myCircle= new MovingCircle(50, 50);
   myOtherCircle= new MovingCircle(100, 100);
 }
@@ -224,7 +221,6 @@ let QUANTITY = 10;
 
 function setup() {
   createCanvas(400, 400);
-  smooth(); 
   // Here is where we create the objects and populate the
   // array with them
   for (let i=0; i < QUANTITY ; i++) {
