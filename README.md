@@ -348,6 +348,9 @@ Logic Level
 1. Simple [descriptions](http://www.mechanical-toys.com/mechanisums.htm) of
 the 6 basic mechanisms
 
+1. [Table of Mechanicks
+	 [sic]](media/Table_of_Mechanicks_Cyclopaedia_Volume_2.jpg)
+
 1. Great pamphlet describing how to build [Mechanisms](doc/machinations-mechanisms.pdf)
 
 1. How to build a [Crank and
