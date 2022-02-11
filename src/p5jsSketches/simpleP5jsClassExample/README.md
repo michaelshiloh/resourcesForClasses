@@ -8,13 +8,15 @@ this:
 
 
 ````
-
 /*
 Step 1: A bouncing ball the old fashioned way
  */
-let INITIALXSPEED = 4;
-let INITIALYSPEED = 7;
-let CIRCLESIZE = 15;
+// Use UPPER CASE for constants
+const INITIALXSPEED = 4;
+const INITIALYSPEED = 7;
+const CIRCLESIZE = 15;
+
+// These will change so they must be variables
 let ballx, bally, ballxSpeed, ballySpeed;
 
 function setup() {
@@ -33,20 +35,19 @@ function draw() {
   ballx = ballx + ballxSpeed;
   bally = bally + ballySpeed;
 
-
-  // check for collisions
+  // Check for collisions
   let r = CIRCLESIZE/2;
-  if ( (ballx<r) || (ballx>width-r)) {
+  if ( (ballx < r) || (ballx > width-r)) {
     ballxSpeed = -ballxSpeed;
   }
-  if ( (bally<r) || (bally>height-r)) {
+  if ( (bally < r) || (bally > height-r)) {
     ballySpeed = -ballySpeed;
   }
-  // Finally draws the circle
+  
+  // Draw the circle
   fill(255);
   ellipse(ballx, bally, CIRCLESIZE, CIRCLESIZE);
 }
-
 ````
 
 Copy this code into a new p5.js sketch and run it. Read the code and
@@ -67,25 +68,20 @@ There is a way, using classes and objects. This is called
 OOP.
 
 ````
-
 /*
  Step 2: Creating a class for a bouncing ball
  based on http://www.openprocessing.org/sketch/48960
  */
 
-let XSPEED = 4;
-let YSPEED = 7;
-let CIRCLESIZE = 15;
+const XSPEED = 4;
+const YSPEED = 7;
+const CIRCLESIZE = 15;
 
 // This is the definition of the MovingCircle class.
 // Start with the name of the class:
 class MovingCircle {
 
-  // any variable declared here will be properties of
-  // objects of this type
-  //let x, y, xSpeed, ySpeed;
-
-  // Now the functions that are part of this class:
+  // Functions that are part of this class:
 
   // This special function declaration has the same name
   // as the class (MovingCircle) and it has no return type. This
@@ -109,17 +105,19 @@ class MovingCircle {
     this.y += this.ySpeed;
   }
 
-  // The checkCollisions() function checks to see if our circle has gone off
-  // the edge of the screen, and if so reverses the speed and hence the direction:
+  // The checkCollisions() function checks to see if 
+  // our circle has gone off the edge of the screen, 
+  // and if so reverses the speed and hence the direction:
    checkCollisions() {
-    let r = CIRCLESIZE/2;
-    if ( (this.x<r) || (this.x>width-r)) {
+    const R = CIRCLESIZE/2;
+    if ( (this.x < R) || (this.x > width-R)) {
       this.xSpeed = -this.xSpeed;
     }
-    if ( (this.y<r) || (this.y>height-r)) {
+    if ( (this.y < R) || (this.y > height-R)) {
       this.ySpeed = -this.ySpeed;
     }
   }
+  
   // This function finally draws the circle
    drawCircle() {
     fill(255);
@@ -131,7 +129,8 @@ class MovingCircle {
 // we can put it to use to make objects (the cookies):
 
 // Make an object of type MovingCircle
-// The two parameters are its initial position:
+// The two parameters are its initial position
+// which are passed to the constructor
 let myCircle = new MovingCircle(25, 72);
 
 function setup() {
@@ -141,30 +140,28 @@ function setup() {
 function draw() {
   // Always erase the screen first
   background(0);
+  
   // update the position of the circle
   myCircle.update();
+  
   // check for collisions with the walls
   myCircle.checkCollisions();
+  
   // and finally draw the circle
   myCircle.drawCircle();
 }
-
 ````
 
 If you want two balls, you don’t need to redefine the class, just create
 more objects:
 
 ````
-
 /*
  Simple Processing class example 
  Step 3: Creating two objects using the same class
  
  based on http://www.openprocessing.org/sketch/48960
  */
-let XSPEED = 4;
-let YSPEED = 7;
-let CIRCLESIZE = 15;
 
 let myCircle;
 let myOtherCircle;
@@ -178,16 +175,23 @@ function setup() {
 function draw() {
   // Always erase the screen first
   background(0);
-  // update the position of the circle
+  
+  // update the positions of both balls
   myCircle.update();
   myOtherCircle.update();
+  
   // check for collisions with the walls
   myCircle.checkCollisions();
   myOtherCircle.checkCollisions();
-  // and finally draw the circle
+  
+  // and finally draw the balls
   myCircle.drawCircle();
   myOtherCircle.drawCircle();
 }
+
+const XSPEED = 4;
+const YSPEED = 7;
+const CIRCLESIZE = 15;
 
 // Copy the class definition from the previous step to 
 // see for yourself that no changes are necessary for multiple 
@@ -209,9 +213,9 @@ object:
  based on http://www.openprocessing.org/sketch/48960
  */
 
-let XSPEED = 4;
-let YSPEED = 7;
-let CIRCLESIZE = 15;
+const XSPEED = 4;
+const YSPEED = 7;
+const CIRCLESIZE = 15;
 
 // create an empty array for a bunch of objects
 let myCircleArray = [];
@@ -224,9 +228,12 @@ function setup() {
   // Here is where we create the objects and populate the
   // array with them
   for (let i=0; i < QUANTITY ; i++) {
-    // don't start at the edge or the ball will get stuck
-    myCircleArray.push(new MovingCircle(random(CIRCLESIZE, width-CIRCLESIZE),
-                           random(CIRCLESIZE, height-CIRCLESIZE)));
+
+    // don't start right at the edge or the ball will get stuck
+		// so we move by the ball's diameter
+    myCircleArray.push(new MovingCircle(
+				random(CIRCLESIZE, width-CIRCLESIZE),
+				random(CIRCLESIZE, height-CIRCLESIZE)));
   }
 }
 
@@ -256,3 +263,16 @@ You don't need to create all your objects at once. Once you have
 the class, you can make objects any time you need.
 For instance, you might add a new ball 
 whenever you click a mouse button. 
+
+You could also modify the constructor to initialize things differently,
+for example to give the balls
+random initial speeds so they don't all clump together:
+
+````
+constructor( xpos,  ypos) {
+    this.x = xpos;
+    this.y = ypos;
+    this.xSpeed = random(-5,5);
+    this.ySpeed = random( -7, 3);
+  }
+````
