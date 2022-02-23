@@ -310,7 +310,7 @@ void setup() {
 
 void draw() {
   background(200);
-  //f.followMouse();
+  
   // f.display(); // this really slows things down so use it only when you want
 
   for (Vehicle v : vehicles) {
