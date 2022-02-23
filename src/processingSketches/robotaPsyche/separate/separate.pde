@@ -161,14 +161,13 @@ class Vehicle {
     acceleration.add(force);
   }
 
-  /*
-  What follows are different steering algorithms. A vehicle
-   could use any one, and you could create addiotional ones.
-   Each algorithm calculates the steering force and then
-   applies it
-   */
+  /********************************************************
+  What follow are different steering algorithms. A vehicle could
+  use any one, and you are encouraged to create additional ones.
+  Each algorithm calculates the steering force and then applies it
+  *********************************************************/
 
-  // Calculate steering force to seek a target
+  // Apply steering force to seek a target
   void seek(PVector target) {
     PVector desired = PVector.sub(target, location);
     desired.normalize();
@@ -178,8 +177,9 @@ class Vehicle {
     applyForce(steer);
   }
 
-  // Calculate the steering force to follow a flow field
+  // Apply a steering force to follow a flow field
   void follow(FlowField flow) {
+
     // Look up the vector at that spot in the flow field
     PVector desired = flow.lookup(location);
     desired.mult(maxspeed);
@@ -189,6 +189,60 @@ class Vehicle {
     steer.limit(maxforce);
     applyForce(steer);
   }
+
+  // Apply a steering force to maintain a bit of separation
+  void separate (ArrayList<Vehicle> vehicles) {
+    float desiredseparation = 20; // how close is too close.
+    int count = 0;
+    PVector sum = new PVector(0, 0);
+
+    for (Vehicle other : vehicles) {
+
+      // What is the distance between me and another Vehicle?
+      float d = PVector.dist(location, other.location);
+
+      // If the distance is zero we are looking at ourselves; exclude that
+      if ((d > 0) && (d < desiredseparation)) {
+
+        // calculate the location of this vehicle
+
+        PVector diff = PVector.sub(location, other.location); 
+
+				// Alternately, don't normalize 
+				// in order to separate more from closer vehicles
+        diff.normalize(); 
+
+        // We'll need the average, so add this location to the sum 
+        // of all locations and increment the count.
+        sum.add(diff); 
+        count++;
+      }
+    } // end of loop over all vehicles
+
+    // now calculate the average, 
+    // figure out the force
+    // and apply the force:
+		// but only if there is more than one force
+    if (count > 0) { // If zero then no one is too close
+      sum.div(count); // sum is now our desired velocity
+
+      // Scale desired velocitysss to maxspeed
+      sum.setMag(maxspeed);
+
+      // Apply Reynolds’s steering formula:
+      // error is our current velocty minus our desired velocity
+      PVector steer = PVector.sub(sum, velocity);
+      steer.limit(maxforce);
+
+      // Apply the force to the Vehicle’s
+      // acceleration.
+      applyForce(steer);
+    }
+  }
+
+  /********************************************************
+  End of the different steering algorithms. 
+  *********************************************************/
 
   void display() {
     // Vehicle is a triangle pointing in
@@ -206,50 +260,6 @@ class Vehicle {
     vertex(r, r*2);
     endShape(CLOSE);
     popMatrix();
-  }
-
-  void separate (ArrayList<Vehicle> vehicles) {
-    float desiredseparation = 20; // how close is too close.
-    int count = 0;
-    PVector sum = new PVector(0, 0);
-
-    for (Vehicle other : vehicles) {
-
-      // What is the distance between me and another Vehicle?
-      float d = PVector.dist(location, other.location);
-
-      // If the distance is zero we are looking at ourselves; exclude that
-      if ((d > 0) && (d < desiredseparation)) {
-
-        // calculate the location of this vehicle
-        PVector diff = PVector.sub(location, other.location); // but wait, does this point the wrong way?
-        diff.normalize(); // why normalize? wouldn't we want to separate more from closer vehicles?
-
-        // We'll need the average, so add this location to the sum 
-        // of all locations and increment the count.
-        sum.add(diff); 
-        count++;
-      }
-    } // end of loop over all vehicles
-
-    // now calculate the average, 
-    // figure out the force
-    // and apply the force:
-    if (count > 0) { // If zero then no one is too close
-      sum.div(count); // sum is now our desired velocity
-
-      // Scale desired velocitysss to maxspeed
-      sum.setMag(maxspeed);
-
-      // Apply Reynolds’s steering formula:
-      // error is our current velocty minus our desired velocity
-      PVector steer = PVector.sub(sum, velocity);
-      steer.limit(maxforce);
-
-      // Apply the force to the Vehicle’s
-      // acceleration.
-      applyForce(steer);
-    }
   }
 }
 

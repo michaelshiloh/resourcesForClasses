@@ -402,6 +402,8 @@ Projects website (which itself is a great resource for all sorts of projects)
 
 1. Hackaday (articles on mechanisms)[https://hackaday.com/tag/mechanisms/). Very good.
 
+1. [YouTube channel](https://www.youtube.com/user/thang010146/videos) illustrating a huge range of mechanisms, many of them quite unusual
+
 ## Github Resources
 
 1. Please don't create documentation in PDF or Word format, as these are not
