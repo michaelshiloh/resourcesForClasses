@@ -1,7 +1,6 @@
 // create objects for each ecosystem
 MichaelsEcosystem system1 = new MichaelsEcosystem();
 
-
 void setup(){
   size (1200, 800);
   system1.setup(); // call setup for each ecosystem

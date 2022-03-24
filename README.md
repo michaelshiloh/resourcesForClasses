@@ -553,7 +553,7 @@ Students often assume that the problem is a bad component (including
 	your circuit and/or in your program. 
 	Suspect those first.
 
-#### Upload problems
+#### Upload or connection problems
 - Check in the tools menu that the correct serial port is selected
 - Try uploading again. Sometimes the second or third time works
 - Unplug the USB cable from your laptop and plug it in again. 
