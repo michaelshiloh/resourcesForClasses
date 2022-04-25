@@ -477,8 +477,13 @@ that says "Create new file" or "Upload files". How do I fix this?
 
 	Any file that has the .md extension will be interpreted by Github as a
 	markdown file.
+1. Github
+	 [cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
+1. Git and Github [resources](https://garrulous-fragrance-04a.notion.site/GitHub-Resources-e2b1c4f44afd49dd86ddd0ada3eab99a) created by Thais Alvarenga 
+1. [Version Control with Git](https://swcarpentry.github.io/git-novice/)
+	lessons by [Software Carpentry](https://software-carpentry.org/)
 
-4. How do I create code blocks within in a markdown (.md) file?
+1. How do I create code blocks within in a markdown (.md) file?
 
 	You can create fenced code blocks by placing triple backticks ``` before and
 	after the code block. We recommend placing a blank line before and after code
@@ -490,13 +495,6 @@ function test() {
 }
 ```
 
-1. Github
-	 [cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
-
-1. External Git and Github Resources
-- Git and Github [resources](https://garrulous-fragrance-04a.notion.site/GitHub-Resources-e2b1c4f44afd49dd86ddd0ada3eab99a) created by Thais Alvarenga 
-- [Version Control with Git](https://swcarpentry.github.io/git-novice/)
-	lessons by [Software Carpentry](https://software-carpentry.org/)
 
 ## Making Sounds without Arduino
 1. Basic 40106 (hex Schmitt trigger inverter)
