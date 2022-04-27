@@ -17,3 +17,8 @@ driver and motors.
 Pin numbers for the nRF24L01 module:
 
 ![](nRF24L01PinNumbers.jpg)
+
+To prototype with the radio module on a solderless breadboard, you can use
+feed through headers:
+
+![](nRF24FeedThroughHeaders.jpg)
