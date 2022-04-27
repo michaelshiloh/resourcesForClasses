@@ -583,14 +583,14 @@ connection. Upload a program that tests that component continously, and
 carefully wiggle each wire looking at the output. If the output starts
 fluctuating, then you may be close to the intermittent connection
 
+1. Clay Shirky's 4 part [video series](https://vimeo.com/channels/debugging) on debugging
 
+#### Digital Multimeter (DMM) resources
 1. Adafruit Digital Multimeter
 [tutorial](https://learn.adafruit.com/multimeters?view=all)
 
 1. Sparkfun Digital Multimeter
 [tutorial](https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter)
-
-1. Clay Shirky's 4 part [video series](https://vimeo.com/channels/debugging) on debugging
 
 ## Functions
 1. Arduino function
