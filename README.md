@@ -495,12 +495,11 @@ function test() {
 }
 ```
 
-1. Git is best used from the command line. If you're using Mac OS or Linux
-	 it's pre-installed. If you're using Windows download the tools
-	 from
-	 ([here](https://git-scm.com/download/win). You want the '64-bit Git for
-	 Windows Setup' option. Installation is tricky but
-	 [this](https://phoenixnap.com/kb/how-to-install-git-windows) should help
+15. Git is best used from the command line. If you're using Mac OS or Linux
+	 it's pre-installed. If you're using Windows download the tools from
+	 [here](https://git-scm.com/download/win). You want the *64-bit Git for
+	 Windows Setup* option. Installation is tricky but
+	 [this](https://phoenixnap.com/kb/how-to-install-git-windows) should help.
 	 Thanks to Chinonyerem for these!
 
 
