@@ -5,6 +5,10 @@
 
    Based on https://ryanboland.com/blog/reading-rc-receiver-values
 
+  change log
+
+  02 may 2022 - ms - initial entry
+  24 may 2022 - ms - changed RC_CHx_PIN names
 
 */
 
@@ -22,10 +26,10 @@
 #define RC_CH3  2
 #define RC_CH4  3
 
-#define RC_CH1_INPUT  2
-#define RC_CH2_INPUT  3
-#define RC_CH3_INPUT  4
-#define RC_CH4_INPUT  5
+#define RC_CH1_PIN  7
+#define RC_CH2_PIN  6
+#define RC_CH3_PIN  5
+#define RC_CH4_PIN  4
 
 uint16_t rc_values[RC_NUM_CHANNELS];
 uint32_t rc_start[RC_NUM_CHANNELS];
@@ -47,30 +51,30 @@ void calc_input(uint8_t channel, uint8_t input_pin) {
 }
 
 void calc_ch1() {
-  calc_input(RC_CH1, RC_CH1_INPUT);
+  calc_input(RC_CH1, RC_CH1_PIN);
 }
 void calc_ch2() {
-  calc_input(RC_CH2, RC_CH2_INPUT);
+  calc_input(RC_CH2, RC_CH2_PIN);
 }
 void calc_ch3() {
-  calc_input(RC_CH3, RC_CH3_INPUT);
+  calc_input(RC_CH3, RC_CH3_PIN);
 }
 void calc_ch4() {
-  calc_input(RC_CH4, RC_CH4_INPUT);
+  calc_input(RC_CH4, RC_CH4_PIN);
 }
 
 void setup() {
   Serial.begin(SERIAL_PORT_SPEED);
 
-  pinMode(RC_CH1_INPUT, INPUT);
-  pinMode(RC_CH2_INPUT, INPUT);
-  pinMode(RC_CH3_INPUT, INPUT);
-  pinMode(RC_CH4_INPUT, INPUT);
+  pinMode(RC_CH1_PIN, INPUT);
+  pinMode(RC_CH2_PIN, INPUT);
+  pinMode(RC_CH3_PIN, INPUT);
+  pinMode(RC_CH4_PIN, INPUT);
 
-  enableInterrupt(RC_CH1_INPUT, calc_ch1, CHANGE);
-  enableInterrupt(RC_CH2_INPUT, calc_ch2, CHANGE);
-  enableInterrupt(RC_CH3_INPUT, calc_ch3, CHANGE);
-  enableInterrupt(RC_CH4_INPUT, calc_ch4, CHANGE);
+  enableInterrupt(RC_CH1_PIN, calc_ch1, CHANGE);
+  enableInterrupt(RC_CH2_PIN, calc_ch2, CHANGE);
+  enableInterrupt(RC_CH3_PIN, calc_ch3, CHANGE);
+  enableInterrupt(RC_CH4_PIN, calc_ch4, CHANGE);
 }
 
 void loop() {
