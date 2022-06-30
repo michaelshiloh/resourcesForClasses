@@ -1,3 +1,33 @@
+Parts that I've found useful; you might too
+
+# Parts that should always be kept on hand
+
+## These are generic parts and the  links are to one possible vendor; 
+there are many others and for the most part they are interchangeable.
+
+1. [USB type A (plug and socket pair) to screw terminal
+adapter](https://www.amazon.com/dp/B09TP7QGW4/)
+1. [2.1 x 5.5mm coax connector to screw terminal
+adapter](https://www.amazon.com/DAYKIT-Female-2-1x5-5MM-Adapter-Connector/dp/B01J1WZENK/)
+1. Header pins: Right angle 
+1. Header sockets: Right angle 
+1. Header pins: Straight 
+1. Header sockets: Straight 
+1. Prototyping shields
+1. Jumper wires: pins to sockets 
+1. Jumper wires: sockets to sockets 
+1. Jumper wires: pins to pins
+
+## These are a little harder to find or the quality varies. I prefer these
+specific part numbers:
+
+1. jumper wires pins to pins BLACK ONLY
+1. Momentary SPST switches for gaming consoles
+1. Heat shrink tubing assortment, especially
+
+
+
+# Parts from previous labs and workshops
 HL SF
 ================
 Digital
