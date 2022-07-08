@@ -17,6 +17,7 @@ adapter](https://www.amazon.com/DAYKIT-Female-2-1x5-5MM-Adapter-Connector/dp/B01
 1. Jumper wires: pins to sockets 
 1. Jumper wires: sockets to sockets 
 1. Jumper wires: pins to pins
+1. [Spring loaded connectors](https://www.amazon.com/dp/B09TP7QGW4/)
 
 ## These are a little harder to find or the quality varies. I prefer these
 specific part numbers:
