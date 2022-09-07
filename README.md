@@ -1374,3 +1374,9 @@ theater.
 
 1. [Grey
 Walter](http://cyberneticzoo.com/cyberneticanimals/w-grey-walter-and-his-tortoises/)
+
+1. [Animatronics](https://en.wikipedia.org/wiki/Animatronics)
+
+1. [History of
+	 Technology](https://en.wikipedia.org/wiki/History_of_technology)
+
