@@ -681,6 +681,9 @@ to excellent soldering
 2. Sparkfun Through Hole Soldering
 [tutorial](https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering)
 
+1. Best close up I've ever seen on how to solder pins into a circuit board.
+	 It's between 0:17 and 0:28 of [this](https://tinusaur.com/demo/) video
+
 ## Solderless Breadboard Resources
 1. Sparkfun's [How to Use a
     Breadboard](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard)

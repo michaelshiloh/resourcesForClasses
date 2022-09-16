@@ -9,6 +9,7 @@
 
   02 may 2022 - ms - initial entry
   24 may 2022 - ms - changed RC_CHx_PIN names
+  15 sep 2022 - ms - changed pin numbers to new assignments
 
 */
 
@@ -26,10 +27,10 @@
 #define RC_CH3  2
 #define RC_CH4  3
 
-#define RC_CH1_PIN  7
-#define RC_CH2_PIN  6
-#define RC_CH3_PIN  5
-#define RC_CH4_PIN  4
+#define RC_CH1_PIN  12
+#define RC_CH2_PIN  9
+#define RC_CH3_PIN  8
+#define RC_CH4_PIN  7
 
 uint16_t rc_values[RC_NUM_CHANNELS];
 uint32_t rc_start[RC_NUM_CHANNELS];
