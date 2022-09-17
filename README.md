@@ -838,6 +838,10 @@ limited but easy to learn quickly from built-in tutorials.
 MacOS, and Windows.
 
 
+## Creativity resources
+
+1. [Kermit the Frog at TEDx](https://www.youtube.com/watch?v=zX7vQ2QB6Eo)
+
 ## CNC supply resources (stores)
 
 1. [Inventables](https://www.inventables.com/categories/machine-components)
