@@ -26,10 +26,14 @@ specific part numbers:
 1. Momentary SPST switches for gaming consoles
 1. Heat shrink tubing assortment, especially
 
+# Parts for classes at NYU Abu Dhabi
+========================================
+M4 x 7mm Metric Hex Socket Countersunk Head Bolts
+https://www.amazon.com/Uxcell-a15100700ux0304-Metric-Socket-Countersunk/dp/B017NC3U2C/		
 
 
 # Parts from previous labs and workshops
-HL SF
+Hybrid Lab San Francisco
 ================
 Digital
 10 MC140408 counter obsolete? 

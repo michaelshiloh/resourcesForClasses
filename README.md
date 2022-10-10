@@ -351,7 +351,7 @@ the 6 basic mechanisms
 1. [Table of Mechanicks
 	 [sic]](media/Table_of_Mechanicks_Cyclopaedia_Volume_2.jpg)
 
-1. Great pamphlet describing how to build [Mechanisms](doc/machinations-mechanisms.pdf)
+1. Great book describing how to build [Mechanisms](doc/machinations-mechanisms.pdf)
 
 1. How to build a [Crank and
 	 Slider](https://www.wikihow.com/Build-a-Crank-and-Slider-Mechanism) 
@@ -403,6 +403,9 @@ Projects website (which itself is a great resource for all sorts of projects)
 1. Hackaday (articles on mechanisms)[https://hackaday.com/tag/mechanisms/). Very good.
 
 1. [YouTube channel](https://www.youtube.com/user/thang010146/videos) illustrating a huge range of mechanisms, many of them quite unusual
+
+1. [Twenty different
+	 mechanisms](https://www.youtube.com/watch?v=M1-YeqGynlw&authuser=0) demonstrated using Lego
 
 ## Github Resources
 
