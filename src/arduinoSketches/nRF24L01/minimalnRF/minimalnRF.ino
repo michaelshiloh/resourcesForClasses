@@ -42,13 +42,13 @@ const int CEPIN = 9;
 const int CSNPIN = 10;
 RF24 radio(CEPIN, CSNPIN);                // CE, CSN
 
+const int LED_PIN = 2;
+int ledState = LOW;
+
 // Byte of array representing the address.
 // This is the address where we will send the data.
 // This should be same on the receiving side.
 const byte address[6] = "00030";
-
-const int LED_PIN = 2;
-int ledState = LOW;
 
 void setup() {
   Serial.begin(9600);
@@ -93,6 +93,9 @@ void loop() {
 const int CEPIN = 9;
 const int CSNPIN = 10;
 RF24 radio(CEPIN, CSNPIN);  // CE, CSN
+
+const int LED_PIN = 2;
+int ledState = LOW;
 
 
 // Byte of array representing the address.
