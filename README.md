@@ -879,6 +879,45 @@ MacOS, and Windows.
 1. [11.10: Computer Vision: Adding Lifespan to Blobs - Processing Tutorial](https://www.youtube.com/watch?v=o1Ob28sF0N8&amp;list=PLRqwX-V7Uu6aG2RJHErXKSWFDXU4qo_ro&amp;index=7)
 
 
+## How to ask for help, whether from your classmates, professors, or online
+The general principles are these:
+1. Make it easy to understand what you are doing with clear documentation
+	 (well organized schematic or code, good comments etc.)
+1. Clearly explain what you think should be happening, and what is happening
+	 instead
+1. Show that you have seriously tried to solve your problem
+
+More specifically:
+1. First, clean up your code, insert meaningful comments, remove unnecessary
+	 code, remove unused code that is commented out, indent your code properly,
+	 etc. If your code is very long, organize it into functions to make it
+	 easier to read. Use meaningful names for functions, variables, and classes.
+	 Someone should be able to read your code and understand what it is doing
+	 without you having to explain.
+
+1. Explain briefly the overall goal, but don't confuse with unnecessary
+	 details. 
+
+1. Show that you have exhausted all reasonable attempts to solve this on your
+	 own. Provide links to reference pages, tutorials, examples, etc. that you
+	 used to develop and in your attempt to debug your project. Provide
+	 summaries of any relevant Google searches, or discussions that you found on
+	 forums. 
+
+1. Explain very clearly the precise steps required to reproduce the problem.
+	 Test these instructions yourself before you submit the question. 
+
+1. Describe the attempted solutions you already tried, and what the results
+	 were. Again, be specific and clear. Give the reason you thought these
+	 attempts might work
+
+1. Share error messages, screenshots of the failure, etc. Provide as much
+	 information as possible.
+
+1. If your project involves a circuit, share clear photo(s) of your wiring so
+	 people can see if you made a mistake.
+
+
 ## Critical Making
 
 1. [The Role of Critical
