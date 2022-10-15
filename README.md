@@ -1054,6 +1054,8 @@ of an interactive autonomous robot.
 
 ## Artists
 
+1. [ Michael Candy](https://michaelcandy.com)
+
 1. [Simone Giertz](https://youtu.be/WcW70-6eQcY)
 
 3. Jean Tinguely 
