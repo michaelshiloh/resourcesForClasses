@@ -72,7 +72,7 @@ void loop() {
     left = B00000001;
   }
   int right = B00000000;
-  if (digitalRead(SWITCH1PIN) == HIGH) {
+  if (digitalRead(SWITCH2PIN) == HIGH) {
     right = B00000010;
   }
 
@@ -154,19 +154,19 @@ void loop() {
     Serial.println( data);
 
     switch (data) {
-      case B00000000:
+      case 0:
         digitalWrite(LED1PIN, LOW);
         digitalWrite(LED2PIN, LOW);
         break;
-      case B00000001:
+      case 1:
         digitalWrite(LED1PIN, HIGH);
         break;
 
-      case B00000010:
+      case 2:
         digitalWrite(LED2PIN, HIGH);
         break;
 
-      case B00000011:
+      case 3:
         digitalWrite(LED1PIN, HIGH);
         digitalWrite(LED2PIN, HIGH);
         break;
