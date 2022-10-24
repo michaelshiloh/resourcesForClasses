@@ -7,7 +7,7 @@
    Both sketches are present in this file; first the transmitter
    The receiver is included as a comment below
 
-   These sketches require the RF24 library by TMRH20
+   These sketches require the RF24 library by TMRh20
 */
 
 
