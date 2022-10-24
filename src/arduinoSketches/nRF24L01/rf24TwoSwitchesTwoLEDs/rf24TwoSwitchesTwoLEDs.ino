@@ -136,9 +136,9 @@ void loop() {
   } else {
     Serial.println("radio successfully initialized");
   }
-  radio.openWritingPipe(address);  //destination addres
+  radio.openReadingPipe(0,address);  //destination address
   radio.setPALevel(RF24_PA_MIN);   // min or max
-  radio.stopListening();           //This sets the module as transmitter
+  radio.startListening();           //This sets the module as transmitter
   }
   void loop() {
   uint8_t pipeNum;
