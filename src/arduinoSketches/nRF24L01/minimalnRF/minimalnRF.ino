@@ -9,7 +9,7 @@
 
    Based on rf24XmitShield and rf24Rcvr
 
-  These sketches require the RF24 library by TMRH20
+  These sketches require the RF24 library by TMRh20
 
   12 Dec 2021 - ms - initial entry
 */

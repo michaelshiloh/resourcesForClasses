@@ -7,7 +7,7 @@
    Both sketches are present in this file; first the transmitter
    The receiver is included as a comment below
 
-   These sketches require the RF24 library by TMRH20
+   These sketches require the RF24 library by TMRh20
 */
 
 
@@ -72,7 +72,7 @@ void loop() {
     left = B00000001;
   }
   int right = B00000000;
-  if (digitalRead(SWITCH1PIN) == HIGH) {
+  if (digitalRead(SWITCH2PIN) == HIGH) {
     right = B00000010;
   }
 
@@ -136,9 +136,9 @@ void loop() {
   } else {
     Serial.println("radio successfully initialized");
   }
-  radio.openWritingPipe(address);  //destination addres
+  radio.openReadingPipe(0,address);  //destination address
   radio.setPALevel(RF24_PA_MIN);   // min or max
-  radio.stopListening();           //This sets the module as transmitter
+  radio.startListening();           //This sets the module as transmitter
   }
   void loop() {
   uint8_t pipeNum;
@@ -154,19 +154,19 @@ void loop() {
     Serial.println( data);
 
     switch (data) {
-      case B00000000:
+      case 0:
         digitalWrite(LED1PIN, LOW);
         digitalWrite(LED2PIN, LOW);
         break;
-      case B00000001:
+      case 1:
         digitalWrite(LED1PIN, HIGH);
         break;
 
-      case B00000010:
+      case 2:
         digitalWrite(LED2PIN, HIGH);
         break;
 
-      case B00000011:
+      case 3:
         digitalWrite(LED1PIN, HIGH);
         digitalWrite(LED2PIN, HIGH);
         break;
