@@ -5,6 +5,8 @@
    the transmitter is connected to some pushbuttons
    the receiver is connected to a motor driver
 
+   These sketches require the RF24 library by TMRH20
+
    14 NOV 2021 - ms - changed baud rate to 9600
 */
 

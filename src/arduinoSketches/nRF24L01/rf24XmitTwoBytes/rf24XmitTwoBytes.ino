@@ -9,6 +9,8 @@
    and could be used e.g. to control motors
    The second byte could be used e.g. to tell which
    pattern to display on the NeoPixel matrix
+
+   These sketches require the RF24 library by TMRH20
 */
 
 // Pin usage
