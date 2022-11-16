@@ -40,15 +40,35 @@ const int CSNPIN = 10;
 #include <SPI.h>
 #include <nRF24L01.h>
 #include <RF24.h>
-RF24 radio(CEPIN, CSNPIN);                // CE, CSN
+RF24 radio(CEPIN, CSNPIN);  // CE, CSN
+
+#include <printf.h>
+
 
 // Byte of array representing the address.
 // This is the address where we will send the data.
 // This should be same on the receiving side.
-const byte address[6] = "00001";
+//
+// Avoid addresses where all bits are the same
+// (e.g. 00000 or FFFFF, because it looks like noise)
+// or alternate (e.g. 01010101 or 1010101, because it looks like the preamble)
+//
+// Good addresses need alternating short (2-4) sequences of the same
+// bit value e.g.  110001110011
+// or in hex the nibbles 0x3, 0x6, 0x7, 0xC, 0xE
+// (these are only 4 bits so combine)
+//
+// values that start or end with 1 bit can be combined
+// e.g. 0x38 or 0x1C
+//
+// e.g.
+const byte address[6] = { 0x33, 0x36, 0xC7, 0xE6, 0xCC, 0xE3 };
+// const byte address[6] = "00001";
 
 void setup() {
   Serial.begin(9600);
+  printf_begin();
+
 
   pinMode(SWITCH1PIN, INPUT);
   pinMode(SWITCH2PIN, INPUT);
@@ -64,6 +84,11 @@ void setup() {
   radio.openWritingPipe(address);  //destination address
   radio.setPALevel(RF24_PA_MIN);   // min or max
   radio.stopListening();           //This sets the module as transmitter
+
+
+  radio.printPrettyDetails();
+  while (1)
+    ;
 }
 void loop() {
 
@@ -79,9 +104,24 @@ void loop() {
 
   int data = left | right;
   if (data) {
-    Serial.print( "sending data = " );
+    Serial.print("sending data = ");
     Serial.println(data);
-    radio.write(&data, sizeof(data)) ;
+
+    // The write() function will block
+    // until the message is successfully acknowledged by the receiver
+    // or the timeout/retransmit maxima are reached.
+    // In the current (default?) configuration, the max delay here is 60-70ms.
+    //
+    // Returns
+    //   true if the payload was delivered successfully
+    //        and an acknowledgement (ACK packet) was received.
+    //        If auto-ack is disabled, then any attempt to transmit
+    //        will also return true (even if the payload was not received).
+    //   false if the payload was sent but was not acknowledged
+    //        with an ACK packet.
+    //        This condition can only be reported
+    //        if the auto-ack feature is on.
+    radio.write(&data, sizeof(data));
   }
 }
 
