@@ -40,9 +40,11 @@
 
 // Pin usage
 //
-const int JUMPERPIN = 2;    // connect to ground for receiver
-const int REDLEDPIN = 3;    // indicates error
+const int JUMPERPIN = 2;  // connect to ground for receiver
+const int REDLEDPIN = 3;
 const int GREENLEDPIN = 4;  // successful handshake
+const int REDSWITCHPIN = 5;
+const int GREENSWITCHPIN = 6;
 
 // nRF24L01 uses SPI which is fixed on pins 11, 12, and 13.
 // It also requires two other signals
@@ -65,9 +67,11 @@ const int CSNPIN = 10;
 #include <SPI.h>
 #include <nRF24L01.h>
 #include <RF24.h>
-RF24 radio(CEPIN, CSNPIN, 125000L);  // CE, CSN
+//RF24 radio(CEPIN, CSNPIN, 125000L);  // CE, CSN
+RF24 radio(CEPIN, CSNPIN);  // CE, CSN
 
-#include <printf.h>
+
+#include <printf.h>  // for debugging
 
 
 // Byte of array representing the address.
@@ -87,12 +91,19 @@ RF24 radio(CEPIN, CSNPIN, 125000L);  // CE, CSN
 // e.g. 0x38 or 0x1C
 //
 // e.g.
-const byte address[] = { 0x33, 0x36, 0xC7, 0xE6, 0xCC };
+const byte xmitAddress[] = { 0x33, 0x36, 0xC7, 0xE6, 0xCC };
+const byte recvAddress[] = { 0x33, 0x36, 0xC7, 0xE6, 0x66 };
+
 
 // global variables
 boolean iAmTransmitter = true;  // jumper makes us the receiver
-unsigned long data;
 uint8_t pipeNum;
+
+struct DataStruct {
+  uint8_t green;
+  uint8_t red;
+};
+DataStruct data;
 
 void setup() {
   Serial.begin(9600);
@@ -101,9 +112,13 @@ void setup() {
   pinMode(JUMPERPIN, INPUT_PULLUP);
   iAmTransmitter = digitalRead(JUMPERPIN);  // jumper on receiver sets this to false
 
-  // only present on transmitter but doesn't affect receiver
+  // Receiver has LEDs
   pinMode(REDLEDPIN, OUTPUT);
   pinMode(GREENLEDPIN, OUTPUT);
+
+  // Transmitter has switches
+  pinMode(REDSWITCHPIN, INPUT_PULLUP);
+  pinMode(GREENSWITCHPIN, INPUT_PULLUP);
 
   // RF24 setup
   if (!radio.begin()) {
@@ -117,8 +132,16 @@ void setup() {
   // Here's most of the special stuff (apart from constructor above):
   radio.setDataRate(RF24_250KBPS);
   radio.setChannel(86);
-  radio.openWritingPipe(address);  //destination address
-  radio.setPALevel(RF24_PA_LOW);   //
+
+  radio.setPALevel(RF24_PA_LOW);
+
+  if (iAmTransmitter) {
+    radio.openWritingPipe(xmitAddress);
+    radio.openReadingPipe(1, recvAddress);
+  } else {
+    radio.openWritingPipe(recvAddress);
+    radio.openReadingPipe(1, xmitAddress);
+  }
 
   radio.printPrettyDetails();
 
@@ -126,35 +149,38 @@ void setup() {
 
     boolean receivedReply = false;
     while (!receivedReply) {
+
+      data.red = digitalRead(REDSWITCHPIN);
+      data.green = digitalRead(GREENSWITCHPIN);
+
+      Serial.print("XMTR: in setup(), waiting for receiver, sending red = ");
+      Serial.print(data.red);
+      Serial.print(" green = ");
+      Serial.println(data.green);
+
       radio.stopListening();  // Become a transmitter
-
-      unsigned long timeNow = millis();
-      Serial.print("XMTR: sending time = ");
-
-      Serial.println(timeNow);
-      radio.write(&timeNow, sizeof(timeNow));
+      radio.write(&data, sizeof(data));
 
       receivedReply = checkForMessage();
-
       delay(200);  // not too often
     }
-    Serial.println("XMTR: received response, breaking out of setup()");
   }  // end of I am a transmitter
 }  // end of setup
-
 
 // checks to see whether we have received a message
 // returns true if we have received a message and data is valid
 //         false otherwise
 boolean checkForMessage() {
 
-  Serial.println("checking for a message");
+  //Serial.println("checking for a message");
   radio.startListening();  // Become a receiver
 
   if (radio.available(&pipeNum)) {
     radio.read(&data, sizeof(data));  //Reading the data
-    Serial.print("message received data = ");
-    Serial.println(data);
+    Serial.print("message received red = ");
+    Serial.print(data.red);
+    Serial.print(" green = ");
+    Serial.println(data.green);
     return true;
   }
   return false;
@@ -171,8 +197,13 @@ void loop() {
     }
 
     radio.read(&data, sizeof(data));  //Reading the data
-    Serial.print("RCVR: received data = ");
-    Serial.println(data);
+    Serial.print("RCVR: received red = ");
+    Serial.print(data.red);
+    Serial.print(" green = ");
+    Serial.println(data.green);
+
+    digitalWrite(GREENLEDPIN, data.green);
+    digitalWrite(REDLEDPIN, data.red);
 
     // now simply send it back
     radio.stopListening();
@@ -180,13 +211,12 @@ void loop() {
 
   } else {  // We are the transmitter
 
-    digitalWrite(GREENLEDPIN, LOW);
-    digitalWrite(REDLEDPIN, LOW);
-
-    radio.stopListening();
-    unsigned long timeNow = millis();
-    Serial.print("XMTR: sending timeNow = ");
-    Serial.println(timeNow);
+    data.red = digitalRead(REDSWITCHPIN);
+    data.green = digitalRead(GREENSWITCHPIN);
+    Serial.print("XMTR: sending red = ");
+    Serial.print(data.red);
+    Serial.print(" green = ");
+    Serial.println(data.green);
 
     // The write() function will block
     // until the message is successfully acknowledged by the receiver
@@ -202,23 +232,17 @@ void loop() {
     //        with an ACK packet.
     //        This condition can only be reported
     //        if the auto-ack feature is on.
-    radio.write(&timeNow, sizeof(timeNow));
+    radio.stopListening();
+    radio.write(&data, sizeof(data));
 
     // now wait for a reply and turn on the appropriate LED
     boolean receivedReply = false;
     while (!receivedReply) {
       radio.startListening();  // Become a receiver
       receivedReply = checkForMessage();
+      //Serial.print("XMTR: receivedReply = ");
+      //Serial.println(receivedReply);
       delay(10);  // can check for messages pretty often
     }
-    Serial.print("XMTR: received response, data = ");
-    Serial.println(data);
-
-    if (timeNow == data) {
-      digitalWrite(GREENLEDPIN, HIGH);
-    } else {
-      digitalWrite(REDLEDPIN, HIGH);
-    }
-
   }  // end of we are the transmitter
 }  // end of loop
