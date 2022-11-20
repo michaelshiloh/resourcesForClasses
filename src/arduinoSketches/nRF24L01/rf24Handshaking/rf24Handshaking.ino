@@ -13,10 +13,15 @@
    Documentation here: https://nrf24.github.io/RF24/index.html
 
    nRF24L01 datasheet here: 
-   https://www.sparkfun.com/datasheets/Components/SMD/nRF24L01Pluss_Preliminary_Product_Specification_v1_0.pdf
+   https://www.sparkfun.com/datasheets/Components/
+	 SMD/nRF24L01Pluss_Preliminary_Product_Specification_v1_0.pdf
 
    Much useful information in
    https://www.youtube.com/watch?v=Z7_Cy66Vnrc
+
+	 Good discussion of selecting good addresses:
+	 http://maniacalbits.blogspot.com/2013/04/
+	 rf24-addressing-nrf24l01-radios-require.html
 
 
    change log
