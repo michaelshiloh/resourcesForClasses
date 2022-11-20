@@ -8,6 +8,25 @@
    The receiver is included as a comment below
 
    These sketches require the RF24 library by TMRh20
+   Documentation here: https://nrf24.github.io/RF24/index.html
+
+   nRF24L01 datasheet here: 
+   https://www.sparkfun.com/datasheets/Components/SMD/nRF24L01Pluss_Preliminary_Product_Specification_v1_0.pdf
+
+   Much useful information 
+
+   change log
+
+   ?? Feb 2022 - ms - initial entry
+   16 Nov 2022 - ms - changed address to avoid bad bit patterns
+   18 Nov 2022 - ms - slower SPI speed (third parameter in constructor)
+                    - separate channels by 10 e.g. 
+                      setChannel(86); // default is 76
+                    - slower on-air datarate e.g.
+                      radio.setDataRate(RF24_250KBPS); 
+                    - low (but not minimum) power level e.g.
+                      radio.setPALevel(RF24_PA_LOW);                   
+   
 */
 
 
@@ -40,7 +59,7 @@ const int CSNPIN = 10;
 #include <SPI.h>
 #include <nRF24L01.h>
 #include <RF24.h>
-RF24 radio(CEPIN, CSNPIN);  // CE, CSN
+RF24 radio(CEPIN, CSNPIN, 125000L);  // CE, CSN
 
 #include <printf.h>
 
@@ -62,7 +81,7 @@ RF24 radio(CEPIN, CSNPIN);  // CE, CSN
 // e.g. 0x38 or 0x1C
 //
 // e.g.
-const byte address[6] = { 0x33, 0x36, 0xC7, 0xE6, 0xCC, 0xE3 };
+const byte address[] = { 0x33, 0x36, 0xC7, 0xE6, 0xCC };
 // const byte address[6] = "00001";
 
 void setup() {
@@ -81,8 +100,10 @@ void setup() {
   } else {
     Serial.println("radio successfully initialized");
   }
+  radio.setDataRate(RF24_250KBPS);
+  setChannel(86);
   radio.openWritingPipe(address);  //destination address
-  radio.setPALevel(RF24_PA_MIN);   // min or max
+  radio.setPALevel(RF24_PA_LOW);   // 
   radio.stopListening();           //This sets the module as transmitter
 
 
