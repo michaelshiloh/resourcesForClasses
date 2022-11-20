@@ -159,13 +159,10 @@ void loop() {
 
   if (!iAmTransmitter) {  // I am receiver so wait for a message
 
-    digitalWrite(GREENLEDPIN, LOW);
-    digitalWrite(REDLEDPIN, LOW);
-
     radio.startListening();  // Become a receiver
     while (!(radio.available(&pipeNum))) {
       Serial.println("RCVR: waiting for message");
-      delay(100);  // don't wait as long as transmitter
+      delay(10);  // check for messgaes pretty often
     }
 
     radio.read(&data, sizeof(data));  //Reading the data
@@ -177,6 +174,9 @@ void loop() {
     radio.write(&data, sizeof(data));
 
   } else {  // We are the transmitter
+
+    digitalWrite(GREENLEDPIN, LOW);
+    digitalWrite(REDLEDPIN, LOW);
 
     radio.stopListening();
     unsigned long timeNow = millis();
