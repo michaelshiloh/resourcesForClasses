@@ -124,7 +124,7 @@ void loop() {
   // TODO should I do this continuously or only once per press?
 
   if (digitalRead(XMITPIN) == LOW) {  // remember switches are active LOW
-    data.selectorBits = (digitalRead(SELECTOR0PIN) << 0 || digitalRead(SELECTOR1PIN) << 1 || digitalRead(SELECTOR2PIN) << 2);
+    data.selectorBits = (digitalRead(SELECTOR0PIN) << 0 | digitalRead(SELECTOR1PIN) << 1 | digitalRead(SELECTOR2PIN) << 2);
 
     Serial.print("XMTR: sending data = ");
     Serial.println(data.selectorBits);
@@ -139,20 +139,21 @@ void loop() {
   }
 }  // end of loop()
 
-/* Receiver Code
+
+/* Receiver Code 
 
 // Pin usage for receiver
 
 // Adafruit music maker shield
-const int SHIELD_RESET - 1  // VS1053 reset pin (unused!)
-  const int SHIELD_CS 7     // VS1053 chip select pin (output)
-  const int SHIELD_DCS 6    // VS1053 Data/command select pin (output)
-  const int CARDCS 4        // Card chip select pin
-  // DREQ should be an Int pin, see http://arduino.cc/en/Reference/attachInterrupt
-  const int DREQ 3  // VS1053 Data request, ideally an Interrupt pin
+#define SHIELD_RESET -1  // VS1053 reset pin (unused!)
+#define SHIELD_CS 7      // VS1053 chip select pin (output)
+#define SHIELD_DCS 6     // VS1053 Data/command select pin (output)
+#define CARDCS 4         // Card chip select pin
+// DREQ should be an Int pin, see http://arduino.cc/en/Reference/attachInterrupt
+#define DREQ 3  // VS1053 Data request, ideally an Interrupt pin
 
-  // Servo motors
-  const int SERVO0PIN = A0;
+// Servo motors
+const int SERVO0PIN = A0;
 const int SERVO1PIN = A1;
 const int SERVO2PIN = A2;
 const int SERVO3PIN = A3;
@@ -189,9 +190,39 @@ void setup() {
 
 }  // end of setup
 
-void loop(){
-  // If there is data, read it, and do the needfull
+void loop() {
+  // If there is data, read it,
+  // and do the needfull
+  // Become a receiver
+  radio.startListening();
+  if (radio.available(&pipeNum)) {
+    radio.read(&data, sizeof(data));
+    Serial.print("message received Data = ");
+    Serial.println(data.selectorBits);
 
+    switch (data.selectorBits) {
+      case 0b00000000:
+        Serial.println("case 0");
+        break;
+      case 0b00000001:
+        break;
+      case 0b00000010:
+        break;
+      case 0b00000011:
+        break;
+      case 0b00000100:
+        break;
+      case 0b00000101:
+        break;
+      case 0b00000110:
+        break;
+      case 0b00000111:
+      default:
+        Serial.println("Invalid option");
+    }
+  }
 }  // end of loop()
 
-end of receiver code  */
+// end of receiver code
+
+*/
