@@ -23,7 +23,8 @@
 
    change log
 
-   22 Nov 2022 - ms - initial entry based on rf24Handshaking                                     
+   22 Nov 2022 - ms - initial entry based on rf24Handshaking  
+   23 Nov 2022 - ms - added control of Music Maker Shield and servo motors                                   
    
 */
 
@@ -95,6 +96,11 @@ void setup() {
   pinMode(GROUNDPIN, OUTPUT);
   digitalWrite(GROUNDPIN, LOW);
 
+  setupRF24();
+  }
+
+  void setupRF24(){}
+
   // RF24 setup
   if (!radio.begin()) {
     Serial.println("radio  initialization failed");
@@ -116,7 +122,7 @@ void setup() {
 
   radio.printPrettyDetails();
 
-}  // end of setup
+}
 
 void loop() {
 
@@ -146,6 +152,7 @@ void loop() {
 // Additional libraries for receiver
 #include <Adafruit_VS1053.h>
 #include <SD.h>
+#include <Servo.h>
 
 // Additional pin usage for receiver
 
@@ -169,6 +176,16 @@ const int NEOPIXELPIN = A5;
 Adafruit_VS1053_FilePlayer musicPlayer =
   Adafruit_VS1053_FilePlayer(SHIELD_RESET, SHIELD_CS, SHIELD_DCS, DREQ, CARDCS);
 
+Servo servo0;
+Servo servo1;
+Servo servo2;
+Servo servo3;
+
+const int SERVO0NEUTRALPOSITION = 45;
+const int SERVO1NEUTRALPOSITION = 90;
+const int SERVO2NEUTRALPOSITION = 0;
+const int SERVO3NEUTRALPOSITION = 180;
+
 void setup() {
   Serial.begin(9600);
   printf_begin();
@@ -176,6 +193,7 @@ void setup() {
   // do the needfull for the MMS, NP, and servos
   setupMusicMakerShield();
   setupRF24();
+  setupServoMotors();
 }
 
 void setupRF24() {
@@ -199,8 +217,7 @@ void setupRF24() {
   radio.openReadingPipe(1, xmtrAddress);
 
   radio.printPrettyDetails();
-
-}  // end of setup
+}
 
 void setupMusicMakerShield() {
   if (!musicPlayer.begin()) {  // initialise the music player
@@ -227,6 +244,19 @@ void setupMusicMakerShield() {
   musicPlayer.useInterrupt(VS1053_FILEPLAYER_PIN_INT);  // DREQ int
 }
 
+void setupServoMotors() {
+  servo0.attach(SERVO0PIN);
+  servo1.attach(SERVO1PIN);
+  servo2.attach(SERVO2PIN);
+  servo3.attach(SERVO3PIN);
+
+  servo0.write(SERVO0NEUTRALPOSITION);
+  servo1.write(SERVO1NEUTRALPOSITION);
+  servo2.write(SERVO2NEUTRALPOSITION);
+  servo3.write(SERVO3NEUTRALPOSITION);
+}
+
+
 void loop() {
   // If there is data, read it,
   // and do the needfull
@@ -251,7 +281,6 @@ void loop() {
         }
         break;
       case 0b00000010:
-        
         // Don't play if it's already playing
         if (musicPlayer.stopped()) {
           // Non-blocking
@@ -262,10 +291,31 @@ void loop() {
         }
         break;
       case 0b00000011:
+        servo0.write(0);
+        servo1.write(0);
+        servo2.write(0);
+        servo3.write(0);
         break;
       case 0b00000100:
+        servo0.write(90);
+        servo1.write(90);
+        servo2.write(90);
+        servo3.write(90);
         break;
       case 0b00000101:
+        servo0.write(180);
+        servo1.write(180);
+        servo2.write(180);
+        servo3.write(180);
+
+        // Don't play if it's already playing
+        if (musicPlayer.stopped()) {
+          // Non-blocking
+          Serial.println(F("Playing track 002"));
+          musicPlayer.startPlayingFile("/track002.mp3");
+        } else {
+          Serial.println(F("Playing in progress, ignoring"));
+        }
         break;
       case 0b00000110:
         break;
