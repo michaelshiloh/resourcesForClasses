@@ -71,9 +71,10 @@ struct DataStruct {
 };
 DataStruct data;
 
+/*
 // Transmitter code
 
-// Pin usage for transmitter
+// Additional pin usage for transmitter
 const int SELECTOR0PIN = 6;
 const int SELECTOR1PIN = 5;
 const int SELECTOR2PIN = 4;
@@ -138,11 +139,15 @@ void loop() {
     delay(100);  // if the button is still pressed don't do this too often
   }
 }  // end of loop()
+*/
 
+// Receiver Code
 
-/* Receiver Code 
+// Additional libraries for receiver
+#include <Adafruit_VS1053.h>
+#include <SD.h>
 
-// Pin usage for receiver
+// Additional pin usage for receiver
 
 // Adafruit music maker shield
 #define SHIELD_RESET -1  // VS1053 reset pin (unused!)
@@ -159,14 +164,21 @@ const int SERVO2PIN = A2;
 const int SERVO3PIN = A3;
 
 // Neopixel
-const int NEOPIXELPIN = 5;
+const int NEOPIXELPIN = A5;
+
+Adafruit_VS1053_FilePlayer musicPlayer =
+  Adafruit_VS1053_FilePlayer(SHIELD_RESET, SHIELD_CS, SHIELD_DCS, DREQ, CARDCS);
 
 void setup() {
   Serial.begin(9600);
   printf_begin();
 
   // do the needfull for the MMS, NP, and servos
+  setupMusicMakerShield();
+  setupRF24();
+}
 
+void setupRF24() {
   // RF24 setup
   if (!radio.begin()) {
     Serial.println("radio  initialization failed");
@@ -190,6 +202,31 @@ void setup() {
 
 }  // end of setup
 
+void setupMusicMakerShield() {
+  if (!musicPlayer.begin()) {  // initialise the music player
+    Serial.println(F("Couldn't find VS1053, do you have the right pins defined?"));
+    while (1)
+      ;
+  }
+  Serial.println(F("VS1053 found"));
+
+  if (!SD.begin(CARDCS)) {
+    Serial.println(F("SD failed, or not present"));
+    while (1)
+      ;  // don't do anything more
+  }
+
+  // Set volume for left, right channels. lower numbers == louder volume!
+  musicPlayer.setVolume(20, 20);
+
+  // Timer interrupts are not suggested, better to use DREQ interrupt!
+  //musicPlayer.useInterrupt(VS1053_FILEPLAYER_TIMER0_INT); // timer int
+
+  // If DREQ is on an interrupt pin (on uno, #2 or #3) we can do background
+  // audio playing
+  musicPlayer.useInterrupt(VS1053_FILEPLAYER_PIN_INT);  // DREQ int
+}
+
 void loop() {
   // If there is data, read it,
   // and do the needfull
@@ -202,11 +239,27 @@ void loop() {
 
     switch (data.selectorBits) {
       case 0b00000000:
-        Serial.println("case 0");
         break;
       case 0b00000001:
+        // Don't play if it's already playing
+        if (musicPlayer.stopped()) {
+          // Non-blocking
+          Serial.println(F("Playing track 001"));
+          musicPlayer.startPlayingFile("/track001.mp3");
+        } else {
+          Serial.println(F("Playing in progress, ignoring"));
+        }
         break;
       case 0b00000010:
+        
+        // Don't play if it's already playing
+        if (musicPlayer.stopped()) {
+          // Non-blocking
+          Serial.println(F("Playing track 002"));
+          musicPlayer.startPlayingFile("/track002.mp3");
+        } else {
+          Serial.println(F("Playing in progress, ignoring"));
+        }
         break;
       case 0b00000011:
         break;
@@ -224,5 +277,3 @@ void loop() {
 }  // end of loop()
 
 // end of receiver code
-
-*/
