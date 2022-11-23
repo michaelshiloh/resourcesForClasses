@@ -1,13 +1,11 @@
 /*
-   Example using the nRF24L01 radio module to communicate
+   Using the nRF24L01 radio module to communicate
    between two Arduinos with much increased reliability following
    various tutorials, conversations, and studying the nRF24L01 datasheet
    and the library reference.
 
-   This code is for both transmitter and receiver. 
-   Behavior is determined by a jumper on the receiver.   
-   
-   The transmitter has two LEDs indicating correct data or errors
+   This file contians code for both transmitter and receiver. 
+   Transmitter at the top, receiver code is commented out
 
    These sketches require the RF24 library by TMRh20
    Documentation here: https://nrf24.github.io/RF24/index.html
@@ -23,31 +21,17 @@
 	 http://maniacalbits.blogspot.com/2013/04/
 	 rf24-addressing-nrf24l01-radios-require.html
 
-TODO
-- If the receiver resets after the transmitter transmits, 
-  they will both wait forever
-
    change log
 
-   18 Nov 2022 - ms - initial entry based on rf24TwoSwitchesTwoLEDs
-   18 Nov 2022 - ms - slower SPI speed (third parameter in constructor)
-                    - separate channels by 10 e.g. 
-                      setChannel(86); // default is 76
-                    - slower on-air datarate e.g.
-                      radio.setDataRate(RF24_250KBPS); 
-                    - low (but not minimum) power level e.g.
-                      radio.setPALevel(RF24_PA_LOW); 
-                    - changed address to avoid bad bit patterns                                        
+   22 Nov 2022 - ms - initial entry based on rf24Handshaking                                     
    
 */
 
-// Pin usage
+// Common code
+
+// Common pin usage
+// Note there are additional pins unique to transmitter or receiver
 //
-const int JUMPERPIN = 2;  // connect to ground for receiver
-const int REDLEDPIN = 3;
-const int GREENLEDPIN = 4;  // successful handshake
-const int REDSWITCHPIN = 5;
-const int GREENSWITCHPIN = 6;
 
 // nRF24L01 uses SPI which is fixed on pins 11, 12, and 13.
 // It also requires two other signals
@@ -70,58 +54,45 @@ const int CSNPIN = 10;
 #include <SPI.h>
 #include <nRF24L01.h>
 #include <RF24.h>
-//RF24 radio(CEPIN, CSNPIN, 125000L);  // CE, CSN
 RF24 radio(CEPIN, CSNPIN);  // CE, CSN
-
 
 #include <printf.h>  // for debugging
 
-
-// Byte of array representing the address.
-// This is the address where we will send the data.
-// This should be same on the receiving side.
+// See note in rf24Handshaking about address selection
 //
-// Avoid addresses where all bits are the same
-// (e.g. 00000 or FFFFF, because it looks like noise)
-// or alternate (e.g. 01010101 or 1010101, because it looks like the preamble)
-//
-// Good addresses need alternating short (2-4) sequences of the same
-// bit value e.g.  110001110011
-// or in hex the nibbles 0x3, 0x6, 0x7, 0xC, 0xE
-// (these are only 4 bits so combine)
-//
-// values that start or end with 1 bit can be combined
-// e.g. 0x38 or 0x1C
-//
-// e.g.
-const byte xmitAddress[] = { 0x33, 0x36, 0xC7, 0xE6, 0xCC };
-const byte recvAddress[] = { 0x33, 0x36, 0xC7, 0xE6, 0x66 };
-
+const byte xmtrAddress[] = { 0x33, 0x36, 0xC7, 0xE6, 0xCC };
+const byte rcvrAddress[] = { 0x33, 0x36, 0xC7, 0xE6, 0x66 };
 
 // global variables
-boolean iAmTransmitter = true;  // jumper makes us the receiver
 uint8_t pipeNum;
 
 struct DataStruct {
-  uint8_t green;
-  uint8_t red;
+  uint8_t selectorBits;
 };
 DataStruct data;
+
+// Transmitter code
+
+// Pin usage for transmitter
+const int SELECTOR0PIN = 6;
+const int SELECTOR1PIN = 5;
+const int SELECTOR2PIN = 4;
+const int XMITPIN = 3;
+const int GROUNDPIN = 7;  // because I was too lazy to wire up a ground pin
 
 void setup() {
   Serial.begin(9600);
   printf_begin();
 
-  pinMode(JUMPERPIN, INPUT_PULLUP);
-  iAmTransmitter = digitalRead(JUMPERPIN);  // jumper on receiver sets this to false
+  // All switches switch to ground
+  pinMode(SELECTOR0PIN, INPUT_PULLUP);
+  pinMode(SELECTOR1PIN, INPUT_PULLUP);
+  pinMode(SELECTOR2PIN, INPUT_PULLUP);
+  pinMode(XMITPIN, INPUT_PULLUP);
 
-  // Receiver has LEDs
-  pinMode(REDLEDPIN, OUTPUT);
-  pinMode(GREENLEDPIN, OUTPUT);
-
-  // Transmitter has switches
-  pinMode(REDSWITCHPIN, INPUT_PULLUP);
-  pinMode(GREENSWITCHPIN, INPUT_PULLUP);
+  // Temporary use as a ground pin
+  pinMode(GROUNDPIN, OUTPUT);
+  digitalWrite(GROUNDPIN, LOW);
 
   // RF24 setup
   if (!radio.begin()) {
@@ -132,120 +103,95 @@ void setup() {
     Serial.println("radio successfully initialized");
   }
 
-  // Here's most of the special stuff (apart from constructor above):
+  // Here's most of the special stuff:
   radio.setDataRate(RF24_250KBPS);
   radio.setChannel(86);
 
   radio.setPALevel(RF24_PA_LOW);
 
-  if (iAmTransmitter) {
-    radio.openWritingPipe(xmitAddress);
-    radio.openReadingPipe(1, recvAddress);
-  } else {
-    radio.openWritingPipe(recvAddress);
-    radio.openReadingPipe(1, xmitAddress);
-  }
+  // Set us as a transmitter
+  radio.openWritingPipe(xmtrAddress);
+  radio.openReadingPipe(1, rcvrAddress);
 
   radio.printPrettyDetails();
 
-  if (iAmTransmitter) {  // I am transmitter so transmit until receiver responds
-
-    boolean receivedReply = false;
-    while (!receivedReply) {
-
-      data.red = digitalRead(REDSWITCHPIN);
-      data.green = digitalRead(GREENSWITCHPIN);
-
-      Serial.print("XMTR: in setup(), waiting for receiver, sending red = ");
-      Serial.print(data.red);
-      Serial.print(" green = ");
-      Serial.println(data.green);
-
-      radio.stopListening();  // Become a transmitter
-      radio.write(&data, sizeof(data));
-
-      receivedReply = checkForMessage();
-      delay(200);  // not too often
-    }
-  }  // end of I am a transmitter
 }  // end of setup
-
-// checks to see whether we have received a message
-// returns true if we have received a message and data is valid
-//         false otherwise
-boolean checkForMessage() {
-
-  //Serial.println("checking for a message");
-  radio.startListening();  // Become a receiver
-
-  if (radio.available(&pipeNum)) {
-    radio.read(&data, sizeof(data));  //Reading the data
-    Serial.print("message received red = ");
-    Serial.print(data.red);
-    Serial.print(" green = ");
-    Serial.println(data.green);
-    return true;
-  }
-  return false;
-}
 
 void loop() {
 
-  if (!iAmTransmitter) {  // I am receiver so wait for a message
+  // If the transmit button is pressed, read the switches
+  // and send the bits
+  // TODO should I do this continuously or only once per press?
 
-    radio.startListening();  // Become a receiver
-    while (!(radio.available(&pipeNum))) {
-      Serial.println("RCVR: waiting for message");
-      delay(10);  // check for messgaes pretty often
-    }
+  if (digitalRead(XMITPIN) == LOW) {  // remember switches are active LOW
+    data.selectorBits = (digitalRead(SELECTOR0PIN) << 0 || digitalRead(SELECTOR1PIN) << 1 || digitalRead(SELECTOR2PIN) << 2);
 
-    radio.read(&data, sizeof(data));  //Reading the data
-    Serial.print("RCVR: received red = ");
-    Serial.print(data.red);
-    Serial.print(" green = ");
-    Serial.println(data.green);
-
-    digitalWrite(GREENLEDPIN, data.green);
-    digitalWrite(REDLEDPIN, data.red);
-
-    // now simply send it back
-    radio.stopListening();
-    radio.write(&data, sizeof(data));
-
-  } else {  // We are the transmitter
-
-    data.red = digitalRead(REDSWITCHPIN);
-    data.green = digitalRead(GREENSWITCHPIN);
-    Serial.print("XMTR: sending red = ");
-    Serial.print(data.red);
-    Serial.print(" green = ");
-    Serial.println(data.green);
+    Serial.print("XMTR: sending data = ");
+    Serial.println(data.selectorBits);
 
     // The write() function will block
     // until the message is successfully acknowledged by the receiver
     // or the timeout/retransmit maxima are reached.
-    // In the current (default?) configuration, the max delay here is 60-70ms.
-    //
-    // Returns
-    //   true if the payload was delivered successfully
-    //        and an acknowledgement (ACK packet) was received.
-    //        If auto-ack is disabled, then any attempt to transmit
-    //        will also return true (even if the payload was not received).
-    //   false if the payload was sent but was not acknowledged
-    //        with an ACK packet.
-    //        This condition can only be reported
-    //        if the auto-ack feature is on.
     radio.stopListening();
     radio.write(&data, sizeof(data));
 
-    // now wait for a reply before sending again
-    boolean receivedReply = false;
-    while (!receivedReply) {
-      radio.startListening();  // Become a receiver
-      receivedReply = checkForMessage();
-      //Serial.print("XMTR: receivedReply = ");
-      //Serial.println(receivedReply);
-      delay(10);  // can check for messages pretty often
-    }
-  }  // end of we are the transmitter
-}  // end of loop
+    delay(100);  // if the button is still pressed don't do this too often
+  }
+}  // end of loop()
+
+/* Receiver Code
+
+// Pin usage for receiver
+
+// Adafruit music maker shield
+const int SHIELD_RESET - 1  // VS1053 reset pin (unused!)
+  const int SHIELD_CS 7     // VS1053 chip select pin (output)
+  const int SHIELD_DCS 6    // VS1053 Data/command select pin (output)
+  const int CARDCS 4        // Card chip select pin
+  // DREQ should be an Int pin, see http://arduino.cc/en/Reference/attachInterrupt
+  const int DREQ 3  // VS1053 Data request, ideally an Interrupt pin
+
+  // Servo motors
+  const int SERVO0PIN = A0;
+const int SERVO1PIN = A1;
+const int SERVO2PIN = A2;
+const int SERVO3PIN = A3;
+
+// Neopixel
+const int NEOPIXELPIN = 5;
+
+void setup() {
+  Serial.begin(9600);
+  printf_begin();
+
+  // do the needfull for the MMS, NP, and servos
+
+  // RF24 setup
+  if (!radio.begin()) {
+    Serial.println("radio  initialization failed");
+    while (1)
+      ;
+  } else {
+    Serial.println("radio successfully initialized");
+  }
+
+  // Here's most of the special stuff:
+  radio.setDataRate(RF24_250KBPS);
+  radio.setChannel(86);
+
+  radio.setPALevel(RF24_PA_LOW);
+
+  // Set us as a receiver
+  radio.openWritingPipe(rcvrAddress);
+  radio.openReadingPipe(1, xmtrAddress);
+
+  radio.printPrettyDetails();
+
+}  // end of setup
+
+void loop(){
+  // If there is data, read it, and do the needfull
+
+}  // end of loop()
+
+end of receiver code  */
