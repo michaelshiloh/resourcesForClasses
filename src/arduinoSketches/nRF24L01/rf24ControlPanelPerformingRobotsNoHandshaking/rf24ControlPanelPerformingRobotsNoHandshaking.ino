@@ -320,6 +320,7 @@ void loop() {
       case 0b00000110:
         break;
       case 0b00000111:
+        break;
       default:
         Serial.println("Invalid option");
     }
