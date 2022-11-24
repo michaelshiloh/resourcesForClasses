@@ -72,7 +72,7 @@ struct DataStruct {
 };
 DataStruct data;
 
-/*
+
 // Transmitter code
 
 // Additional pin usage for transmitter
@@ -97,9 +97,9 @@ void setup() {
   digitalWrite(GROUNDPIN, LOW);
 
   setupRF24();
-  }
+}
 
-  void setupRF24(){}
+void setupRF24() {
 
   // RF24 setup
   if (!radio.begin()) {
@@ -121,10 +121,10 @@ void setup() {
   radio.openReadingPipe(1, rcvrAddress);
 
   radio.printPrettyDetails();
-
 }
 
 void loop() {
+  abuseServo();
 
   // If the transmit button is pressed, read the switches
   // and send the bits
@@ -145,8 +145,26 @@ void loop() {
     delay(100);  // if the button is still pressed don't do this too often
   }
 }  // end of loop()
-*/
 
+void abuseServo() {
+  data.selectorBits = 0b00000100;
+  Serial.print("XMTR: sending data = ");
+  Serial.println(data.selectorBits);
+  radio.stopListening();
+  radio.write(&data, sizeof(data));
+
+  delay(100);
+
+  data.selectorBits = 0b00000101;
+  Serial.print("XMTR: sending data = ");
+  Serial.println(data.selectorBits);
+  radio.stopListening();
+  radio.write(&data, sizeof(data));
+
+  delay(100);
+}
+
+/*
 // Receiver Code
 
 // Additional libraries for receiver
@@ -328,3 +346,4 @@ void loop() {
 }  // end of loop()
 
 // end of receiver code
+*/
