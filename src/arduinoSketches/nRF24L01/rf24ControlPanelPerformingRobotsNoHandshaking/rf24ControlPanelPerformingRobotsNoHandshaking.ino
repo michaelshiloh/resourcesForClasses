@@ -61,12 +61,12 @@ RF24 radio(CEPIN, CSNPIN);  // CE, CSN
 
 // See note in rf24Handshaking about address selection
 //
-const byte xmtrAddress[] = { 0x33, 0x36, 0xC7, 0xE6, 0xCC };
-const byte rcvrAddress[] = { 0x33, 0x36, 0xC7, 0xE6, 0x66 };
+const byte xmtrAddress[] = { 0x33, 0x33, 0xC7, 0xE6, 0xCC };
+const byte rcvrAddress[] = { 0x33, 0x33, 0xC7, 0xE6, 0x66 };
 
 const int RF24_POWER_LEVEL = RF24_PA_LOW;
 
-const int RF24_CHANNEL_NUMBER = 86;
+const int RF24_CHANNEL_NUMBER = 106;
 
 // global variables
 uint8_t pipeNum;
@@ -91,7 +91,7 @@ void setupRF24Common() {
   radio.setChannel(RF24_CHANNEL_NUMBER);
   radio.setPALevel(RF24_POWER_LEVEL);
 }
-/*
+
 
 // Transmitter code
 
@@ -154,7 +154,7 @@ void loop() {
 }  // end of loop()
 
 void abuseServo() {
-  data.selectorBits = 0b00000100;
+  data.selectorBits = 0b00000110;
   Serial.print("XMTR: sending data = ");
   Serial.println(data.selectorBits);
   radio.stopListening();
@@ -162,7 +162,7 @@ void abuseServo() {
 
   delay(300);
 
-  data.selectorBits = 0b00000101;
+  data.selectorBits = 0b00000111;
   Serial.print("XMTR: sending data = ");
   Serial.println(data.selectorBits);
   radio.stopListening();
@@ -171,8 +171,7 @@ void abuseServo() {
   delay(300);
 }
 
-*/
-
+/*
 // Receiver Code
 
 // Additional libraries for receiver
@@ -341,3 +340,4 @@ void loop() {
 }  // end of loop()
 
 // end of receiver code
+*/
