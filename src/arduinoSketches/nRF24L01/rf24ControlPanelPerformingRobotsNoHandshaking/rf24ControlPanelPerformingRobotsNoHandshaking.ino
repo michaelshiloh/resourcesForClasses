@@ -64,6 +64,10 @@ RF24 radio(CEPIN, CSNPIN);  // CE, CSN
 const byte xmtrAddress[] = { 0x33, 0x36, 0xC7, 0xE6, 0xCC };
 const byte rcvrAddress[] = { 0x33, 0x36, 0xC7, 0xE6, 0x66 };
 
+const int RF24_POWER_LEVEL = RF24_PA_LOW;
+
+const int RF24_CHANNEL_NUMBER = 86;
+
 // global variables
 uint8_t pipeNum;
 
@@ -72,6 +76,22 @@ struct DataStruct {
 };
 DataStruct data;
 
+void setupRF24Common() {
+
+  // RF24 setup
+  if (!radio.begin()) {
+    Serial.println("radio  initialization failed");
+    while (1)
+      ;
+  } else {
+    Serial.println("radio successfully initialized");
+  }
+
+  radio.setDataRate(RF24_250KBPS);
+  radio.setChannel(RF24_CHANNEL_NUMBER);
+  radio.setPALevel(RF24_POWER_LEVEL);
+}
+/*
 
 // Transmitter code
 
@@ -101,20 +121,7 @@ void setup() {
 
 void setupRF24() {
 
-  // RF24 setup
-  if (!radio.begin()) {
-    Serial.println("radio  initialization failed");
-    while (1)
-      ;
-  } else {
-    Serial.println("radio successfully initialized");
-  }
-
-  // Here's most of the special stuff:
-  radio.setDataRate(RF24_250KBPS);
-  radio.setChannel(86);
-
-  radio.setPALevel(RF24_PA_LOW);
+  setupRF24Common();
 
   // Set us as a transmitter
   radio.openWritingPipe(xmtrAddress);
@@ -153,7 +160,7 @@ void abuseServo() {
   radio.stopListening();
   radio.write(&data, sizeof(data));
 
-  delay(100);
+  delay(300);
 
   data.selectorBits = 0b00000101;
   Serial.print("XMTR: sending data = ");
@@ -161,10 +168,11 @@ void abuseServo() {
   radio.stopListening();
   radio.write(&data, sizeof(data));
 
-  delay(100);
+  delay(300);
 }
 
-/*
+*/
+
 // Receiver Code
 
 // Additional libraries for receiver
@@ -209,26 +217,13 @@ void setup() {
   printf_begin();
 
   // do the needfull for the MMS, NP, and servos
-  setupMusicMakerShield();
+  // setupMusicMakerShield();
   setupRF24();
   setupServoMotors();
 }
 
 void setupRF24() {
-  // RF24 setup
-  if (!radio.begin()) {
-    Serial.println("radio  initialization failed");
-    while (1)
-      ;
-  } else {
-    Serial.println("radio successfully initialized");
-  }
-
-  // Here's most of the special stuff:
-  radio.setDataRate(RF24_250KBPS);
-  radio.setChannel(86);
-
-  radio.setPALevel(RF24_PA_LOW);
+  setupRF24Common();
 
   // Set us as a receiver
   radio.openWritingPipe(rcvrAddress);
@@ -330,7 +325,7 @@ void loop() {
         if (musicPlayer.stopped()) {
           // Non-blocking
           Serial.println(F("Playing track 002"));
-          musicPlayer.startPlayingFile("/track002.mp3");
+          //musicPlayer.startPlayingFile("/track002.mp3");
         } else {
           Serial.println(F("Playing in progress, ignoring"));
         }
@@ -346,4 +341,3 @@ void loop() {
 }  // end of loop()
 
 // end of receiver code
-*/
