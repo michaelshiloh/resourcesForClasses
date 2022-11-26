@@ -92,6 +92,20 @@ void setupRF24Common() {
   radio.setPALevel(RF24_POWER_LEVEL);
 }
 
+void rf24SendData() {
+
+  // The write() function will block
+    // until the message is successfully acknowledged by the receiver
+    // or the timeout/retransmit maxima are reached.
+  int retval = radio.write(&data, sizeof(data));
+  if (retval) {
+    Serial.println("packet delivered successfully");
+  } else {
+    Serial.println("packet delivery failed");
+    radio.printPrettyDetails(); // probably don't need all of this
+  }
+}
+
 
 // Transmitter code
 
@@ -143,11 +157,9 @@ void loop() {
     Serial.print("XMTR: sending data = ");
     Serial.println(data.selectorBits);
 
-    // The write() function will block
-    // until the message is successfully acknowledged by the receiver
-    // or the timeout/retransmit maxima are reached.
+    
     radio.stopListening();
-    radio.write(&data, sizeof(data));
+    rf24SendData();
 
     delay(100);  // if the button is still pressed don't do this too often
   }
@@ -158,7 +170,7 @@ void abuseServo() {
   Serial.print("XMTR: sending data = ");
   Serial.println(data.selectorBits);
   radio.stopListening();
-  radio.write(&data, sizeof(data));
+  rf24SendData();
 
   delay(300);
 
@@ -166,7 +178,7 @@ void abuseServo() {
   Serial.print("XMTR: sending data = ");
   Serial.println(data.selectorBits);
   radio.stopListening();
-  radio.write(&data, sizeof(data));
+  rf24SendData();
 
   delay(300);
 }
