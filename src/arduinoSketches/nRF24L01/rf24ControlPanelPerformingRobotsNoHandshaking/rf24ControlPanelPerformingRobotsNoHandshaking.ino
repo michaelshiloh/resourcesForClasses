@@ -61,12 +61,12 @@ RF24 radio(CEPIN, CSNPIN);  // CE, CSN
 
 // See note in rf24Handshaking about address selection
 //
-const byte xmtrAddress[] = { 0x33, 0x33, 0xC7, 0xE6, 0xCC };
-const byte rcvrAddress[] = { 0x33, 0x33, 0xC7, 0xE6, 0x66 };
+const byte xmtrAddress[] = { 0xC7, 0xC7, 0xC7, 0xE6, 0xCC };
+const byte rcvrAddress[] = { 0xC7, 0xC7, 0xC7, 0xE6, 0x66 };
 
 const int RF24_POWER_LEVEL = RF24_PA_LOW;
 
-const int RF24_CHANNEL_NUMBER = 106;
+const int RF24_CHANNEL_NUMBER = 116;
 
 // global variables
 uint8_t pipeNum;
@@ -106,16 +106,28 @@ void rf24SendData() {
   }
 }
 
-/*
+
 // Transmitter code
 
 // Additional pin usage for transmitter
-const int SELECTOR0PIN = 7;
+// One row of selector switches
+const int SELECTOR0PIN = 8;
 const int SELECTOR1PIN = 6;
 const int SELECTOR2PIN = 5;
 const int SELECTOR3PIN = 4;
 const int XMITPIN = 3;
 const int GROUNDPIN = 7;  // because I was too lazy to wire up a ground pin
+
+// Hypothetical second row of selector switches
+const int SELECTOR4PIN = A0;
+const int SELECTOR5PIN = A1;
+const int SELECTOR6PIN = A2;
+const int SELECTOR7PIN = A3;
+const int XMIT2PIN = 2;
+
+// Hypothetical audio control switches
+const int PLAYNEXTCLIPPIN = A4;
+const int PLAYPREVIOUSCLIPPIN = A5;
 
 void setup() {
   Serial.begin(9600);
@@ -171,7 +183,7 @@ void loop() {
 }  // end of loop()
 
 void abuseServo() {
-  data.selectorBits = 0b00000110;
+  data.selectorBits = 0b00000001;
   Serial.print("XMTR: sending data = ");
   Serial.println(data.selectorBits);
   radio.stopListening();
@@ -179,7 +191,7 @@ void abuseServo() {
 
   delay(300);
 
-  data.selectorBits = 0b00000111;
+  data.selectorBits = 0b00000010;
   Serial.print("XMTR: sending data = ");
   Serial.println(data.selectorBits);
   radio.stopListening();
@@ -188,7 +200,7 @@ void abuseServo() {
   delay(300);
 }
 
-*/
+/*
 // Receiver Code
 
 // Additional libraries for receiver
@@ -373,3 +385,4 @@ void loop() {
 }  // end of loop()
 
 // end of receiver code
+*/
