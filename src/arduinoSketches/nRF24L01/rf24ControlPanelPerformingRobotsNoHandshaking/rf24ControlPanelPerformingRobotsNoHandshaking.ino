@@ -99,11 +99,16 @@ void rf24SendData() {
     // until the message is successfully acknowledged by the receiver
     // or the timeout/retransmit maxima are reached.
   int retval = radio.write(&data, sizeof(data));
+
+  Serial.print("Sending data = ");
+  Serial.print(data.selectorBits);
+  Serial.print(" ... ");
   if (retval) {
-    //Serial.println("packet delivered successfully");
+    Serial.println("success");
+
   } else {
     totalTransmitFailures++;
-    Serial.print("packet delivery failed, total failures = ");
+    Serial.print("failure, total failures = ");
     Serial.println(totalTransmitFailures);
     //radio.printPrettyDetails(); // probably don't need all of this
   }
@@ -187,16 +192,13 @@ void loop() {
 
 void abuseServo() {
   data.selectorBits = 0b00000111;
-  Serial.print("XMTR: sending data = ");
-  Serial.println(data.selectorBits);
+  
   radio.stopListening();
   rf24SendData();
 
   delay(300);
 
   data.selectorBits = 0b00001000;
-  Serial.print("XMTR: sending data = ");
-  Serial.println(data.selectorBits);
   radio.stopListening();
   rf24SendData();
 
