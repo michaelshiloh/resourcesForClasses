@@ -61,15 +61,16 @@ RF24 radio(CEPIN, CSNPIN);  // CE, CSN
 
 // See note in rf24Handshaking about address selection
 //
-const byte xmtrAddress[] = { 0xC7, 0xC7, 0xC7, 0xE6, 0xCC };
-const byte rcvrAddress[] = { 0xC7, 0xC7, 0xC7, 0xE6, 0x66 };
+const byte xmtrAddress[] = { 0x33, 0x33, 0xC7, 0xE6, 0xCC };
+const byte rcvrAddress[] = { 0x33, 0x33, 0xC7, 0xE6, 0x66 };
 
 const int RF24_POWER_LEVEL = RF24_PA_LOW;
 
-const int RF24_CHANNEL_NUMBER = 116;
+const int RF24_CHANNEL_NUMBER = 106;
 
 // global variables
 uint8_t pipeNum;
+unsigned int totalTransmitFailures = 0;
 
 struct DataStruct {
   uint8_t selectorBits;
@@ -99,10 +100,12 @@ void rf24SendData() {
     // or the timeout/retransmit maxima are reached.
   int retval = radio.write(&data, sizeof(data));
   if (retval) {
-    Serial.println("packet delivered successfully");
+    //Serial.println("packet delivered successfully");
   } else {
-    Serial.println("packet delivery failed");
-    radio.printPrettyDetails(); // probably don't need all of this
+    totalTransmitFailures++;
+    Serial.print("packet delivery failed, total failures = ");
+    Serial.println(totalTransmitFailures);
+    //radio.printPrettyDetails(); // probably don't need all of this
   }
 }
 
@@ -183,7 +186,7 @@ void loop() {
 }  // end of loop()
 
 void abuseServo() {
-  data.selectorBits = 0b00000001;
+  data.selectorBits = 0b00000111;
   Serial.print("XMTR: sending data = ");
   Serial.println(data.selectorBits);
   radio.stopListening();
@@ -191,7 +194,7 @@ void abuseServo() {
 
   delay(300);
 
-  data.selectorBits = 0b00000010;
+  data.selectorBits = 0b00001000;
   Serial.print("XMTR: sending data = ");
   Serial.println(data.selectorBits);
   radio.stopListening();
@@ -348,15 +351,6 @@ void loop() {
         servo1.write(180);
         servo2.write(180);
         servo3.write(180);
-
-        // Don't play if it's already playing
-        if (musicPlayer.stopped()) {
-          // Non-blocking
-          Serial.println(F("Playing track 002"));
-          //musicPlayer.startPlayingFile("/track002.mp3");
-        } else {
-          Serial.println(F("Playing in progress, ignoring"));
-        }
         break;
       case 0b00000110:
         break;
