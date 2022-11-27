@@ -106,13 +106,14 @@ void rf24SendData() {
   }
 }
 
-
+/*
 // Transmitter code
 
 // Additional pin usage for transmitter
-const int SELECTOR0PIN = 6;
-const int SELECTOR1PIN = 5;
-const int SELECTOR2PIN = 4;
+const int SELECTOR0PIN = 7;
+const int SELECTOR1PIN = 6;
+const int SELECTOR2PIN = 5;
+const int SELECTOR3PIN = 4;
 const int XMITPIN = 3;
 const int GROUNDPIN = 7;  // because I was too lazy to wire up a ground pin
 
@@ -124,6 +125,7 @@ void setup() {
   pinMode(SELECTOR0PIN, INPUT_PULLUP);
   pinMode(SELECTOR1PIN, INPUT_PULLUP);
   pinMode(SELECTOR2PIN, INPUT_PULLUP);
+  pinMode(SELECTOR3PIN, INPUT_PULLUP);
   pinMode(XMITPIN, INPUT_PULLUP);
 
   // Temporary use as a ground pin
@@ -152,7 +154,10 @@ void loop() {
   // TODO should I do this continuously or only once per press?
 
   if (digitalRead(XMITPIN) == LOW) {  // remember switches are active LOW
-    data.selectorBits = (digitalRead(SELECTOR0PIN) << 0 | digitalRead(SELECTOR1PIN) << 1 | digitalRead(SELECTOR2PIN) << 2);
+    data.selectorBits = (digitalRead(SELECTOR0PIN) << 0 
+    | digitalRead(SELECTOR1PIN) << 1 
+    | digitalRead(SELECTOR2PIN) << 2
+    | digitalRead(SELECTOR3PIN) << 3 );
 
     Serial.print("XMTR: sending data = ");
     Serial.println(data.selectorBits);
@@ -183,7 +188,7 @@ void abuseServo() {
   delay(300);
 }
 
-/*
+*/
 // Receiver Code
 
 // Additional libraries for receiver
@@ -345,6 +350,22 @@ void loop() {
         break;
       case 0b00000111:
         break;
+      case 0b00001000:
+        break;
+      case 0b00001001:
+        break;
+      case 0b00001010:
+        break;
+      case 0b00001011:
+        break;
+      case 0b00001100:
+        break;
+      case 0b00001101:
+      break;
+      case 0b00001110:
+        break;
+      case 0b00001111:
+        break;
       default:
         Serial.println("Invalid option");
     }
@@ -352,4 +373,3 @@ void loop() {
 }  // end of loop()
 
 // end of receiver code
-*/
