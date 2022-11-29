@@ -61,12 +61,12 @@ RF24 radio(CEPIN, CSNPIN);  // CE, CSN
 
 // See note in rf24Handshaking about address selection
 //
-const byte xmtrAddress[] = { 0x33, 0x33, 0xC7, 0xE6, 0xCC };
-const byte rcvrAddress[] = { 0x33, 0x33, 0xC7, 0xE6, 0x66 };
+const byte xmtrAddress[] = { 0xCC, 0xCC, 0xC7, 0xE6, 0xCC };
+const byte rcvrAddress[] = { 0xCC, 0xCC, 0xC7, 0xE6, 0x66 };
 
 const int RF24_POWER_LEVEL = RF24_PA_LOW;
 
-const int RF24_CHANNEL_NUMBER = 106;
+const int RF24_CHANNEL_NUMBER = 126;
 
 // global variables
 uint8_t pipeNum;
@@ -114,7 +114,7 @@ void rf24SendData() {
   }
 }
 
-
+/*
 // Transmitter code
 
 // Additional pin usage for transmitter
@@ -191,21 +191,21 @@ void loop() {
 }  // end of loop()
 
 void abuseServo() {
-  data.selectorBits = 0b00000111;
+  data.selectorBits = 0b00001001;
   
   radio.stopListening();
   rf24SendData();
 
   delay(300);
 
-  data.selectorBits = 0b00001000;
+  data.selectorBits = 0b00001010;
   radio.stopListening();
   rf24SendData();
 
   delay(300);
 }
 
-/*
+*/
 // Receiver Code
 
 // Additional libraries for receiver
@@ -224,26 +224,28 @@ void abuseServo() {
 #define DREQ 3  // VS1053 Data request, ideally an Interrupt pin
 
 // Servo motors
-const int SERVO0PIN = A0;
-const int SERVO1PIN = A1;
-const int SERVO2PIN = A2;
-const int SERVO3PIN = A3;
+const int SERVO0PIN = A1;
+const int SERVO1PIN = A2;
+const int SERVO2PIN = A3;
+const int SERVO3PIN = A4;
+const int SERVO4PIN = A5;
 
 // Neopixel
 const int NEOPIXELPIN = A5;
 
-Adafruit_VS1053_FilePlayer musicPlayer =
-  Adafruit_VS1053_FilePlayer(SHIELD_RESET, SHIELD_CS, SHIELD_DCS, DREQ, CARDCS);
+Adafruit_VS1053_FilePlayer musicPlayer = Adafruit_VS1053_FilePlayer(SHIELD_RESET, SHIELD_CS, SHIELD_DCS, DREQ, CARDCS);
 
 Servo servo0;
 Servo servo1;
 Servo servo2;
 Servo servo3;
+Servo servo4;
 
 const int SERVO0NEUTRALPOSITION = 45;
 const int SERVO1NEUTRALPOSITION = 90;
 const int SERVO2NEUTRALPOSITION = 0;
 const int SERVO3NEUTRALPOSITION = 180;
+const int SERVO4NEUTRALPOSITION = 180;
 
 void setup() {
   Serial.begin(9600);
@@ -295,11 +297,13 @@ void setupServoMotors() {
   servo1.attach(SERVO1PIN);
   servo2.attach(SERVO2PIN);
   servo3.attach(SERVO3PIN);
+  servo4.attach(SERVO4PIN);
 
   servo0.write(SERVO0NEUTRALPOSITION);
   servo1.write(SERVO1NEUTRALPOSITION);
   servo2.write(SERVO2NEUTRALPOSITION);
   servo3.write(SERVO3NEUTRALPOSITION);
+  servo4.write(SERVO4NEUTRALPOSITION);
 }
 
 
@@ -361,8 +365,18 @@ void loop() {
       case 0b00001000:
         break;
       case 0b00001001:
+        servo0.write(90);
+        servo1.write(90);
+        servo2.write(90);
+        servo3.write(90);
+        servo4.write(90);
         break;
       case 0b00001010:
+        servo0.write(180);
+        servo1.write(180);
+        servo2.write(180);
+        servo3.write(180);
+        servo4.write(180);
         break;
       case 0b00001011:
         break;
@@ -381,4 +395,3 @@ void loop() {
 }  // end of loop()
 
 // end of receiver code
-*/
