@@ -24,7 +24,9 @@
    change log
 
    22 Nov 2022 - ms - initial entry based on rf24Handshaking  
-   23 Nov 2022 - ms - added control of Music Maker Shield and servo motors                                   
+   23 Nov 2022 - ms - added control of Music Maker Shield and servo motors  
+   28 Nov 2022 - ms - checking return value from RF24.write() for errors
+   29 Nov 2022 - ms - exercise servo motors                                    
    
 */
 
@@ -114,7 +116,7 @@ void rf24SendData() {
   }
 }
 
-/*
+
 // Transmitter code
 
 // Additional pin usage for transmitter
@@ -164,6 +166,7 @@ void setupRF24() {
   radio.openReadingPipe(1, rcvrAddress);
 
   radio.printPrettyDetails();
+  Serial.println("I am a transmitter");
 }
 
 void loop() {
@@ -205,7 +208,7 @@ void abuseServo() {
   delay(300);
 }
 
-*/
+/*
 // Receiver Code
 
 // Additional libraries for receiver
@@ -265,6 +268,7 @@ void setupRF24() {
   radio.openReadingPipe(1, xmtrAddress);
 
   radio.printPrettyDetails();
+  Serial.println("I am a receiver");
 }
 
 void setupMusicMakerShield() {
@@ -393,5 +397,5 @@ void loop() {
     }
   }
 }  // end of loop()
-
+*/
 // end of receiver code
