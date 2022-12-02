@@ -49,13 +49,24 @@ RF24 radio(CEPIN, CSNPIN);  // CE, CSN
 
 // See note in rf24Handshaking about address selection
 //
-const byte xmtrAddress[] = { 0xCC, 0xCC, 0xC7, 0xE6, 0xCC };
-const byte rcvrAddress[] = { 0xCC, 0xCC, 0xC7, 0xE6, 0x66 };
+
+// Channel and address allocation:
+// Eadin and Dania: Channel 30, addr = 0x76
+// Fatima and Shamsa: Channel 40, addr = 0x73
+// Oliver and Hessa:  Channel 50, addr = 0x7C
+// Louis and Alpha: Channel 60, addr = 0xC6
+// Yoki and Yupu:  Channel 70, addr = 0xC3
+// Omar and Mudi: Channel 80, addr = 0xCC
+// Dhabia and Joseph: Channel 90, addr = 0x33
+
+const byte addr = 0x76;
+const byte xmtrAddress[] = { addr, addr, 0xC7, 0xE6, 0xCC };
+const byte rcvrAddress[] = { addr, addr, 0xC7, 0xE6, 0x66 };
+
+//  Legitimate channels are 0-125
+const int RF24_CHANNEL_NUMBER = 0;
 
 const int RF24_POWER_LEVEL = RF24_PA_LOW;
-
-// Addresses start at 96
-const int RF24_CHANNEL_NUMBER = 126;
 
 // global variables
 uint8_t pipeNum;
