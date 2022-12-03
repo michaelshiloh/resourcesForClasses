@@ -58,13 +58,12 @@ RF24 radio(CEPIN, CSNPIN);  // CE, CSN
 // Yoki and Yupu:  Channel 70, addr = 0xC3
 // Omar and Mudi: Channel 80, addr = 0xCC
 // Dhabia and Joseph: Channel 90, addr = 0x33
+const byte addr = 0x76; // change as per the above assignment
+const int RF24_CHANNEL_NUMBER = 0; // change as per the above assignment
 
-const byte addr = 0x76;
+// Do not make changes here
 const byte xmtrAddress[] = { addr, addr, 0xC7, 0xE6, 0xCC };
 const byte rcvrAddress[] = { addr, addr, 0xC7, 0xE6, 0x66 };
-
-//  Legitimate channels are 0-125
-const int RF24_CHANNEL_NUMBER = 0;
 
 const int RF24_POWER_LEVEL = RF24_PA_LOW;
 
@@ -318,9 +317,7 @@ void flashNeoPixels() {
   delay(500);
   
   // all off
-  for (int i = 0; i < NUMPIXELS; i++) {  // For each pixel...
-    pixels.setPixelColor(i, pixels.Color(0, 100, 0));
-  }
+  pixels.clear();
   pixels.show();
 }
 
