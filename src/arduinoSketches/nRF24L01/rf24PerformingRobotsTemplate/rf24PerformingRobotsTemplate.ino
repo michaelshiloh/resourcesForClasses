@@ -45,7 +45,7 @@ const int CSNPIN = 10;
 #include <RF24.h>
 RF24 radio(CEPIN, CSNPIN);  // CE, CSN
 
-#include <printf.h>  // for debugging
+//#include <printf.h>  // for debugging
 
 // See note in rf24Handshaking about address selection
 //
@@ -137,7 +137,7 @@ const int SPAREPIN = 8;
 
 void setup() {
   Serial.begin(9600);
-  printf_begin();
+  //printf_begin();
 
   // All switches use internal pullup resistor
   pinMode(SELECTOR0PIN, INPUT_PULLUP);
@@ -167,7 +167,7 @@ void setupRF24() {
   radio.openWritingPipe(xmtrAddress);
   radio.openReadingPipe(1, rcvrAddress);
 
-  radio.printPrettyDetails();
+  // radio.printPrettyDetails();
   Serial.println("I am a transmitter");
 }
 
@@ -241,7 +241,7 @@ const int SERVO4NEUTRALPOSITION = 180;
 
 void setup() {
   Serial.begin(9600);
-  printf_begin();
+  // printf_begin();
 
   // Set up all the attached hardware
   setupMusicMakerShield();
@@ -260,7 +260,7 @@ void setupRF24() {
   radio.openWritingPipe(rcvrAddress);
   radio.openReadingPipe(1, xmtrAddress);
 
-  radio.printPrettyDetails();
+  // radio.printPrettyDetails();
   Serial.println("I am a receiver");
 }
 
