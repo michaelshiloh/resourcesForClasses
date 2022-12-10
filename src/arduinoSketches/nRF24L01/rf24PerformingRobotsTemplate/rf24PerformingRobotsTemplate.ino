@@ -14,6 +14,7 @@
    change log
 
    02 Dec 2022 - ms - initial entry based on rf24ControlPanelPerformingRobotsNoHandshaking
+   10 Dec 2022 - ms - put all strings in flash memory and comment out printf.h to save space
 */
 
 // Common code
@@ -58,8 +59,8 @@ RF24 radio(CEPIN, CSNPIN);  // CE, CSN
 // Yoki and Yupu:  Channel 70, addr = 0xC3
 // Omar and Mudi: Channel 80, addr = 0xCC
 // Dhabia and Joseph: Channel 90, addr = 0x33
-const byte addr = 0x76; // change as per the above assignment
-const int RF24_CHANNEL_NUMBER = 0; // change as per the above assignment
+const byte addr = 0x76;             // change as per the above assignment
+const int RF24_CHANNEL_NUMBER = 0;  // change as per the above assignment
 
 // Do not make changes here
 const byte xmtrAddress[] = { addr, addr, 0xC7, 0xE6, 0xCC };
@@ -72,7 +73,9 @@ uint8_t pipeNum;
 unsigned int totalTransmitFailures = 0;
 
 struct DataStruct {
-  uint8_t selectorBits;
+  uint8_t servoBits;
+  uint8_t neoPixelBits;
+  uint8_t playbackControlBits;
 };
 DataStruct data;
 
@@ -99,62 +102,59 @@ void rf24SendData() {
   // or the timeout/retransmit maxima are reached.
   int retval = radio.write(&data, sizeof(data));
 
-  Serial.print("Sending data = ");
-  Serial.print(data.selectorBits);
+  Serial.print(F("Servo bits = "));
+  Serial.print(data.servoBits, BIN);
+  Serial.print(F(" NeoPixel bits = "));
+  Serial.print(data.neoPixelBits, BIN);
+  Serial.print(F(" Playback control bits = "));
+  Serial.print(data.playbackControlBits, BIN);
+
   Serial.print(" ... ");
   if (retval) {
     Serial.println("success");
-
   } else {
     totalTransmitFailures++;
-    Serial.print("failure, total failures = ");
+    Serial.print(F("failure, total failures = "));
     Serial.println(totalTransmitFailures);
   }
 }
 
-
+/*
 // Transmitter code
 
-// Additional pin usage for transmitter
-// Example of selector switches line 1
-const int SELECTOR0PIN = 6;
-const int SELECTOR1PIN = 5;
-const int SELECTOR2PIN = 4;
-const int SELECTOR3PIN = 3;
-const int XMIT1PIN = 2;
+// Switches for selecting servo activity
+const int SERVOSELPIN2 = 5;
+const int SERVOSELPIN1 = 4;
+const int SERVOSELPIN0 = 3;
+const int SERVOXMITPIN = 2;
 
-// Hypothetical second row of selector switches
-const int SELECTOR4PIN = A0;
-const int SELECTOR5PIN = A1;
-const int SELECTOR6PIN = A2;
-const int SELECTOR7PIN = A3;
-const int XMIT2PIN = 7;
+// Switches for selecting NeoPixel activity
+const int NEOSELPIN2 = A2;
+const int NEOSELPIN1 = A1;
+const int NEOSELPIN0 = A0;
+const int NEOXMITPIN = 6;
 
 // Hypothetical audio control switches
-const int PLAYNEXTCLIPPIN = A4;
-const int PLAYPREVIOUSCLIPPIN = A5;
-const int SPAREPIN = 8;
+const int PLAYNEXTCLIPPIN = A3;
+
+// that leaves 6, 7, 8, A4, and A5 unused
 
 void setup() {
   Serial.begin(9600);
   //printf_begin();
 
   // All switches use internal pullup resistor
-  pinMode(SELECTOR0PIN, INPUT_PULLUP);
-  pinMode(SELECTOR1PIN, INPUT_PULLUP);
-  pinMode(SELECTOR2PIN, INPUT_PULLUP);
-  pinMode(SELECTOR3PIN, INPUT_PULLUP);
-  pinMode(SELECTOR4PIN, INPUT_PULLUP);
-  pinMode(SELECTOR5PIN, INPUT_PULLUP);
-  pinMode(SELECTOR6PIN, INPUT_PULLUP);
-  pinMode(SELECTOR7PIN, INPUT_PULLUP);
+  pinMode(SERVOSELPIN2, INPUT_PULLUP);
+  pinMode(SERVOSELPIN1, INPUT_PULLUP);
+  pinMode(SERVOSELPIN0, INPUT_PULLUP);
+  pinMode(SERVOXMITPIN, INPUT_PULLUP);
 
-  pinMode(XMIT1PIN, INPUT_PULLUP);
-  pinMode(XMIT2PIN, INPUT_PULLUP);
+  pinMode(NEOSELPIN2, INPUT_PULLUP);
+  pinMode(NEOSELPIN1, INPUT_PULLUP);
+  pinMode(NEOSELPIN0, INPUT_PULLUP);
+  pinMode(NEOXMITPIN, INPUT_PULLUP);
 
-  pinMode(PLAYNEXTCLIPPIN , INPUT_PULLUP);
-  pinMode(PLAYPREVIOUSCLIPPIN , INPUT_PULLUP);
-  pinMode(SPAREPIN , INPUT_PULLUP);
+  pinMode(PLAYNEXTCLIPPIN, INPUT_PULLUP);
 
   setupRF24();
 }
@@ -168,7 +168,7 @@ void setupRF24() {
   radio.openReadingPipe(1, rcvrAddress);
 
   // radio.printPrettyDetails();
-  Serial.println("I am a transmitter");
+  Serial.println(F("I am a transmitter"));
 }
 
 void loop() {
@@ -176,26 +176,59 @@ void loop() {
   // If the transmit button is pressed, read the switches
   // and send the bits
 
-  if (digitalRead(XMIT1PIN) == LOW) {  // remember switches are active LOW
-    data.selectorBits = (digitalRead(SELECTOR0PIN) << 0 
-    | digitalRead(SELECTOR1PIN) << 1 
-    | digitalRead(SELECTOR2PIN) << 2
-    | digitalRead(SELECTOR3PIN) << 3 );
+  if (digitalRead(SERVOXMITPIN) == LOW) {  // remember switches are active LOW
 
-    Serial.print("XMTR: sending data = ");
-    Serial.println(data.selectorBits);
+    clearData();
 
-    
+    data.servoBits = (digitalRead(SERVOSELPIN0) << 0
+                      | digitalRead(SERVOSELPIN1) << 1
+                      | digitalRead(SERVOSELPIN2) << 2);
+
     radio.stopListening();
     rf24SendData();
 
     delay(100);  // if the button is still pressed don't do this too often
   }
+
+  if (digitalRead(NEOXMITPIN) == LOW) {  // remember switches are active LOW
+
+    clearData();
+
+    data.neoPixelBits = (digitalRead(NEOSELPIN0) << 0
+                         | digitalRead(NEOSELPIN1) << 1
+                         | digitalRead(NEOSELPIN2) << 2);
+
+    radio.stopListening();
+    rf24SendData();
+
+    delay(100);  // if the button is still pressed don't do this too often
+  }
+
+  if (digitalRead(PLAYNEXTCLIPPIN) == LOW) {
+
+    clearData();
+    data.playbackControlBits = 1;
+    
+    radio.stopListening();
+    rf24SendData();
+
+    delay(100);  // if the button is still pressed don't do this too often
+  
+  }
+
 }  // end of loop()
 
-// End of transmitter code
 
-/*
+void clearData() {
+  // set all fields to 0
+  data.servoBits = 0;
+  data.neoPixelBits = 0;
+  data.playbackControlBits = 0;
+}
+
+// End of transmitter code
+*/
+
 // Receiver Code
 
 // Additional libraries for receiver
@@ -315,7 +348,7 @@ void flashNeoPixels() {
   }
   pixels.show();
   delay(500);
-  
+
   // all off
   pixels.clear();
   pixels.show();
@@ -328,31 +361,21 @@ void loop() {
   radio.startListening();
   if (radio.available(&pipeNum)) {
     radio.read(&data, sizeof(data));
-    Serial.print("message received Data = ");
-    Serial.println(data.selectorBits);
+    Serial.print(F("message received Data = "));
+    Serial.print(F("Servo bits = "));
+    Serial.print(data.servoBits, BIN);
+    Serial.print(F(" NeoPixel bits = "));
+    Serial.print(data.neoPixelBits, BIN);
+    Serial.print(F(" Playback control bits = "));
+    Serial.println(data.playbackControlBits, BIN);
 
-    switch (data.selectorBits) {
+    switch (data.servoBits) {
       case 0b00000000:
+        // always do nothing for 0
         break;
       case 0b00000001:
-        // Don't play if it's already playing
-        if (musicPlayer.stopped()) {
-          // Non-blocking
-          Serial.println(F("Playing track 001"));
-          musicPlayer.startPlayingFile("/track001.mp3");
-        } else {
-          Serial.println(F("Playing in progress, ignoring"));
-        }
         break;
       case 0b00000010:
-        // Don't play if it's already playing
-        if (musicPlayer.stopped()) {
-          // Non-blocking
-          Serial.println(F("Playing track 002"));
-          musicPlayer.startPlayingFile("/track002.mp3");
-        } else {
-          Serial.println(F("Playing in progress, ignoring"));
-        }
         break;
       case 0b00000011:
         servo0.write(0);
@@ -372,21 +395,44 @@ void loop() {
         break;
       case 0b00000111:
         break;
-      case 0b00001000:
+      default:
+        Serial.println("Invalid option");
+    }
+
+    switch (data.neoPixelBits) {
+      case 0b00000000:
+        // always do nothing for 0
         break;
-      case 0b00001001:
+      case 0b00000001:
         break;
-      case 0b00001010:
+      case 0b00000010:
         break;
-      case 0b00001011:
+      case 0b00000011:
+        // do some LED pattern here
         break;
-      case 0b00001100:
+      case 0b00000100:
+        // do a different LED pattern here
         break;
-      case 0b00001101:
+      case 0b00000101:
         break;
-      case 0b00001110:
+      case 0b00000110:
         break;
-      case 0b00001111:
+      case 0b00000111:
+        break;
+      default:
+        Serial.println("Invalid option");
+    }
+
+    switch (data.playbackControlBits) {
+      case 0b00000000:
+        // always do nothing for 0
+        break;
+      case 0b00000001:
+      Serial.println(F("will play next track"));
+        break;
+      case 0b00000010:
+        break;
+      case 0b00000011:
         break;
       default:
         Serial.println("Invalid option");
@@ -396,4 +442,3 @@ void loop() {
 
 // end of receiver code
 
-*/
