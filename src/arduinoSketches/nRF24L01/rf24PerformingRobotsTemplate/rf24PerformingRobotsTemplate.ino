@@ -115,7 +115,7 @@ void rf24SendData() {
   } else {
     totalTransmitFailures++;
     Serial.print(F("failure, total failures = "));
-    Serial.println(F(totalTransmitFailures));
+    Serial.println(totalTransmitFailures);
   }
 }
 
