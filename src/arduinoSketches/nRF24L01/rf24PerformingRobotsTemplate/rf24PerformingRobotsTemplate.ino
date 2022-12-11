@@ -83,11 +83,11 @@ void setupRF24Common() {
 
   // RF24 setup
   if (!radio.begin()) {
-    Serial.println("radio  initialization failed");
+    Serial.println(F("radio  initialization failed"));
     while (1)
       ;
   } else {
-    Serial.println("radio successfully initialized");
+    Serial.println(F("radio successfully initialized"));
   }
 
   radio.setDataRate(RF24_250KBPS);
@@ -109,17 +109,17 @@ void rf24SendData() {
   Serial.print(F(" Playback control bits = "));
   Serial.print(data.playbackControlBits, BIN);
 
-  Serial.print(" ... ");
+  Serial.print(F(" ... "));
   if (retval) {
-    Serial.println("success");
+    Serial.println(F("success"));
   } else {
     totalTransmitFailures++;
     Serial.print(F("failure, total failures = "));
-    Serial.println(totalTransmitFailures);
+    Serial.println(F(totalTransmitFailures));
   }
 }
 
-/*
+
 // Transmitter code
 
 // Switches for selecting servo activity
@@ -227,8 +227,8 @@ void clearData() {
 }
 
 // End of transmitter code
-*/
 
+/*
 // Receiver Code
 
 // Additional libraries for receiver
@@ -294,7 +294,7 @@ void setupRF24() {
   radio.openReadingPipe(1, xmtrAddress);
 
   // radio.printPrettyDetails();
-  Serial.println("I am a receiver");
+  Serial.println(F("I am a receiver"));
 }
 
 void setupMusicMakerShield() {
@@ -396,7 +396,7 @@ void loop() {
       case 0b00000111:
         break;
       default:
-        Serial.println("Invalid option");
+        Serial.println(F("Invalid option"));
     }
 
     switch (data.neoPixelBits) {
@@ -420,7 +420,7 @@ void loop() {
       case 0b00000111:
         break;
       default:
-        Serial.println("Invalid option");
+        Serial.println(F("Invalid option"));
     }
 
     switch (data.playbackControlBits) {
@@ -432,13 +432,13 @@ void loop() {
         break;
       case 0b00000010:
         break;
-      case 0b00000011:
+     T case 0b00000011:
         break;
       default:
-        Serial.println("Invalid option");
+        Serial.println(F("Invalid option"));
     }
   }
 }  // end of loop()
 
 // end of receiver code
-
+*/
