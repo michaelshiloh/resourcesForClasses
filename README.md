@@ -55,6 +55,31 @@ can be applied to all sensors (e.g. the ultrasonic distance measuring sensor)
 tolerate vs. how smooth you need the result. Usually it's best to do this by
 experimentation.
 
+## Fabrication
+
+1. Always design easy access for repair or modification. Never put items on
+	 top of one another. Assume you will need easy access to each component.
+	 Make access doors big so that you can easily put your hands in or bring
+	 components out. Make holes for wires big enough that you can get the
+	 connector through as well.
+1. Make any enclosures at least twice as big as you think you'll need. Until
+	 you're extremely experienced, you will underestimate how much room you'll
+	 need and forget things like wires, which take up lots of space
+1. Make wires longer than necessary, at least long enough that you can remove
+	 a module and work on it comfortably (e.g. placing it face down on a
+	 surface, not having to hold it at an uncomfortable angle)
+1. Always use stranded wire between modules or between components and boards.
+	 Solid wire can only be used when both ends are soldered to the same board.
+1. Be consistent with colors: red for +5V (or whatever the dominant voltage
+	 is), black wires for ground.
+1. Don't have wires traverse empty space. Anchor wires to walls or other
+	 support structures. Use zipties to bundle them neatly. 
+1. Whenever possible, once you have finished the prototype transfer your
+	 circuit from the solderless breadboard to a soldered board such as a
+	 prototyping shield. Abolish all jumpers cables and instead solder
+	 extensions as necessary. Use heat-shrink tubing on all solder joints to
+	 prevent short circuits.
+
 
 ## Theory
 1. [Robotic Creatures](doc/roboticCreatures2010Ghedini.pdf)
@@ -291,13 +316,20 @@ without using `delay()`:
 [flickerMultipleNoDelay](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/flickerMultipleNoDelay/flickerMultipleNoDelay.ino)
 
 
-## State, state machines, and state change detection (also referred to as
-*edge detection*)
+## State, state machines, and state change detection (edge detection)
 
 1. [State Change Detection](https://www.arduino.cc/en/Tutorial/StateChangeDetection)
 
-1. A formal State Machine is called a *Finite State Machine* (FSM). Although you can
-	 often get away with being less formal, here is a nice [tutorial](https://www.instructables.com/Finite-State-Machine-on-an-Arduino/) on FSMs
+1. A formal State Machine is called a *Finite State Machine* (FSM). Although
+	 you can often get away with being less formal, here is a nice
+	 [tutorial](https://www.instructables.com/Finite-State-Machine-on-an-Arduino/)
+	 on FSMs
+
+2. Adafruit 
+	[tutorial](http://www.ladyada.net/learn/arduino/lesson5.html)
+
+3. Another 
+	[edge detection tutorial](https://programmingelectronics.com/tutorial-18-state-change-detection-and-the-modulo-operator-old-version/)
 
 
 ## Arduino Tone Resources
@@ -525,15 +557,6 @@ difference that we won't be concerned with.
 	We have both N-channel and P-channel MOSFETs in the lab, but the ones that
 	we use primarily (and the only ones I've discussed in class) are N-channel
 	enhancement mode MOSFETs
-
-## Edge Detection 
-1. Arduino [tutorial](https://www.arduino.cc/en/Tutorial/StateChangeDetection)
-
-2. Adafruit 
-	[tutorial](http://www.ladyada.net/learn/arduino/lesson5.html)
-
-3. Another 
-	[tutorial](https://programmingelectronics.com/tutorial-18-state-change-detection-and-the-modulo-operator-old-version/)
 
 ## Debouncing
 - Arduino

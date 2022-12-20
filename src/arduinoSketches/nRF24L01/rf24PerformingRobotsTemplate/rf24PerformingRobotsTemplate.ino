@@ -14,7 +14,7 @@
    change log
 
    02 Dec 2022 - ms - initial entry based on rf24ControlPanelPerformingRobotsNoHandshaking
-   10 Dec 2022 - ms - put all strings in flash memory and comment out printf.h to save space
+   10 Dec 2022 - ms - put all strings in flash memory and comment out printf.h to save RAM
 */
 
 // Common code
