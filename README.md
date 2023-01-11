@@ -26,6 +26,12 @@ probably discovered, a big mess of wires is very hard to debug, so spending
 time to make the wires tidy can save you a lot of time later when things don't
 work.
 
+## Wisdom
+
+1. MY GUIDING PRINCIPLES AFTER 20 YEARS OF PROGRAMMING
+Medium
+Alex Ewerlöf wrote an excellent article about his principles for working with software that I found could also apply to working on mechanical and electrical systems.
+
 ## Smoothing Readings from Noisy Sensors using Filters
 
 1. Running average, built-in example in Arduino (File -> Examples -> Analog ->
@@ -979,6 +985,27 @@ Latour, B, ‘A Cautious Prometheus? A Few Steps toward a Philosophy of Design�
 
 1. [Why Open Source Misses the Point of Free
 	 Software](https://www.gnu.org/philosophy/open-source-misses-the-point.en.html)
+
+# General Resources about Robots
+
+1. [INTRODUCTION TO AUTONOMOUS ROBOTS](github)
+Introduction to Autonomous Robots is an open-access book by Nikolaus Correll, Bradley Hayes, Christoffer Heckman, and Alessandro Roncone. The book focuses on mechanisms, sensors, actuators, and algorithms.
+
+1. ELEMENTS OF ROBOTICS
+Springer
+Published in 2018, Elements of Robotics is an open-access textbook by Mordechai Ben-Ari and Francesco Mondada. The book covers sensors, robot motion, state machines, control, navigation, localization, machine learning, and more.
+
+1. [FOUNDATIONS OF ROBOTICS](foundations-of-robotics.org)
+This open-access book by Damith Herath and David St-Onge is an introductory text providing a high-level overview of many aspects of robotics.
+
+1. INTRODUCTION TO ROBOTICS
+Princeton
+Anirudha Majumdar teaches this course at Princeton University. The course covers feedback control, motion planning, state estimation, and computer vision and uses a Crazyflie quadrotor throughout the course. On the above page, you will find all course materials.
+
+1. [ROBOTICS 501: MATHEMATICS FOR ROBOTICS](GitHub)
+“ROB 501: Mathematics for Robotics is a graduate-level course at the University of Michigan that introduces applied mathematics for robotics engineers.
+Topics include vector spaces, orthogonal bases, projection theorem, least squares, matrix factorizations, Kalman filter and underlying probabilistic concepts, norms, convergent sequences, contraction mappings, Newton Raphson algorithm, local vs. global convergence in nonlinear optimization, convexity, linear and quadratic programs”.
+
 
 # Resources for Performing Robots
 
