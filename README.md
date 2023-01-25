@@ -87,7 +87,7 @@ experimentation.
 	 prevent short circuits.
 
 
-## Theory
+## Theory and critique
 1. [Robotic Creatures](doc/roboticCreatures2010Ghedini.pdf)
 1. [Catalog](doc/moma_catalogue_machine_art.pdf)
  from Machine Art exhibit, Museum of Modern Art, 1934 
@@ -444,6 +444,66 @@ Projects website (which itself is a great resource for all sorts of projects)
 
 1. [Twenty different
 	 mechanisms](https://www.youtube.com/watch?v=M1-YeqGynlw&authuser=0) demonstrated using Lego
+
+1. [THE SECRET LIFE OF
+	 COMPONENTS](https://www.timhunkin.com/a241_component-videos.htm)
+"A series of youtube guides for designers and makers" by Tim Hunkn. Of special
+interest in this section of the resource guide are Chain, Hinges, Springs,
+Glue, Bearings, Sensors, Linkages and Mechanisms, Motors, Screw Types, and
+Prototypes. That's pretty much all of them except for LEDs, Switches, and
+Connectors.
+
+1. Not exactly a clock, but an interesting [article](https://www.inverse.com/article/17957-automata-clockwork-robots-artificial-intelligence-jessica-riskin)
+
+1. [Article](https://www.nature.com/articles/d41586-018-05773-y) in Nature magazine about automata (crosses into robots too)
+
+1. [Re-creation](https://www.youtube.com/watch?v=-wR6jAYgVPM) of the famous automata duck
+
+1. CBS News on [Automaton](https://www.youtube.com/watch?v=C7oSFNKIlaM)
+
+1. [Inspiration](https://twitter.com/GregoireSaunier/status/1512924636492800001)
+
+1. [Jigsaw puzzle solving robot](https://www.youtube.com/watch?v=Gu_1S77XkiM) with lots of mechanisms
+
+1.
+	 [Interview](https://www.insider.com/realistic-animatronic-special-effects-for-movies-and-tv-2022-3)
+	 with brilliant special effects designer at Industrial Light and Magic
+
+1. Online version of a famous book series called [507 Mechanical
+	 Movements](http://507movements.com/)
+
+1. Another version of [507 Mechanical Movements](https://www.yeggi.com/q/507+mechanical+movements/)
+
+1. [CAD designs](https://studiored.com/cad/114-of-the-507-mechanical-movement/) of the mechanisms in 507 Mechanical Movements
+
+1. [I don't remember](https://www.red-salamander.com/manuals/)
+
+1. [Making of a animatronic hand](https://makezine.com/article/maker-news/behind-the-scenes-with-the-animatronic-hand-from-netflixs-wednesday/) for promoting the Netflix series *Wednesday*
+
+1. [Animated linkages](https://grabcad.com/library/bennett-linkage-animation-only-1)
+
+1. A book on [Ingenious mechanisms](https://www.amazon.com/Ingenious-Mechanisms-Vol-Designers-Inventors/dp/0831110295/ref=sr_1_5)
+
+1. [?](http://www.figuresinthefourthdimension.com/index.html)
+
+1. [?](http://www.figuresinthefourthdimension.com/html/Spring.html)
+
+1. A linkage [simulator](https://blog.rectorsquid.com/linkage-mechanism-designer-and-simulator/), to help you determine the lengths of the elements for
+	 achieving particular movements
+
+1. [?](https://www.instagram.com/reel/CgpFhJdoJ--/?igshid=YmMyMTA2M2Y=)
+
+1. [?](https://instagram.com/thehouseofautomata)
+
+1. [Virtual sphere rolling joint](https://www.youtube.com/watch?v=tcDDDaSMW0I)
+
+1. [?](https://youtu.be/M1-YeqGynlw)
+
+1. [Engineers Illustrated Thesaurus](https://archive.org/details/HerkhimerH.EngineersIllustratedThesaurus1952), a classic reference book
+
+1. [Escapement mechanisms: Simple and fascinating](https://youtu.be/zBB4EUIOGM8)
+
+================================================================================
 
 ## Github Resources
 
