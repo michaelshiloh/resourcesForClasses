@@ -484,20 +484,20 @@ Connectors.
 
 1. A book on [Ingenious mechanisms](https://www.amazon.com/Ingenious-Mechanisms-Vol-Designers-Inventors/dp/0831110295/ref=sr_1_5)
 
-1. [?](http://www.figuresinthefourthdimension.com/index.html)
+1. [Mechanical Movement for Puppets and Automata](http://www.figuresinthefourthdimension.com/index.html) by Figures in the Fourth Dimension
 
-1. [?](http://www.figuresinthefourthdimension.com/html/Spring.html)
+1. A particularly nice [example](http://www.figuresinthefourthdimension.com/html/Spring.html) from Figures in the Fourth Dimension
 
 1. A linkage [simulator](https://blog.rectorsquid.com/linkage-mechanism-designer-and-simulator/), to help you determine the lengths of the elements for
 	 achieving particular movements
 
-1. [?](https://www.instagram.com/reel/CgpFhJdoJ--/?igshid=YmMyMTA2M2Y=)
+1. The House of Automata [Instagram account](https://instagram.com/thehouseofautomata)
 
-1. [?](https://instagram.com/thehouseofautomata)
+1. [Bare walking mechanism](https://www.instagram.com/reel/CgpFhJdoJ--/?igshid=YmMyMTA2M2Y=) from the House of Automata
 
 1. [Virtual sphere rolling joint](https://www.youtube.com/watch?v=tcDDDaSMW0I)
 
-1. [?](https://youtu.be/M1-YeqGynlw)
+1. [20 Mechanical Principles combined in a Useless Lego Machine](https://youtu.be/M1-YeqGynlw). Nice depiction of each mechanism but I wish they were separate rather than all combined to make them easier to study
 
 1. [Engineers Illustrated Thesaurus](https://archive.org/details/HerkhimerH.EngineersIllustratedThesaurus1952), a classic reference book
 
