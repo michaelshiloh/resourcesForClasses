@@ -1410,6 +1410,11 @@ library](http://web.b.ebscohost.com.proxy.library.nyu.edu/ehost/ebookviewer/eboo
 
 ## To be sorted
 
+1.  [Machine Art In The Twentieth
+  Century](doc/machineArtInTheTwentiethCentury.pdf)
+  
+1. [Richard Hamilton](doc/richardhamilton00hami.pdf)
+
 1. Kris Verdonck A Two Dog Company
 
 1. Peter Eckersall CUNY
