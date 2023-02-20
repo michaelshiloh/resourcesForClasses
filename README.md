@@ -95,6 +95,10 @@ experimentation.
 
 ## Inspiration: Artists, Movies, Projects, etc.
 
+### Machine inspiration
+- [DIY wire wrapping
+  machine](https://www.youtube.com/watch?v=3QL1QaIwMwk&t=482s)
+
 1.  Drawing Machines
 	1. [1](https://www.raspberrypi.org/blog/hanging-wall-plotter/)    
 	1. [2](https://www.youtube.com/watch?v=T0jwdrgVBBc)    
@@ -971,6 +975,7 @@ MacOS, and Windows.
 
 
 ## How to ask for help, whether from your classmates, professors, or online
+
 The general principles are these:
 1. Make it easy to understand what you are doing with clear documentation
 	 (well organized schematic or code, good comments etc.)
