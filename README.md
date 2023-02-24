@@ -101,6 +101,9 @@ experimentation.
 	Clock](https://www.atlasobscura.com/places/the-giant-ghibli-clock-tokyo-japan)
 	also [here](https://www.youtube.com/watch?v=R6nT8IEbaJM)
   machine](https://www.youtube.com/watch?v=3QL1QaIwMwk&t=482s)
+- [Astronomical Clock Strasbourg
+- [Fortnum & Mason store clock](https://www.youtube.com/watch?v=T7dWeTyexEg)
+	Cathedral](https://www.youtube.com/watch?v=lKgZB3P45Kw)
 
 1.  Drawing Machines
 	1. [1](https://www.raspberrypi.org/blog/hanging-wall-plotter/)    
