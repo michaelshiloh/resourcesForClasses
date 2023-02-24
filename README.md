@@ -97,6 +97,9 @@ experimentation.
 
 ### Machine inspiration
 - [DIY wire wrapping
+- [Ghibli
+	Clock](https://www.atlasobscura.com/places/the-giant-ghibli-clock-tokyo-japan)
+	also [here](https://www.youtube.com/watch?v=R6nT8IEbaJM)
   machine](https://www.youtube.com/watch?v=3QL1QaIwMwk&t=482s)
 
 1.  Drawing Machines
