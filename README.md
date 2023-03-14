@@ -104,6 +104,8 @@ experimentation.
 - [Astronomical Clock Strasbourg
 - [Fortnum & Mason store clock](https://www.youtube.com/watch?v=T7dWeTyexEg)
 	Cathedral](https://www.youtube.com/watch?v=lKgZB3P45Kw)
+- Series of 15 videos on [Mechanical
+	Principles](https://www.youtube.com/watch?v=-42Z-_Kq0QU&list=PLq_UHnXWA4jI_gSAW9rvOr-I5Spqi3i_H)
 
 1.  Drawing Machines
 	1. [1](https://www.raspberrypi.org/blog/hanging-wall-plotter/)    
@@ -1084,6 +1086,8 @@ Topics include vector spaces, orthogonal bases, projection theorem, least square
 
 ## New material
 
+1. [Art ex machina](https://wired.me/technology/artificial-intelligence/art-ex-machina/) article in Wired about AI in art, featuring Merritt
+	 Moore dancing with robots
 1. [Guy Hoffman](http://guyhoffman.com/category/research/robots/)
 
 1. [Noga Erez](https://www.youtube.com/watch?v=Xn813NKlhzI)
