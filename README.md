@@ -1082,6 +1082,14 @@ Anirudha Majumdar teaches this course at Princeton University. The course covers
 Topics include vector spaces, orthogonal bases, projection theorem, least squares, matrix factorizations, Kalman filter and underlying probabilistic concepts, norms, convergent sequences, contraction mappings, Newton Raphson algorithm, local vs. global convergence in nonlinear optimization, convexity, linear and quadratic programs”.
 
 
+# Resources for Interactive Media
+
+1. [The playful wonderland behind great
+	 inventions](https://www.ted.com/talks/steven_johnson_the_playful_wonderland_behind_great_inventions?language=en)
+
+1. [Where good ideas come
+	 from](https://www.ted.com/talks/steven_johnson_where_good_ideas_come_from?language=en)
+
 # Resources for Performing Robots
 
 ## New material
