@@ -395,6 +395,16 @@ Logic Level
 
 ## Mechatronic Resources
 
+1. [Walking
+	 boots](https://www.mutualart.com/Artwork/THESE-BOOTS-ARE-MADE-FOR-WALKING/8DF4DB74D0B36CA0)
+
+1. YouTube [playlist](https://www.youtube.com/playlist?list=PLLFpXNanTP9X6lHrX9qoJroqGAQRDDvV9)
+of antique (and ancient) counting and calculating devices with a huge variety of mechanisms 
+
+1. Ken Shirriff
+	 [details](https://www.righto.com/2023/01/inside-globus-ink-mechanical-navigation.html)
+the intricate mechanical systems of the Globus INK – a gorgeous navigation system for soviet spacecraft. It features a rotating globe inside a metal housing, and let Soyuz cosmonauts see their position above Earth.
+
 1. Simple [descriptions](http://www.mechanical-toys.com/mechanisums.htm) of
 the 6 basic mechanisms
 
@@ -1093,6 +1103,8 @@ Topics include vector spaces, orthogonal bases, projection theorem, least square
 # Resources for Performing Robots
 
 ## New material
+
+1. [Storytelling Through Characters at Disney Parks I SXSW 2023](https://www.youtube.com/watch?v=lPqzLE4KjhI&t=257s)
 
 1. [Art ex machina](https://wired.me/technology/artificial-intelligence/art-ex-machina/) article in Wired about AI in art, featuring Merritt
 	 Moore dancing with robots
