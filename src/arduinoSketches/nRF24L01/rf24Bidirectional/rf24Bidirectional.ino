@@ -1,20 +1,12 @@
 /*
-   Using the nRF24L01 radio module to communicate
-   between two Arduinos with much increased reliability following
-   various tutorials, conversations, and studying the nRF24L01 datasheet
-   and the library reference.
-
-   This file contains code for both transmitter and receiver. 
-   Transmitter at the top, receiver at the bottom. 
-   One of them is commented out.
-
+   Bidirectional communication using the nRF24L01 radio module 
+   
    These sketches require the RF24 library by TMRh20
    Documentation here: https://nrf24.github.io/RF24/index.html
 
    change log
 
-   02 Dec 2022 - ms - initial entry based on rf24ControlPanelPerformingRobotsNoHandshaking
-   10 Dec 2022 - ms - put all strings in flash memory and comment out printf.h to save space
+   08 May 2023 - ms - initial entry based on rf24PerformingRobotsTemplate/
 */
 
 // Common code
@@ -49,16 +41,21 @@ RF24 radio(CEPIN, CSNPIN);  // CE, CSN
 //#include <printf.h>  // for debugging
 
 // See note in rf24Handshaking about address selection
-//
+// Basically, there are some bit patterns to be avoided
+// below are some examples that seem to work well. 
+// Note that 'addr' is just a variable that is then 
+// merged into the full address
+// Note also that there are two separate addresses
+// One for transmitting and one for receiving
 
 // Channel and address allocation:
-// Eadin and Dania: Channel 30, addr = 0x76
-// Fatima and Shamsa: Channel 40, addr = 0x73
-// Oliver and Hessa:  Channel 50, addr = 0x7C
-// Louis and Alpha: Channel 60, addr = 0xC6
-// Yoki and Yupu:  Channel 70, addr = 0xC3
-// Omar and Mudi: Channel 80, addr = 0xCC
-// Dhabia and Joseph: Channel 90, addr = 0x33
+// addr = 0x76
+// addr = 0x73
+// addr = 0x7C
+// addr = 0xC6
+// addr = 0xC3
+// addr = 0xCC
+// addr = 0x33
 const byte addr = 0x76;             // change as per the above assignment
 const int RF24_CHANNEL_NUMBER = 0;  // change as per the above assignment
 
