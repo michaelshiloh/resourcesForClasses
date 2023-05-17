@@ -1102,6 +1102,13 @@ Topics include vector spaces, orthogonal bases, projection theorem, least square
 
 # Resources for Performing Robots
 
+# Resources for Machine Lab
+
+1. [De Re
+   Metallica](https://www.gutenberg.org/files/38015/38015-h/38015-h.htm?mc_cid=56846d0c45&mc_eid=23c269c901),
+a translation of a book in Latin cataloguing the state of the art of
+mining, refining, and smelting metals, published in 1556 
+
 ## New material
 
 1. [Storytelling Through Characters at Disney Parks I SXSW 2023](https://www.youtube.com/watch?v=lPqzLE4KjhI&t=257s)
