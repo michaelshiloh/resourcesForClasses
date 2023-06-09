@@ -527,6 +527,10 @@ Connectors.
 
 1. [Escapement mechanisms: Simple and fascinating](https://youtu.be/zBB4EUIOGM8)
 
+1. Long playlist of videos by animatronic artist [Danny
+   Huynh](https://www.youtube.com/@DannyHuynhCreations). 
+   Some show linkages and placement of servo motors.
+
 ================================================================================
 
 ## Github Resources
