@@ -21,14 +21,14 @@
 // (CE = Chip Enable, CSN = Chip Select Not)
 // Which can be any pins. We will use the following:
 
-// nRF 24L01 pin    Arduino pin   name
-//          1                     GND
-//          2                     3.3V
-//          3             9       CE
-//          4             10      CSN
-//          5             13      SCLK
-//          6             11      MOSI/COPI
-//          7             12      MISO/CIPO
+// nRF 24L01 pin Function Arduino pin Uno     Mega
+//          1    GND                  GND     GND
+//          2    3.3V                 3.3V    3.3V
+//          3    CE                   9       A10
+//          4    CSN                  10      18
+//          5    SCLK                 13      52
+//          6    MOSI/COPI            11      51
+//          7    MISO/CIPO            12      50
 
 // Plus another pin for the LED (DO NOT USE LED_BUILTIN!)
 
@@ -38,8 +38,14 @@
 #include <nRF24L01.h>
 #include <RF24.h>
 
-const int CEPIN = 9;
-const int CSNPIN = 10;
+// For Mega shield
+const int CEPIN = A10;  
+const int CSNPIN = 18;
+
+// For Uno shield
+// const int CEPIN = 9;  
+// const int CSNPIN = 10;
+
 RF24 radio(CEPIN, CSNPIN);                // CE, CSN
 
 const int LED_PIN = 2;
