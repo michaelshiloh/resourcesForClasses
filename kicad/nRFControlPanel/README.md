@@ -11,20 +11,33 @@ A key phrase is "Trickle Charging Mode" e.g.
 [this](https://www.amazon.com/dp/B08LH26PFT/ref=redir_mobile_desktop?th=1).
 Holes are provided for zip ties to hold the battery pack
 
+Component placement
+- Front of control panel PCB
+    - Momentary switches 
+    - LCD (use right angle header socket on the PCB, and mount right angle
+      pins on the LCD, so the LCD is as close to the PCB as possible
+- Rear of the control panel PCB
+    - Arduino
+    - nRF24L01 radio
+    - Battery
+
 Bill of Materials
 - 2x8 socket for nRF24L01 radio (I think I'm using the plus version but it
   might work with others)
-- 1x16 socket for 16x2 LCD panel. This is a very common component used with
-  Arduino e.g. from [Adafruit](https://www.adafruit.com/product/181). It uses
-  a 4 bit parallel bus along with two control lines (RS and EN). It has a
-  backlight (requires current limiting resistor) and a contrast control
-  (requires potentiometer)
+- 1x16 right angle socket for 16x2 LCD panel.  This is a very common component
+  used with Arduino e.g. from
+  [Adafruit](https://www.adafruit.com/product/181). It uses a 4 bit parallel
+  bus along with two control lines (RS and EN). It has a backlight (requires
+  current limiting resistor) and a contrast control (requires potentiometer)
 - 1K ohm 1/4 watt resistor
 - 10K potentiometer
 - Header pins to fit Arduino. I like using [feedthrough
-  headers](https://www.adafruit.com/product/85) for all my shields
-  for maximum flexibility. alternately you can uses pins only
+  headers](https://www.adafruit.com/product/85) for all my shields for maximum
+  flexibility. alternately you can uses pins only
     - 1x 10-pin header
     - 2x 8-pin headers
     - 1x 6-pin headers
     - 1x 2x3 header
+- 3x [momentary switches](https://www.sparkfun.com/products/97)
+- 470 capacitor
+- .1 ufd capacitor
