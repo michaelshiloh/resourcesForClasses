@@ -1,0 +1,36 @@
+# Ignore list for KiCAD Projects
+# Temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.backups
+*.sch-bak
+*~
+_autosave-*
+\#auto_saved_files*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+fp-lib-table
+# Netlist files (exported from Eeschema)
+*.net
+# Autorouter files (exported from Pcbnew)
+*.dsn
+*.ses
+# backups
+*-backups/
+*.zip
+# preferences
+*.kicad_prl
+# Exported from BOM files
+*.xml
+*.csv
+
+# all production output files: gerber and drills
+*.gbr
+*.gbrjob
+*.drl
+report.txt
