@@ -39,12 +39,12 @@
 #include <RF24.h>
 
 // For Mega shield
-const int CEPIN = A10;  
-const int CSNPIN = 18;
+// const int CEPIN = A10;  
+// const int CSNPIN = 18;
 
 // For Uno shield
-// const int CEPIN = 9;  
-// const int CSNPIN = 10;
+ const int CEPIN = 9;  
+ const int CSNPIN = 10;
 
 RF24 radio(CEPIN, CSNPIN);                // CE, CSN
 
