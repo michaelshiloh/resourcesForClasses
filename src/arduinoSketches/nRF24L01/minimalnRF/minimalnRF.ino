@@ -43,8 +43,12 @@
 // const int CSNPIN = 18;
 
 // For Uno shield
- const int CEPIN = 9;  
- const int CSNPIN = 10;
+// const int CEPIN = 9;  
+// const int CSNPIN = 10;
+
+// For Uno control panel
+const int CEPIN = A1;
+const int CSNPIN = A0;
 
 RF24 radio(CEPIN, CSNPIN);                // CE, CSN
 
