@@ -144,8 +144,8 @@ void setupRF24Common() {
   }
 
   void countUp() {
-  if (++stateToTransmit > NUM_OF_STATES - 1) {
-    stateToTransmit = NUM_OF_STATES - 1;
+  if (++stateToTransmit >= NUM_OF_STATES) {
+    stateToTransmit = NUM_OF_STATES;
   }
   updateLCD();
   }
@@ -400,36 +400,36 @@ void loop() {
   radio.startListening();
   if (radio.available(&pipeNum)) {
     radio.read(&data, sizeof(data));
-    Serial.print(F("message received Data = "));   
+    Serial.print(F("message received Data = "));
     Serial.print(data.stateNumber);
     Serial.println();
 
     switch (data.stateNumber) {
       case 0:
-         tail.write(TAIL_ANGRY);
-         // play track 0
-         // display something on LEDs
+        tail.write(TAIL_ANGRY);
+        // play track 0
+        // display something on LEDs
         break;
       case 1:
-      // turn off LEDs
-      // move another servo
+        // turn off LEDs
+        // move another servo
         break;
       case 2:
-      // speak track 2
+        // speak track 2
         break;
       case 3:
-       
+
         break;
       case 4:
-        
+
         break;
-      
+
       default:
         Serial.println(F("Invalid option"));
     }
 
-        
-      
+
+
   }
 }  // end of loop()
 
