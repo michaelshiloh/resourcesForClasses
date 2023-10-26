@@ -38,20 +38,20 @@
 // Which can be any pins:
 
 // For the transmitter
-// const int NRF_CE_PIN = A4, NRF_CSN_PIN = A5;
+ const int NRF_CE_PIN = A4, NRF_CSN_PIN = A5;
 
 // for the receiver
-const int NRF_CE_PIN = A10, NRF_CSN_PIN = 18;
+//const int NRF_CE_PIN = A11, NRF_CSN_PIN = A15;
 
 // In summary,
-// nRF 24L01 pin    Arduino pin   name
+// nRF 24L01 pin    Uno Mega   name
 //          1                     GND
 //          2                     3.3V
-//          3             9       CE
-//          4             10      CSN
-//          5             13      SCLK
-//          6             11      MOSI/COPI
-//          7             12      MISO/CIPO
+//          3       9   A11       CE
+//          4       10  A15       CSN
+//          5       13  SCLK
+//          6       11  MOSI/COPI
+//          7       12  MISO/CIPO
 
 #include <SPI.h>
 #include <nRF24L01.h>
@@ -106,7 +106,7 @@ void setupRF24Common() {
 }
 
 // Transmitter code
-/*
+
   // Transmitter pin usage
   const int LCD_RS_PIN = 3, LCD_EN_PIN = 2, LCD_D4_PIN = 4, LCD_D5_PIN = 5, LCD_D6_PIN = 6, LCD_D7_PIN = 7;
   const int SW1_PIN = 8, SW2_PIN = 9, SW3_PIN = 10, SW4_PIN = A3, SW5_PIN = A2;
@@ -126,26 +126,25 @@ void setupRF24Common() {
                      "4 robot weeps",
                      "5 robot goodbye"
                     };
-  int stateToTransmit = 0;
 
   void updateLCD() {
 
   lcd.clear();
-  lcd.print(theStates[stateToTransmit]);
+  lcd.print(theStates[data.stateNumber]);
   lcd.setCursor(0, 1); // column, line (from 0)
   lcd.print("not transmitted yet");
   }
 
   void countDown() {
-  if (--stateToTransmit < 0) {
-    stateToTransmit = 0;
+  if (--data.stateNumber < 0) {
+    data.stateNumber = 0;
   }
   updateLCD();
   }
 
   void countUp() {
-  if (++stateToTransmit >= NUM_OF_STATES) {
-    stateToTransmit = NUM_OF_STATES;
+  if (++data.stateNumber >= NUM_OF_STATES) {
+    data.stateNumber = NUM_OF_STATES;
   }
   updateLCD();
   }
@@ -162,24 +161,26 @@ void setupRF24Common() {
   // or the timeout/retransmit maxima are reached.
   int retval = radio.write(&data, sizeof(data));
 
-  //  Serial.print(F("Servo bits = "));
-  //  Serial.print(data.servoBits, BIN);
-  //  Serial.print(F(" NeoPixel bits = "));
-  //  Serial.print(data.neoPixelBits, BIN);
-  //  Serial.print(F(" Playback control bits = "));
-  //  Serial.print(data.playbackControlBits, BIN);
-  lcd.setCursor(0, 1); // column, line (from 0)
-  lcd.print("transmitting - ");
+  lcd.clear();
+  lcd.setCursor(0, 0); // column, line (from 0)
+  lcd.print("transmitting");
+  lcd.setCursor(14, 0); // column, line (from 0)
+  lcd.print(data.stateNumber);
 
   Serial.print(F(" ... "));
   if (retval) {
     Serial.println(F("success"));
-    lcd.print("OK");
+    lcd.setCursor(0, 1); // column, line (from 0)
+    lcd.print("success");
   } else {
     totalTransmitFailures++;
     Serial.print(F("failure, total failures = "));
     Serial.println(totalTransmitFailures);
-    lcd.print("error");
+    
+    lcd.setCursor(0, 1); // column, line (from 0)
+    lcd.print("error, total=");
+  lcd.setCursor(13, 1); // column, line (from 0)
+  lcd.print(totalTransmitFailures);
   }
   }
 
@@ -228,6 +229,8 @@ void setupRF24Common() {
 
   // radio.printPrettyDetails();
   Serial.println(F("I am a transmitter"));
+
+ data.stateNumber = 0;
   }
 
   void setup() {
@@ -268,8 +271,8 @@ void setupRF24Common() {
   }
 
   // End of transmitter code
-*/
 
+/*
 // Receiver Code
 
 // Additional libraries for receiver
@@ -432,5 +435,5 @@ void loop() {
 
   }
 }  // end of loop()
-
+*/
 // end of receiver code
