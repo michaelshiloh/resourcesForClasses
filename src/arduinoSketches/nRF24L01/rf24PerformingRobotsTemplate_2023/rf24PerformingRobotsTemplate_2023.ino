@@ -21,9 +21,12 @@
 
    11 Oct 2023 - ms - initial entry based on
                   rf24PerformingRobotsTemplate
+   26 Oct 2023 - ms - revised for new board: nRF_Servo_Mega rev 2
+   28 Oct 2023 - ms - add demo of NeoMatrix, servo, and Music Maker Shield
 */
 
 // Common code
+//
 
 // Common pin usage
 // Note there are additional pins unique to transmitter or receiver
@@ -38,10 +41,10 @@
 // Which can be any pins:
 
 // For the transmitter
- const int NRF_CE_PIN = A4, NRF_CSN_PIN = A5;
+//const int NRF_CE_PIN = A4, NRF_CSN_PIN = A5;
 
 // for the receiver
-//const int NRF_CE_PIN = A11, NRF_CSN_PIN = A15;
+const int NRF_CE_PIN = A11, NRF_CSN_PIN = A15;
 
 // In summary,
 // nRF 24L01 pin    Uno Mega   name
@@ -106,7 +109,7 @@ void setupRF24Common() {
 }
 
 // Transmitter code
-
+/*
   // Transmitter pin usage
   const int LCD_RS_PIN = 3, LCD_EN_PIN = 2, LCD_D4_PIN = 4, LCD_D5_PIN = 5, LCD_D6_PIN = 6, LCD_D7_PIN = 7;
   const int SW1_PIN = 8, SW2_PIN = 9, SW3_PIN = 10, SW4_PIN = A3, SW5_PIN = A2;
@@ -176,7 +179,7 @@ void setupRF24Common() {
     totalTransmitFailures++;
     Serial.print(F("failure, total failures = "));
     Serial.println(totalTransmitFailures);
-    
+
     lcd.setCursor(0, 1); // column, line (from 0)
     lcd.print("error, total=");
   lcd.setCursor(13, 1); // column, line (from 0)
@@ -230,7 +233,7 @@ void setupRF24Common() {
   // radio.printPrettyDetails();
   Serial.println(F("I am a transmitter"));
 
- data.stateNumber = 0;
+  data.stateNumber = 0;
   }
 
   void setup() {
@@ -272,14 +275,23 @@ void setupRF24Common() {
 
   // End of transmitter code
 
-/*
+*/
 // Receiver Code
 
-// Additional libraries for receiver
+// Additional libraries for music maker shield
 #include <Adafruit_VS1053.h>
 #include <SD.h>
+
+// Servo library
 #include <Servo.h>
+
+// Additional libraries for graphics on the Neo Pixel Matrix
 #include <Adafruit_NeoPixel.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_NeoMatrix.h>
+#ifndef PSTR
+#define PSTR // Make Arduino Due happy
+#endif
 
 // Additional pin usage for receiver
 
@@ -293,15 +305,21 @@ void setupRF24Common() {
 Adafruit_VS1053_FilePlayer musicPlayer = Adafruit_VS1053_FilePlayer(SHIELD_RESET, SHIELD_CS, SHIELD_DCS, DREQ, CARDCS);
 
 // Servo motors
-const int NOSE_SERVO_PIN = 9;
-const int ANTENNA_SERVO_PIN = 10;
-const int TAIL_SERVO_PIN = 11;
-const int GRABBER_SERVO_PIN = 12;
+const int NOSE_SERVO_PIN = 21;
+//const int ANTENNA_SERVO_PIN = 10;
+//const int TAIL_SERVO_PIN = 11;
+//const int GRABBER_SERVO_PIN = 12;
 
 // Neopixel
-#define NEOPIXELPIN 13
-#define NUMPIXELS 64  // change to fit
-Adafruit_NeoPixel pixels(NUMPIXELS, NEOPIXELPIN, NEO_GRB + NEO_KHZ800);
+const int NEOPIXELPIN = 18;
+const int NUMPIXELS = 64;
+//#define NEOPIXELPIN 18
+//#define NUMPIXELS 64  // change to fit
+//Adafruit_NeoPixel pixels(NUMPIXELS, NEOPIXELPIN, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoMatrix matrix = Adafruit_NeoMatrix(8, 8, NEOPIXELPIN,
+                            NEO_MATRIX_TOP     + NEO_MATRIX_RIGHT +
+                            NEO_MATRIX_COLUMNS + NEO_MATRIX_PROGRESSIVE,
+                            NEO_GRB            + NEO_KHZ800);
 
 Servo nose;  // change names to describe what's moving
 Servo antenna;
@@ -322,9 +340,10 @@ void setup() {
   // printf_begin();
 
   // Set up all the attached hardware
-  //setupMusicMakerShield();
+  setupMusicMakerShield();
   setupServoMotors();
   setupNeoPixels();
+
   setupRF24();
 
   // Brief flash to show we're done with setup()
@@ -369,31 +388,43 @@ void setupMusicMakerShield() {
 
 void setupServoMotors() {
   nose.attach(NOSE_SERVO_PIN);
-  antenna.attach(ANTENNA_SERVO_PIN);
-  tail.attach(TAIL_SERVO_PIN);
-  grabber.attach(GRABBER_SERVO_PIN);
-
-  tail.write(TAIL_HAPPY);
+  nose.write(90);
+  //  antenna.attach(ANTENNA_SERVO_PIN);
+  //  tail.attach(TAIL_SERVO_PIN);
+  //  grabber.attach(GRABBER_SERVO_PIN);
+  //
+  //  tail.write(TAIL_HAPPY);
 }
 
 void setupNeoPixels() {
-  pixels.begin();
-  pixels.clear();
-  pixels.show();
+  //  pixels.begin();
+  //  pixels.clear();
+  //  pixels.show();
+  matrix.begin();
+  matrix.setTextWrap(false);
+  matrix.setBrightness(40);
+  matrix.setTextColor(matrix.Color(200, 30, 40));
 }
 
 void flashNeoPixels() {
 
-  // all on
-  for (int i = 0; i < NUMPIXELS; i++) {  // For each pixel...
-    pixels.setPixelColor(i, pixels.Color(0, 100, 0));
-  }
-  pixels.show();
+  // Using the Matrix library
+  matrix.fillScreen(matrix.Color(0, 255, 0));
+  matrix.show();
   delay(500);
+  matrix.fillScreen(0);
+  matrix.show();
 
-  // all off
-  pixels.clear();
-  pixels.show();
+  //  // all on
+  //  for (int i = 0; i < NUMPIXELS; i++) {  // For each pixel...
+  //    pixels.setPixelColor(i, pixels.Color(0, 100, 0));
+  //  }
+  //  pixels.show();
+  //  delay(500);
+  //
+  //  // all off
+  //  pixels.clear();
+  //  pixels.show();
 }
 
 void loop() {
@@ -414,8 +445,12 @@ void loop() {
         // display something on LEDs
         break;
       case 1:
-        // turn off LEDs
-        // move another servo
+        Serial.print(F("moving nose and drawing rectangle"));
+        nose.write(90);
+
+        matrix.drawRect(2, 2, 5, 5, matrix.Color(200, 90, 30));
+        matrix.show();
+
         break;
       case 2:
         // speak track 2
@@ -435,5 +470,4 @@ void loop() {
 
   }
 }  // end of loop()
-*/
 // end of receiver code
