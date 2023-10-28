@@ -451,6 +451,9 @@ void loop() {
         matrix.drawRect(2, 2, 5, 5, matrix.Color(200, 90, 30));
         matrix.show();
 
+        Serial.println(F("Playing track 002"));
+        musicPlayer.startPlayingFile("/track002.mp3");
+
         break;
       case 2:
         // speak track 2
