@@ -305,7 +305,7 @@ void setupRF24Common() {
 Adafruit_VS1053_FilePlayer musicPlayer = Adafruit_VS1053_FilePlayer(SHIELD_RESET, SHIELD_CS, SHIELD_DCS, DREQ, CARDCS);
 
 // Servo motors
-const int NOSE_SERVO_PIN = 21;
+const int NOSE_SERVO_PIN = 19; // TODO why doesn't pin 21 work?
 //const int ANTENNA_SERVO_PIN = 10;
 //const int TAIL_SERVO_PIN = 11;
 //const int GRABBER_SERVO_PIN = 12;
@@ -446,7 +446,7 @@ void loop() {
         break;
       case 1:
         Serial.print(F("moving nose and drawing rectangle"));
-        nose.write(90);
+        nose.write(180);
 
         matrix.drawRect(2, 2, 5, 5, matrix.Color(200, 90, 30));
         matrix.show();
@@ -456,7 +456,13 @@ void loop() {
 
         break;
       case 2:
-        // speak track 2
+        nose.write(30);
+
+        matrix.drawRect(2, 2, 5, 5, matrix.Color(0, 200, 30));
+        matrix.show();
+
+        Serial.println(F("Playing track 001"));
+        musicPlayer.startPlayingFile("/track001.mp3");
         break;
       case 3:
 
