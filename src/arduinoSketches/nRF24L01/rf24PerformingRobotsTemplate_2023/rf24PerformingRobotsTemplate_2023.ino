@@ -139,15 +139,13 @@ void updateLCD() {
 }
 
 void countDown() {
-  if (--data.stateNumber < 0) {
-    data.stateNumber = 0;
-  }
+  data.stateNumber = (data.stateNumber > 0) ? (data.stateNumber - 1) : 0;
   updateLCD();
 }
 
 void countUp() {
   if (++data.stateNumber >= NUM_OF_STATES) {
-    data.stateNumber = NUM_OF_STATES;
+    data.stateNumber = NUM_OF_STATES - 1;
   }
   updateLCD();
 }
