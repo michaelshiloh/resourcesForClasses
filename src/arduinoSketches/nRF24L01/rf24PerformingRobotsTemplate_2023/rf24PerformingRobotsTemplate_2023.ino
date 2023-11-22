@@ -24,6 +24,7 @@
    26 Oct 2023 - ms - revised for new board: nRF_Servo_Mega rev 2
    28 Oct 2023 - ms - add demo of NeoMatrix, servo, and Music Maker Shield
 	 20 Nov 2023 - as - fixed the bug which allowed counting beyond the limits
+   22 Nov 2023 - ms - display radio custom address byte and channel
 */
 
 // Common code
@@ -42,10 +43,10 @@
 // Which can be any pins:
 
 // For the transmitter
-//const int NRF_CE_PIN = A4, NRF_CSN_PIN = A5;
+const int NRF_CE_PIN = A4, NRF_CSN_PIN = A5;
 
 // for the receiver
-const int NRF_CE_PIN = A11, NRF_CSN_PIN = A15;
+//const int NRF_CE_PIN = A11, NRF_CSN_PIN = A15;
 
 // In summary,
 // nRF 24L01 pin    Uno Mega   name
@@ -75,12 +76,12 @@ RF24 radio(NRF_CE_PIN, NRF_CSN_PIN);  // CE, CSN
 // Akhat, Yunho:  Channel 70, addr = 0xC3
 // Aakif, Marta: Channel 80, addr = 0xCC
 // Yerk, Hamad: Channel 90, addr = 0x33
-const byte addr = 0x76;             // change as per the above assignment
-const int RF24_CHANNEL_NUMBER = 0;  // change as per the above assignment
+const byte CUSTOM_ADDRESS_BYTE = 0x76;             // change as per the above assignment
+const int CUSTOM_CHANNEL_NUMBER = 0;  // change as per the above assignment
 
 // Do not make changes here
-const byte xmtrAddress[] = { addr, addr, 0xC7, 0xE6, 0xCC };
-const byte rcvrAddress[] = { addr, addr, 0xC7, 0xE6, 0x66 };
+const byte xmtrAddress[] = { CUSTOM_ADDRESS_BYTE, CUSTOM_ADDRESS_BYTE, 0xC7, 0xE6, 0xCC };
+const byte rcvrAddress[] = { CUSTOM_ADDRESS_BYTE, CUSTOM_ADDRESS_BYTE, 0xC7, 0xE6, 0x66 };
 
 const int RF24_POWER_LEVEL = RF24_PA_LOW;
 
@@ -105,25 +106,25 @@ void setupRF24Common() {
   }
 
   radio.setDataRate(RF24_250KBPS);
-  radio.setChannel(RF24_CHANNEL_NUMBER);
+  radio.setChannel(CUSTOM_CHANNEL_NUMBER);
   radio.setPALevel(RF24_POWER_LEVEL);
 }
-/*
-  // Transmitter code
 
-  // Transmitter pin usage
-  const int LCD_RS_PIN = 3, LCD_EN_PIN = 2, LCD_D4_PIN = 4, LCD_D5_PIN = 5, LCD_D6_PIN = 6, LCD_D7_PIN = 7;
-  const int SW1_PIN = 8, SW2_PIN = 9, SW3_PIN = 10, SW4_PIN = A3, SW5_PIN = A2;
+// Transmitter code
 
-  // LCD library code
-  #include <LiquidCrystal.h>
+// Transmitter pin usage
+const int LCD_RS_PIN = 3, LCD_EN_PIN = 2, LCD_D4_PIN = 4, LCD_D5_PIN = 5, LCD_D6_PIN = 6, LCD_D7_PIN = 7;
+const int SW1_PIN = 8, SW2_PIN = 9, SW3_PIN = 10, SW4_PIN = A3, SW5_PIN = A2;
 
-  // initialize the library with the relevant pins
-  LiquidCrystal lcd(LCD_RS_PIN, LCD_EN_PIN, LCD_D4_PIN, LCD_D5_PIN, LCD_D6_PIN, LCD_D7_PIN);
+// LCD library code
+#include <LiquidCrystal.h>
+
+// initialize the library with the relevant pins
+LiquidCrystal lcd(LCD_RS_PIN, LCD_EN_PIN, LCD_D4_PIN, LCD_D5_PIN, LCD_D6_PIN, LCD_D7_PIN);
 
 
-  const int NUM_OF_STATES = 6;
-  char *theStates[] = {"0 robot wakes",
+const int NUM_OF_STATES = 6;
+char *theStates[] = {"0 robot wakes",
                      "1 robot hello",
                      "2 robot explains",
                      "3 robot pleads",
@@ -131,31 +132,31 @@ void setupRF24Common() {
                      "5 robot goodbye"
                     };
 
-  void updateLCD() {
+void updateLCD() {
 
   lcd.clear();
   lcd.print(theStates[data.stateNumber]);
   lcd.setCursor(0, 1); // column, line (from 0)
   lcd.print("not transmitted yet");
-  }
+}
 
-  void countDown() {
+void countDown() {
   data.stateNumber = (data.stateNumber > 0) ? (data.stateNumber - 1) : 0;
   updateLCD();
-  }
+}
 
-  void countUp() {
+void countUp() {
   if (++data.stateNumber >= NUM_OF_STATES) {
     data.stateNumber = NUM_OF_STATES - 1;
   }
   updateLCD();
-  }
+}
 
 
-  void spare1() {}
-  void spare2() {}
+void spare1() {}
+void spare2() {}
 
-  void rf24SendData() {
+void rf24SendData() {
 
   radio.stopListening(); // go into transmit mode
   // The write() function will block
@@ -184,10 +185,10 @@ void setupRF24Common() {
     lcd.setCursor(13, 1); // column, line (from 0)
     lcd.print(totalTransmitFailures);
   }
-  }
+}
 
-  class Button
-  {
+class Button
+{
     int pinNumber;
     bool previousState;
     void(* buttonFunction)();
@@ -211,17 +212,17 @@ void setupRF24Common() {
       }
       previousState = currentState;
     }
-  };
+};
 
-  const int NUMBUTTONS = 5;
-  Button theButtons[] = {Button(SW1_PIN, countDown),
+const int NUMBUTTONS = 5;
+Button theButtons[] = {Button(SW1_PIN, countDown),
                        Button(SW2_PIN, rf24SendData),
                        Button(SW3_PIN, countUp),
                        Button(SW4_PIN, spare1),
                        Button(SW5_PIN, spare2),
                       };
 
-  void setupRF24() {
+void setupRF24() {
 
   setupRF24Common();
 
@@ -233,17 +234,39 @@ void setupRF24Common() {
   Serial.println(F("I am a transmitter"));
 
   data.stateNumber = 0;
-  }
+}
 
-  void setup() {
+void setup() {
   Serial.begin(9600);
+  Serial.println(F("Setting up LCD"));
 
   // set up the LCD's number of columns and rows:
   lcd.begin(16, 2);
+  lcd.clear();
   // Print a message to the LCD.
-  lcd.print("Radio init ....");
+  lcd.print("Radio setup");
 
+  // Display the address in hex
+  lcd.setCursor(0, 1);
+  lcd.print("addr 0x");
+  lcd.setCursor(7, 1);
+  char s [5];
+  sprintf (s, "%02x", CUSTOM_ADDRESS_BYTE);
+  lcd.print(s);
+
+  // Display the channel number
+  lcd.setCursor(10, 1);
+  lcd.print("ch");
+  lcd.setCursor(13, 1);
+  lcd.print(CUSTOM_CHANNEL_NUMBER);
+  
+  Serial.println(F("Setting up radio"));
   setupRF24();
+
+  // If setupRF24 returned then the radio is set up
+  lcd.setCursor(0, 0);
+  lcd.print("Radio OK state=");
+  lcd.print(theStates[data.stateNumber]);
 
   // Initialize the switches
   pinMode(SW1_PIN, INPUT_PULLUP);
@@ -251,90 +274,99 @@ void setupRF24Common() {
   pinMode(SW3_PIN, INPUT_PULLUP);
   pinMode(SW4_PIN, INPUT_PULLUP);
   pinMode(SW5_PIN, INPUT_PULLUP);
-  lcd.setCursor(0, 1); // column, line (from 0)
-  lcd.print("setup() finished");
-
-  updateLCD();
-  }
+  
 
 
+}
 
-  void loop() {
+
+
+void loop() {
   for (int i = 0; i < NUMBUTTONS; i++) {
     theButtons[i].update();
   }
   delay(50); // for testing
-  }
+}
 
 
-  void clearData() {
+void clearData() {
   // set all fields to 0
   data.stateNumber = 0;
-  }
+}
 
-  // End of transmitter code
-*/
+// End of transmitter code
+/*
 
-// Receiver Code
+  // Receiver Code
 
-// Additional libraries for music maker shield
-#include <Adafruit_VS1053.h>
-#include <SD.h>
+  // Additional libraries for music maker shield
+  #include <Adafruit_VS1053.h>
+  #include <SD.h>
 
-// Servo library
-#include <Servo.h>
+  // Servo library
+  #include <Servo.h>
 
-// Additional libraries for graphics on the Neo Pixel Matrix
-#include <Adafruit_NeoPixel.h>
-#include <Adafruit_GFX.h>
-#include <Adafruit_NeoMatrix.h>
-#ifndef PSTR
-#define PSTR // Make Arduino Due happy
-#endif
+  // Additional libraries for graphics on the Neo Pixel Matrix
+  #include <Adafruit_NeoPixel.h>
+  #include <Adafruit_GFX.h>
+  #include <Adafruit_NeoMatrix.h>
+  #ifndef PSTR
+  #define PSTR // Make Arduino Due happy
+  #endif
 
-// Additional pin usage for receiver
+  // Additional pin usage for receiver
 
-// Adafruit music maker shield
-#define SHIELD_RESET -1  // VS1053 reset pin (unused!)
-#define SHIELD_CS 7      // VS1053 chip select pin (output)
-#define SHIELD_DCS 6     // VS1053 Data/command select pin (output)
-#define CARDCS 4         // Card chip select pin
-// DREQ should be an Int pin, see http://arduino.cc/en/Reference/attachInterrupt
-#define DREQ 3  // VS1053 Data request, ideally an Interrupt pin
-Adafruit_VS1053_FilePlayer musicPlayer = Adafruit_VS1053_FilePlayer(SHIELD_RESET, SHIELD_CS, SHIELD_DCS, DREQ, CARDCS);
+  // Adafruit music maker shield
+  #define SHIELD_RESET -1  // VS1053 reset pin (unused!)
+  #define SHIELD_CS 7      // VS1053 chip select pin (output)
+  #define SHIELD_DCS 6     // VS1053 Data/command select pin (output)
+  #define CARDCS 4         // Card chip select pin
+  // DREQ should be an Int pin, see http://arduino.cc/en/Reference/attachInterrupt
+  #define DREQ 3  // VS1053 Data request, ideally an Interrupt pin
+  Adafruit_VS1053_FilePlayer musicPlayer = Adafruit_VS1053_FilePlayer(SHIELD_RESET, SHIELD_CS, SHIELD_DCS, DREQ, CARDCS);
 
-// Servo motors
-const int NOSE_SERVO_PIN = 20; // TODO why doesn't pin 21 work?
-//const int ANTENNA_SERVO_PIN = 10;
-//const int TAIL_SERVO_PIN = 11;
-//const int GRABBER_SERVO_PIN = 12;
+  // Connectors for NeoPixels and Servo Motors are labeled
+  // M1 - M6 which is not very useful. Here are the pin
+  // assignments:
+  // M1 = 19
+  // M2 = 21
+  // M3 = 20
+  // M4 = 16
+  // M5 = 18
+  // M6 = 17
 
-// Neopixel
-const int NEOPIXELPIN = 18;
-const int NUMPIXELS = 64;
-//#define NEOPIXELPIN 18
-//#define NUMPIXELS 64  // change to fit
-//Adafruit_NeoPixel pixels(NUMPIXELS, NEOPIXELPIN, NEO_GRB + NEO_KHZ800);
-Adafruit_NeoMatrix matrix = Adafruit_NeoMatrix(8, 8, NEOPIXELPIN,
+  // Servo motors
+  const int NOSE_SERVO_PIN = 20;
+  //const int ANTENNA_SERVO_PIN = 10;
+  //const int TAIL_SERVO_PIN = 11;
+  //const int GRABBER_SERVO_PIN = 12;
+
+  // Neopixel
+  const int NEOPIXELPIN = 18;
+  const int NUMPIXELS = 64;
+  //#define NEOPIXELPIN 18
+  //#define NUMPIXELS 64  // change to fit
+  //Adafruit_NeoPixel pixels(NUMPIXELS, NEOPIXELPIN, NEO_GRB + NEO_KHZ800);
+  Adafruit_NeoMatrix matrix = Adafruit_NeoMatrix(8, 8, NEOPIXELPIN,
                             NEO_MATRIX_TOP     + NEO_MATRIX_RIGHT +
                             NEO_MATRIX_COLUMNS + NEO_MATRIX_PROGRESSIVE,
                             NEO_GRB            + NEO_KHZ800);
 
-Servo nose;  // change names to describe what's moving
-Servo antenna;
-Servo tail;
-Servo grabber;
-Servo disk;
+  Servo nose;  // change names to describe what's moving
+  Servo antenna;
+  Servo tail;
+  Servo grabber;
+  Servo disk;
 
-// change as per your robot
-const int NOSE_WRINKLE = 45;
-const int NOSE_TWEAK = 90;
-const int TAIL_ANGRY = 0;
-const int TAIL_HAPPY = 180;
-const int GRABBER_RELAX = 0;
-const int GRABBER_GRAB = 180;
+  // change as per your robot
+  const int NOSE_WRINKLE = 45;
+  const int NOSE_TWEAK = 90;
+  const int TAIL_ANGRY = 0;
+  const int TAIL_HAPPY = 180;
+  const int GRABBER_RELAX = 0;
+  const int GRABBER_GRAB = 180;
 
-void setup() {
+  void setup() {
   Serial.begin(9600);
   // printf_begin();
 
@@ -347,9 +379,9 @@ void setup() {
 
   // Brief flash to show we're done with setup()
   flashNeoPixels();
-}
+  }
 
-void setupRF24() {
+  void setupRF24() {
   setupRF24Common();
 
   // Set us as a receiver
@@ -358,9 +390,9 @@ void setupRF24() {
 
   // radio.printPrettyDetails();
   Serial.println(F("I am a receiver"));
-}
+  }
 
-void setupMusicMakerShield() {
+  void setupMusicMakerShield() {
   if (!musicPlayer.begin()) {  // initialise the music player
     Serial.println(F("Couldn't find VS1053, do you have the right pins defined?"));
     while (1)
@@ -383,9 +415,9 @@ void setupMusicMakerShield() {
   // If DREQ is on an interrupt pin (on uno, #2 or #3) we can do background
   // audio playing
   musicPlayer.useInterrupt(VS1053_FILEPLAYER_PIN_INT);  // DREQ int
-}
+  }
 
-void setupServoMotors() {
+  void setupServoMotors() {
   nose.attach(NOSE_SERVO_PIN);
   nose.write(90);
   //  antenna.attach(ANTENNA_SERVO_PIN);
@@ -393,9 +425,9 @@ void setupServoMotors() {
   //  grabber.attach(GRABBER_SERVO_PIN);
   //
   //  tail.write(TAIL_HAPPY);
-}
+  }
 
-void setupNeoPixels() {
+  void setupNeoPixels() {
   //  pixels.begin();
   //  pixels.clear();
   //  pixels.show();
@@ -403,9 +435,9 @@ void setupNeoPixels() {
   matrix.setTextWrap(false);
   matrix.setBrightness(40);
   matrix.setTextColor(matrix.Color(200, 30, 40));
-}
+  }
 
-void flashNeoPixels() {
+  void flashNeoPixels() {
 
   // Using the Matrix library
   matrix.fillScreen(matrix.Color(0, 255, 0));
@@ -424,9 +456,9 @@ void flashNeoPixels() {
   //  // all off
   //  pixels.clear();
   //  pixels.show();
-}
+  }
 
-void loop() {
+  void loop() {
   // If there is data, read it,
   // and do the needfull
   // Become a receiver
@@ -444,7 +476,7 @@ void loop() {
         // display something on LEDs
         break;
       case 1:
-        Serial.print(F("moving nose and drawing rectangle"));
+        Serial.print(F("moving nose to 180 and drawing rectangle"));
         nose.write(180);
 
         matrix.drawRect(2, 2, 5, 5, matrix.Color(200, 90, 30));
@@ -455,6 +487,7 @@ void loop() {
 
         break;
       case 2:
+        Serial.println(F("moving nose to 30"));
         nose.write(30);
 
         matrix.drawRect(2, 2, 5, 5, matrix.Color(0, 200, 30));
@@ -477,5 +510,6 @@ void loop() {
 
 
   }
-}  // end of loop()
-// end of receiver code
+  }  // end of loop()
+  // end of receiver code
+*/
