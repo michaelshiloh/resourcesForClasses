@@ -1113,8 +1113,8 @@ but I'll try to gather here those particularly relevant to this class)
    Maker](https://www.youtube.com/watch?v=FBi3TKDdwT8) This film is a good
    overview of some basic machine tools
 
-1. Interesting [article](https://open.substack.com/pub/constructionphysics/p/what-happened-to-the-us-machine-tool?r=i1shu&utm_campaign=post&utm_medium=email)  
-article about the US machine tool industry, with a great explanation of
+1. Interesting [article](https://open.substack.com/pub/constructionphysics/p/what-happened-to-the-us-machine-tool?r=i1shu&utm_campaign=post&utm_medium=email)
+about the US machine tool industry, with a great explanation of
 machine tools and why they are important
 
 1. Wonderful [movie](https://www.youtube.com/watch?v=Y3YrbEGWE04&t=211s)
