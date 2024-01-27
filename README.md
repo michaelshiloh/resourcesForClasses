@@ -382,7 +382,7 @@ Shift Register
 
 ## Communication resources
 
-#### Sparkfun Serial Communication tutorial
+1. Sparkfun Serial Communication tutorial
 [here](https://learn.sparkfun.com/tutorials/serial-communication)
 
 
@@ -1104,14 +1104,41 @@ Topics include vector spaces, orthogonal bases, projection theorem, least square
 1. [Where good ideas come
 	 from](https://www.ted.com/talks/steven_johnson_where_good_ideas_come_from?language=en)
 
-# Resources for Performing Robots
-
 # Resources for Machine Lab
+
+(Actually, topics related to Machine Lab are sprinkled through this document,
+but I'll try to gather here those particularly relevant to this class)
+
+1. [1940s Vocational Guidance Film: The Machinist and Tool
+   Maker](https://www.youtube.com/watch?v=FBi3TKDdwT8) This film is a good
+   overview of some basic machine tools
+
+1. Interesting [article](https://open.substack.com/pub/constructionphysics/p/what-happened-to-the-us-machine-tool?r=i1shu&utm_campaign=post&utm_medium=email)  
+article about the US machine tool industry, with a great explanation of
+machine tools and why they are important
+
+1. Wonderful [movie](https://www.youtube.com/watch?v=Y3YrbEGWE04&t=211s)
+from the 1950s demonstrating the Milwaukee-Matic, an early Numerically
+Controlled (NC) machining center. Great way to understand how machine tools
+remove metal in order to create the desired shape. (A predecessor to CNC, NC
+used paper tape or punched cards to control the operations of the machine.)
+
+1. Another great 1950s [movie](https://www.youtube.com/watch?v=5qlS_944oZE),
+   this one from the Monarch Machine Tool Company. There was a certain style
+   to the music of these films chosen, I suppose, to inspire purchase of their
+   machines.
+
+1. In incredibly detailed (and somewhat tedious) instructional film
+from the late 40s: [Machine Shop Work: An Introduction to Operations on the Vertical Boring Mill](https://www.youtube.com/watch?v=rGsiee2cwp4). (Sadly no music in this one).
+
+1. [Machine Shop Bench Work - Working With Taps and Dies](https://www.youtube.com/watch?v=4LlHQ2kBAWg)
 
 1. [De Re
    Metallica](https://www.gutenberg.org/files/38015/38015-h/38015-h.htm?mc_cid=56846d0c45&mc_eid=23c269c901),
 a translation of a book in Latin cataloguing the state of the art of
 mining, refining, and smelting metals, published in 1556 
+
+# Resources for Performing Robots
 
 ## New material
 
