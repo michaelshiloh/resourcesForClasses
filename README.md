@@ -880,12 +880,17 @@ Motors](https://learn.adafruit.com/adafruit-arduino-lesson-16-stepper-motors/ove
 7. Adafruit [Motor Shield
 	 Tutorial](https://learn.adafruit.com/adafruit-motor-shield-v2-for-arduino?view=all)
 
-1. How to configure the giant servos (ASMC or ASME)
+## Giant Servo Motors Resources
+
+How to configure the giant servos (ASMC or ASME; so far they all seem to use
+the same configuration)
+
 These motors are pretty poorly documented; I lifted these pictures from Amazon
-so the resolution isn't so great. Basically the motor can be configured to be
-driven by a standard servo motor signal, just like Arduino delivers. In that
-mode you can select the direction of rotation and the range of rotation, up to
-about 300 degrees. 
+so the resolution isn't so great. 
+
+Basically the motor can be configured to be driven by a standard servo motor
+signal, just like Arduino delivers. In that mode you can select the direction
+of rotation and the range of rotation, up to about 300 degrees. 
 
 **Warnings**:
 1. You must supply 12V to run this motor. You must connect the polarity
