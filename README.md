@@ -880,7 +880,7 @@ Motors](https://learn.adafruit.com/adafruit-arduino-lesson-16-stepper-motors/ove
 7. Adafruit [Motor Shield
 	 Tutorial](https://learn.adafruit.com/adafruit-motor-shield-v2-for-arduino?view=all)
 
-## Giant Servo Motors Resources
+#### Giant Servo Motors Resources
 
 How to configure the giant servos (ASMC or ASME; so far they all seem to use
 the same configuration)
