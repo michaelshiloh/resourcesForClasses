@@ -148,35 +148,35 @@ particular
 
 1. Inspirational videos collected by [J.D.
 Zamfirescu](https://github.com/zamfi)  
-	1.1. Basic robots  
-		1.1.1. [Tree-climbing robot](http://www.youtube.com/watch?v=zkpH1BjD6Wc)  
-		1.1.1. [Self-balancing robot](http://www.youtube.com/watch?v=Tw9Jr-SPL0Y)  
-		1.1.1. [Insect robot](http://www.youtube.com/watch?v=tOsNXg2vAd4#t=120)  
-		1.1.1. [Treadbot](http://www.youtube.com/watch?v=YblSltHDbIU)  
-		1.1.1. [Velociraptor robot](http://www.youtube.com/watch?v=lPEg83vF_Tw)  
-	1.1. Installations  
-		1.1.1. [The Bay Lights](http://thebaylights.org/)  
-		1.1.1. [Murmur Wall](http://www.future-cities-lab.net/projects/#/murmurwall/)  
-		1.1.1. [Floating Couch](http://vimeo.com/72826106)  
-		1.1.1. [Wooden Segment Mirror](https://www.youtube.com/watch?v=BZysu9QcceM#t=36)  
-		1.1.1. [Generative design](https://www.youtube.com/watch?v=pNkz8wEJljc)  
-	1.1. Art & Music bots  
-		1.1.1. [Textile weaving](https://vimeo.com/71044541)  
-		1.1.1. [ReacTable](https://www.youtube.com/user/marcosalonso)  
-		1.1.1. [Projection mapping](https://www.youtube.com/watch?v=czuhNcNU6qU)  
-		1.1.1. [Laser harp](http://www.youtube.com/watch?v=sLVXmsbVwUs#t=20)  
-		1.1.1. [Cubli: Floating Cube](https://www.youtube.com/watch?v=n_6p-1J551Y)  
-		1.1.1. [Arc-o-matic](http://vimeo.com/57082262#at=130)  
-		1.1.1. [Robo Faber](http://vimeo.com/78771257)  
-		1.1.1. [Eggbot](https://www.youtube.com/watch?v=w4cdbV2oaEc)  
-	1.1. Drink-makers  
-		1.1.1. [Textspresso](http://www.youtube.com/watch?v=kx9D74t7GD8#t=89)  
-		1.1.1. [The Inebriator](http://www.youtube.com/watch?v=WqY7fchs7H0)  
-	1.1. Computer Numerical Control (CNC)  
-		1.1.1. [Shapoko / tinyg](http://www.youtube.com/watch?v=pCC1GXnYfFI#t=11)  
-		1.1.1. [Makerbot Replicator](http://www.youtube.com/watch?v=NAbiAzYhTOQ)  
-	1.1. Vacuuming  
-		1.1.1. [Roomba](https://www.youtube.com/watch?v=0DNkbZvVYvc)  
+	1. Basic robots  
+		1. [Tree-climbing robot](http://www.youtube.com/watch?v=zkpH1BjD6Wc)  
+		1. [Self-balancing robot](http://www.youtube.com/watch?v=Tw9Jr-SPL0Y)  
+		1. [Insect robot](http://www.youtube.com/watch?v=tOsNXg2vAd4#t=120)  
+		1. [Treadbot](http://www.youtube.com/watch?v=YblSltHDbIU)  
+		1. [Velociraptor robot](http://www.youtube.com/watch?v=lPEg83vF_Tw)  
+	1. Installations  
+		1. [The Bay Lights](http://thebaylights.org/)  
+		1. [Murmur Wall](http://www.future-cities-lab.net/projects/#/murmurwall/)  
+		1. [Floating Couch](http://vimeo.com/72826106)  
+		1. [Wooden Segment Mirror](https://www.youtube.com/watch?v=BZysu9QcceM#t=36)  
+		1. [Generative design](https://www.youtube.com/watch?v=pNkz8wEJljc)  
+	1. Art & Music bots  
+		1. [Textile weaving](https://vimeo.com/71044541)  
+		1. [ReacTable](https://www.youtube.com/user/marcosalonso)  
+		1. [Projection mapping](https://www.youtube.com/watch?v=czuhNcNU6qU)  
+		1. [Laser harp](http://www.youtube.com/watch?v=sLVXmsbVwUs#t=20)  
+		1. [Cubli: Floating Cube](https://www.youtube.com/watch?v=n_6p-1J551Y)  
+		1. [Arc-o-matic](http://vimeo.com/57082262#at=130)  
+		1. [Robo Faber](http://vimeo.com/78771257)  
+		1. [Eggbot](https://www.youtube.com/watch?v=w4cdbV2oaEc)  
+	1. Drink-makers  
+		1. [Textspresso](http://www.youtube.com/watch?v=kx9D74t7GD8#t=89)  
+		1. [The Inebriator](http://www.youtube.com/watch?v=WqY7fchs7H0)  
+	1. Computer Numerical Control (CNC)  
+		1. [Shapoko / tinyg](http://www.youtube.com/watch?v=pCC1GXnYfFI#t=11)  
+		1. [Makerbot Replicator](http://www.youtube.com/watch?v=NAbiAzYhTOQ)  
+	1. Vacuuming  
+		1. [Roomba](https://www.youtube.com/watch?v=0DNkbZvVYvc)  
 
 2. [Golan Levin: Art that looks back at
 you](https://www.youtube.com/watch?v=1G0MzlfMPuM)
@@ -184,10 +184,10 @@ you](https://www.youtube.com/watch?v=1G0MzlfMPuM)
 3. [Drawdio](https://www.youtube.com/watch?v=PV_w38ldZaE)
 
 4. Other Projects  
-	1.1. Alex Markova's [fortune wheel](http://intro17fall.nyuad.im/2017/10/09/homework-due-october-9/)  
-	1.1. Claire Neel's [reactive eye](https://youtu.be/lYERKTf5YtI)  
-	1.1. Ji Young Kim's [map and national anthems](https://youtu.be/JknAOpjAkmQ  
-	1.1. May Baho's [campfire](http://intro17fall.nyuad.im/wp-content/uploads/2017/12/IMG_2544.jpg)  
+	1. Alex Markova's [fortune wheel](http://intro17fall.nyuad.im/2017/10/09/homework-due-october-9/)  
+	1. Claire Neel's [reactive eye](https://youtu.be/lYERKTf5YtI)  
+	1. Ji Young Kim's [map and national anthems](https://youtu.be/JknAOpjAkmQ)
+	1. May Baho's [campfire](http://intro17fall.nyuad.im/wp-content/uploads/2017/12/IMG_2544.jpg)  
 
 ### Solderless Breadboards
 
@@ -1100,7 +1100,14 @@ Latour, B, â€˜A Cautious Prometheus? A Few Steps toward a Philosophy of Designâ€
 1. [Why Open Source Misses the Point of Free
 	 Software](https://www.gnu.org/philosophy/open-source-misses-the-point.en.html)
 
-# General Resources about Robots
+## Animatronic Resources
+
+1. [Animatronics](https://en.wikipedia.org/wiki/Animatronics)
+
+1. Animatronic [courses](https://www.stanwinstonschool.com/tutorials). Seven
+   day free trial available.
+
+## General Robotic Resources
 
 1. [INTRODUCTION TO AUTONOMOUS ROBOTS](github)
 Introduction to Autonomous Robots is an open-access book by Nikolaus Correll, Bradley Hayes, Christoffer Heckman, and Alessandro Roncone. The book focuses on mechanisms, sensors, actuators, and algorithms.
@@ -1641,7 +1648,6 @@ theater.
 1. [Grey
 Walter](http://cyberneticzoo.com/cyberneticanimals/w-grey-walter-and-his-tortoises/)
 
-1. [Animatronics](https://en.wikipedia.org/wiki/Animatronics)
 
 1. [History of
 	 Technology](https://en.wikipedia.org/wiki/History_of_technology)
