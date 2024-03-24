@@ -35,3 +35,7 @@ fp-lib-table
 *.gbrjob
 *.drl
 report.txt
+
+# KiCad lock files 
+*.kicad_pcb.lck
+*.kicad_sch.lck
