@@ -7,8 +7,6 @@
 // similar functions for green and blue can also be written. This is 
 // left as an exercise to the reader.
 
-// based on code initially written by Liza Datsenko
-
 // 03 Apr 2024 - MS - Initial entry
 
 
@@ -52,12 +50,11 @@ class NeoPixelFader
                   int _delayBetweenSteps)
     {
       neoPixelPin = _neoPixelPin;
-      delayBetweenSteps = _delayBetweenSteps;
       numberOfPixels = _numberOfPixels;
+      delayBetweenSteps = _delayBetweenSteps;
+      // currently every color gets the same delay
+      // but this could also be configured individually
 
-      redPreviousMillis = 0;
-      greenPreviousMillis = 0;
-      bluePreviousMillis = 0;
       pixels = Adafruit_NeoPixel(numberOfPixels, neoPixelPin, NEO_GRB + NEO_KHZ800);
     }
 
@@ -167,8 +164,9 @@ class NeoPixelFader
     }
 };
 
-NeoPixelFader cloud1(A5, 6, 10); // pin, number, delay, step
 
+// pin, number of pixels, delay between steps
+NeoPixelFader cloud1(A5, 6, 10); 
 
 void setup() {
   Serial.begin(9600);
@@ -176,7 +174,6 @@ void setup() {
   // parameters are
   // redMinValue, redMaxValue, redCurrentValue,redIncrementAmount)
   cloud1.setRedValues( 50, 100, 100, -1);
-
   cloud1.begin();
 }
 
