@@ -6,9 +6,12 @@
 // but the red values can be changed with setRedValues(). Of course 
 // similar functions for green and blue can also be written. This is 
 // left as an exercise to the reader.
+//
+// Note that although there is no delay(), there is a for() loop iterating
+// over all pixels, and if there are a large number of them, this
+// could take a long time. 
 
 // 03 Apr 2024 - MS - Initial entry
-
 
 #include <Adafruit_NeoPixel.h>
 
