@@ -1,5 +1,7 @@
 ### nRF_Servo_Mega
 
+![](documentation/nRF_servo_Mega_schematic.jpg)
+
 This shield 
 is mean to sit on a Mega (which means using the SPI pins on the ICSP header)
 with the Adafruit Music Maker Shield.
