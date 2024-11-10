@@ -86,45 +86,6 @@ experimentation.
 	 extensions as necessary. Use heat-shrink tubing on all solder joints to
 	 prevent short circuits.
 
-### Servo Pan and Tilt mechanisms
-
-Also known as *gimbals* or *two degrees of freedom mechanisms*, *pan-and-tilt
-mechanisms* allow your object (e.g. eyes, a robot head, or a camera) to be
-rotated in two perpendicular planes: 
-e.g. turning side-to-side, and turning up and down.
-There are many tutorials for this but I find that they don't give much detail
-on the mechanical aspects and focus on the electronics and programming, which
-you really know how to do by now.
-
-(By the way, you can probably see that if you mounted a gimbal inside of
-another gimbal you would have three degrees of freedom, so you could rotate in
-the X, Y, and Z planes.)
-
-Here then are some examples of pan/tilt mechanisms and gimbals to give you
-some ideas:
-
-1. [This](https://engineezy.com/blogs/project-details/the-robot-head-project-2-degree-of-freedom-gimbal)
-   3D printed example uses a tricky gear mechanism to rotate the head, which
-   is very cool, but not the critical part of a pan-and-tilt mechanism. The
-   critical component is the large upside-down U shaped bracket which holds
-   the head and allows it to rotate left to right, while the bracket itself
-   rotates up and down. This U-shaped bracket is a common feature of most
-   pan-and-tilt mechanisms.
-
-1. In [this](https://www.instructables.com/DIY-Brushless-Gimbal/) tutorial
-   they cut pieces of plastic pipes of different diameters to make the gimbal.
-   You can see again the critical U-shaped bracket in Step 6. A nice feature
-   of this tutorial is the usage of bearings to make an extra smooth gimbal.
-   The motorized weight part of this tutorial is irrelevant for our purposes.
-
-1. [This](https://www.youtube.com/watch?v=xW632aigjMc) video shows a different
-   way to rotate in two planes using a universal joint or *U-joint*. 
-   If you look carefully at the U-joint at the 0:37 second mark you will see
-   our ubiquitious U-shaped bracket. This video is much more elaborate and in
-   fact is just a teaser for a lesson that they sell, but it gives you some
-   ideas. Built out of metal hardware, this will be much stronger and much
-   more reliable, but also heavier and will require stronger servos.
-
 ## Theory and critique
 1. [Robotic Creatures](doc/roboticCreatures2010Ghedini.pdf)
 1. [Catalog](doc/moma_catalogue_machine_art.pdf)
@@ -569,7 +530,45 @@ Connectors.
    Huynh](https://www.youtube.com/@DannyHuynhCreations). 
    Some show linkages and placement of servo motors.
 
-================================================================================
+### Servo Pan and Tilt mechanisms
+
+Also known as *gimbals* or *two degrees of freedom mechanisms*, *pan-and-tilt
+mechanisms* allow your object (e.g. eyes, a robot head, or a camera) to be
+rotated in two perpendicular planes: 
+e.g. turning side-to-side, and turning up and down.
+There are many tutorials for this but I find that they don't give much detail
+on the mechanical aspects and focus on the electronics and programming, which
+you really know how to do by now.
+
+(By the way, you can probably see that if you mounted a gimbal inside of
+another gimbal you would have three degrees of freedom, so you could rotate in
+the X, Y, and Z planes.)
+
+Here then are some examples of pan/tilt mechanisms and gimbals to give you
+some ideas:
+
+1. [This](https://engineezy.com/blogs/project-details/the-robot-head-project-2-degree-of-freedom-gimbal)
+   3D printed example uses a tricky gear mechanism to rotate the head, which
+   is very cool, but not the critical part of a pan-and-tilt mechanism. The
+   critical component is the large upside-down U shaped bracket which holds
+   the head and allows it to rotate left to right, while the bracket itself
+   rotates up and down. This U-shaped bracket is a common feature of most
+   pan-and-tilt mechanisms.
+
+1. In [this](https://www.instructables.com/DIY-Brushless-Gimbal/) tutorial
+   they cut pieces of plastic pipes of different diameters to make the gimbal.
+   You can see again the critical U-shaped bracket in Step 6. A nice feature
+   of this tutorial is the usage of bearings to make an extra smooth gimbal.
+   The motorized weight part of this tutorial is irrelevant for our purposes.
+
+1. [This](https://www.youtube.com/watch?v=xW632aigjMc) video shows a different
+   way to rotate in two planes using a universal joint or *U-joint*. 
+   If you look carefully at the U-joint at the 0:37 second mark you will see
+   our ubiquitious U-shaped bracket. This video is much more elaborate and in
+   fact is just a teaser for a lesson that they sell, but it gives you some
+   ideas. Built out of metal hardware, this will be much stronger and much
+   more reliable, but also heavier and will require stronger servos.
+
 
 ## Github Resources
 
