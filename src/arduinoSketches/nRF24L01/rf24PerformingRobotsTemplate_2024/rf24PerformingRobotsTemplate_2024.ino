@@ -8,7 +8,7 @@
    https://github.com/michaelshiloh/resourcesForClasses/tree/master/kicad/Arduino_Shield_RC_Controller
 
   Receiver is
-  https://github.com/instituteforcriticalrobotics/instituteforcriticalrobotics.github.io/tree/main/kicad/nRF_Mega
+  https://github.com/michaelshiloh/resourcesForClasses/blob/master/kicad/nRF_servo_Mega
 
    This file contains code for both transmitter and receiver.
    Transmitter at the top, receiver at the bottom.
@@ -56,7 +56,7 @@
 
 // CHANGEHERE
 // For the transmitter
- const int NRF_CE_PIN = A4, NRF_CSN_PIN = A5;
+const int NRF_CE_PIN = A4, NRF_CSN_PIN = A5;
 
 // CHANGEHERE
 // for the receiver
@@ -91,8 +91,8 @@ RF24 radio(NRF_CE_PIN, NRF_CSN_PIN);  // CE, CSN
 // Linh and Luke: Channel 90, addr = 0x33
 
 // CHANGEHERE
-const byte CUSTOM_ADDRESS_BYTE = 0x33; // change as per the above assignment
-const int CUSTOM_CHANNEL_NUMBER = 90;  // change as per the above assignment
+const byte CUSTOM_ADDRESS_BYTE = 0x33;  // change as per the above assignment
+const int CUSTOM_CHANNEL_NUMBER = 90;   // change as per the above assignment
 
 // Do not make changes here
 const byte xmtrAddress[] = { CUSTOM_ADDRESS_BYTE, CUSTOM_ADDRESS_BYTE, 0xC7, 0xE6, 0xCC };
@@ -126,120 +126,119 @@ void setupRF24Common() {
 }
 
 // CHANGEHERE
+/*
+// Transmitter code
 
-  // Transmitter code
+// Transmitter pin usage
+const int LCD_RS_PIN = 3, LCD_EN_PIN = 2, LCD_D4_PIN = 4, LCD_D5_PIN = 5, LCD_D6_PIN = 6, LCD_D7_PIN = 7;
+const int SW1_PIN = 8, SW2_PIN = 9, SW3_PIN = 10, SW4_PIN = A3, SW5_PIN = A2;
 
-  // Transmitter pin usage
-  const int LCD_RS_PIN = 3, LCD_EN_PIN = 2, LCD_D4_PIN = 4, LCD_D5_PIN = 5, LCD_D6_PIN = 6, LCD_D7_PIN = 7;
-  const int SW1_PIN = 8, SW2_PIN = 9, SW3_PIN = 10, SW4_PIN = A3, SW5_PIN = A2;
+// LCD library code
+#include <LiquidCrystal.h>
 
-  // LCD library code
-  #include <LiquidCrystal.h>
-
-  // initialize the library with the relevant pins
-  LiquidCrystal lcd(LCD_RS_PIN, LCD_EN_PIN, LCD_D4_PIN, LCD_D5_PIN, LCD_D6_PIN, LCD_D7_PIN);
+// initialize the library with the relevant pins
+LiquidCrystal lcd(LCD_RS_PIN, LCD_EN_PIN, LCD_D4_PIN, LCD_D5_PIN, LCD_D6_PIN, LCD_D7_PIN);
 
 
-  const int NUM_OF_STATES = 6;
-  char *theStates[] = {"0 robot wakes",
-                     "1 robot hello",
-                     "2 robot explains",
-                     "3 robot pleads",
-                     "4 robot weeps",
-                     "5 robot goodbye"
-                    };
+const int NUM_OF_STATES = 6;
+char* theStates[] = { "0 robot wakes",
+                      "1 robot hello",
+                      "2 robot explains",
+                      "3 robot pleads",
+                      "4 robot weeps",
+                      "5 robot goodbye" };
 
-  void updateLCD() {
+void updateLCD() {
 
   lcd.clear();
   lcd.print(theStates[data.stateNumber]);
-  lcd.setCursor(0, 1); // column, line (from 0)
+  lcd.setCursor(0, 1);  // column, line (from 0)
   lcd.print("not transmitted yet");
-  }
+}
 
-  void countDown() {
+void countDown() {
   data.stateNumber = (data.stateNumber > 0) ? (data.stateNumber - 1) : 0;
   updateLCD();
-  }
+}
 
-  void countUp() {
+void countUp() {
   if (++data.stateNumber >= NUM_OF_STATES) {
     data.stateNumber = NUM_OF_STATES - 1;
   }
   updateLCD();
-  }
+}
 
 
-  void spare1() {}
-  void spare2() {}
+void spare1() {}
+void spare2() {}
 
-  void rf24SendData() {
+void rf24SendData() {
 
-  radio.stopListening(); // go into transmit mode
+  radio.stopListening();  // go into transmit mode
   // The write() function will block
   // until the message is successfully acknowledged by the receiver
   // or the timeout/retransmit maxima are reached.
   int retval = radio.write(&data, sizeof(data));
 
   lcd.clear();
-  lcd.setCursor(0, 0); // column, line (from 0)
+  lcd.setCursor(0, 0);  // column, line (from 0)
   lcd.print("transmitting");
-  lcd.setCursor(14, 0); // column, line (from 0)
+  lcd.setCursor(14, 0);  // column, line (from 0)
   lcd.print(data.stateNumber);
 
   Serial.print(F(" ... "));
   if (retval) {
     Serial.println(F("success"));
-    lcd.setCursor(0, 1); // column, line (from 0)
+    lcd.setCursor(0, 1);  // column, line (from 0)
     lcd.print("success");
   } else {
     totalTransmitFailures++;
     Serial.print(F("failure, total failures = "));
     Serial.println(totalTransmitFailures);
 
-    lcd.setCursor(0, 1); // column, line (from 0)
+    lcd.setCursor(0, 1);  // column, line (from 0)
     lcd.print("error, total=");
-    lcd.setCursor(13, 1); // column, line (from 0)
+    lcd.setCursor(13, 1);  // column, line (from 0)
     lcd.print(totalTransmitFailures);
   }
+}
+
+class Button {
+  int pinNumber;
+  bool previousState;
+  void (*buttonFunction)();
+public:
+
+  // Constructor
+  Button(int pn, void* bf) {
+    pinNumber = pn;
+    buttonFunction = bf;
+    previousState = 1;
   }
 
-  class Button
-  {
-    int pinNumber;
-    bool previousState;
-    void(* buttonFunction)();
-  public:
-
-    // Constructor
-    Button(int pn, void* bf) {
-      pinNumber = pn;
-      buttonFunction = bf;
-      previousState = 1;
+  // update the button
+  void update() {
+    bool currentState = digitalRead(pinNumber);
+    if (currentState == LOW && previousState == HIGH) {
+      Serial.print("button on pin ");
+      Serial.print(pinNumber);
+      Serial.println();
+      buttonFunction();
     }
+    previousState = currentState;
+  }
+};
 
-    // update the button
-    void update() {
-      bool currentState = digitalRead(pinNumber);
-      if (currentState == LOW && previousState == HIGH) {
-        Serial.print("button on pin ");
-        Serial.print(pinNumber);
-        Serial.println();
-        buttonFunction();
-      }
-      previousState = currentState;
-    }
-  };
+const int NUMBUTTONS = 5;
+Button theButtons[] = {
+  Button(SW1_PIN, countDown),
+  Button(SW2_PIN, rf24SendData),
+  Button(SW3_PIN, countUp),
+  Button(SW4_PIN, spare1),
+  Button(SW5_PIN, spare2),
+};
 
-  const int NUMBUTTONS = 5;
-  Button theButtons[] = {Button(SW1_PIN, countDown),
-                       Button(SW2_PIN, rf24SendData),
-                       Button(SW3_PIN, countUp),
-                       Button(SW4_PIN, spare1),
-                       Button(SW5_PIN, spare2),
-                      };
-
-  void setupRF24() {
+void setupRF24() {
 
   setupRF24Common();
 
@@ -251,9 +250,9 @@ void setupRF24Common() {
   Serial.println(F("I am a transmitter"));
 
   data.stateNumber = 0;
-  }
+}
 
-  void setup() {
+void setup() {
   Serial.begin(9600);
   Serial.println(F("Setting up LCD"));
 
@@ -267,8 +266,8 @@ void setupRF24Common() {
   lcd.setCursor(0, 1);
   lcd.print("addr 0x");
   lcd.setCursor(7, 1);
-  char s [5];
-  sprintf (s, "%02x", CUSTOM_ADDRESS_BYTE);
+  char s[5];
+  sprintf(s, "%02x", CUSTOM_ADDRESS_BYTE);
   lcd.print(s);
 
   // Display the channel number
@@ -291,33 +290,30 @@ void setupRF24Common() {
   pinMode(SW3_PIN, INPUT_PULLUP);
   pinMode(SW4_PIN, INPUT_PULLUP);
   pinMode(SW5_PIN, INPUT_PULLUP);
+}
 
 
 
-  }
-
-
-
-  void loop() {
+void loop() {
   for (int i = 0; i < NUMBUTTONS; i++) {
     theButtons[i].update();
   }
-  delay(50); // for testing
-  }
+  delay(50);  // for testing
+}
 
 
-  void clearData() {
+void clearData() {
   // set all fields to 0
   data.stateNumber = 0;
-  }
+}
 
-  // End of transmitter code
+// End of transmitter code
 // CHANGEHERE
-
+*/
 
 // Receiver Code
-/*
 // CHANGEHERE
+
 // Additional libraries for music maker shield
 #include <Adafruit_VS1053.h>
 #include <SD.h>
@@ -532,4 +528,3 @@ void loop() {
 }  // end of loop()
 // end of receiver code
 // CHANGEHERE
-*/
