@@ -12,7 +12,15 @@
 
    This file contains code for both transmitter and receiver.
    Transmitter at the top, receiver at the bottom.
-   One of them is commented out.
+   One of them is commented out, so you need to comment in or out
+   the correct section. You don't need to make changes to this 
+   part of the code, just to comment in or out depending on
+   whether you are programming your transmitter or receiver
+
+   You need to set the correct address for your robot.
+
+   Search for the phrase CHANGEHERE to see where to 
+   comment or uncomment or make changes.
 
    These sketches require the RF24 library by TMRh20
    Documentation here: https://nrf24.github.io/RF24/index.html
@@ -25,9 +33,12 @@
    28 Oct 2023 - ms - add demo of NeoMatrix, servo, and Music Maker Shield
 	 20 Nov 2023 - as - fixed the bug which allowed counting beyond the limits
    22 Nov 2023 - ms - display radio custom address byte and channel
-   12 Nov 2024 - ms - changed pin numbers for                  
+   12 Nov 2024 - ms - changed names for channel and address allocation for Fall 2024                  
                       https://github.com/michaelshiloh/resourcesForClasses/blob/master/kicad/nRF_servo_Mega    
                       https://github.com/michaelshiloh/resourcesForClasses/blob/master/kicad/nRFControlPanel
+*/
+
+
 // Common code
 //
 
@@ -43,21 +54,22 @@
 // (CE = Chip Enable, CSN = Chip Select Not)
 // Which can be any pins:
 
+// CHANGEHERE
 // For the transmitter
-// const int NRF_CE_PIN = A4, NRF_CSN_PIN = A5;
+ const int NRF_CE_PIN = A4, NRF_CSN_PIN = A5;
 
+// CHANGEHERE
 // for the receiver
-const int NRF_CE_PIN = A11, NRF_CSN_PIN = A15;
+//const int NRF_CE_PIN = A11, NRF_CSN_PIN = A15;
 
-// In summary,
-// nRF 24L01 pin    Uno Mega   name
-//          1                     GND
-//          2                     3.3V
-//          3       9   A11       CE
-//          4       10  A15       CSN
-//          5       13  SCLK
-//          6       11  MOSI/COPI
-//          7       12  MISO/CIPO
+// nRF 24L01 pin   name
+//          1      GND
+//          2      3.3V
+//          3      CE
+//          4      CSN
+//          5      SCLK
+//          6      MOSI/COPI
+//          7      MISO/CIPO
 
 #include <SPI.h>
 #include <nRF24L01.h>
@@ -77,7 +89,9 @@ RF24 radio(NRF_CE_PIN, NRF_CSN_PIN);  // CE, CSN
 // Hind A & Javeria:  Channel 70, addr = 0xC3
 // Mbebo and Aaron: Channel 80, addr = 0xCC
 // Linh and Luke: Channel 90, addr = 0x33
-const byte CUSTOM_ADDRESS_BYTE = 0x33;             // change as per the above assignment
+
+// CHANGEHERE
+const byte CUSTOM_ADDRESS_BYTE = 0x33; // change as per the above assignment
 const int CUSTOM_CHANNEL_NUMBER = 90;  // change as per the above assignment
 
 // Do not make changes here
@@ -111,7 +125,8 @@ void setupRF24Common() {
   radio.setPALevel(RF24_POWER_LEVEL);
 }
 
-/*
+// CHANGEHERE
+
   // Transmitter code
 
   // Transmitter pin usage
@@ -297,10 +312,12 @@ void setupRF24Common() {
   }
 
   // End of transmitter code
-*/
+// CHANGEHERE
+
 
 // Receiver Code
-
+/*
+// CHANGEHERE
 // Additional libraries for music maker shield
 #include <Adafruit_VS1053.h>
 #include <SD.h>
@@ -514,3 +531,5 @@ void loop() {
   }
 }  // end of loop()
 // end of receiver code
+// CHANGEHERE
+*/
