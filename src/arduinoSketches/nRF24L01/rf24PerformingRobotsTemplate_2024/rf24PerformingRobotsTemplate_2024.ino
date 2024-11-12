@@ -344,8 +344,8 @@ Adafruit_VS1053_FilePlayer musicPlayer = Adafruit_VS1053_FilePlayer(SHIELD_RESET
 // M1 - M6 which is not very useful. Here are the pin
 // assignments:
 // M1 = 19
-// M2 = 21
-// M3 = 20
+// M2 = 20
+// M3 = 21
 // M4 = 16
 // M5 = 18
 // M6 = 17
