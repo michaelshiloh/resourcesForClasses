@@ -24,3 +24,11 @@ Music Maker Shield
 | DCS | VS1053 data select pin | 6 |
 | CCS | SD Card chip select pin | 4 |
 | DREQ | VS1053 data request interrupt pin | 3 |
+
+#### Revisions
+
+Rev 0.1
+- Replace motor numbers with pin numbers
+- Improve marking of servo pin assignments
+- Extend board past the 36 pin connector
+- Add voltage and polarity to screw terminals
