@@ -1257,6 +1257,13 @@ Project](http://www.japansociety.org/event/seinendan-theater-company-osaka-unive
 Collaboration between Rimini Protokoll and Thomas Melle.
 
 
+## Critique
+1. [ORIGIN AND DEVELOPMENT OF ROBOTIC
+   ART](https://www.ekac.org/roboticart.html) article by Eduardo Kac in  Art
+   Journal, Vol. 56, N. 3, Digital Reflections: The Dialogue of Art and
+   Technology, Special issue on Electronic Art, Johanna Drucker, (ed.), CAA,
+   NY, 1997, pp. 60-67
+
 ## History
 
 1. Karel Čapek. [R.U.R. (Rossum's Universal
