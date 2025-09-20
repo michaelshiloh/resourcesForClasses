@@ -500,7 +500,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "ArduinoShieldServoMotors.net",
-      "plot": "",
+      "plot": "./",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",

@@ -990,8 +990,8 @@
 		(at 50.8 25.654 90)
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
-		(property "Reference" "M6"
-			(at -0.508 10.16 180)
+		(property "Reference" "D17"
+			(at 0.154 10.7 180)
 			(layer "B.SilkS")
 			(uuid "1312ccaa-aa24-4268-bd56-488507aa6710")
 			(effects
@@ -1256,8 +1256,8 @@
 		(at 50.8 30.48 90)
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
-		(property "Reference" "M5"
-			(at -0.254 9.906 180)
+		(property "Reference" "D18"
+			(at -0.02 10.7 180)
 			(layer "B.SilkS")
 			(uuid "f5f113b3-80e8-4c5c-8730-51c96690d22c")
 			(effects
@@ -1522,8 +1522,8 @@
 		(at 50.8 35.56 90)
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
-		(property "Reference" "M4"
-			(at 0 9.906 180)
+		(property "Reference" "D16"
+			(at 0.06 10.7 180)
 			(layer "B.SilkS")
 			(uuid "5ba3bcc6-7f40-4f97-97d3-f36f88bb1e7c")
 			(effects
@@ -2646,7 +2646,7 @@
 		)
 		(fp_arc
 			(start 99.314 0.508)
-			(mid 99.650926 1.077973)
+			(mid 99.650928 1.077972)
 			(end 99.8728 1.7018)
 			(stroke
 				(width 0.15)
@@ -6605,7 +6605,7 @@
 		(descr "CP, Radial series, Radial, pin pitch=5.00mm, , diameter=10mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 5.00mm  diameter 10mm Electrolytic Capacitor")
 		(property "Reference" "C3"
-			(at -0.254 -5.842 0)
+			(at 9.86 -3.192 0)
 			(layer "B.SilkS")
 			(uuid "5a5f937c-6109-4b84-9876-31b068615f87")
 			(effects
@@ -6617,7 +6617,7 @@
 			)
 		)
 		(property "Value" "470 uF"
-			(at -2.032 -6.604 180)
+			(at 8.36 -4.692 180)
 			(layer "B.SilkS")
 			(uuid "04168d79-ef06-48a4-aa0f-8dc3e6882a45")
 			(effects
@@ -8954,7 +8954,7 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text_box "nRF Servo Mega\nMichael Shiloh 2024, 2025\nGPLv3 Applies\n\nRevision 0.1 March 2025\n"
+	(gr_text_box "nRF Servo Mega\nMichael Shiloh 2024, 2025\nGPLv3 Applies\n\nRevision 0.2 Sept 2025\n"
 		(start 72.192 34.29)
 		(end 106.426 48.808)
 		(layer "B.SilkS")
