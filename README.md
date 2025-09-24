@@ -841,7 +841,7 @@ to excellent soldering
 1. Best close up I've ever seen on how to solder pins into a circuit board.
 	 It's between 0:17 and 0:28 of [this](https://tinusaur.com/demo/) video
 
-When soldering a wire or pin to a circuit board, 
+1. When soldering a wire or pin to a circuit board, 
 you need to make sure that the solder adheres both to 
 wire or pin **and** to the pad on the circuit board. In the picture
 below, you can see that the solder on the circled pin has
