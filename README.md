@@ -841,6 +841,23 @@ to excellent soldering
 1. Best close up I've ever seen on how to solder pins into a circuit board.
 	 It's between 0:17 and 0:28 of [this](https://tinusaur.com/demo/) video
 
+When soldering a wire or pin to a circuit board, 
+you need to make sure that the solder adheres both to 
+wire or pin **and** to the pad on the circuit board. In the picture
+below, you can see that the solder on the circled pin has
+adhered to the pin, but not to the pad. This is evidenced by the almost 
+perfect spherical shape of the solder. In contrast, the solder joint on the
+pin immediately above has a cononical shape, indicating that the solder has
+properly adhered both to the pin and the pad.
+
+If this happens,
+simply reheat the joint, making sure to heat the pad as well. Once you heat
+the pad, the solder should flow onto it. You may need a tiny bit of fresh
+solder to encourage to solder to flow onto the pad, but take care not to apply
+too much.
+
+![](media/badSolderJoint.png)
+
 ## Solderless Breadboard Resources
 1. Sparkfun's [How to Use a
     Breadboard](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard)

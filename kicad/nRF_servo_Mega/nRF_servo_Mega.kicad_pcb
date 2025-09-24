@@ -213,8 +213,8 @@
 		(at 39.37 30.48 90)
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
-		(property "Reference" "M2"
-			(at 0 -2.794 -90)
+		(property "Reference" "D21"
+			(at 0 -2.794 270)
 			(layer "B.SilkS")
 			(uuid "0284cb3c-fa4e-4753-90a4-0cc1679d710c")
 			(effects
@@ -724,7 +724,7 @@
 		(at 39.37 35.56 90)
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
-		(property "Reference" "M1"
+		(property "Reference" "D19"
 			(at 0 -2.794 90)
 			(layer "B.SilkS")
 			(uuid "91aeb506-96cf-443a-8973-da574b0939a8")
