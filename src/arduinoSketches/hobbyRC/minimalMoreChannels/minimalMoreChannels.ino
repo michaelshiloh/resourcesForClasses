@@ -33,12 +33,12 @@
 
 // CHANGE THESE NUMBERS TO CORRESPOND TO THE PINS THAT
 // YOUR SHIELD HAS CONNECTED TO THE RADIO CHANNELS
-#define RC_CH1_PIN  16
-#define RC_CH2_PIN  17
-#define RC_CH3_PIN  18
-#define RC_CH4_PIN  19
-#define RC_CH5_PIN  20
-#define RC_CH6_PIN  21
+#define RC_CH1_PIN  2
+#define RC_CH2_PIN  3
+#define RC_CH3_PIN  4
+#define RC_CH4_PIN  5
+#define RC_CH5_PIN  6
+#define RC_CH6_PIN  21 // not used
 
 uint16_t rc_values[RC_NUM_CHANNELS];
 uint32_t rc_start[RC_NUM_CHANNELS];
