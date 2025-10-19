@@ -936,13 +936,13 @@ Motors](https://learn.adafruit.com/adafruit-arduino-lesson-16-stepper-motors/ove
 
 #### Giant Servo Motors Resources
 
-Basically the motor can be configured to be driven by a standard servo motor
-signal, just like Arduino delivers. In that mode you can select the direction
-of rotation and the range of rotation, up to about 300 degrees. 
+The motor can be configured to be driven by a standard servo motor
+signal, just like the signal that Arduino delivers. 
 
-**Your Arduino code is no different from a regular servo** Arduino has no idea
+**Your Arduino code is no different from a regular servo**! Arduino has no idea
 that there is a bigger servo motor there. Just as with a regular servo, you
-need to adjust the angle to whatever is appropriate to your needs.
+need to adjust the angle to whatever is appropriate to your needs. Think about
+this before you attach anything to the motor.
 
 **Instructions**
 1. Move the jumpers to the correct position as indicated below
@@ -957,12 +957,13 @@ need to adjust the angle to whatever is appropriate to your needs.
 
 **Warnings**:
 1. You must supply 12V to run this motor. You must connect the polarity
-   correctly or you permanently damage the motor. It's asking someone else to
-   check your wiring before turning on power
+   correctly or you permanently damage the motor. It's worth asking someone
+   else to check your wiring before turning on power
 1. This motor is strong, so test it first without anything attached to the
-   shaft while you adjust the direction and range. Stop it in a known location
-   before you attach your object, and think about what direction it's
-   going to move so that you attach it in the correct position.
+   shaft while you adjust the direction and range. Stop it at a known angle
+   (e.g. head turned to the left) before you attach your object, and then
+   attach your object (e.g. the head) so that it is in the correct position
+   (e.g. head facing the left).
 1. Before doing anything else make sure the jumpers are configured correctly.
    Those are the set of yellow pins at the bottom of the picture, with the
    blue and red jumpers.  The colors don't matter, but the positions must be
