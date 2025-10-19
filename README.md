@@ -959,6 +959,50 @@ of rotation and the range of rotation, up to about 300 degrees.
 ![](media/giantServoModeSelect2.jpg)
 ![](media/giantServorotationRangeAndDirection.jpg)
 
+----
+
+
+##### Understanding the giant servo
+
+Before doing anything else make sure the jumpers are configured correctly.
+Those are the set of yellow pins at the bottom of the picture, with the blue and
+red jumpers.  The colors don't matter, but the positions must be exactly as
+shown below:
+
+![](https://github.com/michaelshiloh/resourcesForClasses/blob/master/media/ASME-04_servo_motor_configured_as_a_servoMotor.jpg)
+
+If you want to know what the different configurations are this is the best
+documentation I could find from the Amazon product pages:
+<pre>
+
+
+
+</pre>
+![](https://github.com/michaelshiloh/resourcesForClasses/blob/master/media/giantServoModeSelect.jpg)
+<pre>
+
+
+
+</pre>
+![](https://github.com/michaelshiloh/resourcesForClasses/blob/master/media/giantServoModeSelect2.jpg)
+<pre>
+
+
+
+</pre>
+![](https://github.com/michaelshiloh/resourcesForClasses/blob/master/media/giantServorotationRangeAndDirection.jpg)
+
+After the jumpers are configured correctly you need to connect 12 V power to
+the servo motor using the green screw terminals in the upper left corner of
+the picture below. **Make sure you get the polarity correct or you will damage
+the motor!** Double check the wires before you turn on the power supply
+
+Once you have done the above two steps you can connect the servo control cable
+(that's the black, red, and white cable that looks like the servo cables you
+are familiar with) to your Arduino.
+
+Once attached you can control the giant servo motor as you would any servo
+motor in Arduino.
 ## Transistor Resources
 
 1. Quite decent MOSFET
