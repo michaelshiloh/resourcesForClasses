@@ -936,43 +936,45 @@ Motors](https://learn.adafruit.com/adafruit-arduino-lesson-16-stepper-motors/ove
 
 #### Giant Servo Motors Resources
 
-How to configure the giant servos (ASMC or ASME; so far they all seem to use
-the same configuration)
-
-These motors are pretty poorly documented; I lifted these pictures from Amazon
-so the resolution isn't so great. 
-
 Basically the motor can be configured to be driven by a standard servo motor
 signal, just like Arduino delivers. In that mode you can select the direction
 of rotation and the range of rotation, up to about 300 degrees. 
 
+**Your Arduino code is no different from a regular servo** Arduino has no idea
+that there is a bigger servo motor there. Just as with a regular servo, you
+need to adjust the angle to whatever is appropriate to your needs.
+
+**Instructions**
+1. Move the jumpers to the correct position as indicated below
+2. Connect 12V power to the servo motor to the green screw terminals labeled
+   **B+** and **B-** as in the upper left corner of the picture below. **Make
+   sure you get the polarity correct or you will damage the motor!** Double
+   check the wires before you turn on the power supply
+3. Connect to your Arduino control and ground (yellow or white and black
+   wires) just as you would a "regular" servo. You can skip the 5V (red) wire
+   because the servo motor is powered from 12V
+4. Code it just like you would a "regular" servo
+
 **Warnings**:
 1. You must supply 12V to run this motor. You must connect the polarity
-   correctly or you permanently damage the motor. It's worth double checking
-   with someone else before turning on power
+   correctly or you permanently damage the motor. It's asking someone else to
+   check your wiring before turning on power
 1. This motor is strong, so test it first without anything attached to the
    shaft while you adjust the direction and range. Stop it in a known location
    before you attach your object, and think about what direction it's
    going to move so that you attach it in the correct position.
-
-![](media/giantServoModeSelect.jpg)
-![](media/giantServoModeSelect2.jpg)
-![](media/giantServorotationRangeAndDirection.jpg)
-
-----
-
-
-##### Understanding the giant servo
-
-Before doing anything else make sure the jumpers are configured correctly.
-Those are the set of yellow pins at the bottom of the picture, with the blue and
-red jumpers.  The colors don't matter, but the positions must be exactly as
-shown below:
+1. Before doing anything else make sure the jumpers are configured correctly.
+   Those are the set of yellow pins at the bottom of the picture, with the
+   blue and red jumpers.  The colors don't matter, but the positions must be
+   exactly as shown below:
 
 ![](https://github.com/michaelshiloh/resourcesForClasses/blob/master/media/ASME-04_servo_motor_configured_as_a_servoMotor.jpg)
 
-If you want to know what the different configurations are this is the best
-documentation I could find from the Amazon product pages:
+There are other configurations but I recommend that you use the configuration
+above to make it behave like a "regular" servo motor.
+
+These motors are pretty poorly documented; I lifted these pictures from Amazon
+so the resolution isn't so great. 
 <pre>
 
 
@@ -992,17 +994,6 @@ documentation I could find from the Amazon product pages:
 </pre>
 ![](https://github.com/michaelshiloh/resourcesForClasses/blob/master/media/giantServorotationRangeAndDirection.jpg)
 
-After the jumpers are configured correctly you need to connect 12 V power to
-the servo motor using the green screw terminals in the upper left corner of
-the picture below. **Make sure you get the polarity correct or you will damage
-the motor!** Double check the wires before you turn on the power supply
-
-Once you have done the above two steps you can connect the servo control cable
-(that's the black, red, and white cable that looks like the servo cables you
-are familiar with) to your Arduino.
-
-Once attached you can control the giant servo motor as you would any servo
-motor in Arduino.
 ## Transistor Resources
 
 1. Quite decent MOSFET
