@@ -670,17 +670,14 @@ function test() {
 
 15. Including images
 
-Look at the source of this file to see how I did these hints:
+    Look at the source of this file to see how I did these examples:
+    16.1. Local (i.e. in this repository) image:
 
-##### Local (i.e. in this repository) image:
-
-Look at the code for item "How to upload a file to Github" above
-
-##### Remote (i.e. elsewhere on the internet) images:
+    Look at the code for item "How to upload a file to Github" above
+    16.2. Remote (i.e. elsewhere on the internet) images:
 
 ![](https://github.com/michaelshiloh/understandinginteractivemedia/blob/main/media/IMSandbox_Poster.png)
-
-##### Controlling the size of the image
+    16.3. Controlling the size of the image
 
 <img src="https://github.com/michaelshiloh/understandinginteractivemedia/blob/main/media/IMSandbox_Poster.png" width="400">
 
