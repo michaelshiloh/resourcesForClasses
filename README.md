@@ -678,7 +678,7 @@ Remote (i.e. elsewhere on the internet) images:
 ![](https://github.com/michaelshiloh/understandinginteractivemedia/blob/main/media/IMSandbox_Poster.png)
 Controlling the size of the image
 
-![](https://github.com/michaelshiloh/understandinginteractivemedia/blob/main/media/IMSandbox_Poster.png  =250x250)
+![](https://github.com/michaelshiloh/understandinginteractivemedia/blob/main/media/IMSandbox_Poster.png | width=100)
 
 
 ## Making Sounds without Arduino
