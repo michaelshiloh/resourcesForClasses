@@ -674,7 +674,7 @@ function test() {
 
 15.1. Local (i.e. in this repository) image:
 
-    Look at the code for item "How to upload a file to Github" above
+Look at the code for item "How to upload a file to Github" above
 
 15.2. Remote (i.e. elsewhere on the internet) images:
     ![](https://github.com/michaelshiloh/understandinginteractivemedia/blob/main/media/IMSandbox_Poster.png)
