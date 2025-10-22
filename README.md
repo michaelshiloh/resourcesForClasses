@@ -671,13 +671,16 @@ function test() {
 15. Including images
 
     Look at the source of this file to see how I did these examples:
+
 15.1. Local (i.e. in this repository) image:
+
     Look at the code for item "How to upload a file to Github" above
+
 15.2. Remote (i.e. elsewhere on the internet) images:
     ![](https://github.com/michaelshiloh/understandinginteractivemedia/blob/main/media/IMSandbox_Poster.png)
-    16.3. Controlling the size of the image
 
-<img src="https://github.com/michaelshiloh/understandinginteractivemedia/blob/main/media/IMSandbox_Poster.png" width="400">
+15.3. Controlling the size of the image
+    <img src="https://github.com/michaelshiloh/understandinginteractivemedia/blob/main/media/IMSandbox_Poster.png" width="400">
 
 
 ## Making Sounds without Arduino
