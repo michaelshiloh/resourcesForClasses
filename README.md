@@ -673,13 +673,15 @@ Look at the source of this file to see how I did these hints:
 
 ##### Local (i.e. in this repository) image:
 
+![](media/badSolderJoint.png)
+
 ##### Remote (i.e. elsewhere on the internet) images:
 
 ![](https://github.com/michaelshiloh/understandinginteractivemedia/blob/main/media/IMSandbox_Poster.png)
 
 ##### Controlling the size of the image
 
-<img src="https://github.com/michaelshiloh/understandinginteractivemedia/blob/main/media/IMSandbox_Poster.png" width="200">
+<img src="https://github.com/michaelshiloh/understandinginteractivemedia/blob/main/media/IMSandbox_Poster.png" width="400">
 
 
 ## Making Sounds without Arduino
