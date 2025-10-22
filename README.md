@@ -669,11 +669,12 @@ function test() {
 	 Thanks to Chinonyerem for these!
 
 15. Including images
+
 Look at the source of this file to see how I did these hints:
 
 ##### Local (i.e. in this repository) image:
 
-![](media/badSolderJoint.png)
+Look at the code for item "How to upload a file to Github" above
 
 ##### Remote (i.e. elsewhere on the internet) images:
 
