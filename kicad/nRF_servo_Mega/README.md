@@ -30,5 +30,24 @@ Music Maker Shield
 Rev 0.1
 - Replace motor numbers with pin numbers
 - Improve marking of servo pin assignments
-- Extend board past the 36 pin connector
 - Add voltage and polarity to screw terminals
+
+#### Revisions
+Rev 0.2
+- Fix servo motor pin assignments
+- Add text indicating servo pin assignment
+- Improve visibility of voltage and polarity to screw terminals
+
+#### Suggestions for future
+- Extend board past the 36 pin connector and add more servo motor connectors?
+- Enlarge text of voltage and polarity to screw terminals
+
+#### Assembly instructions
+##### Assembly order
+1. .1 ufd cap
+1. servo pins
+1. nRF socket
+1. Stacking headers
+1. Screw terminal
+1. ICSP header
+1. 470 uFD caps
