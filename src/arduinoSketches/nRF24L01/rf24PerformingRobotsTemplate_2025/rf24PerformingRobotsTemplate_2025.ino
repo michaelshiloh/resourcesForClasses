@@ -33,7 +33,9 @@
    28 Oct 2023 - ms - add demo of NeoMatrix, servo, and Music Maker Shield
 	 20 Nov 2023 - as - fixed the bug which allowed counting beyond the limits
    22 Nov 2023 - ms - display radio custom address byte and channel
-   12 Nov 2024 - ms - changed names for channel and address allocation for Fall 2024                  
+   12 Nov 2024 - ms - changed names for channel and address allocation for Fall 2024            
+   31 Oct 2025 - ms - changed names for channel and address allocation for Fall 2024            
+                    - listed pin numbers for servo/NeoPixel connections
                       https://github.com/michaelshiloh/resourcesForClasses/blob/master/kicad/nRF_servo_Mega    
                       https://github.com/michaelshiloh/resourcesForClasses/blob/master/kicad/nRFControlPanel
 */
@@ -82,17 +84,17 @@ RF24 radio(NRF_CE_PIN, NRF_CSN_PIN);  // CE, CSN
 //
 
 // Channel and address allocation:
-// Rama and Hind Y: Channel 30, addr = 0x76
-// Ahsen and Pranav: Channel 40, addr = 0x73
-// Sara & Toomie:  Channel 50, addr = 0x7C
-// Avinash and Vahagn: Channel 60, addr = 0xC6
-// Hind A & Javeria:  Channel 70, addr = 0xC3
-// Mbebo and Aaron: Channel 80, addr = 0xCC
-// Linh and Luke: Channel 90, addr = 0x33
+// Torico and Sarah: Channel 30, addr = 0x76
+// Sudiksha and Aysha: Channel 40, addr = 0x73
+// Mariam and Joy:  Channel 50, addr = 0x7C
+// Ghadir and Mustafa: Channel 60, addr = 0xC6
+// Clara and Jiho:  Channel 70, addr = 0xC3
+// Victor and Meera: Channel 80, addr = 0xCC
+// Ali and Hari: Channel 90, addr = 0x33
 
 // CHANGEHERE
-const byte CUSTOM_ADDRESS_BYTE = 0x33;  // change as per the above assignment
 const int CUSTOM_CHANNEL_NUMBER = 90;   // change as per the above assignment
+const byte CUSTOM_ADDRESS_BYTE = 0x33;  // change as per the above assignment
 
 // Do not make changes here
 const byte xmtrAddress[] = { CUSTOM_ADDRESS_BYTE, CUSTOM_ADDRESS_BYTE, 0xC7, 0xE6, 0xCC };
