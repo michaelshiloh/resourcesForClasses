@@ -70,7 +70,7 @@ nRF Servo Mega Shield [video](https://youtu.be/EMkqwKK7xOQ)
    across them to hold them
    together. 
     <img src="documentation/nRF_servo_Mega_assembly_headerSocketsandnRF.jpg" width="400">
-    <img src="documentation/nRF_servo_Mega_assembly_headerSocketsOnRF.jpg" width="400">
+    <img src="documentation/nRF_servo_Mega_assembly_headerSocketsOnnRF.jpg" width="400">
    Solder one pin, and then reheat the pin while you straighten out
    the connector. Solder the rest of the pins.
     <img src="documentation/nRF_servo_Mega_assembly_headerSocketsInstalled.jpg" width="400">
