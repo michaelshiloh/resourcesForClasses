@@ -400,7 +400,12 @@ void setupRF24() {
   radio.openReadingPipe(1, xmtrAddress);
 
   // radio.printPrettyDetails();
-  Serial.println(F("I am a receiver"));
+  Serial.print(F("I am a receiver on channel "));
+  Serial.print(CUSTOM_CHANNEL_NUMBER);
+  Serial.print (" and at address 0x");
+
+  Serial.print (CUSTOM_ADDRESS_BYTE, HEX);
+  Serial.println("");
 }
 
 void setupMusicMakerShield() {
