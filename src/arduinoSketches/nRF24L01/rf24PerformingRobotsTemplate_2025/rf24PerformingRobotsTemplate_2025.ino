@@ -58,11 +58,11 @@
 
 // CHANGEHERE
 // For the transmitter
-// const int NRF_CE_PIN = A4, NRF_CSN_PIN = A5;
+const int NRF_CE_PIN = A4, NRF_CSN_PIN = A5;
 
 // CHANGEHERE
 // for the receiver
-const int NRF_CE_PIN = A11, NRF_CSN_PIN = A15;
+// const int NRF_CE_PIN = A11, NRF_CSN_PIN = A15;
 
 // nRF 24L01 pin   name
 //          1      GND
@@ -128,7 +128,7 @@ void setupRF24Common() {
 }
 
 // CHANGEHERE
-/*
+
 // Transmitter code
 
 // Transmitter pin usage
@@ -180,8 +180,10 @@ void rf24SendData() {
   // The write() function will block
   // until the message is successfully acknowledged by the receiver
   // or the timeout/retransmit maxima are reached.
+  // Returns 1 if write succeeds
+  // Returns 0 if errors occurred (timeout or FAILURE_HANDLING fails)
   int retval = radio.write(&data, sizeof(data));
-
+  
   lcd.clear();
   lcd.setCursor(0, 0);  // column, line (from 0)
   lcd.print("transmitting");
@@ -311,11 +313,11 @@ void clearData() {
 
 // End of transmitter code
 // CHANGEHERE
-*/
+
 
 // Receiver Code
 // CHANGEHERE
-
+/*
 // Additional libraries for music maker shield
 #include <Adafruit_VS1053.h>
 #include <SD.h>
@@ -403,7 +405,6 @@ void setupRF24() {
   Serial.print(F("I am a receiver on channel "));
   Serial.print(CUSTOM_CHANNEL_NUMBER);
   Serial.print (" and at address 0x");
-
   Serial.print (CUSTOM_ADDRESS_BYTE, HEX);
   Serial.println("");
 }
@@ -529,3 +530,4 @@ void loop() {
 }  // end of loop()
 // end of receiver code
 // CHANGEHERE
+*/
