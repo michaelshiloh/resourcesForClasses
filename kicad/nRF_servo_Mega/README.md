@@ -74,12 +74,14 @@ nRF Servo Mega Shield [video](https://youtu.be/EMkqwKK7xOQ)
    Solder one pin, and then reheat the pin while you straighten out
    the connector. Solder the rest of the pins.
     <img src="documentation/nRF_servo_Mega_assembly_headerSocketsInstalled.jpg" width="400">
-1. Prepare 6 sets of header pins, each with 3 positions. Insert into positions
-   M1 - M6 and D20 (my mistake in labeling). Solder one pin, straighten, and
-   then solder the rest of the pins. You may find it easier to do one header
-   at a time instead of trying to do all 6 at once like I did.
+1. Prepare 6 sets of header pins, each with 3 positions. 
     <img src="documentation/nRF_servo_Mega_assembly_cuttingPins.jpg" width="400">
     <img src="documentation/nRF_servo_Mega_assembly_headerPins.jpg" width="400">
+    Insert into positions
+   D16-D21.
+   Solder one pin, straighten, and
+   then solder the rest of the pins. You may find it easier to do one header
+   at a time instead of trying to do all 6 at once like I did.
     <img src="documentation/nRF_servo_Mega_assembly_headerPinsInstalled.jpg" width="400">
 1. From the bag of feed-through headers, remove six 5 position headers and one
    10 position header. Return the rest to the bag.
