@@ -58,11 +58,11 @@
 
 // CHANGEHERE
 // For the transmitter
-const int NRF_CE_PIN = A4, NRF_CSN_PIN = A5;
+// const int NRF_CE_PIN = A4, NRF_CSN_PIN = A5;
 
 // CHANGEHERE
 // for the receiver
-// const int NRF_CE_PIN = A11, NRF_CSN_PIN = A15;
+const int NRF_CE_PIN = A11, NRF_CSN_PIN = A15;
 
 // nRF 24L01 pin   name
 //          1      GND
@@ -128,7 +128,7 @@ void setupRF24Common() {
 }
 
 // CHANGEHERE
-
+/*
 // Transmitter code
 
 // Transmitter pin usage
@@ -313,11 +313,11 @@ void clearData() {
 
 // End of transmitter code
 // CHANGEHERE
-
+*/
 
 // Receiver Code
 // CHANGEHERE
-/*
+
 // Additional libraries for music maker shield
 #include <Adafruit_VS1053.h>
 #include <SD.h>
@@ -530,4 +530,4 @@ void loop() {
 }  // end of loop()
 // end of receiver code
 // CHANGEHERE
-*/
+
