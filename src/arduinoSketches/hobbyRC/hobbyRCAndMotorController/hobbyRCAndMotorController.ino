@@ -30,7 +30,6 @@
 #define RC_CH3 2
 #define RC_CH4 3
 #define RC_CH5 4
-#define RC_CH6 5
 
 // CHANGE THESE NUMBERS TO CORRESPOND TO THE PINS THAT
 // YOUR SHIELD HAS CONNECTED TO THE RADIO CHANNELS
@@ -39,7 +38,6 @@
 #define RC_CH3_PIN 4
 #define RC_CH4_PIN 5
 #define RC_CH5_PIN 6
-#define RC_CH6_PIN 21  // not used
 
 uint16_t rc_values[RC_NUM_CHANNELS];
 uint32_t rc_start[RC_NUM_CHANNELS];
@@ -90,9 +88,7 @@ void calc_ch4() {
 void calc_ch5() {
   calc_input(RC_CH5, RC_CH5_PIN);
 }
-void calc_ch6() {
-  calc_input(RC_CH6, RC_CH6_PIN);
-}
+
 
 void setup() {
   Serial.begin(SERIAL_PORT_SPEED);
@@ -103,14 +99,12 @@ void setup() {
   pinMode(RC_CH3_PIN, INPUT);
   pinMode(RC_CH4_PIN, INPUT);
   pinMode(RC_CH5_PIN, INPUT);
-  pinMode(RC_CH6_PIN, INPUT);
 
   enableInterrupt(RC_CH1_PIN, calc_ch1, CHANGE);
   enableInterrupt(RC_CH2_PIN, calc_ch2, CHANGE);
   enableInterrupt(RC_CH3_PIN, calc_ch3, CHANGE);
   enableInterrupt(RC_CH4_PIN, calc_ch4, CHANGE);
   enableInterrupt(RC_CH5_PIN, calc_ch5, CHANGE);
-  enableInterrupt(RC_CH6_PIN, calc_ch6, CHANGE);
 
   // for the left and right motors
 
@@ -130,52 +124,77 @@ void setup() {
 void loop() {
   rc_read_values();
 
-  Serial.print("CH1:");
-  Serial.print(rc_values[RC_CH1]);
-  Serial.print("\t");
-  Serial.print("CH2:");
-  Serial.print(rc_values[RC_CH2]);
-  Serial.print("\t");
-  Serial.print("CH3:");
-  Serial.print(rc_values[RC_CH3]);
-  Serial.print("\t");
-  Serial.print("CH4:");
-  Serial.print(rc_values[RC_CH4]);
-  Serial.print("\t");
-  Serial.print("CH5:");
-  Serial.print(rc_values[RC_CH5]);
-  Serial.print("\t");
-  Serial.print("CH6:");
-  Serial.println(rc_values[RC_CH6]);
+  // Serial.print("CH1:");
+  // Serial.print(rc_values[RC_CH1]);
+  // Serial.print("\t");
+  // Serial.print("CH2:");
+  // Serial.print(rc_values[RC_CH2]);
+  // Serial.print("\t");
+  // Serial.print("CH3:");
+  // Serial.print(rc_values[RC_CH3]);
+  // Serial.print("\t");
+  // Serial.print("CH4:");
+  // Serial.print(rc_values[RC_CH4]);
+  // Serial.print("\t");
+  // Serial.print("CH5:");
+  // Serial.print(rc_values[RC_CH5]);
+  // Serial.print("\t");
+  // Serial.print("CH6:");
+  // Serial.print(rc_values[RC_CH6]);
+  //Serial.println();
 
-  if (rc_values[RC_CH2] > 1450 && rc_values[RC_CH2] << 1550) {
+  if (rc_values[RC_CH4] > 1450 && rc_values[RC_CH4] < 1550) {
     stop();
-  } else if (rc_values[RC_CH2] << 1450) {
-    int value = constrain(rc_values[RC_CH2], 1450, 1000);
+  }
+
+  else if (rc_values[RC_CH4] < 1450) {
+    int value = constrain(rc_values[RC_CH4], 1000, 1450);
+    // Serial.print("constrained value = ");
+    // Serial.print(value);
     forward(map(value, 1450, 1000, 0, 255));
   }
 
-  //delay(200);
+  // delay(1);
+  // Serial.print("currentSpeedLeftMotor = ");
+  // Serial.print(currentSpeedLeftMotor);
+  // Serial.print("\tcurrentSpeedRightMotor = ");
+  // Serial.print(currentSpeedRightMotor);
+  // Serial.println("");
 }
 
-void forward(int speed) {
-  leftMotorForward(speed);
-  rightMotorForward(speed);
+void forward(int foo) {
+  Serial.print("\tforward speed = ");
+  Serial.print(foo);
+  Serial.println();
+  leftMotorForward(foo);
+   rightMotorForward(foo);
 }
 
-void leftMotorForward(int speed) {
+void leftMotorForward(int foo) {
   digitalWrite(LEFT_MOTOR_INA, LOW);
   digitalWrite(LEFT_MOTOR_INB, HIGH);
-  analogWrite(LEFT_MOTOR_EN, speed);
+
+  desiredSpeedLeftMotor = foo;
+  currentSpeedLeftMotor = foo;
+  // Serial.print("\tdesiredSpeedLeftMotor = ");
+  // Serial.print(desiredSpeedLeftMotor);
+  // Serial.println();
+   analogWrite(LEFT_MOTOR_EN, desiredSpeedLeftMotor);
 }
 
 void rightMotorForward(int speed) {
   digitalWrite(RIGHT_MOTOR_INA, LOW);
   digitalWrite(RIGHT_MOTOR_INB, HIGH);
-  analogWrite(RIGHT_MOTOR_EN, speed);
+  desiredSpeedRightMotor = speed;
+  currentSpeedRightMotor = speed;
+  analogWrite(RIGHT_MOTOR_EN, desiredSpeedRightMotor);
 }
 
 void stop() {
+
+  if (currentSpeedLeftMotor == 0 && currentSpeedRightMotor == 0) {
+    return;
+  }
 
   desiredSpeedLeftMotor = 0;
   desiredSpeedRightMotor = 0;
@@ -191,6 +210,12 @@ void updateLeftMotor() {
     currentSpeedLeftMotor--;
   }
 
+  Serial.print("currentSpeedLeftMotor = ");
+  Serial.print(currentSpeedLeftMotor);
+
+  Serial.print("\tdesiredSpeedLeftMotor = ");
+  Serial.print(desiredSpeedLeftMotor);
+  Serial.println("");
   analogWrite(LEFT_MOTOR_EN, currentSpeedLeftMotor);
 }
 
