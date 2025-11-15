@@ -55,7 +55,7 @@ int currentSpeedLeftMotor = 0;
 int currentSpeedRightMotor = 0;
 int desiredSpeedLeftMotor = 0;
 int desiredSpeedRightMotor = 0;
-
+int stepSize;
 
 // Helper functions for reading the hobby RC radio signals
 void rc_read_values() {
@@ -141,33 +141,26 @@ void loop() {
   // Serial.print("\t");
   // Serial.print("CH6:");
   // Serial.print(rc_values[RC_CH6]);
-  //Serial.println();
+  Serial.println();
 
   if (rc_values[RC_CH4] > 1450 && rc_values[RC_CH4] < 1550) {
     stop();
   }
 
-  else if (rc_values[RC_CH4] < 1450) {
+  else if (rc_values[RC_CH4] < 1450 && rc_values[RC_CH4] > 950) {
+    // always do a constrain before a map
     int value = constrain(rc_values[RC_CH4], 1000, 1450);
-    // Serial.print("constrained value = ");
-    // Serial.print(value);
     forward(map(value, 1450, 1000, 0, 255));
   }
-
-  // delay(1);
-  // Serial.print("currentSpeedLeftMotor = ");
-  // Serial.print(currentSpeedLeftMotor);
-  // Serial.print("\tcurrentSpeedRightMotor = ");
-  // Serial.print(currentSpeedRightMotor);
-  // Serial.println("");
 }
 
 void forward(int foo) {
   Serial.print("\tforward speed = ");
   Serial.print(foo);
   Serial.println();
+  stepSize = 20;
   leftMotorForward(foo);
-   rightMotorForward(foo);
+  rightMotorForward(foo);
 }
 
 void leftMotorForward(int foo) {
@@ -175,19 +168,21 @@ void leftMotorForward(int foo) {
   digitalWrite(LEFT_MOTOR_INB, HIGH);
 
   desiredSpeedLeftMotor = foo;
-  currentSpeedLeftMotor = foo;
+  //currentSpeedLeftMotor = foo;
   // Serial.print("\tdesiredSpeedLeftMotor = ");
   // Serial.print(desiredSpeedLeftMotor);
   // Serial.println();
-   analogWrite(LEFT_MOTOR_EN, desiredSpeedLeftMotor);
+  //analogWrite(LEFT_MOTOR_EN, desiredSpeedLeftMotor);
+  updateLeftMotor();
 }
 
 void rightMotorForward(int speed) {
   digitalWrite(RIGHT_MOTOR_INA, LOW);
   digitalWrite(RIGHT_MOTOR_INB, HIGH);
   desiredSpeedRightMotor = speed;
-  currentSpeedRightMotor = speed;
-  analogWrite(RIGHT_MOTOR_EN, desiredSpeedRightMotor);
+  // currentSpeedRightMotor = speed;
+  // analogWrite(RIGHT_MOTOR_EN, desiredSpeedRightMotor);
+  updateRightMotor();
 }
 
 void stop() {
@@ -195,6 +190,8 @@ void stop() {
   if (currentSpeedLeftMotor == 0 && currentSpeedRightMotor == 0) {
     return;
   }
+
+  stepSize = 5;
 
   desiredSpeedLeftMotor = 0;
   desiredSpeedRightMotor = 0;
@@ -204,28 +201,38 @@ void stop() {
 
 void updateLeftMotor() {
   if (desiredSpeedLeftMotor > currentSpeedLeftMotor) {
-    currentSpeedLeftMotor++;
+    currentSpeedLeftMotor += stepSize;
 
   } else if (desiredSpeedLeftMotor < currentSpeedLeftMotor) {
-    currentSpeedLeftMotor--;
+    currentSpeedLeftMotor -= stepSize;
   }
+
+  currentSpeedLeftMotor = constrain(currentSpeedLeftMotor, 0, 255);
 
   Serial.print("currentSpeedLeftMotor = ");
   Serial.print(currentSpeedLeftMotor);
 
   Serial.print("\tdesiredSpeedLeftMotor = ");
   Serial.print(desiredSpeedLeftMotor);
-  Serial.println("");
+  // Serial.println("");
   analogWrite(LEFT_MOTOR_EN, currentSpeedLeftMotor);
 }
 
 void updateRightMotor() {
   if (desiredSpeedRightMotor > currentSpeedRightMotor) {
-    currentSpeedRightMotor++;
+    currentSpeedRightMotor += stepSize;
 
   } else if (desiredSpeedRightMotor < currentSpeedRightMotor) {
-    currentSpeedRightMotor--;
+    currentSpeedRightMotor -= stepSize;
   }
+
+  currentSpeedRightMotor = constrain(currentSpeedRightMotor, 0, 255);
+
+  Serial.print("\tcurrentSpeedRightMotor = ");
+  Serial.print(currentSpeedRightMotor);
+  Serial.print("\tdesiredSpeedRightMotor = ");
+  Serial.print(desiredSpeedRightMotor);
+  Serial.println("");
 
   analogWrite(RIGHT_MOTOR_EN, currentSpeedRightMotor);
 }
