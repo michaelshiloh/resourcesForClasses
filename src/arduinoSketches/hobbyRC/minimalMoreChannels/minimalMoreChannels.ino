@@ -10,6 +10,8 @@
   02 may 2022 - ms - initial entry
   24 may 2022 - ms - changed RC_CHx_PIN names
   15 sep 2022 - ms - changed pin numbers to new assignments
+  15 Nov 2025 - ms - changed pin numbers for "Arduino Shield Hobby RC and Motor Control" 
+                      added gradual deceleration to avoid robots tipping over when stopping
 
 */
 
