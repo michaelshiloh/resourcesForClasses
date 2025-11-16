@@ -152,36 +152,36 @@ void loop() {
     int value = constrain(rc_values[RC_CH4], 1000, 1450);
     forward(map(value, 1450, 1000, 0, 255));
   }
+
+  // need to add reverse and turning
 }
 
-void forward(int foo) {
+void forward(int mySpeed) {
   Serial.print("\tforward speed = ");
-  Serial.print(foo);
+  Serial.print(mySpeed);
   Serial.println();
   stepSize = 20;
-  leftMotorForward(foo);
-  rightMotorForward(foo);
+  leftMotorForward(mySpeed);
+  rightMotorForward(mySpeed);
 }
 
-void leftMotorForward(int foo) {
+void leftMotorForward(int mySpeed) {
   digitalWrite(LEFT_MOTOR_INA, LOW);
   digitalWrite(LEFT_MOTOR_INB, HIGH);
 
-  desiredSpeedLeftMotor = foo;
-  //currentSpeedLeftMotor = foo;
+  desiredSpeedLeftMotor = mySpeed;
+  //currentSpeedLeftMotor = mySpeed; // this would cause immediate change
   // Serial.print("\tdesiredSpeedLeftMotor = ");
   // Serial.print(desiredSpeedLeftMotor);
   // Serial.println();
-  //analogWrite(LEFT_MOTOR_EN, desiredSpeedLeftMotor);
   updateLeftMotor();
 }
 
-void rightMotorForward(int speed) {
+void rightMotorForward(int mySpeed) {
   digitalWrite(RIGHT_MOTOR_INA, LOW);
   digitalWrite(RIGHT_MOTOR_INB, HIGH);
-  desiredSpeedRightMotor = speed;
-  // currentSpeedRightMotor = speed;
-  // analogWrite(RIGHT_MOTOR_EN, desiredSpeedRightMotor);
+  desiredSpeedRightMotor = mySpeed;
+  // currentSpeedRightMotor = mySpeed; // this would cause immediate change
   updateRightMotor();
 }
 
