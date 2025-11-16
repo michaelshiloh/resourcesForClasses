@@ -38,6 +38,8 @@
                     - listed pin numbers for servo/NeoPixel connections
                       https://github.com/michaelshiloh/resourcesForClasses/blob/master/kicad/nRF_servo_Mega    
                       https://github.com/michaelshiloh/resourcesForClasses/blob/master/kicad/nRFControlPanel
+   16 Nov 2025 - ms - Check correct pin numbers depending on transmitter or receiver
+                    - Example of gradual servo motor movement
 */
 
 
@@ -244,6 +246,13 @@ Button theButtons[] = {
 
 void setupRF24() {
 
+  // Check whether the correct pins are assigned
+  if ( NRF_CE_PIN != A4 || NRF_CSN_PIN != A5)
+  {
+    Serial.println(F("The wrong NRF_CE_PIN and NRF_CSN_PIN pins are defined for a transmitter"));
+    while (1);
+  }
+
   setupRF24Common();
 
   // Set us as a transmitter
@@ -330,7 +339,7 @@ void clearData() {
 #include <Adafruit_GFX.h>
 #include <Adafruit_NeoMatrix.h>
 #ifndef PSTR
-#define PSTR // Make Arduino Due happy
+#define PSTR  // Make Arduino Due happy
 #endif
 
 // Additional pin usage for receiver
@@ -346,7 +355,7 @@ Adafruit_VS1053_FilePlayer musicPlayer = Adafruit_VS1053_FilePlayer(SHIELD_RESET
 
 // Connectors for NeoPixels and Servo Motors are labeled
 // on the circuit board
-// and use pins 16, 17, 18, 19, 20, and 21 
+// and use pins 16, 17, 18, 19, 20, and 21
 
 // Servo motors
 const int NOSE_SERVO_PIN = 20;
@@ -361,9 +370,8 @@ const int NUMPIXELS = 64;
 //#define NUMPIXELS 64  // change to fit
 //Adafruit_NeoPixel pixels(NUMPIXELS, NEOPIXELPIN, NEO_GRB + NEO_KHZ800);
 Adafruit_NeoMatrix matrix = Adafruit_NeoMatrix(8, 8, NEOPIXELPIN,
-                            NEO_MATRIX_TOP     + NEO_MATRIX_RIGHT +
-                            NEO_MATRIX_COLUMNS + NEO_MATRIX_PROGRESSIVE,
-                            NEO_GRB            + NEO_KHZ800);
+                                               NEO_MATRIX_TOP + NEO_MATRIX_RIGHT + NEO_MATRIX_COLUMNS + NEO_MATRIX_PROGRESSIVE,
+                                               NEO_GRB + NEO_KHZ800);
 
 Servo nose;  // change names to describe what's moving
 Servo antenna;
@@ -395,6 +403,14 @@ void setup() {
 }
 
 void setupRF24() {
+
+  // Check whether the correct pins are assigned
+  if (NRF_CE_PIN != A11 || NRF_CSN_PIN != A15) {
+    Serial.println(F("The wrong NRF_CE_PIN and NRF_CSN_PIN pins are defined for a receiver"));
+    while (1)
+      ;
+  }
+
   setupRF24Common();
 
   // Set us as a receiver
@@ -404,8 +420,8 @@ void setupRF24() {
   // radio.printPrettyDetails();
   Serial.print(F("I am a receiver on channel "));
   Serial.print(CUSTOM_CHANNEL_NUMBER);
-  Serial.print (" and at address 0x");
-  Serial.print (CUSTOM_ADDRESS_BYTE, HEX);
+  Serial.print(" and at address 0x");
+  Serial.print(CUSTOM_ADDRESS_BYTE, HEX);
   Serial.println("");
 }
 
@@ -475,6 +491,10 @@ void flashNeoPixels() {
   //  pixels.show();
 }
 
+// this is just an example - change to suit your needs
+int currentNoseAngle = 100;
+int noseStepSize = 5;
+
 void loop() {
   // If there is data, read it,
   // and do the needfull
@@ -494,7 +514,27 @@ void loop() {
         break;
       case 1:
         Serial.print(F("moving nose to 180 and drawing rectangle"));
-        nose.write(180);
+
+        // this moves the nose slowly
+        while (currentNoseAngle != 180) {
+
+          // if it's bigger, then reduce the angle
+          if (currentNoseAngle > 180) {
+            currentNoseAngle -= noseStepSize;
+          } else {  // if it's not bigger it must be smaller
+                    // so increase the angle
+            currentNoseAngle += noseStepSize;
+          }
+
+          // check to see if we are within the step size
+          if (abs(currentNoseAngle - 180) < noseStepSize) {
+            // if so, just put us there
+            currentNoseAngle = 180;
+          }
+
+          // finally, actually write to the servo motor
+          nose.write(currentNoseAngle);
+        }
 
         matrix.drawRect(2, 2, 5, 5, matrix.Color(200, 90, 30));
         matrix.show();
@@ -523,11 +563,7 @@ void loop() {
       default:
         Serial.println(F("Invalid option"));
     }
-
-
-
   }
 }  // end of loop()
 // end of receiver code
 // CHANGEHERE
-
