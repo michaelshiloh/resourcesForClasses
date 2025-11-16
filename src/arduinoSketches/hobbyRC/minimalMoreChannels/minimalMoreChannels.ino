@@ -10,8 +10,7 @@
   02 may 2022 - ms - initial entry
   24 may 2022 - ms - changed RC_CHx_PIN names
   15 sep 2022 - ms - changed pin numbers to new assignments
-  15 Nov 2025 - ms - changed pin numbers for "Arduino Shield Hobby RC and Motor Control" 
-                      added gradual deceleration to avoid robots tipping over when stopping
+  16 Nov 2025 - ms - fixed bug: space not allocated for six channels, but six channels read
 
 */
 
@@ -31,7 +30,6 @@
 #define RC_CH3  2
 #define RC_CH4  3
 #define RC_CH5  4
-#define RC_CH6  5
 
 // CHANGE THESE NUMBERS TO CORRESPOND TO THE PINS THAT
 // YOUR SHIELD HAS CONNECTED TO THE RADIO CHANNELS
@@ -40,7 +38,6 @@
 #define RC_CH3_PIN  4
 #define RC_CH4_PIN  5
 #define RC_CH5_PIN  6
-#define RC_CH6_PIN  21 // not used
 
 uint16_t rc_values[RC_NUM_CHANNELS];
 uint32_t rc_start[RC_NUM_CHANNELS];
@@ -76,9 +73,6 @@ void calc_ch4() {
 void calc_ch5() {
   calc_input(RC_CH5, RC_CH5_PIN);
 }
-void calc_ch6() {
-  calc_input(RC_CH6, RC_CH6_PIN);
-}
 
 void setup() {
   Serial.begin(SERIAL_PORT_SPEED);
@@ -88,14 +82,12 @@ void setup() {
   pinMode(RC_CH3_PIN, INPUT);
   pinMode(RC_CH4_PIN, INPUT);
   pinMode(RC_CH5_PIN, INPUT);
-  pinMode(RC_CH6_PIN, INPUT);
 
   enableInterrupt(RC_CH1_PIN, calc_ch1, CHANGE);
   enableInterrupt(RC_CH2_PIN, calc_ch2, CHANGE);
   enableInterrupt(RC_CH3_PIN, calc_ch3, CHANGE);
   enableInterrupt(RC_CH4_PIN, calc_ch4, CHANGE);
   enableInterrupt(RC_CH5_PIN, calc_ch5, CHANGE);
-  enableInterrupt(RC_CH6_PIN, calc_ch6, CHANGE);
 }
 
 void loop() {
@@ -106,7 +98,7 @@ void loop() {
   Serial.print("CH3:"); Serial.print(rc_values[RC_CH3]); Serial.print("\t");
   Serial.print("CH4:"); Serial.print(rc_values[RC_CH4]); Serial.print("\t");
   Serial.print("CH5:"); Serial.print(rc_values[RC_CH5]); Serial.print("\t");
-  Serial.print("CH6:"); Serial.println(rc_values[RC_CH6]);
+  Serial.println();
 
   delay(200);
 }
