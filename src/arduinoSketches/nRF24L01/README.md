@@ -46,7 +46,7 @@ discussing power supply issues. See especially reply from gilshultz
 [Common Issues](https://github.com/nRF24/RF24/blob/master/COMMON_ISSUES.md)
 page for the RF24 library
 
-# Other references
+# Other resources
 Great [technical
 description](https://wolles-elektronikkiste.de/en/nrf24l01-2-4-ghz-radio-modules)
 of the nRF24L01 modules
@@ -61,3 +61,7 @@ transmitter](https://howtomechatronics.com/projects/diy-arduino-rc-transmitter/)
 Another [hobby RC controller](https://electronoobs.com/eng_arduino_tut86.php)
 
 As an alternative, [this](https://wolles-elektronikkiste.de/en/hc-12-radio-module) tutorial uses the HC-12 radio modules
+
+[Sniff and decode NRF24L01+ and Bluetooth Low
+Energy](https://github.com/omriiluz/NRF24-BTLE-Decoder) using RTL-SDR and a
+downconverter
