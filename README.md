@@ -130,6 +130,8 @@ experimentation.
 1. A whole bunch of [resources on writing artist
    statements](https://guides.ecuad.ca/professionalpractice/writing) with
    links to yet more examples
+1. [Sample Artist Statements/Bios](https://www.gyst-ink.com/sample-artist-statements) from the resource above, because they
+   seem really good
    
 
 ## Inspiration: Artists, Movies, Projects, etc.
