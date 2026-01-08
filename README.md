@@ -114,6 +114,22 @@ experimentation.
    Dali](https://hannahaafecak12.weebly.com/art-critique-example.html)
 1. [Art Critique Example: The Weeping Woman by Pablo
    Picasso](https://16julianas.weebly.com/art-critique-example.html)
+
+### Artist STatements
+1. [8 Artist Statements We Love](https://www.theartleague.org/blog/2015/08/24/8-artist-statements-we-love/) this one starts with a Calvin and Hobbes cartoon so it's already a winner in my book
+1. Reddit thread with [very useful advice from someone who covers art
+   galleries](https://www.reddit.com/r/ContemporaryArt/comments/1emelpj/what_are_some_good_well_written_artist/)
+1. Another Reddit thread with [useful
+   advice](https://www.reddit.com/r/ContemporaryArt/comments/1dog1a4/the_artists_statement/)
+1. [How To Write An Artist Statement, With
+   Examples](https://www.stephaniescott.art/brushwork/2024/11/19/how-to-write-an-artist-statement)
+   by someone who offers artist statement editing professionally
+1. [Example Artist
+   Statements](https://www.liverpoolmuseums.org.uk/example-artist-statements)
+   from a museum so it must be good (I guess)
+1. A whole bunch of [resources on writing artist
+   statements](https://guides.ecuad.ca/professionalpractice/writing) with
+   links to yet more examples
    
 
 ## Inspiration: Artists, Movies, Projects, etc.
