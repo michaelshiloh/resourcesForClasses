@@ -91,6 +91,30 @@ experimentation.
 1. [Catalog](doc/moma_catalogue_machine_art.pdf)
  from Machine Art exhibit, Museum of Modern Art, 1934 
 
+### Art Critiques: Examples and guides
+1. [Beginner’s Guide to Writing an Art
+   Critique](https://acousticpaint.wordpress.com/2018/07/31/beginners-guide-to-writing-an-art-critique/)
+   Uses the foundational Feldman Method of art criticism.
+   Somewhat beginner oriented. 
+1. [How to: critique artwork like a
+   pro](https://www.twistedtextiles.com/how-to-critique-artwork-like-a-pro/)
+   As above
+1. [Teaching Students to Critique](https://www.kennedy-center.org/education/resources-for-educators/classroom-resources/articles-and-how-tos/articles/educators/critique--feedback/teaching-students-to-critique/)
+   As above
+1. [How to Write an Art Critique: Examples &
+   Strategies](https://custom-writing.org/blog/art-critique-writing)
+   As above
+1. [7 Art Critique Examples to Make You a Better Analyst
+   (2025)](https://as.wiktoriaflorek.com/art-critique-examples/) describes 7
+   different approaches to art criticism, all but one more advanced than the
+   Feldman method. I found this the most useful because
+   I could choose the approach that seems the most relevant to the situation
+   and/or the artwork.
+1. [Art Critique Example: The Persistence of Memory by Salvador
+   Dali](https://hannahaafecak12.weebly.com/art-critique-example.html)
+1. [Art Critique Example: The Weeping Woman by Pablo
+   Picasso](https://16julianas.weebly.com/art-critique-example.html)
+   
 
 ## Inspiration: Artists, Movies, Projects, etc.
 
