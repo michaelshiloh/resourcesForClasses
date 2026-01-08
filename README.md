@@ -115,7 +115,7 @@ experimentation.
 1. [Art Critique Example: The Weeping Woman by Pablo
    Picasso](https://16julianas.weebly.com/art-critique-example.html)
 
-### Artist STatements
+### Artist Statements
 1. [8 Artist Statements We Love](https://www.theartleague.org/blog/2015/08/24/8-artist-statements-we-love/) this one starts with a Calvin and Hobbes cartoon so it's already a winner in my book
 1. Reddit thread with [very useful advice from someone who covers art
    galleries](https://www.reddit.com/r/ContemporaryArt/comments/1emelpj/what_are_some_good_well_written_artist/)
