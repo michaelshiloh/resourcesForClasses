@@ -3010,10 +3010,94 @@
 		)
 	)
 	(junction
+		(at 83.82 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0002709c-39fc-4ca5-b1d8-52510cce7a56")
+	)
+	(junction
+		(at 93.98 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "01071459-ff93-4ab8-98f9-ae809e9c6666")
+	)
+	(junction
+		(at 66.04 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "079457c7-179b-4573-a09f-6fcf5cf4a78d")
+	)
+	(junction
+		(at 322.58 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0aa64667-0017-4ab9-8cd7-db8defb506d8")
+	)
+	(junction
+		(at 149.86 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0f01e2ee-35a1-4d69-9e62-ccf83cc5df29")
+	)
+	(junction
+		(at 104.14 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "171c7b4c-52bc-4e92-be61-3bb0776c8af4")
+	)
+	(junction
+		(at 91.44 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "181015b5-a770-4338-b9db-774d18cb5596")
+	)
+	(junction
+		(at 124.46 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "22d227ab-44ea-4ac7-8448-7aae4b20c419")
+	)
+	(junction
+		(at 124.46 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2e02c089-f600-4934-ad4d-1be687b7f921")
+	)
+	(junction
+		(at 58.42 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2f0a9a00-b014-4733-83bc-e946bd542859")
+	)
+	(junction
+		(at 232.41 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2f758a48-198a-4f89-9c08-4b66a362c8db")
+	)
+	(junction
+		(at 283.21 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "32460b34-d034-4122-8443-df8fd4d41b1e")
+	)
+	(junction
+		(at 63.5 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "402882f7-e319-498f-a445-b22a836cac20")
+	)
+	(junction
+		(at 267.97 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "40a19355-508c-4fd3-a851-76012b017a2f")
+	)
+	(junction
 		(at 143.51 160.02)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2c536aff-05aa-4b39-b8b4-0f92f2a50e99")
+		(uuid "49533d0f-1a0f-4c38-9bb3-743120ec9d6b")
 	)
 	(junction
 		(at 143.51 154.94)
@@ -3022,10 +3106,64 @@
 		(uuid "4b0885ee-a064-434a-9adc-dfe90eac9fd1")
 	)
 	(junction
-		(at 265.43 151.13)
+		(at 147.32 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6a1cffca-94db-4417-b6de-6b9f54caa1de")
+		(uuid "4f3230ee-ded0-487f-a452-fc463acd4276")
+	)
+	(junction
+		(at 121.92 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "51592779-ef85-4628-83eb-8668e9f71b26")
+	)
+	(junction
+		(at 127 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "56212f2d-58ea-4f06-adf6-7b4c464eaec5")
+	)
+	(junction
+		(at 252.73 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "595e0917-2c24-48b9-937f-a0e6b4e41dc7")
+	)
+	(junction
+		(at 233.68 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5bba6e2f-6c99-4266-9054-60d7625c4ca7")
+	)
+	(junction
+		(at 280.67 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5e56bee0-ad98-439a-a7c8-7e9d2f2a86a2")
+	)
+	(junction
+		(at 86.36 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "602049d6-87ac-4acf-8a94-c0663c346389")
+	)
+	(junction
+		(at 111.76 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6298124c-2d1c-44b3-8345-ca6e12d84645")
+	)
+	(junction
+		(at 236.22 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "651d0ab2-346a-47c1-af8e-aa2c6ec64413")
+	)
+	(junction
+		(at 106.68 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "68b33df0-265f-44f9-a87e-ba62863bb485")
 	)
 	(junction
 		(at 57.15 167.64)
@@ -3034,10 +3172,112 @@
 		(uuid "6baf041e-b061-4412-bb1d-2d70a7bd9178")
 	)
 	(junction
+		(at 281.94 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6d8662e7-c972-439f-9538-3bb7eaecd2aa")
+	)
+	(junction
+		(at 134.62 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "715e7aaf-8043-4368-9d38-698fc8bdd7a1")
+	)
+	(junction
+		(at 260.35 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "748ce6cd-f0e7-4f98-8b4b-8d7858ff9092")
+	)
+	(junction
+		(at 83.82 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "76cec53c-f96e-4704-aeb3-f50e1392c694")
+	)
+	(junction
+		(at 260.35 151.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "78eaffcd-8fa1-422c-89a1-48c76376ec66")
+	)
+	(junction
+		(at 279.4 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7a229485-c229-489b-a1e1-762e722d787c")
+	)
+	(junction
+		(at 68.58 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7a7d04f0-29fa-4cf7-b208-45e6197d7b79")
+	)
+	(junction
 		(at 143.51 157.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7b2682ad-09da-4c64-a594-d39c915489c3")
+	)
+	(junction
+		(at 322.58 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8346bcdc-33bb-4738-952a-4b42c36a0607")
+	)
+	(junction
+		(at 60.96 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "951726e8-2805-49cd-87e5-1b5a660de627")
+	)
+	(junction
+		(at 76.2 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "960109f1-fdd2-4ae2-814a-af0aeed3c60c")
+	)
+	(junction
+		(at 243.84 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "972d2be2-24c6-4f2d-8543-183fb1a8570a")
+	)
+	(junction
+		(at 114.3 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "99e9699b-0ba1-40f3-a9b0-aea97626cfe0")
+	)
+	(junction
+		(at 96.52 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9bd08997-27e3-4e23-b13d-ea427e36c1b8")
+	)
+	(junction
+		(at 327.66 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9e89d900-9170-4c63-8886-6f41a735575c")
+	)
+	(junction
+		(at 229.87 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9f636ef2-f84e-41ff-a57b-a39ef0453b48")
+	)
+	(junction
+		(at 292.1 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a0c56d0e-8ed3-492d-be63-6c9395eba71a")
+	)
+	(junction
+		(at 101.6 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a1318d34-d958-4274-9f82-5d4b43d77bbe")
 	)
 	(junction
 		(at 143.51 152.4)
@@ -3046,22 +3286,106 @@
 		(uuid "a1f01807-f8f7-469e-9208-5436806638dd")
 	)
 	(junction
-		(at 262.89 143.51)
+		(at 104.14 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d0801718-34d5-4222-bfd7-15eb673de23b")
+		(uuid "a291abde-855f-401c-9628-afb3d7f6c525")
 	)
 	(junction
-		(at 107.95 77.47)
+		(at 325.12 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "fcd5da81-834b-43ab-a4cd-bb71dbff5e20")
+		(uuid "b1603651-3c81-42f7-9480-03e023cd8467")
 	)
 	(junction
-		(at 143.51 83.82)
+		(at 114.3 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ff7f6e98-9291-484d-9464-a625219e49d6")
+		(uuid "b1dedd41-2f6f-4ea7-bf6b-023a64288628")
+	)
+	(junction
+		(at 93.98 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c9eac34a-c081-47ef-a964-5eccf9222bd9")
+	)
+	(junction
+		(at 116.84 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ca93a30e-cd70-45eb-a093-458360c03d5f")
+	)
+	(junction
+		(at 294.64 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d1860997-19e4-4297-ba71-a57453099a3b")
+	)
+	(junction
+		(at 255.27 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d5ab33f5-3163-4fae-b910-9b70b4c8cd14")
+	)
+	(junction
+		(at 137.16 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d69abf97-ec70-43ce-baa3-a5d5d7e5342f")
+	)
+	(junction
+		(at 262.89 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d94271b7-85c8-4854-b288-b8d756ab3dd3")
+	)
+	(junction
+		(at 325.12 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dafe3085-5013-40eb-bf28-b34b8a987dfb")
+	)
+	(junction
+		(at 270.51 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "db94a14b-6380-4ac4-9c94-fd1a519f5550")
+	)
+	(junction
+		(at 254 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dfaf933b-4018-4363-a005-46839fead230")
+	)
+	(junction
+		(at 86.36 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e2104f37-df60-4cd0-896e-1cd56757f1e4")
+	)
+	(junction
+		(at 256.54 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e41aadde-8ff8-4a84-a2af-e3c8917807e4")
+	)
+	(junction
+		(at 78.74 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb7f1b0a-21a7-4e0b-ad00-28cb014adbfd")
+	)
+	(junction
+		(at 241.3 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f4d6f921-1339-4983-b8ed-85682cebff3f")
+	)
+	(junction
+		(at 257.81 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fa1cd0b0-937b-41be-9963-5c3cad513991")
 	)
 	(no_connect
 		(at 209.55 114.3)
@@ -3076,12 +3400,20 @@
 		(uuid "0ffc8fdc-0b9c-4c63-807b-7cb6557482a6")
 	)
 	(no_connect
+		(at 209.55 86.36)
+		(uuid "12f8bb7a-26d1-45fb-b576-d35183c69aeb")
+	)
+	(no_connect
 		(at 209.55 134.62)
 		(uuid "19c9079b-0224-47b7-9a2a-b4c9e3e92290")
 	)
 	(no_connect
 		(at 209.55 157.48)
 		(uuid "1bcd43a4-ba8c-4fb1-9f33-140d4fa527ff")
+	)
+	(no_connect
+		(at 209.55 104.14)
+		(uuid "33dca193-c3d6-453a-a078-44dfd1494591")
 	)
 	(no_connect
 		(at 172.72 39.37)
@@ -3092,8 +3424,36 @@
 		(uuid "3ababde4-782d-4b80-b12e-d533e1638c1e")
 	)
 	(no_connect
+		(at 209.55 109.22)
+		(uuid "4399fbb1-968d-4bb7-9945-161eb0e77b25")
+	)
+	(no_connect
+		(at 209.55 96.52)
+		(uuid "44bd40b0-095b-48a1-97dd-3bfdb10028d1")
+	)
+	(no_connect
+		(at 209.55 99.06)
+		(uuid "4a9039f6-7080-4738-b5d8-322b48b5f744")
+	)
+	(no_connect
 		(at 143.51 137.16)
 		(uuid "4ac2de31-05ff-4dbe-9edd-5b1962c90174")
+	)
+	(no_connect
+		(at 209.55 83.82)
+		(uuid "4b81421b-a753-4527-89f8-746d5dd42366")
+	)
+	(no_connect
+		(at 143.51 73.66)
+		(uuid "4fa6e1a6-c4aa-45be-addb-129f78460735")
+	)
+	(no_connect
+		(at 209.55 91.44)
+		(uuid "5154e9f4-e4bb-4f3c-b4ea-c833d1ba1004")
+	)
+	(no_connect
+		(at 209.55 93.98)
+		(uuid "520cd9e8-be2c-4ef3-ac21-da5a9ff7bdc2")
 	)
 	(no_connect
 		(at 209.55 144.78)
@@ -3104,7 +3464,11 @@
 		(uuid "5a79f254-6bf9-4432-950b-ed4d2a0eca1a")
 	)
 	(no_connect
-		(at 209.55 132.08)
+		(at 143.51 71.12)
+		(uuid "5aed9157-1990-44dd-be48-6a08cc04ce4d")
+	)
+	(no_connect
+		(at 209.55 142.24)
 		(uuid "643a7b4d-dedb-49ac-8fd0-8e5e2788706e")
 	)
 	(no_connect
@@ -3116,6 +3480,14 @@
 		(uuid "67c5f25d-e3ff-4577-a2c1-ef8d00324f35")
 	)
 	(no_connect
+		(at 143.51 53.34)
+		(uuid "6b13b208-a208-4a7d-9f16-6acbecf51d65")
+	)
+	(no_connect
+		(at 209.55 101.6)
+		(uuid "7f192fc1-9e55-4666-a25a-2f0c5a7eb6ac")
+	)
+	(no_connect
 		(at 143.51 147.32)
 		(uuid "8369f735-7ed0-4042-8ed3-cddbb09b6c74")
 	)
@@ -3124,12 +3496,28 @@
 		(uuid "89db8f66-e0c6-4e0f-a95e-d6b175c94956")
 	)
 	(no_connect
+		(at 143.51 119.38)
+		(uuid "8c56840d-f0eb-43bf-80cc-88afe8474769")
+	)
+	(no_connect
+		(at 209.55 88.9)
+		(uuid "8fcf8146-b70d-4da7-8757-f15103ad580f")
+	)
+	(no_connect
+		(at 143.51 50.8)
+		(uuid "90a247c3-73b2-415e-97ce-978cff99d50d")
+	)
+	(no_connect
 		(at 209.55 119.38)
 		(uuid "96151839-c634-4593-bb28-ba2e0ce89c2b")
 	)
 	(no_connect
 		(at 143.51 76.2)
 		(uuid "9b8aebf6-3d73-462a-ae78-333d3db12a3d")
+	)
+	(no_connect
+		(at 209.55 50.8)
+		(uuid "a263427b-96a9-4cce-a413-efab6eaf0559")
 	)
 	(no_connect
 		(at 209.55 124.46)
@@ -3156,12 +3544,24 @@
 		(uuid "cf5206f2-9f7e-455c-805c-f371cd062dd1")
 	)
 	(no_connect
+		(at 143.51 58.42)
+		(uuid "cfc61694-babf-46ee-accd-5b495e5af8e6")
+	)
+	(no_connect
+		(at 143.51 114.3)
+		(uuid "d77940ba-cd9b-4dce-8756-5449597c2a8a")
+	)
+	(no_connect
 		(at 209.55 154.94)
 		(uuid "d914ec65-5d10-4138-aff7-18595a391e2a")
 	)
 	(no_connect
 		(at 209.55 152.4)
 		(uuid "db4bca16-3c3f-4647-b6e8-62af8ef67f7d")
+	)
+	(no_connect
+		(at 143.51 116.84)
+		(uuid "e64f5294-e7d6-456c-8d4b-145c654e76f1")
 	)
 	(no_connect
 		(at 170.18 39.37)
@@ -3179,9 +3579,23 @@
 		(at 209.55 139.7)
 		(uuid "fe989a87-3c2c-41e1-8491-c304733032f0")
 	)
+	(no_connect
+		(at 143.51 55.88)
+		(uuid "ff365685-6f41-488a-ba86-5864711006e5")
+	)
 	(wire
 		(pts
-			(xy 55.88 101.6) (xy 55.88 77.47)
+			(xy 217.17 48.26) (xy 229.87 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "012b34e2-4efd-4e87-939f-3f2a0bd8bc79")
+	)
+	(wire
+		(pts
+			(xy 96.52 101.6) (xy 96.52 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3191,17 +3605,17 @@
 	)
 	(wire
 		(pts
-			(xy 375.92 101.6) (xy 375.92 80.01)
+			(xy 127 31.75) (xy 127 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0226b174-307c-4da7-b5a4-12503ab61fa7")
+		(uuid "021a2f72-2710-48ef-90c4-56efae66ba38")
 	)
 	(wire
 		(pts
-			(xy 323.85 58.42) (xy 323.85 81.28)
+			(xy 289.56 20.32) (xy 289.56 81.28)
 		)
 		(stroke
 			(width 0)
@@ -3211,7 +3625,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 86.36) (xy 88.9 77.47)
+			(xy 127 86.36) (xy 127 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3221,47 +3635,197 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 77.47) (xy 107.95 88.9)
+			(xy 149.86 38.1) (xy 134.62 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "10f672e8-f86c-4c94-a5b9-1678c1463756")
+		(uuid "07941517-8fa4-44c9-8d53-7e56cfb176e9")
 	)
 	(wire
 		(pts
-			(xy 209.55 116.84) (xy 408.94 116.84)
+			(xy 309.88 106.68) (xy 309.88 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "16e6397b-fcba-49dc-8f50-09e5595dbf89")
+		(uuid "07df23c1-282b-4926-899e-110e33e18953")
 	)
 	(wire
 		(pts
-			(xy 107.95 74.93) (xy 107.95 77.47)
+			(xy 260.35 151.13) (xy 278.13 151.13)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "199c3f7d-94d3-4ce8-86b0-16a3ac91ce13")
+		(uuid "0afdce48-54de-4b03-baa4-f7cae053b9d5")
 	)
 	(wire
 		(pts
-			(xy 72.39 148.59) (xy 72.39 151.13)
+			(xy 121.92 60.96) (xy 121.92 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1b9f390d-e02b-4a70-8f95-ace08aa23da7")
+		(uuid "0f6363b4-ac13-4df9-b05a-bbae5d0341f4")
 	)
 	(wire
 		(pts
-			(xy 251.46 143.51) (xy 262.89 143.51)
+			(xy 226.06 22.86) (xy 236.22 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fcac35e-a94a-4762-9c0e-e1cdbf3a0dd2")
+	)
+	(wire
+		(pts
+			(xy 229.87 44.45) (xy 229.87 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "116d0f91-7a6f-4732-8522-201cd8ae52f7")
+	)
+	(wire
+		(pts
+			(xy 292.1 20.32) (xy 292.1 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "129b254a-1096-46ac-bf3d-a187194b7ed5")
+	)
+	(wire
+		(pts
+			(xy 256.54 44.45) (xy 256.54 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1316f360-b838-482a-b82c-68db3108f24d")
+	)
+	(wire
+		(pts
+			(xy 104.14 38.1) (xy 114.3 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1373e7d0-81bd-4975-885f-d42776f93eaf")
+	)
+	(wire
+		(pts
+			(xy 147.32 34.29) (xy 137.16 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15ad91be-ff62-4f59-b5c7-a02bd69a2076")
+	)
+	(wire
+		(pts
+			(xy 83.82 31.75) (xy 83.82 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15bf7510-e3e5-47cc-8c83-0b69d3a6689e")
+	)
+	(wire
+		(pts
+			(xy 60.96 31.75) (xy 60.96 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1626c116-2d0c-4fb2-a6df-b10beb9956db")
+	)
+	(wire
+		(pts
+			(xy 270.51 48.26) (xy 283.21 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1823e2cf-24ab-4911-a1bc-2c0ea9615fa7")
+	)
+	(wire
+		(pts
+			(xy 91.44 60.96) (xy 91.44 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1968f83c-4c40-4a75-b438-d90eb7c89b9e")
+	)
+	(wire
+		(pts
+			(xy 134.62 38.1) (xy 134.62 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a19a51b-af95-491a-bbe7-9ffedfd8baad")
+	)
+	(wire
+		(pts
+			(xy 241.3 50.8) (xy 254 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b61a37e-129b-419e-b1e8-38a878bbf4d5")
+	)
+	(wire
+		(pts
+			(xy 262.89 20.32) (xy 262.89 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1baeb4bc-194b-4f57-afad-04a79cecf749")
+	)
+	(wire
+		(pts
+			(xy 236.22 22.86) (xy 252.73 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bc80be8-a6a4-4c89-90e7-9cef0f475473")
+	)
+	(wire
+		(pts
+			(xy 29.21 31.75) (xy 29.21 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ca939f2-380c-4846-8f9d-dde26f49ef3a")
+	)
+	(wire
+		(pts
+			(xy 246.38 143.51) (xy 257.81 143.51)
 		)
 		(stroke
 			(width 0)
@@ -3271,57 +3835,117 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 101.6) (xy 375.92 101.6)
+			(xy 223.52 55.88) (xy 223.52 20.32)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1d1d2b72-3942-4307-96af-9aea3c1f0b82")
+		(uuid "1d824cd6-7680-4dce-bbf4-e7e508bbdd97")
 	)
 	(wire
 		(pts
-			(xy 66.04 99.06) (xy 66.04 77.47)
+			(xy 276.86 76.2) (xy 276.86 20.32)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1fdc8d93-d0f8-41c9-a393-4bbca7d6ee3f")
+		(uuid "1ec77636-459d-4c17-871d-af794bc6f7bb")
 	)
 	(wire
 		(pts
-			(xy 345.44 48.26) (xy 345.44 49.53)
+			(xy 243.84 132.08) (xy 209.55 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "23000144-8c0f-4c43-b71a-7545166d6abd")
+		(uuid "1f178b84-f721-48e3-8701-2a1fd68ede3d")
 	)
 	(wire
 		(pts
-			(xy 143.51 160.02) (xy 143.51 163.83)
+			(xy 254 44.45) (xy 254 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "287b8a25-58af-48b7-9004-27abbfeadea5")
+		(uuid "23fe837b-3842-4f08-a738-9739774a8f22")
 	)
 	(wire
 		(pts
-			(xy 209.55 121.92) (xy 426.72 121.92)
+			(xy 143.51 111.76) (xy 71.12 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "29e04b9c-2864-45e7-9446-f3fbb5ddc0b0")
+		(uuid "274ab9cf-a8f7-4465-a2ab-54002881799c")
 	)
 	(wire
 		(pts
-			(xy 143.51 101.6) (xy 55.88 101.6)
+			(xy 281.94 20.32) (xy 281.94 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27dab777-4773-4517-8267-ff7145efb87d")
+	)
+	(wire
+		(pts
+			(xy 153.67 31.75) (xy 153.67 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "289947ee-a5d6-41fa-bbd1-f169a4581c2d")
+	)
+	(wire
+		(pts
+			(xy 101.6 60.96) (xy 101.6 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2afb60cc-957d-429b-aee8-a03f9d632fe1")
+	)
+	(wire
+		(pts
+			(xy 143.51 91.44) (xy 116.84 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2be2c49d-4578-485a-a754-14cea636ca74")
+	)
+	(wire
+		(pts
+			(xy 58.42 121.92) (xy 58.42 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f3c8a71-e1ba-47a1-848e-40e405f9a083")
+	)
+	(wire
+		(pts
+			(xy 209.55 111.76) (xy 317.5 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30dfb07f-76b3-49a8-a280-3b78a1247f4a")
+	)
+	(wire
+		(pts
+			(xy 143.51 101.6) (xy 96.52 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3331,67 +3955,227 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 86.36) (xy 350.52 86.36)
+			(xy 149.86 31.75) (xy 149.86 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "351fa035-d12b-47d1-8fab-8e7ad35437fa")
+		(uuid "319041de-2f6e-4798-9706-55908721d1f0")
 	)
 	(wire
 		(pts
-			(xy 278.13 143.51) (xy 262.89 143.51)
+			(xy 96.52 34.29) (xy 86.36 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "36a750f5-eb1b-4f06-b806-7b1ae635fd5b")
+		(uuid "33502842-2836-41fb-8fff-37d5802735a1")
 	)
 	(wire
 		(pts
-			(xy 143.51 104.14) (xy 39.37 104.14)
+			(xy 279.4 22.86) (xy 292.1 22.86)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "39143802-dfde-42c7-9ac7-421269b11940")
+		(uuid "34054b51-05f3-4367-96b1-c23e927906fb")
 	)
 	(wire
 		(pts
-			(xy 443.23 127) (xy 209.55 127)
+			(xy 116.84 91.44) (xy 116.84 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3ad5a969-daf4-454c-86cb-aeea165af5e1")
+		(uuid "355c5d66-94ab-4393-bc72-a64197e55889")
 	)
 	(wire
 		(pts
-			(xy 72.39 96.52) (xy 72.39 77.47)
+			(xy 93.98 38.1) (xy 104.14 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3cefde08-69c6-4c2f-91b0-b5aa16e22a79")
+		(uuid "35c61ba6-1e8d-4ef5-b60b-bcd24f841e42")
 	)
 	(wire
 		(pts
-			(xy 34.29 106.68) (xy 143.51 106.68)
+			(xy 127 34.29) (xy 116.84 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "46909307-f8a6-44cd-b16f-b3ba2445f808")
+		(uuid "35f163fc-e160-4775-a4c3-86ad4bace7e5")
 	)
 	(wire
 		(pts
-			(xy 280.67 78.74) (xy 209.55 78.74)
+			(xy 143.51 93.98) (xy 109.22 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "360bd34b-1067-478b-a385-dd6d2b5adb27")
+	)
+	(wire
+		(pts
+			(xy 137.16 68.58) (xy 143.51 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37481e1a-0ece-4f52-95a0-74effa45dc5b")
+	)
+	(wire
+		(pts
+			(xy 156.21 31.75) (xy 156.21 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37c335cd-2412-4312-ad57-299cc1708219")
+	)
+	(wire
+		(pts
+			(xy 93.98 31.75) (xy 93.98 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "381fe5da-5004-454c-a8ac-1a3e48a0480a")
+	)
+	(wire
+		(pts
+			(xy 294.64 25.4) (xy 311.15 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "389d8d89-7510-450b-afda-c918a083b6d6")
+	)
+	(wire
+		(pts
+			(xy 143.51 160.02) (xy 143.51 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38a1e580-b0fc-4d76-aa99-d78cc6a205f9")
+	)
+	(wire
+		(pts
+			(xy 312.42 77.47) (xy 322.58 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3925402a-5f13-423d-bde6-91ed40c145ed")
+	)
+	(wire
+		(pts
+			(xy 214.63 44.45) (xy 214.63 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3cba1d8c-9b44-408a-a20d-2f49b1b81309")
+	)
+	(wire
+		(pts
+			(xy 63.5 38.1) (xy 78.74 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f9b6cb7-91c2-462d-aa43-5116a56ab1aa")
+	)
+	(wire
+		(pts
+			(xy 124.46 31.75) (xy 124.46 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4134ee44-0a92-4e9b-990d-ff403722f045")
+	)
+	(wire
+		(pts
+			(xy 325.12 74.93) (xy 337.82 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4154eea9-1bf5-461e-90a4-21b6251f9243")
+	)
+	(wire
+		(pts
+			(xy 257.81 143.51) (xy 278.13 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41988fa7-f0c6-4019-a25c-f47d357cd471")
+	)
+	(wire
+		(pts
+			(xy 281.94 25.4) (xy 294.64 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42bedfc7-2a59-476a-ba2f-a3e52354b57b")
+	)
+	(wire
+		(pts
+			(xy 121.92 68.58) (xy 132.08 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "440662f1-ffa1-47af-976b-3383dddc9479")
+	)
+	(wire
+		(pts
+			(xy 63.5 31.75) (xy 63.5 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4449931c-db06-4f6f-927b-2b40992d928e")
+	)
+	(wire
+		(pts
+			(xy 255.27 25.4) (xy 260.35 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "458541e0-4850-41a5-8ac2-1946ae9b8eee")
+	)
+	(wire
+		(pts
+			(xy 285.75 78.74) (xy 209.55 78.74)
 		)
 		(stroke
 			(width 0)
@@ -3401,47 +4185,117 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 55.88) (xy 140.97 55.88)
+			(xy 312.42 99.06) (xy 322.58 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "48434a49-a6ae-4190-be33-f277b0ccce85")
+		(uuid "496444c6-1b70-49d0-a83f-708cd5bc9f07")
 	)
 	(wire
 		(pts
-			(xy 143.51 96.52) (xy 72.39 96.52)
+			(xy 83.82 38.1) (xy 93.98 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4a7c87a5-2f2e-4271-ad05-67de9b111eec")
+		(uuid "4a01e90b-9c7d-4a27-8cb6-f5ffd12b6a5a")
 	)
 	(wire
 		(pts
-			(xy 322.58 107.95) (xy 322.58 106.68)
+			(xy 229.87 48.26) (xy 243.84 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4d556f9a-0a4d-46d4-b330-9562a87bb705")
+		(uuid "4aa3e0d5-a63b-43c9-88b9-dc20db8206dd")
 	)
 	(wire
 		(pts
-			(xy 350.52 80.01) (xy 350.52 86.36)
+			(xy 182.88 36.83) (xy 187.96 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5185a04b-19e3-4b14-b689-f57f7b72f838")
+		(uuid "4b67fb5e-6d03-4f6b-b53d-8bde1be90c53")
 	)
 	(wire
 		(pts
-			(xy 262.89 140.97) (xy 262.89 143.51)
+			(xy 139.7 31.75) (xy 139.7 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c5ddb58-ef30-4e87-b21e-7d2f48e8ccb9")
+	)
+	(wire
+		(pts
+			(xy 143.51 99.06) (xy 99.06 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51924379-27c7-49b1-bc8c-56f2d6413e1b")
+	)
+	(wire
+		(pts
+			(xy 134.62 63.5) (xy 134.62 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "522d0490-a8a8-4509-9f12-d5526994667f")
+	)
+	(wire
+		(pts
+			(xy 58.42 63.5) (xy 58.42 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52ede172-3cfa-42ab-a7bd-f0d294f48488")
+	)
+	(wire
+		(pts
+			(xy 243.84 44.45) (xy 243.84 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5342c10a-dabf-4a29-ac6b-5034684ecb09")
+	)
+	(wire
+		(pts
+			(xy 124.46 63.5) (xy 134.62 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53be38a6-faa7-4b9c-a16f-39277bb89f1f")
+	)
+	(wire
+		(pts
+			(xy 93.98 63.5) (xy 104.14 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5476d043-e387-4d47-b3b4-61e2d8ef59d5")
+	)
+	(wire
+		(pts
+			(xy 257.81 104.14) (xy 257.81 143.51)
 		)
 		(stroke
 			(width 0)
@@ -3451,27 +4305,97 @@
 	)
 	(wire
 		(pts
-			(xy 408.94 80.01) (xy 408.94 116.84)
+			(xy 88.9 104.14) (xy 88.9 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5675961d-91dc-4ba3-a141-e23d8147a9b1")
+		(uuid "5bc85ef9-058f-4e5e-aad6-06ea53737817")
 	)
 	(wire
 		(pts
-			(xy 138.43 73.66) (xy 138.43 50.8)
+			(xy 134.62 31.75) (xy 134.62 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5b9ad40e-c565-4376-a8fd-8c81da6658e3")
+		(uuid "5dda7bd1-cfdc-4ceb-a204-c3fb64e3da76")
 	)
 	(wire
 		(pts
-			(xy 128.27 39.37) (xy 128.27 83.82)
+			(xy 25.4 68.58) (xy 66.04 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e5bbcac-2359-40da-8d20-839817f524c0")
+	)
+	(wire
+		(pts
+			(xy 119.38 31.75) (xy 119.38 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ebdc1e3-1e30-406c-b910-70618ebe3cbb")
+	)
+	(wire
+		(pts
+			(xy 243.84 104.14) (xy 243.84 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f27976a-60fd-4d4d-87be-c21af8d40165")
+	)
+	(wire
+		(pts
+			(xy 280.67 50.8) (xy 307.34 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f8c32cd-fa7d-4ba7-ad07-1e27303cbb99")
+	)
+	(wire
+		(pts
+			(xy 149.86 45.72) (xy 158.75 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fa10035-cb8c-47f4-bd2c-8f4ff53b1f12")
+	)
+	(wire
+		(pts
+			(xy 153.67 38.1) (xy 149.86 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "619fcfa0-a5ce-4b19-818a-864a30ae01e4")
+	)
+	(wire
+		(pts
+			(xy 114.3 63.5) (xy 124.46 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "654ba4a9-a362-4275-9b12-0bbfa32de388")
+	)
+	(wire
+		(pts
+			(xy 129.54 31.75) (xy 129.54 83.82)
 		)
 		(stroke
 			(width 0)
@@ -3481,27 +4405,167 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 104.14) (xy 39.37 77.47)
+			(xy 320.04 93.98) (xy 320.04 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "688157a9-db2c-48f5-b549-d8a224d79038")
+		(uuid "6679ed41-da18-41e8-8dc0-dfefb300dfeb")
 	)
 	(wire
 		(pts
-			(xy 209.55 106.68) (xy 322.58 106.68)
+			(xy 124.46 38.1) (xy 134.62 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6ac0154a-8e76-4b22-8343-07f1990b41e7")
+		(uuid "676c2248-a26b-406f-b065-79b940394dca")
 	)
 	(wire
 		(pts
-			(xy 209.55 71.12) (xy 259.08 71.12)
+			(xy 142.24 60.96) (xy 142.24 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68220b5b-922c-421f-87e1-2fc8f8e1effe")
+	)
+	(wire
+		(pts
+			(xy 143.51 96.52) (xy 106.68 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68362ddb-29d7-4620-bf26-426cfee101d2")
+	)
+	(wire
+		(pts
+			(xy 214.63 53.34) (xy 209.55 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "699452ac-90b2-4b7d-bec2-ce45da53499c")
+	)
+	(wire
+		(pts
+			(xy 337.82 73.66) (xy 337.82 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6997ba2c-2e42-4812-afeb-192af866f9c1")
+	)
+	(wire
+		(pts
+			(xy 267.97 50.8) (xy 280.67 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c4c70c5-8f97-4900-a840-881b127a4fe5")
+	)
+	(wire
+		(pts
+			(xy 93.98 60.96) (xy 93.98 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d028f74-4dd4-42cd-852a-24273d573582")
+	)
+	(wire
+		(pts
+			(xy 111.76 60.96) (xy 111.76 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d530526-0da9-483c-a37b-698fc2cd79d8")
+	)
+	(wire
+		(pts
+			(xy 143.51 106.68) (xy 81.28 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d5ae330-cc57-48b3-9ce3-f00a8ec7be58")
+	)
+	(wire
+		(pts
+			(xy 68.58 63.5) (xy 83.82 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d9f587f-a082-4cee-b903-5f0e250d44b0")
+	)
+	(wire
+		(pts
+			(xy 96.52 31.75) (xy 96.52 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6de19a6b-1b75-4f11-9b49-ac034566969f")
+	)
+	(wire
+		(pts
+			(xy 280.67 44.45) (xy 280.67 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fb26556-c528-48b1-9f41-8deeeb6a8a5a")
+	)
+	(wire
+		(pts
+			(xy 283.21 44.45) (xy 283.21 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "709c1cae-f2cd-4575-b5a3-bcbb89e9fc5d")
+	)
+	(wire
+		(pts
+			(xy 132.08 60.96) (xy 132.08 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70fdbe6f-a903-4f40-8abb-3010dd97ab2b")
+	)
+	(wire
+		(pts
+			(xy 58.42 63.5) (xy 68.58 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "714d7b33-0f4d-4fa1-8ca8-b0ac25176048")
+	)
+	(wire
+		(pts
+			(xy 209.55 71.12) (xy 265.43 71.12)
 		)
 		(stroke
 			(width 0)
@@ -3511,17 +4575,17 @@
 	)
 	(wire
 		(pts
-			(xy 278.13 151.13) (xy 265.43 151.13)
+			(xy 73.66 31.75) (xy 73.66 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "730e654f-e855-4667-88ab-0d517d466520")
+		(uuid "727855d5-19e7-410d-b180-e1ecd13c98ed")
 	)
 	(wire
 		(pts
-			(xy 209.55 66.04) (xy 243.84 66.04)
+			(xy 209.55 66.04) (xy 250.19 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3531,33 +4595,93 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 142.24) (xy 248.92 142.24)
+			(xy 101.6 68.58) (xy 111.76 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "759a02f0-7cd4-43c7-a065-1b1cc33b62ed")
+		(uuid "7617c5b9-9cc1-4b6a-837b-158980c51a74")
 	)
 	(wire
 		(pts
-			(xy 143.51 109.22) (xy 24.13 109.22)
+			(xy 217.17 44.45) (xy 217.17 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7aafb9f1-3f9e-4abe-b3af-262e5333ca9a")
+		(uuid "76c45c60-9626-40bb-8279-0555d1fbe69e")
 	)
 	(wire
 		(pts
-			(xy 128.27 83.82) (xy 143.51 83.82)
+			(xy 320.04 116.84) (xy 209.55 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7b287047-fe03-4d5a-9491-2cee8ceb6ebb")
+		(uuid "7856b0a4-ce72-44b4-9938-3f63d441433d")
+	)
+	(wire
+		(pts
+			(xy 209.55 121.92) (xy 327.66 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7879dcb8-965d-4463-b176-eb1aad09a8b2")
+	)
+	(wire
+		(pts
+			(xy 137.16 34.29) (xy 127 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7887a77e-160f-44fe-ac8a-406031d88171")
+	)
+	(wire
+		(pts
+			(xy 104.14 63.5) (xy 114.3 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79af08f0-472a-4c0e-8a1b-6f2ccdecb43a")
+	)
+	(wire
+		(pts
+			(xy 233.68 20.32) (xy 233.68 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a0fc63d-2ab9-4dac-bd8a-2ac09f0e72c2")
+	)
+	(wire
+		(pts
+			(xy 104.14 60.96) (xy 104.14 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a70b6b5-05c7-4ade-918d-170fd92b9b05")
+	)
+	(wire
+		(pts
+			(xy 209.55 58.42) (xy 227.33 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a9cbd27-7a88-4b2e-96a2-d3e54bc73b27")
 	)
 	(wire
 		(pts
@@ -3571,7 +4695,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 151.13) (xy 265.43 151.13)
+			(xy 248.92 151.13) (xy 260.35 151.13)
 		)
 		(stroke
 			(width 0)
@@ -3581,27 +4705,77 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 91.44) (xy 99.06 91.44)
+			(xy 114.3 38.1) (xy 124.46 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7ede8b3f-899d-488c-818b-8af99ec2cc36")
+		(uuid "7c72f1b1-75a5-49eb-9154-3da7556b5442")
 	)
 	(wire
 		(pts
-			(xy 248.92 142.24) (xy 248.92 140.97)
+			(xy 322.58 99.06) (xy 346.71 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7f561081-801f-4ed4-a063-8dc7c3d63767")
+		(uuid "7e59cb5f-d345-472c-84ca-eaffff4a121f")
 	)
 	(wire
 		(pts
-			(xy 209.55 81.28) (xy 323.85 81.28)
+			(xy 262.89 22.86) (xy 279.4 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fa0b988-5898-4416-9721-5d7be9e4354c")
+	)
+	(wire
+		(pts
+			(xy 147.32 31.75) (xy 147.32 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fc3754f-cb22-4355-b24d-f052869c6f2e")
+	)
+	(wire
+		(pts
+			(xy 294.64 20.32) (xy 294.64 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "828104c7-ce9c-4b81-b5ca-e5363247a184")
+	)
+	(wire
+		(pts
+			(xy 140.97 46.99) (xy 140.97 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82948ca7-4b5e-4b67-80c5-0126100c0551")
+	)
+	(wire
+		(pts
+			(xy 156.21 34.29) (xy 147.32 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "858ccc73-1734-4832-9718-6aacbb79006c")
+	)
+	(wire
+		(pts
+			(xy 209.55 81.28) (xy 289.56 81.28)
 		)
 		(stroke
 			(width 0)
@@ -3611,17 +4785,7 @@
 	)
 	(wire
 		(pts
-			(xy -6.35 76.2) (xy -6.35 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "86a85c1a-2241-46ae-b5af-8554e20b147c")
-	)
-	(wire
-		(pts
-			(xy 443.23 80.01) (xy 443.23 127)
+			(xy 327.66 72.39) (xy 327.66 121.92)
 		)
 		(stroke
 			(width 0)
@@ -3631,17 +4795,77 @@
 	)
 	(wire
 		(pts
-			(xy 386.08 107.95) (xy 322.58 107.95)
+			(xy 78.74 31.75) (xy 78.74 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8e3a261e-ec59-4501-afd3-ed615e8be4c4")
+		(uuid "88bc1408-05ba-4746-9bb6-5d3a95ee413a")
 	)
 	(wire
 		(pts
-			(xy 209.55 60.96) (xy 219.71 60.96)
+			(xy 143.51 104.14) (xy 88.9 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89ebf963-5eb0-46d9-a6e6-1c16cdd556e3")
+	)
+	(wire
+		(pts
+			(xy 241.3 50.8) (xy 232.41 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a2b7aad-c2d5-407c-8167-9c0e8182f455")
+	)
+	(wire
+		(pts
+			(xy 283.21 48.26) (xy 307.34 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a5c5605-3b9a-4bab-8a05-8e1da87833b0")
+	)
+	(wire
+		(pts
+			(xy 312.42 72.39) (xy 312.42 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c024f82-8d60-4f1a-bf15-761144ac1d90")
+	)
+	(wire
+		(pts
+			(xy 314.96 93.98) (xy 314.96 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cfe785b-d7c9-49bf-a1d4-c810315b1b69")
+	)
+	(wire
+		(pts
+			(xy 29.21 38.1) (xy 63.5 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8dd5d6bb-a579-41fd-b1c8-3681a526c8ee")
+	)
+	(wire
+		(pts
+			(xy 209.55 60.96) (xy 238.76 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3651,13 +4875,33 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 63.5) (xy 227.33 50.8)
+			(xy 246.38 63.5) (xy 246.38 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "912d3da1-ba4a-4010-a0aa-60320d54b14a")
+	)
+	(wire
+		(pts
+			(xy 119.38 88.9) (xy 143.51 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91d35857-fbad-4dd4-ab39-7e7e95c26265")
+	)
+	(wire
+		(pts
+			(xy 317.5 72.39) (xy 317.5 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91e1d177-6592-43b0-9f47-1cec78d90159")
 	)
 	(wire
 		(pts
@@ -3671,7 +4915,37 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 73.66) (xy 308.61 73.66)
+			(xy 226.06 20.32) (xy 226.06 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92dbe944-38e2-4bbd-874b-13db702eca92")
+	)
+	(wire
+		(pts
+			(xy 227.33 58.42) (xy 227.33 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93509f61-0b4f-4ec5-a4ff-023b5dc23496")
+	)
+	(wire
+		(pts
+			(xy 252.73 20.32) (xy 252.73 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "939e5d0d-e453-44c4-9fd9-da6fc74e40ab")
+	)
+	(wire
+		(pts
+			(xy 209.55 73.66) (xy 273.05 73.66)
 		)
 		(stroke
 			(width 0)
@@ -3681,17 +4955,47 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 83.82) (xy 144.78 83.82)
+			(xy 139.7 66.04) (xy 143.51 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "96b63f9e-a60a-4a5b-84ce-3e6fff5b6d53")
+		(uuid "979050b2-a2a1-4083-a060-3389cc1f9659")
 	)
 	(wire
 		(pts
-			(xy 209.55 63.5) (xy 227.33 63.5)
+			(xy 260.35 20.32) (xy 260.35 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97e1abfa-3e7c-490e-92e2-4477d5e0ac35")
+	)
+	(wire
+		(pts
+			(xy 106.68 96.52) (xy 106.68 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98142ba6-e131-4604-949c-490b36fec488")
+	)
+	(wire
+		(pts
+			(xy 311.15 20.32) (xy 311.15 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "982fb33f-b796-4c4c-9954-c9be5b744467")
+	)
+	(wire
+		(pts
+			(xy 209.55 63.5) (xy 246.38 63.5)
 		)
 		(stroke
 			(width 0)
@@ -3701,7 +5005,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 66.04) (xy 243.84 58.42)
+			(xy 250.19 66.04) (xy 250.19 20.32)
 		)
 		(stroke
 			(width 0)
@@ -3711,7 +5015,17 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 33.02) (xy 48.26 35.56)
+			(xy 143.51 121.92) (xy 58.42 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "993a5458-6c89-49fb-9b20-b87c0ce70f1f")
+	)
+	(wire
+		(pts
+			(xy 25.4 60.96) (xy 25.4 63.5)
 		)
 		(stroke
 			(width 0)
@@ -3721,13 +5035,63 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 88.9) (xy 143.51 88.9)
+			(xy 322.58 72.39) (xy 322.58 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9be7e869-2b55-45a2-b8ae-d826bdeaebc4")
+		(uuid "9a54a92e-299d-4444-9a29-75e5c0f7942c")
+	)
+	(wire
+		(pts
+			(xy 260.35 25.4) (xy 281.94 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c9359a6-d119-461a-801d-f313b1a62530")
+	)
+	(wire
+		(pts
+			(xy 325.12 93.98) (xy 325.12 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cf3ec4e-15e5-48d3-aa2f-6546813722ea")
+	)
+	(wire
+		(pts
+			(xy 144.78 46.99) (xy 140.97 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d86ed90-82b3-4cb1-8508-eefae0b0a8ee")
+	)
+	(wire
+		(pts
+			(xy 66.04 68.58) (xy 86.36 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f5b0e8f-2b90-4664-b554-05108c3d75ba")
+	)
+	(wire
+		(pts
+			(xy 109.22 93.98) (xy 109.22 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f769350-6bbd-4967-a9aa-5e74555c5ae9")
 	)
 	(wire
 		(pts
@@ -3741,17 +5105,87 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 73.66) (xy 138.43 73.66)
+			(xy 292.1 22.86) (xy 311.15 22.86)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9fbc252c-d886-41c1-86fe-b1ffef7b62bd")
+		(uuid "9fad00f6-594d-4807-b6e1-4cd81e4b856d")
 	)
 	(wire
 		(pts
-			(xy 88.9 86.36) (xy 143.51 86.36)
+			(xy 256.54 48.26) (xy 270.51 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fe6e5fe-00fe-4c56-aef2-af8615b7172e")
+	)
+	(wire
+		(pts
+			(xy 68.58 60.96) (xy 68.58 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a013e2b5-97e5-4b7d-8dc5-d3e7f9cffa25")
+	)
+	(wire
+		(pts
+			(xy 255.27 25.4) (xy 233.68 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0da98ec-6a92-4c84-9380-9fbcfb406e40")
+	)
+	(wire
+		(pts
+			(xy 243.84 48.26) (xy 256.54 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a13b885a-1a4a-4db9-87db-f6d013ce9eed")
+	)
+	(wire
+		(pts
+			(xy 76.2 34.29) (xy 60.96 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a173092d-2d64-487a-87f9-c471a0959c05")
+	)
+	(wire
+		(pts
+			(xy 254 50.8) (xy 267.97 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1aa15b9-fd86-45dd-9e57-64b50030599a")
+	)
+	(wire
+		(pts
+			(xy 106.68 31.75) (xy 106.68 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8310984-e95b-4515-93ff-17f5cb4d147c")
+	)
+	(wire
+		(pts
+			(xy 127 86.36) (xy 143.51 86.36)
 		)
 		(stroke
 			(width 0)
@@ -3761,7 +5195,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 140.97) (xy 260.35 147.32)
+			(xy 255.27 104.14) (xy 255.27 147.32)
 		)
 		(stroke
 			(width 0)
@@ -3771,7 +5205,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 71.12) (xy 259.08 58.42)
+			(xy 265.43 71.12) (xy 265.43 20.32)
 		)
 		(stroke
 			(width 0)
@@ -3781,23 +5215,153 @@
 	)
 	(wire
 		(pts
-			(xy 392.43 111.76) (xy 209.55 111.76)
+			(xy 228.6 25.4) (xy 228.6 20.32)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b4f40860-d36f-425e-8f2a-56d6c9a376d3")
+		(uuid "a9e1bc08-2a2b-473b-9eb2-e1905c957b19")
 	)
 	(wire
 		(pts
-			(xy -6.35 121.92) (xy 143.51 121.92)
+			(xy 83.82 60.96) (xy 83.82 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bad50513-d6af-4759-9bd1-d13e4b37cfe7")
+		(uuid "aa5486ff-27ce-4d9d-851f-59a3f01f3564")
+	)
+	(wire
+		(pts
+			(xy 252.73 22.86) (xy 262.89 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abcb80a0-8482-4167-920e-8e238a1e5da2")
+	)
+	(wire
+		(pts
+			(xy 86.36 68.58) (xy 91.44 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad4a1267-a79e-459e-ab9e-92521c62849e")
+	)
+	(wire
+		(pts
+			(xy 86.36 34.29) (xy 76.2 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae3407b6-47b2-43ef-8bdd-5a2234ad0f83")
+	)
+	(wire
+		(pts
+			(xy 327.66 121.92) (xy 327.66 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af642b1a-99d1-4ef8-a2ed-809d24571b6b")
+	)
+	(wire
+		(pts
+			(xy 60.96 34.29) (xy 29.21 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0c36f57-67a7-448a-a785-cb6269ef9be8")
+	)
+	(wire
+		(pts
+			(xy 142.24 48.26) (xy 149.86 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b157f42e-b057-49c9-83fe-b2c39307855a")
+	)
+	(wire
+		(pts
+			(xy 140.97 63.5) (xy 143.51 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b309fe5f-da67-45cb-8c98-66d98d827c73")
+	)
+	(wire
+		(pts
+			(xy 116.84 34.29) (xy 106.68 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b39c7cc9-1941-4b39-9d48-a543f40e4b2e")
+	)
+	(wire
+		(pts
+			(xy 279.4 20.32) (xy 279.4 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4b542ca-2aa1-4209-b591-6c51b9605595")
+	)
+	(wire
+		(pts
+			(xy 143.51 60.96) (xy 142.24 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b65b8e15-5b9a-42e6-b8c2-c925a0778e83")
+	)
+	(wire
+		(pts
+			(xy 83.82 63.5) (xy 93.98 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9503a87-c91d-4712-ad7f-23400da176d1")
+	)
+	(wire
+		(pts
+			(xy 209.55 55.88) (xy 223.52 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba61a6b4-c4f1-4826-81e6-3643ff274330")
+	)
+	(wire
+		(pts
+			(xy 209.55 76.2) (xy 276.86 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb351bbd-64b4-4f95-986b-4c32a154b49b")
 	)
 	(wire
 		(pts
@@ -3811,6 +5375,16 @@
 	)
 	(wire
 		(pts
+			(xy 86.36 60.96) (xy 86.36 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c038489e-ad53-44c7-8041-4c3c3b7761d2")
+	)
+	(wire
+		(pts
 			(xy 143.51 154.94) (xy 143.51 157.48)
 		)
 		(stroke
@@ -3821,7 +5395,47 @@
 	)
 	(wire
 		(pts
-			(xy 308.61 73.66) (xy 308.61 58.42)
+			(xy 270.51 44.45) (xy 270.51 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c118fa13-8ab1-44f7-8ae3-a056502cdbc0")
+	)
+	(wire
+		(pts
+			(xy 76.2 31.75) (xy 76.2 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c312dce8-21a1-4f63-89fe-8614ec2e63f9")
+	)
+	(wire
+		(pts
+			(xy 314.96 74.93) (xy 325.12 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c34171af-682e-4a93-82ce-709aa499c309")
+	)
+	(wire
+		(pts
+			(xy 267.97 44.45) (xy 267.97 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c37ffd8c-924f-4209-afaf-721e2a359f57")
+	)
+	(wire
+		(pts
+			(xy 273.05 73.66) (xy 273.05 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3831,7 +5445,7 @@
 	)
 	(wire
 		(pts
-			(xy 280.67 58.42) (xy 280.67 78.74)
+			(xy 285.75 44.45) (xy 285.75 78.74)
 		)
 		(stroke
 			(width 0)
@@ -3841,27 +5455,87 @@
 	)
 	(wire
 		(pts
-			(xy 386.08 80.01) (xy 386.08 107.95)
+			(xy 144.78 31.75) (xy 144.78 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c4dfc8f6-224a-4122-9474-ea5a374ba994")
+		(uuid "c50cc9e4-750b-451c-962e-8fb61f3fc57c")
 	)
 	(wire
 		(pts
-			(xy 392.43 80.01) (xy 392.43 111.76)
+			(xy 325.12 72.39) (xy 325.12 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c91fb373-5ae6-438d-ad55-8c9780319948")
+		(uuid "c6cf96d2-34ed-460c-83c0-ac83ee9dc8bb")
 	)
 	(wire
 		(pts
-			(xy 219.71 60.96) (xy 219.71 33.02)
+			(xy 111.76 68.58) (xy 121.92 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6e4eda8-e4e0-455d-ae98-ddbe6cbfedfe")
+	)
+	(wire
+		(pts
+			(xy 106.68 34.29) (xy 96.52 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9b58088-0fab-4667-a7cd-519024c069ce")
+	)
+	(wire
+		(pts
+			(xy 232.41 50.8) (xy 232.41 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9d69117-b9fa-4b17-8171-43791d3412d3")
+	)
+	(wire
+		(pts
+			(xy 71.12 111.76) (xy 71.12 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9e0d56a-a95a-44db-85ad-6f46c7ad34bf")
+	)
+	(wire
+		(pts
+			(xy 314.96 104.14) (xy 325.12 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9fbda0a-5a12-42fe-b1a8-5c37726840fc")
+	)
+	(wire
+		(pts
+			(xy 81.28 106.68) (xy 81.28 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cafafe9f-97a9-4382-a04a-1fb332457975")
+	)
+	(wire
+		(pts
+			(xy 238.76 60.96) (xy 238.76 20.32)
 		)
 		(stroke
 			(width 0)
@@ -3871,17 +5545,27 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 35.56) (xy 76.2 35.56)
+			(xy 104.14 31.75) (xy 104.14 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cc4ba698-e7e0-492f-88ea-022ef281a59d")
+		(uuid "cc0862c3-fda6-4f5c-b312-8e1df036fedc")
 	)
 	(wire
 		(pts
-			(xy 260.35 147.32) (xy 209.55 147.32)
+			(xy 241.3 44.45) (xy 241.3 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc866baf-dc62-4f31-a194-c5345149053e")
+	)
+	(wire
+		(pts
+			(xy 255.27 147.32) (xy 209.55 147.32)
 		)
 		(stroke
 			(width 0)
@@ -3891,47 +5575,97 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 39.37) (xy 73.66 39.37)
+			(xy 99.06 99.06) (xy 99.06 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d0f7eb67-b588-4d59-b655-60d3b02963fc")
+		(uuid "d0cf4758-2477-4003-ac15-415f99991074")
 	)
 	(wire
 		(pts
-			(xy 143.51 99.06) (xy 66.04 99.06)
+			(xy 78.74 38.1) (xy 83.82 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dc117370-c4df-41d9-83d7-b540a0773c97")
+		(uuid "d15d04e5-43a7-4d84-bfb2-c25a323ad42a")
 	)
 	(wire
 		(pts
-			(xy 143.51 157.48) (xy 143.51 160.02)
+			(xy 325.12 104.14) (xy 346.71 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dd83edb6-61ac-4bd6-af8e-b317a5c766a8")
+		(uuid "dafcf620-1f9b-4091-9bb3-9d028c652841")
 	)
 	(wire
 		(pts
-			(xy 99.06 91.44) (xy 99.06 77.47)
+			(xy 233.68 25.4) (xy 228.6 25.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "de3ef375-75ca-442a-bc65-255078893c0c")
+		(uuid "dd18c209-a276-439f-958b-0835feb12d5e")
 	)
 	(wire
 		(pts
-			(xy 251.46 140.97) (xy 251.46 143.51)
+			(xy 255.27 20.32) (xy 255.27 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd9adaf8-3492-4e02-8a23-3c810ad98556")
+	)
+	(wire
+		(pts
+			(xy 91.44 68.58) (xy 101.6 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "debafad3-dc74-403f-9896-4213559c5260")
+	)
+	(wire
+		(pts
+			(xy 322.58 93.98) (xy 322.58 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df792777-f528-4486-90b2-59341a3979de")
+	)
+	(wire
+		(pts
+			(xy 219.71 44.45) (xy 219.71 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df89009c-de9a-456c-a9c8-2890ba24901d")
+	)
+	(wire
+		(pts
+			(xy 114.3 38.1) (xy 114.3 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e10ffb9f-8168-4341-91ab-51e0c2e18432")
+	)
+	(wire
+		(pts
+			(xy 246.38 104.14) (xy 246.38 143.51)
 		)
 		(stroke
 			(width 0)
@@ -3951,7 +5685,37 @@
 	)
 	(wire
 		(pts
-			(xy 265.43 140.97) (xy 265.43 151.13)
+			(xy 182.88 39.37) (xy 182.88 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3164c89-8b65-4d1a-a345-e8bd8dc87b5d")
+	)
+	(wire
+		(pts
+			(xy 314.96 72.39) (xy 314.96 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e42dd678-b57b-40e4-84b6-123bc6490346")
+	)
+	(wire
+		(pts
+			(xy 209.55 106.68) (xy 309.88 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e44c8d77-d58a-488a-b648-5ed52f5cb183")
+	)
+	(wire
+		(pts
+			(xy 260.35 104.14) (xy 260.35 151.13)
 		)
 		(stroke
 			(width 0)
@@ -3961,7 +5725,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 68.58) (xy 251.46 68.58)
+			(xy 209.55 68.58) (xy 259.08 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3971,7 +5735,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 68.58) (xy 251.46 41.91)
+			(xy 259.08 68.58) (xy 259.08 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3981,17 +5745,47 @@
 	)
 	(wire
 		(pts
-			(xy 426.72 121.92) (xy 426.72 80.01)
+			(xy 322.58 77.47) (xy 337.82 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e9a3977e-bb6d-4386-844c-36aac815dda0")
+		(uuid "ea8b7c5e-e9d3-4106-af97-01f39f5dfe6b")
 	)
 	(wire
 		(pts
-			(xy 254 140.97) (xy 254 151.13)
+			(xy 236.22 20.32) (xy 236.22 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec0ee871-fef1-4fcb-a781-87e17dba9b0b")
+	)
+	(wire
+		(pts
+			(xy 114.3 60.96) (xy 114.3 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edadc7d9-ada7-4bb0-8dd6-c9ad68bf3599")
+	)
+	(wire
+		(pts
+			(xy 25.4 63.5) (xy 58.42 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0d3b628-6b9a-4781-958c-e2cfea72b914")
+	)
+	(wire
+		(pts
+			(xy 248.92 104.14) (xy 248.92 151.13)
 		)
 		(stroke
 			(width 0)
@@ -4001,37 +5795,137 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 77.47) (xy 34.29 106.68)
+			(xy 137.16 31.75) (xy 137.16 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f72d622c-0c5d-40aa-abe2-2370ea34fb09")
+		(uuid "f150df89-c85a-40a7-b97d-dca89d291cf5")
 	)
 	(wire
 		(pts
-			(xy 24.13 109.22) (xy 24.13 77.47)
+			(xy 143.51 157.48) (xy 143.51 160.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fd65fd27-4b80-4964-bacc-b14f3b880a45")
+		(uuid "f169290a-7c73-413d-9a36-f7f4415b227b")
 	)
 	(wire
 		(pts
-			(xy 64.77 31.75) (xy 64.77 35.56)
+			(xy 312.42 93.98) (xy 312.42 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fd863993-7cd7-484c-90d5-b3dae55da1ba")
+		(uuid "f23f319a-1cad-4907-8a21-b7d3a96f6f54")
+	)
+	(wire
+		(pts
+			(xy 124.46 60.96) (xy 124.46 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2c4c76a-50e9-4948-ac3f-fcf8fad64435")
+	)
+	(wire
+		(pts
+			(xy 116.84 31.75) (xy 116.84 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3bfc195-b461-4715-a844-6ea7abf6f92c")
+	)
+	(wire
+		(pts
+			(xy 143.51 109.22) (xy 73.66 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f550d6a0-e870-4d24-861e-a0945dcf913c")
+	)
+	(wire
+		(pts
+			(xy 129.54 83.82) (xy 143.51 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6e28e63-4578-4962-82d0-ff72fd66fa4c")
+	)
+	(wire
+		(pts
+			(xy 86.36 31.75) (xy 86.36 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f80f54a4-d2ec-4060-8463-74aa3171a0a6")
+	)
+	(wire
+		(pts
+			(xy 149.86 48.26) (xy 149.86 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb849eac-14eb-44d4-a200-51ded505b4ac")
+	)
+	(wire
+		(pts
+			(xy 158.75 45.72) (xy 158.75 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc2c7db1-b378-4d9d-be50-0f98bac57327")
+	)
+	(wire
+		(pts
+			(xy 66.04 60.96) (xy 66.04 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fda0f822-412a-470c-8bad-43ea9c4a1e58")
+	)
+	(wire
+		(pts
+			(xy 219.71 50.8) (xy 232.41 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fec2ff47-1f1b-4923-8cfd-4d28adf4b151")
+	)
+	(wire
+		(pts
+			(xy 137.16 68.58) (xy 137.16 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff87e2de-3468-49c1-8eee-f2461cb6243d")
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 353.06 72.39 90)
+		(at 147.32 24.13 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4039,7 +5933,7 @@
 		(dnp no)
 		(uuid "03ec2a0b-8852-467e-8eb5-f12af5665a04")
 		(property "Reference" "M6"
-			(at 386.08 76.2 90)
+			(at 146.304 25.146 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4048,7 +5942,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 358.14 72.401 90)
+			(at 152.4 24.141 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4058,7 +5952,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 357.886 72.39 0)
+			(at 152.146 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4067,7 +5961,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 357.886 72.39 0)
+			(at 152.146 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4076,7 +5970,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 353.06 72.39 0)
+			(at 147.32 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4097,6 +5991,72 @@
 			(project "nRF_servo_Mega"
 				(path "/5d4ac997-0275-451c-a58a-d84421a0d8df"
 					(reference "M6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 143.51 165.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0425a4e7-34bd-4aaa-bc0d-c13b75923f62")
+		(property "Reference" "#PWR03"
+			(at 143.51 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 143.51 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 143.51 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "511cabba-637d-4e52-ac0b-e205bda6d569")
+		)
+		(instances
+			(project "arduinoMegaServoShield"
+				(path "/5d4ac997-0275-451c-a58a-d84421a0d8df"
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -4175,7 +6135,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 262.89 133.35 90)
+		(at 257.81 96.52 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4183,7 +6143,7 @@
 		(dnp no)
 		(uuid "0d6efabd-2ec0-46cb-a3a5-f569ebd14097")
 		(property "Reference" "M4"
-			(at 262.89 134.62 90)
+			(at 257.81 97.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4192,7 +6152,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 267.97 133.361 90)
+			(at 262.89 96.531 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4202,7 +6162,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 267.716 133.35 0)
+			(at 262.636 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4211,7 +6171,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 267.716 133.35 0)
+			(at 262.636 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4220,7 +6180,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 262.89 133.35 0)
+			(at 257.81 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4248,7 +6208,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 48.26 40.64 0)
+		(at 25.4 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4257,7 +6217,7 @@
 		(fields_autoplaced yes)
 		(uuid "0fa02b62-b428-45ae-86e9-c0b64725e04b")
 		(property "Reference" "#PWR014"
-			(at 48.26 46.99 0)
+			(at 25.4 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4266,7 +6226,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 48.26 45.72 0)
+			(at 25.4 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4274,7 +6234,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 48.26 40.64 0)
+			(at 25.4 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4283,7 +6243,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 40.64 0)
+			(at 25.4 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4292,7 +6252,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 48.26 40.64 0)
+			(at 25.4 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4314,7 +6274,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 135.89 43.18 270)
+		(at 134.62 53.34 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4323,7 +6283,7 @@
 		(dnp no)
 		(uuid "136fe0d6-fde2-49bb-b8a5-074f1de66fe7")
 		(property "Reference" "M11"
-			(at 135.89 44.45 90)
+			(at 134.62 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4332,7 +6292,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 130.81 43.191 90)
+			(at 129.54 53.351 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4342,7 +6302,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 131.064 43.18 0)
+			(at 129.794 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4351,7 +6311,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 131.064 43.18 0)
+			(at 129.794 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4360,7 +6320,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 135.89 43.18 0)
+			(at 134.62 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4388,7 +6348,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 246.38 50.8 90)
+		(at 252.73 12.7 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4396,7 +6356,7 @@
 		(dnp no)
 		(uuid "16e6d2fa-d222-4a4a-84cb-79efac6ab91f")
 		(property "Reference" "M35"
-			(at 246.38 52.07 90)
+			(at 251.46 12.954 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4405,7 +6365,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 251.46 50.811 90)
+			(at 257.81 12.711 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4415,7 +6375,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 251.206 50.8 0)
+			(at 257.556 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4424,7 +6384,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 251.206 50.8 0)
+			(at 257.556 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4433,7 +6393,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 246.38 50.8 0)
+			(at 252.73 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4461,7 +6421,7 @@
 	)
 	(symbol
 		(lib_id "power:+5VP")
-		(at 64.77 31.75 0)
+		(at 29.21 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4470,7 +6430,7 @@
 		(fields_autoplaced yes)
 		(uuid "17781df3-b743-4731-bc44-deae30567445")
 		(property "Reference" "#PWR010"
-			(at 64.77 35.56 0)
+			(at 29.21 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4479,7 +6439,7 @@
 			)
 		)
 		(property "Value" "+5VP"
-			(at 64.77 26.67 0)
+			(at 29.21 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4487,7 +6447,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.77 31.75 0)
+			(at 29.21 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4496,7 +6456,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 31.75 0)
+			(at 29.21 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4505,7 +6465,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5VP\""
-			(at 64.77 31.75 0)
+			(at 29.21 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4527,7 +6487,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 53.34 69.85 270)
+		(at 93.98 53.34 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4536,7 +6496,7 @@
 		(dnp no)
 		(uuid "1c5ea18f-183e-42aa-bcf9-64a327694d59")
 		(property "Reference" "M10"
-			(at 53.34 71.12 90)
+			(at 93.98 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4545,7 +6505,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 48.26 69.861 90)
+			(at 88.9 53.351 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4555,7 +6515,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 48.514 69.85 0)
+			(at 89.154 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4564,7 +6524,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 48.514 69.85 0)
+			(at 89.154 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4573,7 +6533,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 53.34 69.85 0)
+			(at 93.98 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4601,7 +6561,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 278.13 50.8 270)
+		(at 283.21 36.83 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4610,7 +6570,7 @@
 		(dnp no)
 		(uuid "1fbcb3c2-bc43-481d-b419-fbcc31749d6a")
 		(property "Reference" "M40"
-			(at 278.13 52.07 90)
+			(at 283.21 38.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4619,7 +6579,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 273.05 50.811 90)
+			(at 278.13 36.841 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4629,7 +6589,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 273.304 50.8 0)
+			(at 278.384 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4638,7 +6598,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 273.304 50.8 0)
+			(at 278.384 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4647,7 +6607,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 278.13 50.8 0)
+			(at 283.21 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4674,6 +6634,79 @@
 		)
 	)
 	(symbol
+		(lib_id "Motor:Motor_Servo")
+		(at 312.42 86.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "239edaf4-8f11-4891-86ac-aef12d27c033")
+		(property "Reference" "M3"
+			(at 312.42 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Motor_Servo"
+			(at 317.5 86.371 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 317.246 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
+			(at 317.246 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 312.42 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4c29a75e-eaa3-4957-985e-c4a2c124890a")
+		)
+		(pin "2"
+			(uuid "fac25ab4-866d-4b95-a46f-75648275c8ef")
+		)
+		(pin "3"
+			(uuid "0592fad3-aa7b-4275-8bca-e42e3417cdcf")
+		)
+		(instances
+			(project "arduinoMegaServoShield"
+				(path "/5d4ac997-0275-451c-a58a-d84421a0d8df"
+					(reference "M3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 46.99 175.26 0)
 		(mirror y)
@@ -4682,7 +6715,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2416b45b-fa0e-4829-b663-17012f57309f")
 		(property "Reference" "#PWR09"
 			(at 46.99 181.61 0)
@@ -4694,7 +6726,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 46.99 180.34 0)
+			(at 49.022 179.324 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4742,7 +6774,7 @@
 	)
 	(symbol
 		(lib_id "power:+5VP")
-		(at 48.26 33.02 0)
+		(at 25.4 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4751,7 +6783,7 @@
 		(fields_autoplaced yes)
 		(uuid "29dea0d9-3350-4702-8618-b7d0d393ef81")
 		(property "Reference" "#PWR013"
-			(at 48.26 36.83 0)
+			(at 25.4 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4760,7 +6792,7 @@
 			)
 		)
 		(property "Value" "+5VP"
-			(at 48.26 27.94 0)
+			(at 25.4 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4768,7 +6800,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 48.26 33.02 0)
+			(at 25.4 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4777,7 +6809,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 33.02 0)
+			(at 25.4 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4786,7 +6818,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5VP\""
-			(at 48.26 33.02 0)
+			(at 25.4 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4874,7 +6906,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 406.4 72.39 270)
+		(at 96.52 24.13 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4883,7 +6915,7 @@
 		(dnp no)
 		(uuid "37eb52aa-8a80-450d-bce0-f30aae083e19")
 		(property "Reference" "M16"
-			(at 406.4 73.66 90)
+			(at 96.52 25.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4892,7 +6924,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 401.32 72.401 90)
+			(at 91.44 24.141 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4902,7 +6934,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 401.574 72.39 0)
+			(at 91.694 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4911,7 +6943,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 401.574 72.39 0)
+			(at 91.694 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4920,7 +6952,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 406.4 72.39 0)
+			(at 96.52 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4948,7 +6980,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 63.5 69.85 270)
+		(at 104.14 53.34 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4957,7 +6989,7 @@
 		(dnp no)
 		(uuid "3ae883a8-d4ea-46bc-8488-5ab3d670bf8d")
 		(property "Reference" "M9"
-			(at 63.5 71.12 90)
+			(at 104.14 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4966,7 +6998,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 58.42 69.861 90)
+			(at 99.06 53.351 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4976,7 +7008,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 58.674 69.85 0)
+			(at 99.314 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4985,7 +7017,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 58.674 69.85 0)
+			(at 99.314 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4994,7 +7026,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 63.5 69.85 0)
+			(at 104.14 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5022,7 +7054,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 21.59 69.85 270)
+		(at 86.36 24.13 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5031,7 +7063,7 @@
 		(dnp no)
 		(uuid "3b267cd3-7bfd-4b9c-a661-00c019d050e2")
 		(property "Reference" "M14"
-			(at 21.59 71.12 90)
+			(at 86.36 25.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5040,7 +7072,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 16.51 69.861 90)
+			(at 81.28 24.141 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5050,7 +7082,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 16.764 69.85 0)
+			(at 81.534 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5059,7 +7091,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 16.764 69.85 0)
+			(at 81.534 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5068,7 +7100,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 21.59 69.85 0)
+			(at 86.36 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5096,7 +7128,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 96.52 69.85 270)
+		(at 314.96 64.77 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5105,7 +7137,7 @@
 		(dnp no)
 		(uuid "3cb398b1-1d54-408e-b9f0-d95c90273246")
 		(property "Reference" "M28"
-			(at 96.52 71.12 90)
+			(at 314.96 66.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5114,7 +7146,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 91.44 69.861 90)
+			(at 309.88 64.781 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5124,7 +7156,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 91.694 69.85 0)
+			(at 310.134 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5133,7 +7165,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 91.694 69.85 0)
+			(at 310.134 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5142,7 +7174,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 96.52 69.85 0)
+			(at 314.96 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5170,7 +7202,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 345.44 53.34 0)
+		(at 311.15 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5179,7 +7211,7 @@
 		(fields_autoplaced yes)
 		(uuid "3e4c2e2b-da98-47f4-a9f8-943864489e4a")
 		(property "Reference" "#PWR02"
-			(at 345.44 59.69 0)
+			(at 311.15 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5188,7 +7220,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 345.44 58.42 0)
+			(at 311.15 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5196,7 +7228,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 345.44 53.34 0)
+			(at 311.15 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5205,7 +7237,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 345.44 53.34 0)
+			(at 311.15 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5214,7 +7246,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 345.44 53.34 0)
+			(at 311.15 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5236,7 +7268,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 74.93 69.85 90)
+		(at 217.17 36.83 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5244,7 +7276,7 @@
 		(dnp no)
 		(uuid "3e50c4c2-f192-47b2-9808-187aca897e5e")
 		(property "Reference" "M23"
-			(at 74.93 71.12 90)
+			(at 217.17 38.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5253,7 +7285,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 80.01 69.861 90)
+			(at 222.25 36.841 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5263,7 +7295,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 79.756 69.85 0)
+			(at 221.996 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5272,7 +7304,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 79.756 69.85 0)
+			(at 221.996 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5281,7 +7313,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 74.93 69.85 0)
+			(at 217.17 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5309,7 +7341,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 86.36 69.85 270)
+		(at 124.46 53.34 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5318,7 +7350,7 @@
 		(dnp no)
 		(uuid "48af2566-d4e4-4309-8e97-4540562ad05c")
 		(property "Reference" "M29"
-			(at 86.36 71.12 90)
+			(at 124.46 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5327,7 +7359,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 81.28 69.861 90)
+			(at 119.38 53.351 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5337,7 +7369,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 81.534 69.85 0)
+			(at 119.634 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5346,7 +7378,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 81.534 69.85 0)
+			(at 119.634 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5355,7 +7387,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 86.36 69.85 0)
+			(at 124.46 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5383,7 +7415,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 429.26 72.39 90)
+		(at 322.58 86.36 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5391,7 +7423,7 @@
 		(dnp no)
 		(uuid "4a63e8b6-d06c-4654-a3b5-f7a72510bd9a")
 		(property "Reference" "M31"
-			(at 429.26 73.66 90)
+			(at 322.58 87.63 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5400,7 +7432,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 434.34 72.401 90)
+			(at 327.66 86.371 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5410,7 +7442,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 434.086 72.39 0)
+			(at 327.406 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5419,7 +7451,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 434.086 72.39 0)
+			(at 327.406 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5428,7 +7460,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 429.26 72.39 0)
+			(at 322.58 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5455,8 +7487,74 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5VP")
+		(at 337.82 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "54a53066-5a2c-45c8-9816-a25abf975580")
+		(property "Reference" "#PWR018"
+			(at 337.82 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5VP"
+			(at 337.82 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 337.82 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 337.82 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5VP\""
+			(at 337.82 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "48f784c2-bdb3-47d7-97cb-d829ec7e6a59")
+		)
+		(instances
+			(project "arduinoMegaServoShield"
+				(path "/5d4ac997-0275-451c-a58a-d84421a0d8df"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 217.17 25.4 270)
+		(at 236.22 12.7 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5465,7 +7563,7 @@
 		(dnp no)
 		(uuid "674f76ad-c833-4ecb-a874-2f2a7b6aeda2")
 		(property "Reference" "M17"
-			(at 217.17 26.67 90)
+			(at 236.22 13.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5474,7 +7572,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 212.09 25.411 90)
+			(at 231.14 12.711 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5484,7 +7582,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 212.344 25.4 0)
+			(at 231.394 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5493,7 +7591,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 212.344 25.4 0)
+			(at 231.394 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5502,7 +7600,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 217.17 25.4 0)
+			(at 236.22 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5530,7 +7628,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 31.75 69.85 270)
+		(at 68.58 53.34 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5539,7 +7637,7 @@
 		(dnp no)
 		(uuid "68c02028-b015-4f12-895b-ffb8bf0692d8")
 		(property "Reference" "M13"
-			(at 31.75 69.85 90)
+			(at 68.58 53.34 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5548,7 +7646,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 26.67 69.861 90)
+			(at 63.5 53.351 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5558,7 +7656,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 26.924 69.85 0)
+			(at 63.754 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5567,7 +7665,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 26.924 69.85 0)
+			(at 63.754 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5576,7 +7674,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 31.75 69.85 0)
+			(at 68.58 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5604,7 +7702,7 @@
 	)
 	(symbol
 		(lib_id "power:+5VP")
-		(at 335.28 157.48 0)
+		(at 307.34 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5612,7 +7710,7 @@
 		(dnp no)
 		(uuid "6ab6ad67-21d1-40a0-b63c-29293f18fa4e")
 		(property "Reference" "#PWR04"
-			(at 335.28 161.29 0)
+			(at 307.34 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5621,7 +7719,7 @@
 			)
 		)
 		(property "Value" "+5VP"
-			(at 335.28 153.67 0)
+			(at 307.34 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5629,7 +7727,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 335.28 157.48 0)
+			(at 307.34 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5638,7 +7736,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 335.28 157.48 0)
+			(at 307.34 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5647,7 +7745,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5VP\""
-			(at 335.28 157.48 0)
+			(at 307.34 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5669,7 +7767,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 306.07 50.8 270)
+		(at 270.51 36.83 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5678,7 +7776,7 @@
 		(dnp no)
 		(uuid "6cc08cb4-c099-474b-b9c8-6a0d7ab4114a")
 		(property "Reference" "M38"
-			(at 306.07 52.07 90)
+			(at 270.51 38.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5687,7 +7785,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 300.99 50.811 90)
+			(at 265.43 36.841 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5697,7 +7795,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 301.244 50.8 0)
+			(at 265.684 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5706,7 +7804,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 301.244 50.8 0)
+			(at 265.684 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5715,7 +7813,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 306.07 50.8 0)
+			(at 270.51 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5743,7 +7841,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 123.19 69.85 270)
+		(at 114.3 53.34 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5752,7 +7850,7 @@
 		(dnp no)
 		(uuid "74dd81e0-51c7-4426-9c80-731627f8664c")
 		(property "Reference" "M20"
-			(at 123.19 71.12 90)
+			(at 114.3 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5761,7 +7859,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 118.11 69.861 90)
+			(at 109.22 53.351 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5771,7 +7869,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 118.364 69.85 0)
+			(at 109.474 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5780,7 +7878,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 118.364 69.85 0)
+			(at 109.474 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5789,7 +7887,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 123.19 69.85 0)
+			(at 114.3 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5817,7 +7915,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 64.77 39.37 0)
+		(at 29.21 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5826,7 +7924,7 @@
 		(fields_autoplaced yes)
 		(uuid "7b88e748-5b4d-4f59-bb77-8d23b203fc2b")
 		(property "Reference" "#PWR07"
-			(at 64.77 45.72 0)
+			(at 29.21 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5835,7 +7933,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 64.77 44.45 0)
+			(at 29.21 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5843,7 +7941,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.77 39.37 0)
+			(at 29.21 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5852,7 +7950,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 39.37 0)
+			(at 29.21 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5861,7 +7959,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 64.77 39.37 0)
+			(at 29.21 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5883,7 +7981,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 233.68 25.4 90)
+		(at 226.06 12.7 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5891,7 +7989,7 @@
 		(dnp no)
 		(uuid "7ecdb723-c03d-4b01-b49c-36252687244f")
 		(property "Reference" "M25"
-			(at 233.68 26.67 90)
+			(at 225.298 13.462 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5900,7 +7998,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 238.76 25.411 90)
+			(at 231.14 12.711 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5910,7 +8008,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 238.506 25.4 0)
+			(at 230.886 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5919,7 +8017,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 238.506 25.4 0)
+			(at 230.886 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5928,7 +8026,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 233.68 25.4 0)
+			(at 226.06 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5956,7 +8054,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at -3.81 68.58 90)
+		(at 60.96 24.13 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5964,7 +8062,7 @@
 		(dnp no)
 		(uuid "836ad213-c728-4991-94ec-60ec012c4851")
 		(property "Reference" "M5"
-			(at -3.81 69.85 90)
+			(at 60.96 25.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5973,7 +8071,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 1.27 68.591 90)
+			(at 66.04 24.141 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5983,7 +8081,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 1.016 68.58 0)
+			(at 65.786 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5992,7 +8090,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 1.016 68.58 0)
+			(at 65.786 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6001,7 +8099,7 @@
 			)
 		)
 		(property "Description" ""
-			(at -3.81 68.58 0)
+			(at 60.96 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6022,6 +8120,72 @@
 			(project "nRF_servo_Mega"
 				(path "/5d4ac997-0275-451c-a58a-d84421a0d8df"
 					(reference "M5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 337.82 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a99c10c-7846-4ed8-96f6-45a1cdfbb0ef")
+		(property "Reference" "#PWR019"
+			(at 337.82 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 337.82 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 337.82 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 337.82 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 337.82 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5a5b011e-13fe-4cdf-bfb6-69bd30b315d6")
+		)
+		(instances
+			(project "arduinoMegaServoShield"
+				(path "/5d4ac997-0275-451c-a58a-d84421a0d8df"
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -6095,7 +8259,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 335.28 160.02 0)
+		(at 307.34 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6104,7 +8268,7 @@
 		(fields_autoplaced yes)
 		(uuid "905e0141-7324-4a38-bf17-13b9b77ec48b")
 		(property "Reference" "#PWR05"
-			(at 335.28 166.37 0)
+			(at 307.34 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6113,7 +8277,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 335.28 165.1 0)
+			(at 307.34 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6121,7 +8285,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 335.28 160.02 0)
+			(at 307.34 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6130,7 +8294,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 335.28 160.02 0)
+			(at 307.34 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6139,7 +8303,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 335.28 160.02 0)
+			(at 307.34 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6161,7 +8325,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 251.46 133.35 90)
+		(at 246.38 96.52 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6169,7 +8333,7 @@
 		(dnp no)
 		(uuid "91f143d5-cf4a-4f52-8743-1ae1830f9a02")
 		(property "Reference" "M2"
-			(at 251.46 133.35 90)
+			(at 246.38 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6178,7 +8342,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 256.54 133.361 90)
+			(at 251.46 96.531 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6188,7 +8352,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 256.286 133.35 0)
+			(at 251.206 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6197,7 +8361,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 256.286 133.35 0)
+			(at 251.206 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6206,7 +8370,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 251.46 133.35 0)
+			(at 246.38 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6234,7 +8398,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 125.73 31.75 270)
+		(at 127 24.13 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6243,7 +8407,7 @@
 		(dnp no)
 		(uuid "92aff0e0-ff96-4b4a-88c5-fd6e0dcd20f3")
 		(property "Reference" "M37"
-			(at 125.73 33.02 90)
+			(at 127 25.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6252,7 +8416,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 120.65 31.761 90)
+			(at 121.92 24.141 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6262,7 +8426,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 120.904 31.75 0)
+			(at 122.174 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6271,7 +8435,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 120.904 31.75 0)
+			(at 122.174 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6280,7 +8444,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 125.73 31.75 0)
+			(at 127 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6308,7 +8472,7 @@
 	)
 	(symbol
 		(lib_id "power:+5VP")
-		(at 345.44 48.26 0)
+		(at 311.15 20.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6317,7 +8481,7 @@
 		(fields_autoplaced yes)
 		(uuid "92dbfc0b-5aaf-4b68-b6fa-895742d1a162")
 		(property "Reference" "#PWR012"
-			(at 345.44 52.07 0)
+			(at 311.15 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6326,7 +8490,7 @@
 			)
 		)
 		(property "Value" "+5VP"
-			(at 345.44 43.18 0)
+			(at 311.15 15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6334,7 +8498,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 345.44 48.26 0)
+			(at 311.15 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6343,7 +8507,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 345.44 48.26 0)
+			(at 311.15 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6352,7 +8516,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5VP\""
-			(at 345.44 48.26 0)
+			(at 311.15 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6374,7 +8538,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 41.91 69.85 90)
+		(at 76.2 24.13 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6382,7 +8546,7 @@
 		(dnp no)
 		(uuid "948c5ef6-e6d7-46fa-868c-d03454dad325")
 		(property "Reference" "M34"
-			(at 41.91 71.12 90)
+			(at 76.2 25.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6391,7 +8555,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 46.99 69.861 90)
+			(at 81.28 24.141 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6401,7 +8565,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 46.736 69.85 0)
+			(at 81.026 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6410,7 +8574,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 46.736 69.85 0)
+			(at 81.026 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6419,7 +8583,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 41.91 69.85 0)
+			(at 76.2 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6447,7 +8611,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 224.79 43.18 270)
+		(at 243.84 36.83 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6456,7 +8620,7 @@
 		(dnp no)
 		(uuid "964d3763-916c-4e0f-960d-209aa8bb9712")
 		(property "Reference" "M18"
-			(at 224.79 44.45 90)
+			(at 243.84 38.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6465,7 +8629,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 219.71 43.191 90)
+			(at 238.76 36.841 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6475,7 +8639,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 219.964 43.18 0)
+			(at 239.014 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6484,7 +8648,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 219.964 43.18 0)
+			(at 239.014 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6493,7 +8657,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 224.79 43.18 0)
+			(at 243.84 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6654,7 +8818,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 256.54 50.8 270)
+		(at 262.89 12.7 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6663,7 +8827,7 @@
 		(dnp no)
 		(uuid "a6e578f4-e7b7-433f-96d2-b89c804af39b")
 		(property "Reference" "M36"
-			(at 256.54 52.07 90)
+			(at 262.89 13.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6672,7 +8836,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 251.46 50.811 90)
+			(at 257.81 12.711 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6682,7 +8846,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 251.714 50.8 0)
+			(at 258.064 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6691,7 +8855,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 251.714 50.8 0)
+			(at 258.064 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6700,7 +8864,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 256.54 50.8 0)
+			(at 262.89 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6728,222 +8892,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 266.7 50.8 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "aa43203f-f22a-445a-b669-0dc2a203384e")
-		(property "Reference" "M41"
-			(at 266.7 52.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Motor_Servo"
-			(at 261.62 50.811 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 261.874 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 261.874 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 266.7 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1abfbf56-167c-4a5a-8997-ec0097c9988c")
-		)
-		(pin "2"
-			(uuid "80126caf-aed9-4262-a38a-cd930a9133bf")
-		)
-		(pin "3"
-			(uuid "ea99c07e-e223-4c42-ba52-7bc924b803a6")
-		)
-		(instances
-			(project "arduinoMegaServoShield"
-				(path "/5d4ac997-0275-451c-a58a-d84421a0d8df"
-					(reference "M41")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Motor:Motor_Servo")
-		(at 295.91 50.8 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ab55f006-d52f-430c-bff4-bbdfcd2cb1f5")
-		(property "Reference" "M39"
-			(at 295.91 52.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Motor_Servo"
-			(at 290.83 50.811 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 291.084 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 291.084 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 295.91 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dde89dc4-1ed5-40b0-87b2-75b253115453")
-		)
-		(pin "2"
-			(uuid "455fb750-6a79-4d61-9ed2-c0ba8db18d02")
-		)
-		(pin "3"
-			(uuid "f2f52594-684b-413e-93a5-c7fdca5818fa")
-		)
-		(instances
-			(project "arduinoMegaServoShield"
-				(path "/5d4ac997-0275-451c-a58a-d84421a0d8df"
-					(reference "M39")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 143.51 163.83 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "aea2312e-7c74-4a27-9fab-9288dcee7397")
-		(property "Reference" "#PWR03"
-			(at 143.51 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 142.24 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 143.51 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 143.51 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 143.51 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d1aa2bb4-54f1-4e2b-aa64-29268e15f5c4")
-		)
-		(instances
-			(project "nRF_servo_Mega"
-				(path "/5d4ac997-0275-451c-a58a-d84421a0d8df"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Motor:Motor_Servo")
-		(at 394.97 72.39 90)
+		(at 83.82 53.34 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6951,7 +8900,7 @@
 		(dnp no)
 		(uuid "b5b53942-2b74-437a-8670-9a5307f6b3b6")
 		(property "Reference" "M30"
-			(at 394.97 73.66 90)
+			(at 83.82 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6960,7 +8909,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 400.05 72.401 90)
+			(at 88.9 53.351 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6970,7 +8919,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 399.796 72.39 0)
+			(at 88.646 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6979,7 +8928,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 399.796 72.39 0)
+			(at 88.646 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6988,7 +8937,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 394.97 72.39 0)
+			(at 83.82 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7024,7 +8973,7 @@
 		(dnp no)
 		(uuid "bf48f8cc-769b-4f59-a314-be1e6d9aaea8")
 		(property "Reference" "J1"
-			(at 66.548 170.942 0)
+			(at 65.532 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7083,7 +9032,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 114.3 69.85 270)
+		(at 106.68 24.13 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7092,7 +9041,7 @@
 		(dnp no)
 		(uuid "cacdaf39-688b-4085-8747-40447a471e24")
 		(property "Reference" "M21"
-			(at 114.3 71.12 90)
+			(at 106.68 25.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7101,7 +9050,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 109.22 69.861 90)
+			(at 101.6 24.141 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7111,7 +9060,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 109.474 69.85 0)
+			(at 101.854 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7120,7 +9069,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 109.474 69.85 0)
+			(at 101.854 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7129,7 +9078,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 114.3 69.85 0)
+			(at 106.68 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7157,7 +9106,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 383.54 72.39 270)
+		(at 156.21 24.13 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7166,7 +9115,7 @@
 		(dnp no)
 		(uuid "ce6c837e-51cc-4f2f-84e9-e0d53b6cae37")
 		(property "Reference" "M7"
-			(at 383.54 73.66 90)
+			(at 156.21 25.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7175,7 +9124,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 378.46 72.401 90)
+			(at 151.13 24.141 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7185,7 +9134,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 378.714 72.39 0)
+			(at 151.384 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7194,7 +9143,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 378.714 72.39 0)
+			(at 151.384 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7203,7 +9152,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 383.54 72.39 0)
+			(at 156.21 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7231,7 +9180,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 373.38 72.39 270)
+		(at 137.16 24.13 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7240,7 +9189,7 @@
 		(dnp no)
 		(uuid "d535861d-69b1-48c1-a70c-cd1c4dbbb81c")
 		(property "Reference" "M12"
-			(at 373.38 73.66 90)
+			(at 137.16 25.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7249,7 +9198,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 368.3 72.401 90)
+			(at 132.08 24.141 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7259,7 +9208,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 368.554 72.39 0)
+			(at 132.334 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7268,7 +9217,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 368.554 72.39 0)
+			(at 132.334 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7277,7 +9226,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 373.38 72.39 0)
+			(at 137.16 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7305,7 +9254,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 236.22 49.53 90)
+		(at 229.87 36.83 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7313,7 +9262,7 @@
 		(dnp no)
 		(uuid "dbc364c2-2ed4-46a8-84d6-a0dc28d27642")
 		(property "Reference" "M26"
-			(at 236.22 50.8 90)
+			(at 229.87 38.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7322,7 +9271,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 241.3 49.541 90)
+			(at 234.95 36.841 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7332,7 +9281,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 241.046 49.53 0)
+			(at 234.696 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7341,7 +9290,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 241.046 49.53 0)
+			(at 234.696 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7350,7 +9299,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 236.22 49.53 0)
+			(at 229.87 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7378,7 +9327,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 105.41 69.85 270)
+		(at 116.84 24.13 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7387,7 +9336,7 @@
 		(dnp no)
 		(uuid "e96e2812-aba9-4c8b-9be3-defeb9efadd0")
 		(property "Reference" "M27"
-			(at 105.41 71.12 90)
+			(at 116.84 25.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7396,7 +9345,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 100.33 69.861 90)
+			(at 111.76 24.141 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7406,7 +9355,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 100.584 69.85 0)
+			(at 112.014 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7415,7 +9364,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 100.584 69.85 0)
+			(at 112.014 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7424,7 +9373,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 105.41 69.85 0)
+			(at 116.84 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7445,6 +9394,71 @@
 			(project "arduinoMegaServoShield"
 				(path "/5d4ac997-0275-451c-a58a-d84421a0d8df"
 					(reference "M27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5VP")
+		(at 346.71 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e96fe8ba-850f-4c06-a7d0-11e761c6ddc9")
+		(property "Reference" "#PWR015"
+			(at 346.71 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5VP"
+			(at 346.71 94.488 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 346.71 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 346.71 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5VP\""
+			(at 346.71 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5693940b-067f-48ad-bee0-3c654b5940ca")
+		)
+		(instances
+			(project "arduinoMegaServoShield"
+				(path "/5d4ac997-0275-451c-a58a-d84421a0d8df"
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -7786,7 +9800,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 326.39 50.8 90)
+		(at 292.1 12.7 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7794,7 +9808,7 @@
 		(dnp no)
 		(uuid "ea2cfd97-f3bf-4b71-9e58-103db20d9dbb")
 		(property "Reference" "M1"
-			(at 326.39 52.07 90)
+			(at 292.1 13.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7803,7 +9817,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 331.47 50.811 90)
+			(at 297.18 12.711 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7813,7 +9827,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 331.216 50.8 0)
+			(at 296.926 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7822,7 +9836,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 331.216 50.8 0)
+			(at 296.926 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7831,7 +9845,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 326.39 50.8 0)
+			(at 292.1 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7859,7 +9873,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 248.92 34.29 270)
+		(at 256.54 36.83 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7868,7 +9882,7 @@
 		(dnp no)
 		(uuid "ed4a2384-a41e-4698-a418-3be822c60f25")
 		(property "Reference" "M19"
-			(at 248.92 35.56 90)
+			(at 256.54 38.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7877,7 +9891,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 243.84 34.301 90)
+			(at 251.46 36.841 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7887,7 +9901,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 244.094 34.29 0)
+			(at 251.714 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7896,7 +9910,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 244.094 34.29 0)
+			(at 251.714 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7905,7 +9919,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 248.92 34.29 0)
+			(at 256.54 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7933,16 +9947,15 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 440.69 72.39 270)
-		(mirror x)
+		(at 279.4 12.7 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f91af9f5-8376-4dcd-a1db-fec4d839a817")
-		(property "Reference" "M8"
-			(at 440.69 72.39 90)
+		(uuid "efcf3634-3057-4331-9b69-4bdf065ed619")
+		(property "Reference" "M15"
+			(at 279.4 12.7 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7951,7 +9964,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 435.61 72.401 90)
+			(at 284.48 12.711 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7961,7 +9974,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 435.864 72.39 0)
+			(at 284.226 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7970,7 +9983,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 435.864 72.39 0)
+			(at 284.226 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7979,7 +9992,147 @@
 			)
 		)
 		(property "Description" ""
-			(at 440.69 72.39 0)
+			(at 279.4 12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5222d9fe-9661-4dff-b2fe-b8fb2b50068f")
+		)
+		(pin "2"
+			(uuid "dc5d0e2e-b2f5-47e0-afe8-927c2af43867")
+		)
+		(pin "3"
+			(uuid "396f314e-d717-485d-aceb-2526fa6bc6aa")
+		)
+		(instances
+			(project "arduinoMegaServoShield"
+				(path "/5d4ac997-0275-451c-a58a-d84421a0d8df"
+					(reference "M15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 346.71 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f32aea60-540e-4cbf-b751-a0fe5ec5ceaa")
+		(property "Reference" "#PWR017"
+			(at 346.71 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 346.71 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 346.71 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 346.71 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 346.71 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6c70c922-cd87-4e44-b782-2e95db07b66d")
+		)
+		(instances
+			(project "arduinoMegaServoShield"
+				(path "/5d4ac997-0275-451c-a58a-d84421a0d8df"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Motor:Motor_Servo")
+		(at 325.12 64.77 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f91af9f5-8376-4dcd-a1db-fec4d839a817")
+		(property "Reference" "M8"
+			(at 325.882 65.786 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Motor_Servo"
+			(at 320.04 64.781 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 320.294 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
+			(at 320.294 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 325.12 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
