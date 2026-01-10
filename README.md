@@ -91,7 +91,7 @@ experimentation.
 1. [Catalog](doc/moma_catalogue_machine_art.pdf)
  from Machine Art exhibit, Museum of Modern Art, 1934 
 
-### Art Critiques: Examples and guides
+### Art Critique: Examples and guides
 1. [Beginner’s Guide to Writing an Art
    Critique](https://acousticpaint.wordpress.com/2018/07/31/beginners-guide-to-writing-an-art-critique/)
    Uses the foundational Feldman Method of art criticism.
@@ -132,6 +132,10 @@ experimentation.
    links to yet more examples
 1. [Sample Artist Statements/Bios](https://www.gyst-ink.com/sample-artist-statements) from the resource above, because they
    seem really good
+
+### Examples of well researched and written papers
+1. [Art of Interaction: A Theoretical Examination of Carsten Höller’s Test
+   Site](https://www.tate.org.uk/research/tate-papers/15/art-of-interaction-a-theoretical-examination-of-carsten-holler-test-site)
    
 
 ## Inspiration: Artists, Movies, Projects, etc.
