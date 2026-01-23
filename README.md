@@ -756,7 +756,7 @@ difference that we won't be concerned with.
 - Arduino
 	[tutorial](https://www.arduino.cc/en/tutorial/debounce)
 
-## Debugging
+## Debugging Resources
 Students often assume that the problem is a bad component (including
 	Arduino) or a problem in their computer. 
 	While this is possible, 
