@@ -116,6 +116,7 @@ experimentation.
    Picasso](https://16julianas.weebly.com/art-critique-example.html)
 
 ### Artist Statements
+1. :
 1. [8 Artist Statements We Love](https://www.theartleague.org/blog/2015/08/24/8-artist-statements-we-love/) this one starts with a Calvin and Hobbes cartoon so it's already a winner in my book
 1. Reddit thread with [very useful advice from someone who covers art
    galleries](https://www.reddit.com/r/ContemporaryArt/comments/1emelpj/what_are_some_good_well_written_artist/)
@@ -133,9 +134,11 @@ experimentation.
 1. [Sample Artist Statements/Bios](https://www.gyst-ink.com/sample-artist-statements) from the resource above, because they
    seem really good
 
-### Examples of well researched and written papers
+### Examples of well researched and well written papers about art
 1. [Art of Interaction: A Theoretical Examination of Carsten Höller’s Test
    Site](https://www.tate.org.uk/research/tate-papers/15/art-of-interaction-a-theoretical-examination-of-carsten-holler-test-site)
+
+
    
 
 ## Inspiration: Artists, Movies, Projects, etc.
@@ -901,7 +904,53 @@ to excellent soldering
 1. Best close up I've ever seen on how to solder pins into a circuit board.
 	 It's between 0:17 and 0:28 of [this](https://tinusaur.com/demo/) video
 
-1. When soldering a wire or pin to a circuit board, 
+### My soldering advice
+1. Safety:
+    - Wear safety glasses
+    - Use the air filter. Position it so that the soldering fumes are sucked
+      into the filter.
+1. Inspect your soldering iron tip. If it is completely black, it needs to be
+   replaced. There are multiple reasons for tips to turn black:
+    - Oxidation of the tip (creates a coating of black iron oxide)
+    - Flux residue, primarily carbon
+    - Solder contaminants
+    - High-temperature degradation: temperature above 350 degrees C
+    - Soldering iron left turned when not in use
+    - Overly aggressive cleaning (sanding, scraping) removes protective
+      plating. The protective plating is there to protect the copper core from
+      the solder flux, which is necessary but corrosive.
+1. Turn on the soldering iron and make sure the temperature is set to 350
+   degrees C or less. Adjust as necessary, but **never go above 350**.
+1. If you replaced the tip, you must coat the new tip with fresh solder
+   **immediately** after turning it on
+1. Clean the soldering iron tip gently before soldering. Apply a bit of fresh
+   solder to the tip. A layer of fresh solder will slow down tip oxidation.
+   Get in the habit of always applying solder after cleaning the tip.
+1. Ideally, the shiny part of the soldering iron tip (where the solder coating
+   is) should press against both surfaces that you are soldering. If you are
+   soldering a component into a circuit board, that is often difficult. I
+   usually start on the bigger part (e.g. the resistor lead) and once the
+   solder is melting on that I draw it down to the other part (e.g. the copper
+   donut on the circuit board)
+1. Do not clean the tip after you solder a joint. Remember that the solder
+   protects the tip, so leave it there. You will clean it off before you
+   solder the next joint or component.
+1. If it's going to be awhile (e.g. more than 5 minutes) before you are ready
+   to solder again, turn off the iron. It usually heats up in about 20
+   seconds. If you're ready to solder the next join in less than 5 minutes you
+   can leave the iron on.
+1. When you are ready to solder the next component or joint, again clean the
+   tip gently and apply fresh solder, then proceed to your next soldering
+   task.
+1. When you have finished soldering, clean the tip and coat it with fresh
+   solder, and then turn off the soldering iron
+1. **Never never never use the soldering iron on plastic**
+1. Your first soldering will probably be pretty bad. Don't be discouraged. You
+   will get better at soldering with practice. Use the scrap wire and used
+   circuit boards to practice.
+
+### Soldering tips (haha)
+When soldering a wire or pin to a circuit board, 
 you need to make sure that the solder adheres both to 
 wire or pin **and** to the pad on the circuit board. In the picture
 below, you can see that the solder on the circled pin has
@@ -917,6 +966,13 @@ solder to encourage to solder to flow onto the pad, but take care not to apply
 too much.
 
 ![](media/badSolderJoint.png)
+
+Sometimes the heat from the soldering iron seems to refuse to get into to the
+things you're soldering. If this happens, apply the solder directly to the
+soldering iron tip, where it will start melting. Then you can draw this puddle
+of solder onto whatever your soldering (wire, circuit board, component, etc.).
+The puddle of solder will do a better job of transferring heat to whatever
+your soldering, and the solder should immediately adhere.
 
 ## Solderless Breadboard Resources
 1. Sparkfun's [How to Use a
