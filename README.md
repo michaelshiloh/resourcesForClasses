@@ -812,7 +812,7 @@ fluctuating, then you may be close to the intermittent connection
 
 1. Clay Shirky's 4 part [video series](https://vimeo.com/channels/debugging) on debugging
 
-#### Digital Multimeter (DMM) resources
+### Digital Multimeter (DMM) resources
 1. Adafruit Digital Multimeter
 [tutorial](https://learn.adafruit.com/multimeters?view=all)
 
