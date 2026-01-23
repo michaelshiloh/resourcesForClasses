@@ -893,7 +893,7 @@ tutorial on objects in Processing
 3. "[Arduino the Object Oriented
 way](https://paulmurraycbr.github.io/ArduinoTheOOWay.html)" tutorial
 
-## Soldering
+## Soldering Resources
 1. Adafruit 
 [guide](https://learn.adafruit.com/adafruit-guide-excellent-soldering?view=all)
 to excellent soldering
