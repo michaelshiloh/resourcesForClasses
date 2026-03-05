@@ -486,7 +486,7 @@ ways and using different tools.
 from The Exploratorium which has a clear diagram of how to use two cams to get
 alternating rotation
 
-1. "Making Things Move" by Dustyn Roberts
+1. [Making Things Move](doc/making_things_move.pdf) by Dustyn Roberts
 
 1. Very detailed [book](https://www.cs.cmu.edu/afs/cs/academic/class/15394h-f17/resources/cabaret_mechanical_movement.pdf) on making automata from Cabaret Mechanical Theatre
 
@@ -1355,11 +1355,12 @@ but I'll try to gather here those particularly relevant to this class)
 about the US machine tool industry, with a great explanation of
 machine tools and why they are important
 
-1. Wonderful [movie](https://www.youtube.com/watch?v=Y3YrbEGWE04&t=211s)
-from the 1950s demonstrating the Milwaukee-Matic, an early Numerically
-Controlled (NC) machining center. Great way to understand how machine tools
-remove metal in order to create the desired shape. (A predecessor to CNC, NC
-used paper tape or punched cards to control the operations of the machine.)
+1. Wonderful [movie](https://www.youtube.com/watch?v=Y3YrbEGWE04&t=211s) from
+   the 1950s demonstrating the Milwaukee-Matic, an early Numerically
+   Controlled (NC) machining center. Great way to understand how machine tools
+   remove metal in order to create the desired shape. (NC was a predecessor to
+   CNC. It used paper tape or punched cards to control the operations of the
+   machine.)
 
 1. Another great 1950s [movie](https://www.youtube.com/watch?v=5qlS_944oZE),
    this one from the Monarch Machine Tool Company. There was a certain style
