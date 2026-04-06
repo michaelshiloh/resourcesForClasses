@@ -904,6 +904,16 @@ to excellent soldering
 1. Best close up I've ever seen on how to solder pins into a circuit board.
 	 It's between 0:17 and 0:28 of [this](https://tinusaur.com/demo/) video
 
+1. Excellent [video](https://www.youtube.com/watch?v=98t4NzqtD3E) on how to
+   solder NeoPixels. The only thing I would add is strain relief: I suggest
+   you
+   stick something something stiff, like a piece of cardboard or a craft
+   stick, to the end of the NeoPixel strip that extends a few cm beyond the
+   strip, to which the wire can be glued or ziptied; this removes the strain
+   from the soldered joint and from the very flimsy flexible circuit board
+   from which the NeoPixel strip is made. The video mentions this briefly at
+   the very end, but I would have put this in the main body.
+
 ### My soldering advice
 1. Safety:
     - Wear safety glasses
