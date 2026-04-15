@@ -1323,6 +1323,9 @@ Latour, B, â€˜A Cautious Prometheus? A Few Steps toward a Philosophy of Designâ€
 1. Animatronic [courses](https://www.stanwinstonschool.com/tutorials). Seven
    day free trial available.
 
+1. Kathleen McDermott's [website](https://wp.nyu.edu/animatronics/) for her Animatronics course,
+   especially week 2 which covers [Motors, Automata & Kinetic Art](https://docs.google.com/presentation/d/1dfa4ulCtm32Ly3T9vl6JgXgcSGuwnnlredslHrjVJPM/edit?slide=id.p#slide=id.p)
+
 ## General Robotic Resources
 
 1. [INTRODUCTION TO AUTONOMOUS ROBOTS](github)
@@ -1351,6 +1354,8 @@ Topics include vector spaces, orthogonal bases, projection theorem, least square
 
 1. [Where good ideas come
 	 from](https://www.ted.com/talks/steven_johnson_where_good_ideas_come_from?language=en)
+
+1. [Special Topics in Digital Media: Grad Wearables](https://wp.nyu.edu/tandonschoolofengineering-idmwearables/) class website
 
 # Resources for Machine Lab
 
@@ -1386,6 +1391,18 @@ from the late 40s: [Machine Shop Work: An Introduction to Operations on the Vert
    Metallica](https://www.gutenberg.org/files/38015/38015-h/38015-h.htm?mc_cid=56846d0c45&mc_eid=23c269c901),
 a translation of a book in Latin cataloguing the state of the art of
 mining, refining, and smelting metals, published in 1556 
+
+## Maker spaces around the world
+
+### Maker spaces in London
+
+1. [Institute of Making](https://www.instituteofmaking.org.uk/workshop/about)
+
+1. [Imperial Advanced Hackspace](https://imperialhackspace.com)
+
+2. Makerspace at Imperial College's White City Campus (website not known)
+
+
 
 # Resources for Performing Robots
 
