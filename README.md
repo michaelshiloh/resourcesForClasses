@@ -1357,6 +1357,8 @@ Topics include vector spaces, orthogonal bases, projection theorem, least square
 
 1. [Special Topics in Digital Media: Grad Wearables](https://wp.nyu.edu/tandonschoolofengineering-idmwearables/) class website
 
+1. [Tutorials and other wearable resources](https://www.idmwearables.club) at NYU's Integrated Design & Media (IDM) program
+
 # Resources for Machine Lab
 
 (Actually, topics related to Machine Lab are sprinkled through this document,
