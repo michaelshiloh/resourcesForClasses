@@ -1755,8 +1755,17 @@ library](http://web.b.ebscohost.com.proxy.library.nyu.edu/ehost/ebookviewer/eboo
 	studies artificial and natural intelligence. She's working to improve the
 	governance and ethics of digital technology.
 
+# Materials and Supplies Resources (where to get stuff)
 
-## To be sorted
+## London
+
+1. [Cricklewood Electronics](https://cricklewoodelectronics.com/Microcontrollers.html)
+
+1. [RS](https://uk.rs-online.com/web/content/services/branch-finder)
+
+1. [Pimoroni](https://shop.pimoroni.com/en-us ) online but very fast shipping
+
+# To be sorted
 
 1.  [Machine Art In The Twentieth
   Century](doc/machineArtInTheTwentiethCentury.pdf)
