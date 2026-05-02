@@ -589,7 +589,7 @@ location. All other motors, including stepper motors, do not know where they are
 
 1. If screws are used to mount a servo motor, you should use the rubber
    grommets
-   [correctly[(https://jbeech.com/edu/bestpractice/servo-installation-done-right/).
+   [correctly](https://jbeech.com/edu/bestpractice/servo-installation-done-right/).
    Don't tighten the screws too much or you might distort the servo motor,
    which could jam the gears.
 
