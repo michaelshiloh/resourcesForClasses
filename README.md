@@ -579,7 +579,10 @@ Connectors.
    Huynh](https://www.youtube.com/@DannyHuynhCreations). 
    Some show linkages and placement of servo motors.
 
-## Servo Resources
+## Servo Motor Resources
+
+When should you use a servo motor? Whenever you need to stop at a specific
+location. All other motors, including stepper motors, do not know where they are. 
 
 1. Never turn a servo motor by hand! The gears are not designed to sustain
    the force
@@ -591,8 +594,8 @@ Connectors.
    which could jam the gears.
 
 1. Servo linkage examples in model airplanes:
-	![mountedServos_fig1.jpg](media/githubUploadFiles.png)
-	![mountedServos_fig2.jpg](media/githubUploadFiles.png)
+	![](media/mountedServos_fig1.jpg)
+	![](media/mountedServos_fig2.jpg)
 
 1. [Example](https://makecode.adafruit.com/courses/maker/projects/servo-box)
    using popsickle sticks to make a linkage. Personally I have a very hard
