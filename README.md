@@ -579,6 +579,26 @@ Connectors.
    Huynh](https://www.youtube.com/@DannyHuynhCreations). 
    Some show linkages and placement of servo motors.
 
+## Servo Resources
+
+1. Never turn a servo motor by hand! The gears are not designed to sustain
+   the force
+
+1. If screws are used to mount a servo motor, you should use the rubber
+   grommets
+   [correctly[(https://jbeech.com/edu/bestpractice/servo-installation-done-right/).
+   Don't tighten the screws too much or you might distort the servo motor,
+   which could jam the gears.
+
+1. Servo linkage examples in model airplanes:
+	![mountedServos_fig1.jpg](media/githubUploadFiles.png)
+	![mountedServos_fig2.jpg](media/githubUploadFiles.png)
+
+1. [Example](https://makecode.adafruit.com/courses/maker/projects/servo-box)
+   using popsickle sticks to make a linkage. Personally I have a very hard
+   time drilling holes in popsickle sticks. Hopefully you'll do better than
+   me.
+
 ### Servo Pan and Tilt mechanisms
 
 Also known as *gimbals* or *two degrees of freedom mechanisms*, *pan-and-tilt
