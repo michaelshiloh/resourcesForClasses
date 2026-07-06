@@ -473,7 +473,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "nRF_servo_Mega.kicad_pro",
+    "filename": "mega_nRF_feedthrough.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -508,7 +508,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "nRF_servo_Mega.net",
+      "netlist": "mega_nRF_feedthrough.net",
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
