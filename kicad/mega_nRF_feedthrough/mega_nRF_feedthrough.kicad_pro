@@ -194,6 +194,8 @@
       ],
       "track_widths": [
         0.0,
+        0.25,
+        0.4,
         1.6
       ],
       "tuning_pattern_settings": {
@@ -223,6 +225,10 @@
         }
       },
       "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
         {
           "diameter": 0.0,
           "drill": 0.0
