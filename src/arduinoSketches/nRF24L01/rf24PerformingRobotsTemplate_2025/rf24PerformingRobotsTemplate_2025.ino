@@ -64,7 +64,7 @@
 
 // CHANGEHERE
 // for the receiver
-const int NRF_CE_PIN = A11, NRF_CSN_PIN = A15;
+const int NRF_CE_PIN = 46, NRF_CSN_PIN = 48;
 
 // nRF 24L01 pin   name
 //          1      GND
@@ -328,7 +328,7 @@ void clearData() {
 // CHANGEHERE
 
 // Additional libraries for music maker shield
-#include <Adafruit_VS1053.h>
+//#include <Adafruit_VS1053.h>
 #include <SD.h>
 
 // Servo library
@@ -351,7 +351,7 @@ void clearData() {
 #define CARDCS 4         // Card chip select pin
 // DREQ should be an Int pin, see http://arduino.cc/en/Reference/attachInterrupt
 #define DREQ 3  // VS1053 Data request, ideally an Interrupt pin
-Adafruit_VS1053_FilePlayer musicPlayer = Adafruit_VS1053_FilePlayer(SHIELD_RESET, SHIELD_CS, SHIELD_DCS, DREQ, CARDCS);
+//Adafruit_VS1053_FilePlayer musicPlayer = Adafruit_VS1053_FilePlayer(SHIELD_RESET, SHIELD_CS, SHIELD_DCS, DREQ, CARDCS);
 
 // Connectors for NeoPixels and Servo Motors are labeled
 // on the circuit board
@@ -392,7 +392,7 @@ void setup() {
   // printf_begin();
 
   // Set up all the attached hardware
-  setupMusicMakerShield();
+//  setupMusicMakerShield();
   setupServoMotors();
   setupNeoPixels();
 
@@ -405,7 +405,7 @@ void setup() {
 void setupRF24() {
 
   // Check whether the correct pins are assigned
-  if (NRF_CE_PIN != A11 || NRF_CSN_PIN != A15) {
+  if (NRF_CE_PIN != 46 || NRF_CSN_PIN != 48) {
     Serial.println(F("The wrong NRF_CE_PIN and NRF_CSN_PIN pins are defined for a receiver"));
     while (1)
       ;
@@ -424,7 +424,7 @@ void setupRF24() {
   Serial.print(CUSTOM_ADDRESS_BYTE, HEX);
   Serial.println("");
 }
-
+/*
 void setupMusicMakerShield() {
   if (!musicPlayer.begin()) {  // initialise the music player
     Serial.println(F("Couldn't find VS1053, do you have the right pins defined?"));
@@ -448,7 +448,7 @@ void setupMusicMakerShield() {
   // If DREQ is on an interrupt pin (on uno, #2 or #3) we can do background
   // audio playing
   musicPlayer.useInterrupt(VS1053_FILEPLAYER_PIN_INT);  // DREQ int
-}
+}*/
 
 void setupServoMotors() {
   nose.attach(NOSE_SERVO_PIN);
@@ -540,7 +540,7 @@ void loop() {
         matrix.show();
 
         Serial.println(F("Playing track 002"));
-        musicPlayer.startPlayingFile("/track002.mp3");
+        //musicPlayer.startPlayingFile("/track002.mp3");
 
         break;
       case 2:
@@ -551,7 +551,7 @@ void loop() {
         matrix.show();
 
         Serial.println(F("Playing track 001"));
-        musicPlayer.startPlayingFile("/track001.mp3");
+        //musicPlayer.startPlayingFile("/track001.mp3");
         break;
       case 3:
 
