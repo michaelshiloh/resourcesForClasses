@@ -48,7 +48,7 @@ Here is an example of an image
 
 You can see how this renders by visiting [https://capstone-test-website.github.io/](https://capstone-test-website.github.io/). 
 This also tells you that you can see the source repository for this at 
-[https://github.com/capstone-test-website](https://github.com/capstone-test-website)
+[https://github.com/capstone-test-website/capstone-test-website.github.io](https://github.com/capstone-test-website/capstone-test-website.github.io)
 
 
 After making any changes, you must commit your changes, and then wait a few
@@ -58,7 +58,8 @@ minutes for your changes to be published.
 There are of course many additional resources on the web. A good place to
 start is [here](https://docs.github.com/en/pages/quickstart). 
 
-If you prefer, you can use html and css. A good example of this is Mustafa
+If you prefer, you can use html and css and incorporate javascript. 
+A good example of this is Mustafa
 Bakir's website which
 you can view [here](https://mustafabakir0.github.io/). The source for his
 website is [here](https://github.com/MustafaBakir0/MustafaBakir0.github.io)
