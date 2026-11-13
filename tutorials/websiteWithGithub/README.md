@@ -46,7 +46,9 @@ Here is an example of an image
 ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
 ```
 
-You can see how this renders by visiting [https://capstone-test-website.github.io/](https://capstone-test-website.github.io/). This also tells you that you can see the source repository for this at [github.com/capstone-test-website](github.com/capstone-test-website)
+You can see how this renders by visiting [https://capstone-test-website.github.io/](https://capstone-test-website.github.io/). 
+This also tells you that you can see the source repository for this at 
+[https://github.com/capstone-test-website](https://github.com/capstone-test-website)
 
 
 After making any changes, you must commit your changes, and then wait a few
@@ -57,9 +59,9 @@ There are of course many additional resources on the web. A good place to
 start is [here](https://docs.github.com/en/pages/quickstart). 
 
 If you prefer, you can use html and css. A good example of this is Mustafa
-Bakir's website. Mustafa's github account is **github.com/MustafaBakir0**, his
-github.io repository is **MustafaBakir0.github.io**, and you can view his website
-at [https://mustafabakir0.github.io/](https://mustafabakir0.github.io/)
+Bakir's website which
+you can view [here](https://mustafabakir0.github.io/). The source for his
+website is [here](https://github.com/MustafaBakir0/MustafaBakir0.github.io)
 
 If you have any questions or suggestions for improvement, or if you find any
-errors, please let me know
+errors, please let me know 
