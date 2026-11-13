@@ -1,0 +1,55 @@
+# How to host your website on github.io using your Github account 
+
+1. If you don't have a Github account, follow these instructions
+1. In your Github account, create a new repository. It must have a special
+   name in order to work. Name it username.github.io, 
+   replacing username with your GitHub username exactly.
+1.1. Toggle Add README to __On__.
+1.1. Click Create __repository__.
+1. Near the top of the page, under the repository name, click on __Settings__
+1. In the __Code, planning, and automation__ section of the sidebar, click __Pages__
+1. Under __Build and deployment__, under __Source__, select __Deploy from a branch__
+1. Under __Build and deployment__, under __Source__, 
+    use the __branch__ dropdown menu and select __Main__
+1. Leave the folder setting __/(root)__
+1. Click __save__
+1. Near the top of the page, under the repository name, click on __Code__
+
+
+At this point your website should publish. It can take some time, usually a
+few minutes. Your website will be at username.github.io. What you will see is
+whatever is in your README.md file, which is probably empty. You can add some
+content, such as this:
+
+```
+# A big heading
+some content
+## A medium heading
+more content
+### A small heading
+even more content
+#### A tiny heading(maybe)
+And now a numbered list:
+
+1. Item #1
+1. Item #1
+1. Item #1
+
+Here is an example of a link [Quickstart for GitHub Pages](https://docs.github.com/en/pages/quickstart)
+
+Here is an example of an image
+
+```
+
+
+After making any changes, you must commit your changes, and then wait a few
+minutes for your changes to be published.
+
+
+There are of course many additional resources on the web. A good place to
+start is [here](https://docs.github.com/en/pages/quickstart). 
+
+If you prefer, you can use html and css. A good example of this is Mustafa
+Bakir's website. Mustafa's github account is github.com/MustafaBakir0, his
+github.io repository is MustafaBakir0.github.io, and you can view his website
+at https://mustafabakir0.github.io/
