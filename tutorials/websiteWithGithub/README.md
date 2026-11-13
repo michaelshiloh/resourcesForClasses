@@ -1,6 +1,9 @@
 # How to host your website on github.io using your Github account 
 
-If you don't have a Github account, follow these instructions:
+
+If you don't have a Github account, follow
+[these](https://github.com/michaelshiloh/resourcesForClasses/tree/master#github-resources) instructions
+first, and then come back here to great your github.io web page.
 
 1. In your Github account, create a new repository. It must have a special
    name in order to be created as a web page on github.io: Name it *username.github.io*,
