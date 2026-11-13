@@ -754,6 +754,11 @@ Look at the code for item "How to upload a file to Github" above
 16.3. Controlling the size of the image
     <img src="https://github.com/michaelshiloh/understandinginteractivemedia/blob/main/media/IMSandbox_Poster.png" width="400">
 
+### How to host your own web page on github.io, using your github.com account
+
+Follow [this](https://github.com/michaelshiloh/resourcesForClasses/tree/master/tutorials/websiteWithGithub) 
+tutorial
+
 
 ## Making Sounds without Arduino
 1. Basic 40106 (hex Schmitt trigger inverter)
