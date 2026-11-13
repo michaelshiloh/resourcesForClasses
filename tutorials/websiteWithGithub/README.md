@@ -22,8 +22,8 @@ first, and then come back here to great your github.io web page.
 
 At this point your website should publish. This usually takes a
 few minutes. Your website will be at *username.github.io*. What you will see is
-whatever is in your README.md file, which is probably empty. You can add some
-content, such as this:
+whatever is in your README.md file, which is probably empty. Try adding some
+content, such as the following:
 
 ```
 # A big heading
